@@ -1,0 +1,47 @@
+/* Color */
+.text-color,
+.btn.outline.color,
+a.arrow-link:hover,
+a.arrow-link:hover:before,
+.service-item:hover > i,
+.service-item:hover > a.arrow-link:before,
+.c-details a:hover,
+.c-details a:hover i {
+	color: #e51966;
+}
+
+/* Background color */
+a.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+a .icon:hover,
+a.btn.outline:hover,
+button.outline:hover,
+input[type="submit"].outline:hover,
+.btn.color,
+.icon-nav a:hover > i {
+	background: #e51966;
+}
+
+/* Border color */
+.btn.outline.color {
+	border: 2px solid #e51966;
+}
+
+/* RGBA border color */
+a.btn.outline:hover,
+button.outline:hover,
+input[type="submit"].outline:hover {
+	border: 2px solid #e51966;
+	border: 2px solid rgba(229,25,102,1);
+}
+
+/* RGBA background color */
+.back-top {
+	background: #e51966;
+	background: rgba(229,25,102,0.9);
+}
+
+.back-top:hover {
+	background: rgba(229,25,102,1);
+}
