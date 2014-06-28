@@ -1,234 +1,165 @@
-<html>
-  <head>
-    <title>fast forward labs</title>
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script src="js/lib/modernizr.js"></script>
 
-<style type="text/css">
-html {
-  background: url(nyc_at_night.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color:#fff;
-  font:14px Courier,serif;
-}
-#mc_container {
-  padding-left:50px;
-}
-#mc_embed_signup {
-  background:#666;
-  filter:alpha(opacity=60);
-  opacity:.6;
-  clear:left;
-  padding:10px;
-  position:absolute; top:50%; height:225px; margin-top:-112px;
-  width:700px;
-}
-</style>
-<!-- thanks to Nathan Congleton and his lovely creative commons photo which we found on flickr here: https://www.flickr.com/photos/nathancongleton/6745241245/ -->
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
-try {
-    var jqueryLoaded=jQuery;
-    jqueryLoaded=true;
-} catch(err) {
-    var jqueryLoaded=false;
-}
-var head= document.getElementsByTagName('head')[0];
-if (!jqueryLoaded) {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-    head.appendChild(script);
-    if (script.readyState && script.onload!==null){
-        script.onreadystatechange= function () {
-              if (this.readyState == 'complete') mce_preload_check();
-        }
-    }
-}
+  <title>Fast Forward Labs</title>
 
-var err_style = '';
-try{
-    err_style = mc_custom_error_style;
-} catch(e){
-    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
-}
-var head= document.getElementsByTagName('head')[0];
-var style= document.createElement('style');
-style.type= 'text/css';
-if (style.styleSheet) {
-  style.styleSheet.cssText = err_style;
-} else {
-  style.appendChild(document.createTextNode(err_style));
-}
-head.appendChild(style);
-setTimeout('mce_preload_check();', 250);
+  <meta name="robots" content="index, nofollow">
+  <meta name="description" content="Fast Forward Labs, Near Future Research">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-var mce_preload_checks = 0;
-function mce_preload_check(){
-    if (mce_preload_checks>40) return;
-    mce_preload_checks++;
-    try {
-        var jqueryLoaded=jQuery;
-    } catch(err) {
-        setTimeout('mce_preload_check();', 250);
-        return;
-    }
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-    head.appendChild(script);
-    try {
-        var validatorLoaded=jQuery("#fake-form").validate({});
-    } catch(err) {
-        setTimeout('mce_preload_check();', 250);
-        return;
-    }
-    mce_init_form();
-}
-function mce_init_form(){
-    jQuery(document).ready( function($) {
-      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://praxisd.us8.list-manage.com/subscribe/post-json?u=bdb368b9a389b010c19dbcd54&id=1d8c97a0bd&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                    beforeSubmit: function(){
-                        $('#mce_tmp_error_msg').remove();
-                        $('.datefield','#mc_embed_signup').each(
-                            function(){
-                                var txt = 'filled';
-                                var fields = new Array();
-                                var i = 0;
-                                $(':text', this).each(
-                                    function(){
-                                        fields[i] = this;
-                                        i++;
-                                    });
-                                $(':hidden', this).each(
-                                    function(){
-                                        var bday = false;
-                                        if (fields.length == 2){
-                                            bday = true;
-                                            fields[2] = {'value':1970};//trick birthdays into having years
-                                        }
-                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                                this.value = '';
-                                                                            } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                                this.value = '';
-                                                                            } else {
-                                                                                if (/\[day\]/.test(fields[0].name)){
-                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
-                                                                                } else {
-                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-                                                }
-                                            }
-                                    });
-                            });
-                        $('.phonefield-us','#mc_embed_signup').each(
-                            function(){
-                                var fields = new Array();
-                                var i = 0;
-                                $(':text', this).each(
-                                    function(){
-                                        fields[i] = this;
-                                        i++;
-                                    });
-                                $(':hidden', this).each(
-                                    function(){
-                                        if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                                this.value = '';
-                                                                            } else {
-                                                                                this.value = 'filled';
-                                            }
-                                    });
-                            });
-                        return mce_validator.form();
-                    },
-                    success: mce_success_cb
-                };
-      $('#mc-embedded-subscribe-form').ajaxForm(options);
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Essential stylesheets -->
+  <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lib/owl.theme.css">
+  <link rel="stylesheet" href="css/lib/base.css">
+  <link rel="stylesheet" href="css/lib/base.css">
+  <!-- The stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- The favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+  
 
 
-    });
-}
-function mce_success_cb(resp){
-    $('#mce-success-response').hide();
-    $('#mce-error-response').hide();
-    if (resp.result=="success"){
-        $('#mce-'+resp.result+'-response').show();
-        $('#mce-'+resp.result+'-response').html(resp.msg);
-        $('#mc-embedded-subscribe-form').each(function(){
-            this.reset();
-        });
-    } else {
-        var index = -1;
-        var msg;
-        try {
-            var parts = resp.msg.split(' - ',2);
-            if (parts[1]==undefined){
-                msg = resp.msg;
-            } else {
-                i = parseInt(parts[0]);
-                if (i.toString() == parts[0]){
-                    index = parts[0];
-                    msg = parts[1];
-                } else {
-                    index = -1;
-                    msg = resp.msg;
-                }
-            }
-        } catch(e){
-            index = -1;
-            msg = resp.msg;
-        }
-        try{
-            if (index== -1){
-                $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);
-            } else {
-                err_id = 'mce_tmp_error_msg';
-                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
 
-                var input_id = '#mc_embed_signup';
-                var f = $(input_id);
-                if (ftypes[index]=='address'){
-                    input_id = '#mce-'+fnames[index]+'-addr1';
-                    f = $(input_id).parent().parent().get(0);
-                } else if (ftypes[index]=='date'){
-                    input_id = '#mce-'+fnames[index]+'-month';
-                    f = $(input_id).parent().parent().get(0);
-                } else {
-                    input_id = '#mce-'+fnames[index];
-                    f = $().parent(input_id).get(0);
-                }
-                if (f){
-                    $(f).append(html);
-                    $(input_id).focus();
-                } else {
-                    $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html(msg);
-                }
-            }
-        } catch(e){
-            $('#mce-'+resp.result+'-response').show();
-            $('#mce-'+resp.result+'-response').html(msg);
-        }
-    }
-}
+</head>
 
-</script>
-<!--End mc_embed_signup-->
+<body>
 
-  </head>
-  <body>
-    <div id="pd_main">
-      <div id="mc_container">
+  <!-- Top of the page -->
+  <div id="top"></div>
+
+  <!-- Top bar -->
+  <div class="top-bar tb-large tb-transp">
+    <div class="row">
+      <div class="twelve col">
+
+        <!-- Symbolic or typographic logo -->
+        <div class="tb-logo">
+          <a href="#home" class="scrollto"><img src="images/logo.png" alt="logo"></a>
+          <h1><a href="#home" class="scrollto">Fast Forward Labs</a></h1>
+        </div>
+
+        <!-- Menu items -->
+        <nav class="menu">
+          <ul>
+            </li>
+            <li><a href="#home" class="scrollto">Home</a></li>
+            <li><a href="#product" class="scrollto">Product</a></li>
+            <li><a href="#team" class="scrollto">Team</a></li>
+            <li><a href="#contact" class="scrollto">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home static background -->
+  <section id="home" class="home">
+    <div class="header large bg-img fixed background-one">
+      <div class="header-inner">
+
+        <!-- Content -->
+        <h3 class="bigtext text-white mb0">Fast Forward Labs</h3>
+        <h6 class="serif bigtext text-white">We're a new kind of research company that will help you reocognize and develop new product and business opportunites through emerging technologies.</h6>
+        <a class="scrollto btn outline light grid-mt grid-ms" href="#product">Learn more</a>
+        <a class="scrollto btn white grid-m grid-ms" href="#contact">Connect with us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section id="product" class="intro">
+    <div class="row title">
+        <h2>The Product</h2>
+        <hr>
+    </div>
+    <!-- Introduction text -->
+
+<div class="row">
+        <div class="three col offset-by-two">
+          <h2>Reporting on the recently possible</h2>
+        </div>
+        <div class="five col">
+              <p><span class="serif">A subscription to Fast Forward Labs incudes quarterly R&D reports, prototypes, innovation events <span class="serif"> &amp;</span> <span class="serif">an ongoing dialogue with our team on the topics of innovation and near future technolgoies.</span></p>
+        </div>
+      </div>
+  </section>
+  
+
+<!-- Call to action -->
+<section class="cta bg-img fixed background-four">
+    <div class="row">
+      <div class="twelve col text-center">
+        <h2 class="text-white"><span class="serif">Interested in what we are doing ?</span><br>
+        <span class="serif">Let's talk more about it!</span></h2>
+        <a href="#contact" class="scrollto btn outline light">Connect with us</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Team -->
+<section id="team">
+
+    <div class="bg-white bg-padding">
+      <div class="row title">
+        <h2>Our Team</h2>
+        <hr>
+      </div>
+      
+      <div class="row">
+        <div class="three col offset-by-two">
+          <h2>We believe in applied research</h2>
+        </div>
+        <div class="five col">
+              <p>Fast Forward Labs has a team of world class scientists, entrepreneurs and engineers led by CEO and Chief Scientist, Hilary Mason. The team has a wide-range of professional experience in academia, consumer startups and large corporations. We are a mix of entrepreneurs that have built companies and scientific researches who have published in peer-reviewed journals.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+      </div>
+  </section>
+
+
+<!-- Contact -->
+  <section id="contact" class="contact">
+
+
+    <!-- Title -->
+    <div class="row title">
+      <h2>Contact</h2>
+      <hr>
+    </div>
+
+
+    <div class="row">
+
+
+      <!-- Sign up for newsletter -->
+      <div class="six col offset-by-one">
+        <div id="pd_main">
+            <div id="mc_container">
       <div id="mc_embed_signup">
-      <form action="http://praxisd.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&amp;id=1d8c97a0bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <h2>fast forward labs - reporting on the recently possible</h2>
-              <h3>sign up for dispatches here</h3>
+      <form action="http://praxisd.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&amp;id=1d8c97a0bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
+              <h5>sign up for dispatches here</h5>
       <div class="mc-field-group">
               <label for="mce-EMAIL">Your e-mail: </label>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -243,5 +174,48 @@ function mce_success_cb(resp){
       </div>
     </div>
     </div>
-  </body>
+      </div>
+
+
+      <!-- Contact details -->
+      <div class="four col text-left">
+        <h5>Email Us!</h5>
+        <p>Want to learn more about what we are doing and talk to us about our research interests? 
+          Send us an email or sign up for our list!
+          <br><p>
+          <a href="mailto:contact@fastforwardlabs.com">
+            <i class="fa fa-envelope-o"></i>
+            <span>contact@fastforwardlabs.com</span>
+          </a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Back to top -->
+  <div class="back-top-wrap">
+    <a href="#top" class="scrollto"><i class="back-top fa fa-chevron-up"></i></a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="row">
+      <div class="twelve col">
+        <p>&copy; 2014 - Made in NYC  <i class="fa fa-cab"></i> </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Javascript -->
+  <script src="./js/lib/jquery.min.js"></script>
+  <script src="js/lib/retina.min.js"></script>
+  <script src="js/lib/jquery.bxslider.min.js"></script>
+  <script src="js/lib/owl.carousel.min.js"></script>
+  <script src="js/lib/jquery.equal.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/mailchimp.js"></script>
+
+</body>
 </html>
