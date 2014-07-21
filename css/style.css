@@ -554,7 +554,7 @@ input::-moz-focus-inner {
 
 /* Background images */
 .background-one {
-	background-image: url('../images/placeholder-1800x1200.png');
+	background-image: url('../images/placeholder-1800x1200-small.jpg');
 }
 
 .background-two {
@@ -562,15 +562,15 @@ input::-moz-focus-inner {
 }
 
 .background-three {
-	background-image: url('../images/placeholder-1800x1200.png');
+	background-image: url('../images/placeholder-1800x1200-small.jpg');
 }
 
 .background-four {
-	background-image: url('../images/placeholder-1800x1200.png');
+	background-image: url('../images/placeholder-1800x1200-small.jpg');
 }
 
 .background-five {
-	background-image: url('../images/placeholder-1800x1200.png');
+	background-image: url('../images/placeholder-1800x1200-small.jpg');
 }
 
 /* Title */
