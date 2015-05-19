@@ -1,4 +1,5 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
 
     // From Treehouse/Matt West http://blog.teamtreehouse.com/create-ajax-contact-form
 
