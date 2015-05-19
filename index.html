@@ -1,233 +1,370 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
-<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
-<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
-<!--[if !IE]><html lang="en"><![endif]-->
-<head>
-  <meta charset="utf-8">
-  <script src="js/lib/modernizr.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fast Forward Labs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
-  <title>Fast Forward Labs</title>
+    <meta property="og:url" content="http://www.fastforwardlabs.com" />
+    <meta property="og:title" content="Fast Forward Labs" />
+    <meta property="og:description" content="Fast Forward Labs is a machine intelligence research company. We produce reports and prototypes on emerging technologies." />
+    <meta property="og:image" content="http://grantcuster.com/ffl-screen.png" />
 
-  <meta name="robots" content="index, nofollow">
-  <meta name="description" content="Fast Forward Labs, Near Future Research">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fastforwardlabs">
+    <meta name="twitter:creator" content="@fastforwardlabs">
+    <meta name="twitter:title" content="Fast Forward Labs">
+    <meta name="twitter:description" content="Fast Forward Labs is a machine intelligence research company. We produce reports and prototypes on emerging technologies.">
+    <meta name="twitter:image" content="http://grantcuster.com/ffl-screen.png">
 
-  <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <script src="//use.typekit.net/jsw2dxi.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  </head>
 
-  <!-- Essential stylesheets -->
-  <link rel="stylesheet" href="css/lib/font-awesome.min.css">
-  <link rel="stylesheet" href="css/lib/owl.theme.css">
-  <link rel="stylesheet" href="css/lib/base.css">
-  <link rel="stylesheet" href="css/lib/base.css">
-  <!-- The stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <body>
 
-  <!-- The favicon -->
-  <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Navigation -->
+    <div id="nav">
+      <a href="#intro" class="section-link">Intro</a><a class="section-link" href="#product">Product</a><a class="section-link" href="#contact">Contact</a><a class="section-link" href="#team">Team</a>
+    </div>
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- Intro -->
+    <div id="intro">
 
+      <!-- Tech Graph -->
+      <div id="techgraph-holder"></div>
+      <div id="shadow-holder">
+        <div id="shadow"></div>
+      </div>
 
-  <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+      <div id="whiteboard-box" title="What is the Tech Graph?">
+        <div id="whiteboard-pointer"></div>
+        <div id="whiteboard-text">
+          <div class="text-closed">Tech Graph</div>
+          <div class="text-open">Tech Graph</div>
+        </div>
+        <div id="idea-info">
+          <i class="fa fa-question-circle"></i>
+          <i class="fa fa-times-circle"></i>
+        </div>
+      </div>
 
+      <div id="tech-explainer">
+        <div id="mobile_closer"><i class="fa fa-times"></i></div>
+        <h3>About the Tech Graph</h3>
+        <p>The tech graph is our digital whiteboard. A place where we track technologies we are interested in and the connections between them. Some of these ideas will go on to become full reports, others newsletter dispatches, and still others hack day projects. In all cases, thinking about and sharing them is an integral part of our research process.</p>
+      </div>
 
+      <!-- Logo -->
+      <div id="logo-holder">
+        <svg id="ff-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 268.1" enable-background="new 0 0 288 268.1"><path fill="#010101" d="M0 42v212l31 14.1L62 254v-64l62-28v-46l-62 28.3V88l62-28V14.1L93 0z"/><path fill="#00dcec" d="M62 88v56.3l62-28.3z"/><path fill="#010101" d="M164 42v212l31 14.1 31-14.1v-64l62-28v-46l-62 28.3V88l62-28V14.1L257 0z"/><path fill="#00dcec" d="M226 88v56.3l62-28.3z"/></svg>
+        <h1>Fast Forward Labs</h1>
+        <div id="tagline">Reporting on the Recently Possible</div>
+      </div>
 
+    </div>
 
-</head>
+    <!-- Learn More -->
+    <div id="learn-more-holder">
+      <a id="learn-more" class="section-link" href="#product">Learn More</a>
+    </div>
 
-<body>
+    <!-- Content -->
+    <div id="content">
 
-  <!-- Top of the page -->
-  <div id="top"></div>
+      <!-- Canvas Backer -->
+      <canvas id="content-canvas"></canvas>
 
-  <!-- Top bar -->
-  <div class="top-bar tb-large tb-transp">
-    <div class="row">
-      <div class="twelve col">
+      <!-- Product Section -->
+      <div id="product" class="section">
 
-        <!-- Symbolic or typographic logo -->
-        <div class="tb-logo">
-          <a href="#home" class="scrollto"><img src="images/logo.png" alt="logo"></a>
-          <h1><a href="#home" class="scrollto">Fast Forward Labs</a></h1>
+        <div class="section-title">Product</div>
+
+        <div class="content-block">
+          <h2>See the Near Future</h2>
+          <p>Fast Forward Labs helps organizations accelerate their data science and machine intelligence capabilities. Every quarter we profile a different near future technology, producing a report on its development and a prototype demonstrating its application. Paired with our advising services, our <span class="report-underline underline">reports and <span class="backup-connector">prototypes</span></span> enable you to make the most of the recently possible.</p>
         </div>
 
-        <!-- Menu items -->
-        <nav class="menu">
+        <!-- Product Work -->
+        <div id="report-box" class="group">
+
+          <div class="report-row ff01 group" data-num="01">
+            <!-- To make hash link spacing right -->
+            <div id="ff01" class="report-spacer"></div>
+            <div class="report-text left">
+              <div class="report-num">FF01</div>
+            </div>
+            <div class="report-side left">
+              <div class="report-image-hoverer  side-content" data-title="Natural Language Generation" data-info="Machines are beginning to speak our language. Through natural language generation, computers can take highly structured data and output human language narrative. This report explores machine systems for natural language generation.">
+                <img class="active" src="images/nlg/00.jpg" />
+                <img src="images/nlg/01.jpg" />
+                <img src="images/nlg/02.jpg" />
+                <img src="images/nlg/03.jpg" />
+                <img src="images/nlg/04.jpg" />
+              </div>
+            </div>
+            <div class="report-side right">
+              <div class="video-holder side-content" data-title="Roborealtor"  data-info="Inspired by real estate sites, Roborealtor is a natural language generation prototype that takes the attributes for a hypothetical apartment and generates listings for it.">
+                <div class="video-dots"></div>
+                <video src="images/roborealtor.mp4" loop="true"></video>
+                <img src="images/roborealtor-screenshot.jpg" />
+                <div id="play-circle"></div>
+              </div>
+            </div>
+            <div class="report-text right">
+              <div class="report-title-holder">
+                <div class="report-title">Natural Language Generation</div>
+                <div class="report-date">September 2014</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-row ff02 group" data-num="02">
+            <!-- To make hash link spacing right -->
+            <div id="ff02" class="report-spacer"></div>
+            <div class="report-text left">
+              <div class="report-num">FF02</div>
+            </div>
+            <div class="report-side left">
+              <div class="report-image-hoverer side-content" data-title="Probabilistic Methods for Realtime Streams" data-info="Realtime analysis is a challenge for modern data systems. The probabilistic methods explored in this report offer highly efficient models for extracting value from streams of data as they are generated. This orders-of-magnitude improvement in efficiency enables many new applications and modes of computation.">
+                <img class="active" src="images/pmrs/00.jpg" />
+                <img src="images/pmrs/01.jpg" />
+                <img src="images/pmrs/02.jpg" />
+                <img src="images/pmrs/03.jpg" />
+                <img src="images/pmrs/04.jpg" />
+              </div>
+            </div>
+            <div class="report-side right">
+              <div class="video-holder side-content" data-title="CliqueStream" data-info="CliqueStream displays popular topics across Twitter and Reddit as nodes in a force-directed graph where the connections are based on similarity of word use over all comments and tweets. Keyword groups add nodes based on how often the keyword is used. The probabilistic methods powering the prototype run in ~48 milliseconds. In a traditional analytics framework they would take around 15 minutes.">
+                <div class="video-dots"></div>
+                <video src="images/cliquestream.mp4" loop="true"></video>
+                <img src="images/cliquestream-screenshot.jpg" />
+                <div id="play-circle"></div>
+              </div>
+            </div>
+            <div class="report-text right">
+              <div class="report-title-holder">
+                <div class="report-title">Probabilistic Methods for Realtime Streams</div>
+                <div class="report-date">February 2015</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-row ff03 coming-soon group" data-num="03">
+            <div class="report-text left">
+              <div class="report-num">FF03</div>
+            </div>
+            <div class="report-text right">
+              <div class="report-title-holder">
+                <div class="report-title">Deep Learning</div>
+                <div class="report-date">Coming June 2015</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="blocker">For access to these and future reports and prototypes:<br/><a class="contact-link section-link" href="#contact">Learn how to work with us.</a></div>
+
+        <h3>How We Work</h3>
+
+<!--         <div class="research-development">
+          <div class="rotater">
+            <span>Research</span> <span class="plus">&</span> <span>Development</span>
+          </div>
+        </div>
+ -->
+        <div class="content-block">
+          <p>We believe the only way to really understand a technology is to build with it. Our prototypes show the technology in action, and provide a deep understanding of the engineering constraints and opportunities it offers. Our reports include an overview of the state and trajectory of each technology in the academic, startup, and commercial spaces. Taken together, they present a vision of both the algorithms of the near future and the products they'll power.</p>
+        </div>
+
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="section">
+
+        <div class="section-title">Contact</div>
+
+        <div class="content-block">
+
+          <h2>Work With Us</h2>
+
+          <p>We advise clients in a wide range of industries including insurance, publishing, finance, media, and government on data product development, technology, and culture.</p>
+
           <ul>
-            </li>
-            <li><a href="#home" class="scrollto">Home</a></li>
-            <li><a href="#product" class="scrollto">Product</a></li>
-            <li><a href="#team" class="scrollto">Team</a></li>
-            <li><a href="http://blog.fastforwardlabs.com">Blog</a></li>
-            <li><a href="#contact" class="scrollto">Contact</a></li>
+            <li>We work with <strong>established companies</strong> to help them understand the technical and human implications of machine intelligence and data technology for short and long-term planning.</li>
+            <li>We work with <strong>select startups</strong> to help them build amazing products with cutting-edge technology and data capabilities.</li>
           </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
 
-  <!-- Home static background -->
-  <section id="home" class="home">
-    <div class="header large bg-img fixed background-one">
-      <div class="header-inner">
+          <p>Interested in learning more? Fill out our <span class="contact-underline underline">contact <span class="backup-connector">form</span></span> or send us a message at <a href="mailto:contact@fastforwardlabs.com">contact@fastforwardlabs.com</a>.</p>
 
-        <!-- Content -->
-        <h3 class="bigtext text-white mb0">Fast Forward Labs</h3>
-        <h6 class="serif bigtext text-white">We're a new kind of research company that will help you recognize and develop new product and business opportunities through emerging technologies.</h6>
-        <a class="scrollto btn outline light grid-mt grid-ms" href="#product">Learn more</a>
-        <a class="scrollto btn white grid-m grid-ms" href="#contact">Connect with us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Introduction -->
-  <section id="product" class="intro">
-    <div class="row title">
-        <h2>The Product</h2>
-        <hr>
-    </div>
-    <!-- Introduction text -->
-
-<div class="row">
-        <div class="three col offset-by-two">
-          <h2>Reporting on the recently possible</h2>
         </div>
-        <div class="five col">
-              <p><span class="serif">A subscription to Fast Forward Labs includes quarterly R&D reports, prototypes, innovation events <span class="serif"> &amp;</span> <span class="serif">an ongoing dialogue with our team on the topics of innovation and near future technologies.</span></p>
+
+        <div class="wider-block group margined">
+
+          <div class="contact-form-holder">
+            <h3>Get In Touch</h3>
+            <div id="form-inner">
+              <form id="contact-form" class="group" method="post" action="mailer.php">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <input type="submit" value="Send Message">
+              </form>
+              <div id="contacted-message" class="text-centered">
+                <div id="contacted-sending" class="contacted-inner">
+                  <div class="contact-title">Sending Message...</div>
+                </div>
+                <div id="contacted-success" class="contacted-inner">
+                  <div class="contact-title">Got It!</div>
+                  <p>We've received your message and will be in touch soon.</p>
+                  <p><a id="new-message" href="#new_message">Send another.</a></p>
+                </div>
+                <div id="contacted-failure" class="contacted-inner">
+                  <div class="contact-title">Something has gone wrong.</div>
+                  <p>We were unable to send your message. You can <a id="try-again" href="#try_again">try again</a> or email your message to <a href="mailto:contact@fastforwardlabs.com">contact@fastforwardlabs.com</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-more">
+            <div class="more-centerer">
+              <h3>More Ways to Connect</h3>
+              <div id="newsletter-signup" class="more-space group">
+                <h4>Sign Up For Our Newsletter</h4>
+                <div class="more-text">We'll keep you up to date on our projects and events.</div>
+                <div id="subscribe-form-holder" class="group">
+                  <form action="http://praxisd.us8.list-manage.com/subscribe/post-json?u=bdb368b9a389b010c19dbcd54&amp;id=1d8c97a0bd" method="post" id="mc-form" target="_Blank" class="group">
+                    <input type="email" id="mc-email" name="EMAIL" placeholder="Your Email" required>
+                    <input type="submit" value="Sign Up">
+                  </form>
+                  <div id="subscribe-messager">
+                    <div id="subscribe-loading" class="message-inner">
+                      <strong>Subscribing...</strong>
+                    </div>
+                    <div id="subscribe-success" class="message-inner">
+                      Thanks! To complete the subscription process, <strong>please click the link in the MailChimp email we just sent you.</strong>
+                    </div>
+                    <div id="subscribe-failure" class="message-inner">
+                      <strong>Something has gone wrong.</strong> Please <a href="http://fastforwardlabs.us8.list-manage2.com/subscribe?u=bdb368b9a389b010c19dbcd54&id=1d8c97a0bd" target="_blank">try subscribing again.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="more-space">
+                <h4>Visit our blog</h4>
+                <a target="_blank" href="http://blog.fastforwardlabs.com">Fast Forward Labs Blog</a>
+              </div>
+              <div class="more-space">
+                <h4>Follow us on Twitter</h4>
+                <a target="_blank" href="http://twitter.com/fastforwardlabs">@FastForwardLabs</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-  </section>
 
+      <!-- Team Section -->
+      <div id="team" class="section">
 
-<!-- Call to action -->
-<section class="cta bg-img fixed background-four">
-    <div class="row">
-      <div class="twelve col text-center">
-        <h2 class="text-white"><span class="serif">Interested in what we are doing ?</span><br>
-        <span class="serif">Let's talk more about it!</span></h2>
-        <a href="#contact" class="scrollto btn outline light">Connect with us</a>
-      </div>
-    </div>
-  </section>
-
-<!-- Team -->
-<section id="team">
-
-    <div class="bg-white bg-padding">
-      <div class="row title">
-        <h2>Our Team</h2>
-        <hr>
-      </div>
-
-      <div class="row">
-        <div class="three col offset-by-two">
-          <h2>We believe in applied research</h2>
+        <div class="content-block">
+          <div class="section-title">Team</div>
+          <h2>Meet Our Team</h2>
+          <p>Led by CEO and Founder, <span class="team-underline underline">Hilary <span class="backup-connector">Mason</span></span>, the Fast Forward Labs team has a wide-range of professional experience in academia, consumer startups and large companies.</p>
         </div>
-        <div class="five col">
-              <p>Fast Forward Labs has a team of world class scientists, entrepreneurs and engineers led by CEO and Founder, Hilary Mason. The team has a wide-range of professional experience in academia, consumer startups and large corporations. We are a mix of entrepreneurs that have built companies, hackers, and scientific researchers.</p>
+
+        <div class="wider-block padded group text-centered">
+          <div class="third">
+            <div class="person-holder">
+              <a class="fotolink" target="_blank" href="http://mwskirpan.com/">
+                <img src="images/team/mike.jpg" />
+              </a>
+              <div class="name">Michael Skirpan</div>
+              <a class="footlink" target="_blank" href="http://mwskirpan.com/">mwskirpan</a>
+            </div>
+          </div><div class="third">
+            <div class="person-holder">
+              <a class="fotolink" target="_blank" href="https://www.flickr.com/photos/jqpubliq/"><img src="images/team/ryan.jpg" /></a>
+              <div class="name">Ryan Micallef</div>
+              <a class="footlink" target="_blank" href="https://www.flickr.com/photos/jqpubliq/">jqpubliq</a>
+            </div>
+          </div><div class="third hilary-third">
+            <div class="person-holder">
+              <a class="fotolink" target="_blank" href="http://twitter.com/hmason">
+                <img src="images/team/hilary.jpg" />
+              </a>
+              <div class="name">Hilary Mason</div>
+              <a class="footlink" target="_blank" href="http://twitter.com/hmason">@hmason</a>
+            </div>
+          </div><div class="third">
+            <div class="person-holder">
+              <a class="fotolink" target="_blank" href="http://twitter.com/sefleuria">
+                <img src="images/team/jessica.jpg" />
+              </a>
+              <div class="name">Jessica Graves</div>
+              <a class="footlink" target="_blank" href="http://twitter.com/sefleuria">@sefleuria</a>
+            </div>
+          </div><div class="third">
+            <div class="person-holder">
+              <a class="fotolink" target="_blank" href="http://github.com/mynameisfiber">
+                <img src="images/team/micha.png" />
+              </a>
+              <div class="name">Micha Gorelick</div>
+              <a class="footlink" target="_blank" href="http://github.com/mynameisfiber">mynameisfiber</a>
+            </div>
+          </div><div class="third">
+            <div class="person-holder">
+              <a class="fotolink" target="_blank" href="http://twitter.com/grantcuster">
+                <img src="images/team/grant.png" />
+              </a>
+              <div class="name">Grant Custer</div>
+              <a class="footlink" target="_blank" href="http://twitter.com/grantcuster">@grantcuster</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="group">
+        <div class="left">
+          <span class="small-line">©2015 Fast Forward Labs</span><span class="small-hide"> &middot; </span><span class="small-line">Made in NYC</span>
+        </div>
+        <div class="right">
+          <a href="mailto:contact@fastforwardlabs.com" target="_blank">Email</a><a href="http://blog.fastforwardlabs.com" target="_blank">Blog</a><a href="http://twitter.com/fastforwardlabs" target="_Blank">Twitter</a>
         </div>
       </div>
     </div>
-      </div>
-      </div>
-  </section>
-
-
-<!-- Contact -->
-  <section id="contact" class="contact">
-
-
-    <!-- Title -->
-    <div class="row title">
-      <h2>Contact</h2>
-      <hr>
-    </div>
-
-
-    <div class="row">
-
-
-      <!-- Sign up for newsletter -->
-      <div class="six col offset-by-one">
-        <div id="pd_main">
-            <div id="mc_container">
-      <div id="mc_embed_signup">
-      <form action="http://praxisd.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&amp;id=1d8c97a0bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
-              <h5>sign up for dispatches here</h5>
-      <div class="mc-field-group">
-              <label for="mce-EMAIL">Your e-mail: </label>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      </div>
-              <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_bdb368b9a389b010c19dbcd54_1d8c97a0bd" value=""></div>
-              <div class="clear"><input type="submit" value="subscribe!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </form>
+    <div id="overlay">
+      <div id="overlay-content-holder">
+        <div id="overlay-content">
+          <div id="overlay-centerer"></div>
+        </div>
+        <div id="overlay-caption">
+          <div id="caption-content"></div>
+        </div>
+        <div id="close-overlay"><i class="fa fa-times"></i></div>
       </div>
     </div>
-    </div>
-      </div>
 
+    <script src="javascripts/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/d3.min.js"></script>
+    <script src="javascripts/hammer.min.js"></script>
+    <script src="javascripts/min/main-min.js"></script>
 
-      <!-- Contact details -->
-      <div class="four col text-left">
-        <h5>Email Us!</h5>
-        <p>Want to learn more about what we are doing and talk to us about our research interests?
-          Send us an email or sign up for our list!
-          <br><p>
-          <a href="mailto:contact@fastforwardlabs.com">
-            <i class="fa fa-envelope-o"></i>
-            <span>contact@fastforwardlabs.com</span>
-          </a>
-        </address>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Back to top -->
-  <div class="back-top-wrap">
-    <a href="#top" class="scrollto"><i class="back-top fa fa-chevron-up"></i></a>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="row">
-      <div class="twelve col">
-        <p>&copy; 2014 - Made in NYC  <i class="fa fa-cab"></i> </p>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Javascript -->
-  <script src="./js/lib/jquery.min.js"></script>
-  <script src="js/lib/retina.min.js"></script>
-  <script src="js/lib/jquery.bxslider.min.js"></script>
-  <script src="js/lib/owl.carousel.min.js"></script>
-  <script src="js/lib/jquery.equal.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript" src="js/mailchimp.js"></script>
-
-<!-- google analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53030428-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-</body>
+    <!-- google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53030428-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
