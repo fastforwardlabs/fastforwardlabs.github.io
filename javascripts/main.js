@@ -113,6 +113,7 @@ var height = $window.height();
 var no_scroll_events = false;
 var touch_events = false;
 var too_small = false;
+var graph_active = true;
 
 $(document).ready(function() {
 
@@ -381,6 +382,7 @@ $(document).ready(function() {
         squareUp();
         setBoxes();
         connectDots();
+        widthGraph();
       }
     } else {
       width = $window.width();
@@ -391,6 +393,7 @@ $(document).ready(function() {
       squareUp();
       setBoxes();
       connectDots();
+      widthGraph();
     }
   });
 
@@ -415,8 +418,10 @@ $(document).ready(function() {
         var target_top = 0;
       }
       $nav.removeClass('scrolled');
-      revolveGraph();
-      graph_active = true;
+      if (!graph_paused) {
+        revolveGraph();
+        graph_active = true;
+      }
     } else {
       var target_index = $target.index();
       var target_top = $target.offset().top;
@@ -519,9 +524,11 @@ $(document).ready(function() {
         } else {
           if (!graphing) {
             // Toggle graph revolve on
-            graph_active = true;
-            revolveGraph();
-            graphing = true;
+            if (!graph_paused) {
+              graph_active = true;
+              revolveGraph();
+              graphing = true;
+            }
           }
         }
       }
@@ -561,7 +568,6 @@ $(document).ready(function() {
     $mc_form.parent().addClass('submitted');
     $mc_form.parent().addClass('success');
     $mc_form.parent().removeClass('error');
-    console.log('submitted');
   });
 
   var $whiteboard_box = $('#whiteboard-box');
@@ -895,13 +901,52 @@ $(document).ready(function() {
     }
   });
 
+  var $whiteboard_control = $('#whiteboard-control');
+  $whiteboard_control.on("click", function() {
+    if ($whiteboard_control.hasClass('paused')) {
+      $whiteboard_control.removeClass('paused');
+      revolveGraph();
+      graph_paused = false;
+      graph_active = true;
+    } else {
+      $whiteboard_control.addClass('paused');
+      force.alpha(0);
+      graph_paused = true;
+      graph_active = false;
+    }
+  });
+
+  if (is_firefox) {
+    $body.addClass('firefox');
+  }
+
+  function widthGraph() {
+    if (width < 500) {
+      graph_active = false;
+      graph_paused = true;
+      $whiteboard_control.addClass('paused');
+    } else {
+      graph_paused = false;
+      graph_active = true;
+      $whiteboard_control.removeClass('paused');
+      revolveGraph();
+    }
+  }
+
+  widthGraph();
+
 });
 
 // Top Graph
 var graph_active = false;
+var graph_paused = false;
 var revolving_interval = "";
 var force = d3.layout.force();
 var nodes = "";
+
+function stopGraph() {
+  force.alpha(0);
+}
 
 function revolveGraph() {
   if (!is_firefox) {
@@ -1031,7 +1076,6 @@ var api = "http://techgraph.fastforwardlabs.com/api/";
 
       nodes = topics;
       setUp();
-      graph_active = true;
       update();
 
       $(window).resize(function() {

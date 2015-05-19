@@ -228,6 +228,42 @@ a
   top: 0
   margin-top: -12px
 
+#whiteboard-control
+  position: fixed
+  right: 160px
+  top: 15px
+  color: #999
+  z-index: 4
+  width: 40px
+  height: 40px
+  line-height: 40px
+  text-align: center
+  cursor: pointer
+  font-size: 22px
+  +user-select(none)
+  .fa-play
+    display: none
+  &.paused
+    .fa-pause
+      display: none
+    .fa-play
+      display: inline
+  &:hover
+    color: #000
+  +breakpoint(two)
+    top: 60px
+    right: 157px
+  +breakpoint(three)
+    right: 150px
+    font-size: 20px
+    top: 56px
+  +breakpoint(four)
+    display: none
+
+.firefox
+  #whiteboard-control
+    display: none
+
 #whiteboard-box
   position: fixed
   right: 18px
