@@ -533,31 +533,35 @@ $(document).ready(function() {
 
   // Submit code from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
   $mc_form.on("submit",function(e) {
-    var $this = $(this);
-    $.ajax({
-      type: $this.attr('method'),
-      url: $this.attr('action'),
-      data: $this.serialize(),
-      cache: false,
-      dataType: 'jsonp',
-      jsonp: 'c',
-      contentType: "application/json; charset=utf-8",
-      error: function(err) { 
-        alert("Could not connect to the registration server. Please try again later."); },
-      success: function(data) {
-        $mc_form.parent().addClass('submitted');
-        if (data.result != "success") {
-          console.log('failure');
-          $mc_form.parent().addClass('error');
-          $mc_form.parent().removeClass('error');
-        } else {
-          console.log('success');
-          $mc_form.parent().addClass('success');
-          $mc_form.parent().removeClass('error');
-        }
-      }
-    });
-    return false;
+    // var $this = $(this);
+    // $.ajax({
+    //   type: $this.attr('method'),
+    //   url: $this.attr('action'),
+    //   data: $this.serialize(),
+    //   cache: false,
+    //   dataType: 'jsonp',
+    //   jsonp: 'c',
+    //   contentType: "application/json; charset=utf-8",
+    //   error: function(err) { 
+    //     alert("Could not connect to the registration server. Please try again later."); },
+    //   success: function(data) {
+    //     $mc_form.parent().addClass('submitted');
+    //     if (data.result != "success") {
+    //       console.log('failure');
+    //       $mc_form.parent().addClass('error');
+    //       $mc_form.parent().removeClass('error');
+    //     } else {
+    //       console.log('success');
+    //       $mc_form.parent().addClass('success');
+    //       $mc_form.parent().removeClass('error');
+    //     }
+    //   }
+    // });
+    // return false;
+    $mc_form.parent().addClass('submitted');
+    $mc_form.parent().addClass('success');
+    $mc_form.parent().removeClass('error');
+    console.log('submitted');
   });
 
   var $whiteboard_box = $('#whiteboard-box');
