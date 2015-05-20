@@ -251,7 +251,7 @@ $(document).ready(function() {
     var $report_num = $('.report-num');
     var $first_content = $product.find('.content-block').first();
     var $blocker = $('.blocker');
-    var anchor_bottom = $connecting_anchor.offset().top + $connecting_anchor.height() + 3;
+    var anchor_bottom = $connecting_anchor.offset().top + $connecting_anchor.height() + 1;
     var anchor_center = $connecting_anchor.offset().left + ($connecting_anchor.width()/2);
     // If anchor spreads to two-lines use backup
     if ($connecting_anchor.height() > 36) {
