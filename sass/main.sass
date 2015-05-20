@@ -491,6 +491,8 @@ h1
   position: relative
   z-index: 7
   top: 100vh
+  p
+    font-family: "ff-tisa-sans-web-pro", sans-serif
 
 #team
   border-bottom: solid 2px #eaeaea
@@ -499,14 +501,16 @@ h1
 .underline
   font-weight: 700
   border-bottom: solid 2px #eaeaea
-  padding-bottom: 2px
+  padding-bottom: 0px
 
 #content-canvas
   +coverer
 
 .more-text
-  font-size: 18px
-  line-height: 26px
+  font-size: 16px
+  line-height: 24px
+  color: #444
+  font-family: "ff-tisa-sans-web-pro", sans-serif
 
 #learn-more-holder
   position: absolute
@@ -625,7 +629,16 @@ h4
   margin: 0 auto
   position: relative
   p
-    margin-bottom: $baseline
+    font-size: 21px
+    line-height: 1.6em
+    margin-bottom: 1em
+    color: #333
+    +breakpoint(three)
+      font-size: 19px
+      line-height: 1.6em
+    +breakpoint(four)
+      font-size: 16px
+      line-height: 1.5em
   +breakpoint(two)
     padding: 0 20px
 
@@ -915,8 +928,17 @@ h4
     transform: rotateY(0deg)
 
 ul
-  margin-bottom: $baseline/2
-  margin-top: -$baseline/2
+  margin-bottom: 0.5em
+  margin-top: -0.5em
+  font-family: "ff-tisa-sans-web-pro", sans-serif
+  font-size: 21px
+  line-height: 1.6em
+  +breakpoint(three)
+    font-size: 19px
+    line-height: 1.6em
+  +breakpoint(four)
+    font-size: 16px
+    line-height: 1.5em
   li
     padding-left: $baseline - 4px
     background-image: url("../images/forward-bullet.svg")
@@ -925,7 +947,6 @@ ul
     background-position: 1px 8px
   +breakpoint(three)
     margin-bottom: 10px
-    margin-top: 10px
   +breakpoint(four)
     li
       padding-left: 20px
@@ -1183,6 +1204,8 @@ input[type="submit"]
     .footlink
       line-height: 24px
       font-size: 20px
+      i
+        margin-right: 4px
     .fotolink
       display: block
       line-height: 0

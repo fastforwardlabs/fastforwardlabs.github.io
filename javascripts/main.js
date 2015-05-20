@@ -254,7 +254,7 @@ $(document).ready(function() {
     var anchor_bottom = $connecting_anchor.offset().top + $connecting_anchor.height() + 3;
     var anchor_center = $connecting_anchor.offset().left + ($connecting_anchor.width()/2);
     // If anchor spreads to two-lines use backup
-    if ($connecting_anchor.height() > 30) {
+    if ($connecting_anchor.height() > 36) {
       var $backup = $connecting_anchor.find('.backup-connector');
       anchor_center = $backup.offset().left + ($backup.width()/2);
     }
@@ -299,7 +299,7 @@ $(document).ready(function() {
     var anchor_bottom = $connecting_anchor.offset().top + $connecting_anchor.height() + 3;
     var anchor_center = $connecting_anchor.offset().left + ($connecting_anchor.width()/2);
     // If anchor spreads to two-lines use backup
-    if ($connecting_anchor.height() > 30) {
+    if ($connecting_anchor.height() > 36) {
       var $backup = $connecting_anchor.find('.backup-connector');
       anchor_center = $backup.offset().left + ($backup.width()/2);
     }
@@ -328,7 +328,7 @@ $(document).ready(function() {
     var anchor_bottom = $connecting_anchor.offset().top + $connecting_anchor.height() + 3;
     var anchor_center = $connecting_anchor.offset().left + ($connecting_anchor.width()/2);
     // If anchor spreads to two-lines use backup
-    if ($connecting_anchor.height() > 30) {
+    if ($connecting_anchor.height() > 36) {
       var $backup = $connecting_anchor.find('.backup-connector');
       anchor_center = $backup.offset().left + ($backup.width()/2);
     }
