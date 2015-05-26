@@ -260,7 +260,7 @@ $(document).ready(function() {
     }
     var start_x = anchor_center;
     var start_y = anchor_bottom - canvas_offset;
-    var y_1 = $first_content.offset().top + $first_content.height() - canvas_offset + 14;
+    var y_1 = $first_content.offset().top + $first_content.height() - canvas_offset + 18;
     var x_1 = $report_num.eq(0).offset().left + ($report_num.eq(0).width()/2);
     var y_2 = $report_num.eq(0).offset().top - canvas_offset;
     var y_3 = $report_num.eq(1).offset().top - canvas_offset;
@@ -305,7 +305,7 @@ $(document).ready(function() {
     }
     var start_x = anchor_center;
     var start_y = anchor_bottom - canvas_offset;
-    var y_1 = $first_content.offset().top + $first_content.height() - canvas_offset + 15;
+    var y_1 = $first_content.offset().top + $first_content.height() - canvas_offset + 20;
     var x_1 = $contact_box.offset().left + ($contact_box.outerWidth()/2);
     var y_2 = $contact_box.offset().top - canvas_offset;
     context.beginPath();
@@ -413,7 +413,7 @@ $(document).ready(function() {
     if (href == "#intro") {
       var target_index = 0;
       if (width>500) {
-        var target_top = -23;
+        var target_top = 0;
       } else {
         var target_top = 0;
       }
@@ -434,7 +434,7 @@ $(document).ready(function() {
     }
     if (width>500) {
       $('html, body').animate({
-        scrollTop: target_top + 23
+        scrollTop: target_top
       }, 200);
     } else {
       $('html, body').animate({
@@ -488,9 +488,33 @@ $(document).ready(function() {
 
   var graphing = true;
 
-  $(window).on("scroll",function() {
+  // Scroll cod from https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
+  var didScroll;
+  var active_scroll = false;
+  // on scroll, let the interval function know the user has scrolled
+  $(window).scroll(function(event){
+    didScroll = true;
+  });
+  // run hasScrolled() and reset didScroll status
+  setInterval(function() {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  var last_scroll_top = 0;
+  var delta = 1;
+  var show_nav = true;
+  var naving_up = false;
+  var naving_down = false;
+  var naving_set = false;
+  var naving_top = 0;
+  var nav_height = $nav.outerHeight();
+
+  function hasScrolled() {
     if (!scrolling && !no_scroll_events) {
-      var scroll_top = $(this).scrollTop();
+      var scroll_top = $window.scrollTop();
       if (scroll_top+(height/3) > $sections.first().offset().top) {
         $($sections.get().reverse()).each(function(i) {
           var $this = $(this);
@@ -515,7 +539,7 @@ $(document).ready(function() {
         }
       }
       if (!too_small) {
-        if ((scroll_top > (height + height/2)) && (scroll_top < content_height)) {
+        if (scroll_top > (height * 1.25) && scroll_top < content_height) {
           if (graphing) {
             // Toggle graph revolve off
             graph_active = false;
@@ -532,39 +556,13 @@ $(document).ready(function() {
           }
         }
       }
+      last_scroll_top = scroll_top;
     }
-  });
+  }
 
   // Mailchimp form
   var $mc_form = $('#mc-form');
-
-  // Submit code from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
   $mc_form.on("submit",function(e) {
-    // var $this = $(this);
-    // $.ajax({
-    //   type: $this.attr('method'),
-    //   url: $this.attr('action'),
-    //   data: $this.serialize(),
-    //   cache: false,
-    //   dataType: 'jsonp',
-    //   jsonp: 'c',
-    //   contentType: "application/json; charset=utf-8",
-    //   error: function(err) { 
-    //     alert("Could not connect to the registration server. Please try again later."); },
-    //   success: function(data) {
-    //     $mc_form.parent().addClass('submitted');
-    //     if (data.result != "success") {
-    //       console.log('failure');
-    //       $mc_form.parent().addClass('error');
-    //       $mc_form.parent().removeClass('error');
-    //     } else {
-    //       console.log('success');
-    //       $mc_form.parent().addClass('success');
-    //       $mc_form.parent().removeClass('error');
-    //     }
-    //   }
-    // });
-    // return false;
     $mc_form.parent().addClass('submitted');
     $mc_form.parent().addClass('success');
     $mc_form.parent().removeClass('error');
@@ -653,7 +651,15 @@ $(document).ready(function() {
     var title = $this.find('.side-content').attr('data-title');
     $body.addClass('overlayed');
     sizeOverlay();
-    $window.scrollTop(0);
+    if (no_scroll_events) {
+      console.log('why');
+      $window.scrollTop(0);
+    }
+    // Has to be longer than scroll check interval
+    requestTimeout(function() {
+      $nav.addClass('scrolled');
+      graph_active = false;
+    },350);
     var caption_html = '<div class="caption-num ff' + num + '">FF' + num + '</div>';
     caption_html += '<h4 class="caption-type">' + type + '</h4>';
     caption_html += '<div class="caption-title"> ' + title + '</div>';

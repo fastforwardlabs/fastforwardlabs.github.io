@@ -160,23 +160,28 @@ a
     border-bottom: solid 2px rgba(220,220,220,0.5)
     font-size: 20px
     background: #fff
+    top: 0
     a
       height: 48px
       line-height: 46px
   +breakpoint(two)
-    height: 48px !important
+    height: 48px
     border-bottom: solid 2px rgba(220,220,220,0.5)
-    font-size: 20px !important
-    background: #fff !important
+    font-size: 20px
+    background: #fff
+    top: 0
     a
-      height: 48px !important
-      line-height: 46px !important
+      height: 48px
+      line-height: 46px
   +breakpoint(four)
-    height: 40px !important
+    height: 38px !important
     font-size: 18px !important
+    line-height: 38px !important
     a
-      height: 40px !important
-      line-height: 41px !important
+      font-size: 18px !important
+      height: 38px !important
+      line-height: 34px !important
+      padding: 0 4px !important
 
 .overlayed
   #nav
@@ -184,6 +189,8 @@ a
     border-bottom: solid 2px rgba(220,220,220,0.5)
     font-size: 20px
     background: #fff
+    transition: none
+    top: 0
     a
       height: 48px
       line-height: 46px
@@ -348,21 +355,29 @@ a
   text-transform: none
   z-index: 4
   max-width: 520px
+  max-width: $width
   padding: 26px 28px
   border: solid 2px #ddd
   background: #fff
   z-index: 6
-  font-size: 20px
-  line-height: 30px
+  font-size: 21px
+  line-height: 1.6em
   border-radius: 4px
   top: 150%
   transition: top 0.2s
   width: 100%
+  min-height: 320px
+  p
+    font-family: "ff-tisa-sans-web-pro", sans-serif
+    font-size: 21px
+    line-height: 1.6em
   h3
     text-align: left
   +breakpoint(three)
-    font-size: 18px
-    line-height: 26px
+    min-height: 0
+    p
+      font-size: 18px
+      line-height: 26px
     h3
       text-align: left
   +breakpoint(four)
@@ -440,23 +455,32 @@ $circle_size: 30px
 #ff-logo
   display: block
   margin: 0 auto
-  width: 160px
-  height: 160px
+  width: 174px
+  height: 174px
   background-repeat: no-repeat
   background-position: center center
-  margin-bottom: 14px
+  margin-bottom: 12px
+  +breakpoint(two)
+    width: 160px
+    height: 160px
 h1
-  font-size: 46px
-  line-height: 46px
+  font-size: 54px
+  line-height: 54px
   font-weight: 700
   color: $cyan
   font-style: italic
   margin-bottom: 16px
+  +breakpoint(two)
+    font-size: 48px
+    line-height: 48px
 #tagline
-  font-size: 20px
-  line-height: 20px
+  font-size: 22px
+  line-height: 22px
   font-weight: 700
-  font-style: italic
+  // font-family: "ff-tisa-sans-web-pro", sans-serif
+  margin-bottom: 6px
+  color: #333
+  // +font-smoothing(antialiased)
 .explaining
   #logo-holder
     // top: -50%
@@ -562,7 +586,7 @@ h1
   font-weight: 700
   letter-spacing: 0.05em
   color: #bbb
-  padding: ($baseline * 3) 0 $baseline
+  padding: 72px 0 24px
   text-align: center
   +breakpoint(three)
     font-size: 19px
@@ -573,18 +597,28 @@ h1
     font-size: 18px
     line-height: 18px
     padding-bottom: 20px
-    padding-top: 60px
+    padding-top: 40px
 
 .section
   position: relative
-  +breakpoint(three)
-    border-bottom: solid 2px #eaeaea
+  padding-bottom: 24px * 3
+  border-bottom: solid 2px #eaeaea
+  &#team
+    padding-bottom: (24px * 3) - 18px
+  +breakpoint(four)
+    padding-bottom: 24px
+    #team
+      padding-bottom: 24px
 
 h2
   font-weight: 700
-  font-size: 40px
-  margin-bottom: $baseline/1.5
+  font-size: 44px
+  margin-bottom: 20px
   text-align: center
+  +breakpoint(two)
+    font-size: 40px
+    line-height: 44px
+    margin-bottom: 16px
   +breakpoint(three)
     font-size: 36px
     line-height: 46px
@@ -596,10 +630,10 @@ h2
 
 h3
   font-weight: 700
-  font-size: 22px
-  line-height: 26px
+  font-size: 24px
+  line-height: 28px
   text-transform: uppercase
-  margin-bottom: $baseline/2
+  margin-bottom: 18px
   text-align: center
   +breakpoint(three)
     font-size: 20px
@@ -616,7 +650,7 @@ h4
   line-height: 20px
   text-transform: uppercase
   margin-bottom: 3px
-  color: #999
+  color: #888
   +font-smoothing(antialiased)
 
 .wider-block
@@ -628,30 +662,35 @@ h4
   max-width: $width
   margin: 0 auto
   position: relative
+  strong
+    +font-smoothing(antialiased)
   p
-    font-size: 21px
+    font-size: 22px
     line-height: 1.6em
-    margin-bottom: 1em
+    margin-bottom: 24px
     color: #333
+    +breakpoint(two)
+      font-size: 21px
+      line-height: 1.6em
     +breakpoint(three)
       font-size: 19px
       line-height: 1.6em
     +breakpoint(four)
-      font-size: 16px
+      font-size: 18px
       line-height: 1.5em
   +breakpoint(two)
     padding: 0 20px
 
 #report-box
   max-width: $wider + 40px
-  padding: 0 20px
+  padding: 24px 20px 0
   margin: 0 auto
   +breakpoint(stack)
     padding: 0
 .report-row
   position: relative
   height: 527px
-  margin-bottom: 60px
+  margin-bottom: 24px * 2
   +breakpoint(stack)
     margin-bottom: 20px
   .report-side
@@ -723,23 +762,36 @@ h4
   letter-spacing: 0.02em
   width: 72px
   text-align: center
+  +breakpoint(two)
+    font-size: 20px
+    width: 68px
+    line-height: 34px
 .report-num
   +centerer
 .report-title-holder
   +centerer-v
-  padding: 0 40px
+  padding: 0 30px
   +breakpoint(two)
-    padding: 0 30px
+    padding: 0 20px
   .report-title
     font-weight: 700
-    font-size: 26px
-    line-height: 30px
+    font-size: 29px
+    line-height: 35px
+    color: #222
     margin-bottom: 6px
+    +breakpoint(two)
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 4px
   .report-date
-    font-style: italic
+    font-family: "ff-tisa-sans-web-pro", sans-serif
+    // font-style: italic
     color: #aaa
-    font-size: 20px
-    line-height: 24px
+    font-size: 21px
+    line-height: 26px
+    +breakpoint(two)
+      font-size: 19px
+      line-height: 22px
 
 .report-image-hoverer
   +coverer
@@ -860,26 +912,43 @@ h4
   max-width: $width
   margin: 0 auto
   border: solid 2px #eaeaea
-  padding: 20px
-  font-style: italic
+  padding: 20px 20px 20px
   text-align: center
-  border-radius: 4px
+  // background: #fafafa
   background: #fff
-  margin-bottom: $baseline
+  margin-bottom: 48px
   position: relative
-  a
-    font-style: normal
+  font-family: "ff-tisa-sans-web-pro", sans-serif
+  font-size: 21px
+  border-radius: 4px
+  line-height: 1.6em
+  // a
+  //   font-style: normal
+  //   background: $cyan
+  //   color: #fff
+  //   text-decoration: none
+  //   padding: 6px 14px 5px
+  //   margin-top: 4px
+  //   display: inline-block
+  //   margin-top: 6px
+  //   font-size: 22px
+  //   line-height: 1.6em
+  //   font-family: "ff-chambers-sans-web", "Chambers Sans OT", sans-serif
+  //   &:hover
+  //     text-decoration: underline
   +breakpoint(two)
     margin: 0 20px $baseline
   +breakpoint(three)
     margin: 0 20px 26px
   +breakpoint(four)
+    font-size: 18px
+    line-height: 1.5em
     margin: 0 0 26px
     border-left: none
     border-right: none
 
 .margined
-  margin-top: 40px
+  margin-top: 48px
 
 .research-development
   height: auto
@@ -961,7 +1030,7 @@ $form-width: 520px
   max-width: $form-width
   border: solid 2px #eaeaea
   border-radius: 4px
-  padding: 20px 20px 12px
+  padding: 20px 20px 8px
   perspective: 1000
   +breakpoint(one)
     margin: 0 auto 40px
@@ -1033,15 +1102,15 @@ $form-width: 520px
 input, textarea
   display: block
   width: 100%
-  font-size: 22px
-  line-height: 30px
+  font-size: 20px
+  line-height: 1.6em
   background: #efefef
   border: none
   border: solid 2px #efefef
   border-radius: 4px
-  padding: 8px 11px 6px
+  padding: 7px 11px 6px
   margin-bottom: 12px
-  font-family: "ff-chambers-sans-web", "Chambers Sans OT", sans-serif
+  font-family: "ff-tisa-sans-web-pro", sans-serif
   -webkit-appearance: none
   &:focus
     outline: none
@@ -1058,17 +1127,18 @@ input, textarea
     padding: 6px 9px
 
 textarea
-  height: 30px * 5
+  height: 28px * 5
 input[type="submit"]
   float: right
   background: $cyan
   color: #fff
   font-weight: 700
-  padding: 8px 13px
+  padding: 8px 13px 7px
   +font-smoothing(antialiased)
   width: auto
   cursor: pointer
   border: none
+  font-family: "ff-chambers-sans-web", sans-serif
   &:hover, &:active
     background: darken($cyan,6%)
 
@@ -1087,9 +1157,9 @@ input[type="submit"]
     margin-top: 9px
     input
       margin-bottom: 8px
-      font-size: 20px
-      line-height: 28px
-      padding: 6px 10px 5px
+      // font-size: 20px
+      // line-height: 28px
+      // padding: 6px 10px 5px
     input[type="submit"]
       padding: 8px 11px 7px
       float: left
@@ -1176,7 +1246,7 @@ input[type="submit"]
 
 
 .more-space
-  margin-bottom: 24px
+  margin-bottom: 20px
   position: relative
 
 .wider-block.padded
@@ -1212,8 +1282,12 @@ input[type="submit"]
   img
     width: 100%
   +breakpoint(two)
+    padding: 0 5px
+    .person-holder
+      font-size: 20px
+  //   width: 50%
+  +breakpoint(stack)
     width: 50%
-  +breakpoint(three)
     padding: 0 5px
     .person-holder
       margin-bottom: 6px
@@ -1221,6 +1295,15 @@ input[type="submit"]
       font-size: 18px
       .footlink
         font-size: 18px
+        line-height: 22px
+  +breakpoint(four)
+    .person-holder
+      padding: 4px 4px 5px
+      .name
+        font-size: 17px
+        line-height: 20px
+      .footlink
+        font-size: 17px
 
 #footer
   height: 74px
@@ -1259,7 +1342,6 @@ input[type="submit"]
 
 .overlayed
   overflow: hidden
-  position: fixed
   width: 100%
   #overlay
     +coverer
@@ -1268,6 +1350,8 @@ input[type="submit"]
     z-index: 999
     background: rgba(0,0,0,0.9)
     overflow: hidden
+.mobiley.overlayed
+  position: fixed
 #overlay-content-holder
   +coverer
   padding-right: 360px
@@ -1348,23 +1432,20 @@ input[type="submit"]
   overflow-y: auto
   background: #fff
   #caption-content
-    padding: 24px 30px 30px
+    padding: 24px
   .caption-num
-    margin-bottom: 11px
-    font-size: 20px
-    padding-top: 2px
-    width: 66px
-    line-height: 34px
+    margin-bottom: 16px
   .caption-type
-    margin-bottom: 7px
+    margin-bottom: 12px
   .caption-title
     font-weight: 700
     font-size: 26px
     line-height: 32px
-    margin-bottom: 6px
+    margin-bottom: 8px
   .caption-info
     font-size: 20px
-    line-height: 28px
+    line-height: 1.5em
+    font-family: "ff-tisa-sans-web-pro", sans-serif
   +breakpoint(overlay)
     width: 280px
     #caption-content
@@ -1379,11 +1460,11 @@ input[type="submit"]
     overflow-y: visible
 #close-overlay
   position: absolute
-  right: 30px
+  right: 24px
   width: 40px
   height: 40px
   line-height: 40px
-  top: 22px
+  top: 24px
   text-align: center
   color: #777
   cursor: pointer
@@ -1479,3 +1560,6 @@ input[type="submit"]
     background: $magenta !important
   .pager.active:after
     background: $magenta !important
+
+.last
+  margin-bottom: 0 !important
