@@ -515,7 +515,7 @@ h1
   position: relative
   z-index: 7
   top: 100vh
-  p
+  p, ul
     font-family: "ff-tisa-sans-web-pro", sans-serif
 
 #team
@@ -662,22 +662,21 @@ h4
   max-width: $width
   margin: 0 auto
   position: relative
+  font-size: 22px
+  line-height: 1.6em
+  margin-bottom: 24px
+  color: #333
   strong
     +font-smoothing(antialiased)
-  p
-    font-size: 22px
+  +breakpoint(two)
+    font-size: 21px
     line-height: 1.6em
-    margin-bottom: 24px
-    color: #333
-    +breakpoint(two)
-      font-size: 21px
-      line-height: 1.6em
-    +breakpoint(three)
-      font-size: 19px
-      line-height: 1.6em
-    +breakpoint(four)
-      font-size: 18px
-      line-height: 1.5em
+  +breakpoint(three)
+    font-size: 19px
+    line-height: 1.6em
+  +breakpoint(four)
+    font-size: 18px
+    line-height: 1.5em
   +breakpoint(two)
     padding: 0 20px
 
@@ -997,23 +996,13 @@ h4
     transform: rotateY(0deg)
 
 ul
-  margin-bottom: 0.5em
-  margin-top: -0.5em
-  font-family: "ff-tisa-sans-web-pro", sans-serif
-  font-size: 21px
-  line-height: 1.6em
-  +breakpoint(three)
-    font-size: 19px
-    line-height: 1.6em
-  +breakpoint(four)
-    font-size: 16px
-    line-height: 1.5em
+  margin: 0.6em 0 0.75em
   li
     padding-left: $baseline - 4px
     background-image: url("../images/forward-bullet.svg")
     background-size: auto 14px
     background-repeat: no-repeat
-    background-position: 1px 8px
+    background-position: 1px 10px
   +breakpoint(three)
     margin-bottom: 10px
   +breakpoint(four)
