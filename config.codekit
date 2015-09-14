@@ -42,6 +42,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/footer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27032,
+		"inputAbbreviatedPath": "\/images\/footer.png",
+		"outputAbbreviatedPath": "\/images\/footer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/nlg\/00.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -203,6 +214,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/team\/jessica.png",
 		"outputAbbreviatedPath": "\/images\/team\/jessica.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/kathryn.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28425,
+		"inputAbbreviatedPath": "\/images\/team\/kathryn.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/kathryn.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
