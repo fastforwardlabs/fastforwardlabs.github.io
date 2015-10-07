@@ -45,9 +45,10 @@ $(document).ready(function() {
 			var name = $this.attr('data-video');
 			var resource = "resources/videos/" + name + ".mp4";
 			$this.append('<video src=' + resource + '/></video>');
-			var video = $this.children('video');
-			video.on("canplay", function() {
+			var $video = $this.children('video');
+			$video.on("canplay", function() {
 				$this.removeClass('loading').addClass('loaded');
+				var video = $video.get(0);
 				video.play();
 			});
 		}
