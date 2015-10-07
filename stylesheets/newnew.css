@@ -154,7 +154,12 @@ img {
   padding-left: 0.1em;
   position: relative; }
   .video-holder video {
-    width: 100%; }
+    width: 100%;
+    display: none; }
+  .video-holder.loaded img {
+    display: none; }
+  .video-holder.loaded video {
+    display: block; }
 
 .report-holder {
   height: 33.9vw; }
@@ -273,6 +278,12 @@ img {
 
   to {
     transform: rotate(359deg); } }
+
+.sp-circle {
+  display: none; }
+
+.loading .sp-circle {
+  display: block; }
 
 .nlg .sp-circle {
   border-top-color: #00dcec; }

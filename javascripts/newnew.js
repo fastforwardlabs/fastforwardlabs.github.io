@@ -46,9 +46,8 @@ $(document).ready(function() {
 			var resource = "resources/videos/" + name + ".mp4";
 			$this.append('<video src=' + resource + '/></video>');
 			var video = $this.children('video');
-			console.log(video);
 			video.on("canplay", function() {
-				console.log('can play');
+				$this.removeClass('loading').addClass('loaded');
 			});
 		}
 	});
