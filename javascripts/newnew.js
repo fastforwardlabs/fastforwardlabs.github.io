@@ -38,7 +38,7 @@ $(document).ready(function() {
 	var $video_holder = $('.video-holder');
 	$video_holder.mouseenter(function() {
 		var $this = $(this);
-		if ($this.hasClass('loading')) {
+		if ($this.hasClass('loaded') || $(this).hasClass('loading')) {
 
 		} else {
 			$this.addClass('loading');
@@ -48,6 +48,7 @@ $(document).ready(function() {
 			var video = $this.children('video');
 			video.on("canplay", function() {
 				$this.removeClass('loading').addClass('loaded');
+				video.play();
 			});
 		}
 	});
