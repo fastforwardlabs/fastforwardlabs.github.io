@@ -47,16 +47,16 @@ $(document).ready(function() {
 			$this.append('<video src=' + resource + '/></video>');
 			var $video = $this.children('video');
 			var $progress_indicator = $this.find('.video-progress');
+			var video = $video.get(0);
 			$video.on("canplay", function() {
 				$this.removeClass('loading').addClass('loaded');
-				var video = $video.get(0);
 				video.play();
 			});
 			$video.on('timeupdate', function() {
-			  var currentPos = video.currentTime; //Get currenttime
-			  var maxduration = video.duration; //Get video duration
-			  var percentage = 100 * currentPos / maxduration; //in %
-			  $progress_indicator.css('width', percentage+'%');
+				var currentPos = video.currentTime; //Get currenttime
+				var maxduration = video.duration; //Get video duration
+				var percentage = 100 * currentPos / maxduration; //in %
+				$progress_indicator.css('width', percentage+'%');
 			});
 		}
 	});

@@ -234,13 +234,17 @@ img {
 .image-slider-holder, .video-seeker {
   height: 0.1rem;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   z-index: 9;
   background: #efefef; }
   .image-slider-holder .image-slide-sect, .video-seeker .image-slide-sect {
     width: 20%;
     height: 0.1rem; }
+
+.video-progress {
+  height: 0.1rem;
+  width: 0; }
 
 .nlg .image-slide-sect.active, .nlg .video-progress {
   background: #00dcec; }
