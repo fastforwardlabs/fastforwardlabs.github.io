@@ -46,10 +46,17 @@ $(document).ready(function() {
 			var resource = "resources/videos/" + name + ".mp4";
 			$this.append('<video src=' + resource + '/></video>');
 			var $video = $this.children('video');
+			var $progress_indicator = $this.find('.video-progress');
 			$video.on("canplay", function() {
 				$this.removeClass('loading').addClass('loaded');
 				var video = $video.get(0);
 				video.play();
+			});
+			$video.on('timeupdate', function() {
+			  var currentPos = video.currentTime; //Get currenttime
+			  var maxduration = video.duration; //Get video duration
+			  var percentage = 100 * currentPos / maxduration; //in %
+			  $progress_indicator.css('width', percentage+'%');
 			});
 		}
 	});

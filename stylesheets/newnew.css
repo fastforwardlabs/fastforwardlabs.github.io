@@ -150,7 +150,7 @@ img {
   background: #efefef;
   padding-left: 0.1rem;
   padding-right: 0.1rem;
-  padding-top: 0.65rem;
+  padding-top: 0.75rem;
   padding-left: 0.1em;
   position: relative; }
   .video-holder video {
@@ -166,7 +166,7 @@ img {
 
 .dots {
   float: left;
-  height: 0.65rem;
+  height: 0.75rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -177,8 +177,8 @@ img {
     border-radius: 0.3rem;
     background: #cccccc;
     float: left;
-    margin-top: 0.19rem;
-    margin-left: 0.19rem; }
+    margin-top: 0.225rem;
+    margin-left: 0.225rem; }
 
 .divider-holder {
   height: 0.255em;
@@ -231,20 +231,21 @@ img {
     .report-holder img.active {
       z-index: 8; }
 
-.image-slider-holder {
+.image-slider-holder, .video-seeker {
   height: 0.1rem;
   width: 100%;
-  margin-top: -0.1rem;
+  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  z-index: 9; }
-  .image-slider-holder .image-slide-sect {
+  z-index: 9;
+  background: #efefef; }
+  .image-slider-holder .image-slide-sect, .video-seeker .image-slide-sect {
     width: 20%;
     height: 0.1rem; }
 
-.nlg .image-slide-sect.active {
+.nlg .image-slide-sect.active, .nlg .video-progress {
   background: #00dcec; }
 
-.pmrs .image-slide-sect.active {
+.pmrs .image-slide-sect.active, .pmrs .video-progress {
   background: #ee00ee; }
 
 .sp {
@@ -259,7 +260,7 @@ img {
 
 /* Spinner Circle Rotation */
 .sp-circle {
-  border: 0.2rem white solid;
+  border: 0.2rem #efefef solid;
   border-top: 0.2rem #00dcec solid;
   border-radius: 50%;
   -webkit-animation: spCircRot 0.6s infinite linear;
