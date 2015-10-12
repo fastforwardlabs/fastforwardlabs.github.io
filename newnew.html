@@ -8,25 +8,21 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheets/basscss.min.css">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/newnew.css">
 	</head>
 	<body>
 
-    <!-- <div class="grid"></div> -->
-    <!-- <div class="grid_2"></div> -->
-
-    <div class="left absolute chambers bold cyan" style="left: 2rem; top: 1rem">
-      <div class="italic">
+    <div class="chambers bold cyan clearfix px3" style="margin-bottom: -1rem; padding: 0.5rem 2rem;">
+      <img class="block left" style="height: 2.8rem; width: auto; margin-left: 0.1rem; margin-right: 0.8rem; margin-top: 0.55rem"  src="resources/images/logos/ff-logo-extend.svg" />
+      <div class="italic left" style="margin-top: 1rem">
         Fast Forward Labs
       </div>
-      <!-- <div class="chambers f3 black normal">Reporting on the Recently Possible</div> -->
+      <div class="right f3 chambers rounded right-align p1 border-box" style="margin-top: 0.5rem; font-weight: 400; padding: 0.4rem 0; background-image: none;">
+        <span class="italic black">Already a client?</span><br />
+        <a href="/login" class="bold"><i class="fa fa-hand-stop-o" style="transform: rotate(90deg)"></i><span class="underline">Right this way</span></a>
+      </div>
     </div>
-    <div class="logo-holder absolute right" style="height: 6rem; width: 7.5rem; right: 2rem; top: 1rem; z-index: 999;">
-      <img class="block right" style="height: 6rem; width: auto;"  src="resources/images/logos/ff-logo-extend.svg" />
-    </div>
-
-    <div class="p1" style="margin-top: 1.75rem"></div>
 
     <div id="product" class="p1 px3 relative mb2" style="margin-top: 1rem">
 
@@ -58,19 +54,12 @@
         <div class="clearfix relative mxn1">
           <div class="chambers f3 col-6 sm-col px1">
             <div class="full-holder">
-              <div class="report-holder lh0">
+              <div class="report-holder lh0 mb05">
                 <img class="active" src="images/nlg/00.jpg" />
                 <img src="images/nlg/01.jpg" />
                 <img src="images/nlg/02.jpg" />
                 <img src="images/nlg/03.jpg" />
                 <img src="images/nlg/04.jpg" />
-              </div>
-              <div class="image-slider-holder relative flex">
-                <div class="image-slide-sect active"></div>
-                <div class="image-slide-sect"></div>
-                <div class="image-slide-sect"></div>
-                <div class="image-slide-sect"></div>
-                <div class="image-slide-sect"></div>
               </div>
               <div class="bold italic">
                 Natural Language Generation
@@ -78,7 +67,7 @@
             </div>
           </div>
           <div class="chambers f3 col-6 sm-col px1">
-            <div class="relative video-holder" data-video="roborealtor">
+            <div class="relative video-holder mb05" data-video="roborealtor">
               <div class="dots">
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -86,9 +75,6 @@
               </div>
               <img src="resources/videos/roborealtor.png" />
               <div class="sp sp-circle"></div>
-            </div>
-            <div class="video-seeker">
-              <div class="video-progress"></div>
             </div>
             <div class="bold italic" italic>
               RoboRealtor
@@ -106,19 +92,12 @@
         <div class="clearfix relative mxn1">
           <div class="chambers f3 col-6 sm-col px1">
             <div class="full-holder">
-              <div class="report-holder lh0">
+              <div class="report-holder lh0 mb05">
                 <img class="active" src="images/pmrs/00.jpg" />
                 <img src="images/pmrs/01.jpg" />
                 <img src="images/pmrs/02.jpg" />
                 <img src="images/pmrs/03.jpg" />
                 <img src="images/pmrs/04.jpg" />
-              </div>
-              <div class="image-slider-holder relative flex">
-                <div class="image-slide-sect active"></div>
-                <div class="image-slide-sect"></div>
-                <div class="image-slide-sect"></div>
-                <div class="image-slide-sect"></div>
-                <div class="image-slide-sect"></div>
               </div>
               <div class="bold italic">
                 Probabilistic Methods for Realtime Streams
@@ -126,7 +105,7 @@
             </div>
           </div>
           <div class="chambers f3 col-6 sm-col px1">
-            <div class="mb05 video-holder" data-video="cliquestream">
+            <div class="mb05 video-holder mb05" data-video="cliquestream">
               <div class="dots">
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -134,9 +113,6 @@
               </div>
               <img src="resources/videos/cliquestream.png" />
               <div class="sp sp-circle"></div>
-            </div>
-            <div class="video-seeker">
-              <div class="video-progress"></div>
             </div>
             <div class="bold italic">
               CliqueStream
@@ -201,28 +177,9 @@
 
       <div class="">
         <div class="tisa">
-          Interested in learning more? Fill out our <a class="" href="#">contact form</a> or email <a href="#">contact@fastforwardlabs.com</a>.
+          Interested in learning more? Fill out our <a id="contacter" class="" href="#">contact form</a> or email <a href="#">contact@fastforwardlabs.com</a>.
         </div>
       </div>
-
-<!--       <div class="px1 bg-white clearfix">
-        <div class="clearfix">
-          <div class="px1 sm-col col-6">
-            <label class="f3 chambers bold">Name</label>
-            <input id="username" type="text" class="field">
-          </div>
-          <div class="px1 sm-col col-6">
-            <label class="f3 chambers bold">Email</label>
-            <input id="email" type="text" class="field">
-          </div>
-        </div>
-        <div class="col-12 border-box px1 mb1">
-          <div class="relative">
-            <label class="f3 chambers bold">Your Message</label>
-            <textarea name="message" required=""></textarea>
-          </div>
-        </div>
-      </div> -->
 
     </div>
 
@@ -326,10 +283,10 @@
 
     </div>
 
-    <div class="mb2 px3 relative" style="">
+    <div class="mb1 px3 relative" style="">
 
       <div class="clearfix">
-        <div class="clearfix nav footer f3 bold chambers relative">
+        <div class="clearfix nav footer f3 bold chambers relative py1">
           <div class="left" style="height: 1rem; margin-right: 0.4rem">
             <img class="block left" style="height: 1.1rem; width: auto; margin-top: 0.6rem; margin-left: 0.05rem"  src="resources/images/logos/ff-logo-extend.svg" />
           </div>
@@ -341,6 +298,43 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="contact-overlay" class="col-12 px3 py2 border-box" style="background: #efefef; height: 100vh; display: flex; flex-direction: column;">
+
+      <div class="mb1 chambers bold block" style="flex-grow: 1;">
+        We'd Love to Hear From You
+        <div id="xer" class="right gray px1" style="cursor: pointer;">
+          <svg style='height: 1rem; position: relative;' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" enable-background="new 0 0 30 30"><path d="M30 4.6L25.4 0 15 10.4 4.6 0 0 4.6 10.4 15 0 25.4 4.6 30 15 19.6 25.4 30l4.6-4.6L19.6 15z"/></svg>
+        </div>
+      </div>
+
+      <div class="mxn1 mb2 flex" style="flex-grow: 1;">
+        <div class="col-6 px1">
+          <label class="f3 chambers bold mb05 block">Name</label>
+          <input id="username" type="text" class="field" />
+        </div>
+        <div class="col-6 px1">
+          <label class="f3 chambers bold mb05 block">Email</label>
+          <input id="email" type="text" class="field" />
+        </div>
+      </div>
+
+      <div class="col-12 border-box mb2" style="flex-grow: 100; display: flex; flex-direction: column;">
+        <label class="f3 chambers bold mb05" style="flex-grow: 1;">Your Message</label>
+        <textarea name="message" class="rounded" style="flex-grow: 100;" required=""></textarea>
+      </div>
+
+      <div class="mb1 f3 chambers clearfix" style="flex-grow: 1;">
+        <div class="left checkbox py1" style="margin-left: 0.05rem">
+          <input type="checkbox" id="newsletter-check">
+          <label id="checkbox-holder" for="newsletter-check" class="left" style="cursor: pointer;">Subscribe me to the Fast Forward Labs Newsletter</label>
+        </div>
+        <div class="right">
+          <input class="f3 chambers bold bg-cyan white right p1 px2 rounded" style="width: auto; border: none !important; cursor: pointer;" type="submit" value="Send Message" />
+        </div>
+      </div>
+
     </div>
 
     <script src="javascripts/jquery-2.1.1.min.js"></script>

@@ -39,14 +39,14 @@ $(document).ready(function() {
 	$video_holder.mouseenter(function() {
 		var $this = $(this);
 		if ($this.hasClass('loaded') || $(this).hasClass('loading')) {
-
+			$(this).find('video').get(0).play();
 		} else {
 			$this.addClass('loading');
 			var name = $this.attr('data-video');
 			var resource = "resources/videos/" + name + ".mp4";
-			$this.append('<video src=' + resource + '/></video>');
+			$this.append('<video src=' + resource + ' loop="true"></video>');
 			var $video = $this.children('video');
-			var $progress_indicator = $this.find('.video-progress');
+			var $progress_indicator = $this.parent().find('.video-progress');
 			var video = $video.get(0);
 			$video.on("canplay", function() {
 				$this.removeClass('loading').addClass('loaded');
@@ -59,6 +59,20 @@ $(document).ready(function() {
 				$progress_indicator.css('width', percentage+'%');
 			});
 		}
+	});
+	$video_holder.mouseleave(function() {
+	  $(this).find('video').get(0).pause();
+	});
+
+	var $body = $('body');
+
+	$('#contacter').click(function() {
+		$body.addClass('overlayed');
+		return false;
+	});
+
+	$('#xer').click(function() {
+		$body.removeClass('overlayed');
 	});
 
 });
