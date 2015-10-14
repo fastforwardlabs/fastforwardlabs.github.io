@@ -1722,9 +1722,9 @@ input[type="submit"] {
 #overlay-centerer.ff02 .pager.active:after {
   background: #ee00ee !important; }
 
-#overlay-centerer.ff02 .seeker-progress {
+#overlay-centerer.ff03 .seeker-progress {
   background: #8237b6 !important; }
-#overlay-centerer.ff02 .pager.active:after {
+#overlay-centerer.ff03 .pager.active:after {
   background: #8237b6 !important; }
 
 .last {
