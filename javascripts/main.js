@@ -188,36 +188,38 @@ $(document).ready(function() {
   // Hover page turn on books
   var $base_hoverer = $('.report-image-hoverer');
   $base_hoverer.each(function() {
-    if (!touch_events) {
-      $this = $(this);
-      var section_width = $this.width()/5;
-      var $report_images = $this.children();
-      $this.on("mousemove",function(e) {
-        var $this = $(this);
-        var mouse_x = e.pageX - $this.offset().left;
-        if (mouse_x < section_width) {
-          $report_images.removeClass('active')
-          $report_images.eq(0).addClass('active');
-        } else if (mouse_x < section_width * 2) {
-          $report_images.removeClass('active')
-          $report_images.eq(1).addClass('active');
-        } else if (mouse_x < section_width * 3) {
-          $report_images.removeClass('active')
-          $report_images.eq(2).addClass('active');
-        } else if (mouse_x < section_width * 4) {
-          $report_images.removeClass('active')
-          $report_images.eq(3).addClass('active');
-        } else {
-          $report_images.removeClass('active')
-          $report_images.eq(4).addClass('active');
-        }
-      });
-      $this.on("mouseleave",function() {
-        requestTimeout(function() {
-          $report_images.removeClass('active')
-          $report_images.eq(0).addClass('active');
-        },200);
-      })
+    if (!$(this).hasClass('disabled')) {
+      if (!touch_events) {
+        $this = $(this);
+        var section_width = $this.width()/5;
+        var $report_images = $this.children();
+        $this.on("mousemove",function(e) {
+          var $this = $(this);
+          var mouse_x = e.pageX - $this.offset().left;
+          if (mouse_x < section_width) {
+            $report_images.removeClass('active')
+            $report_images.eq(0).addClass('active');
+          } else if (mouse_x < section_width * 2) {
+            $report_images.removeClass('active')
+            $report_images.eq(1).addClass('active');
+          } else if (mouse_x < section_width * 3) {
+            $report_images.removeClass('active')
+            $report_images.eq(2).addClass('active');
+          } else if (mouse_x < section_width * 4) {
+            $report_images.removeClass('active')
+            $report_images.eq(3).addClass('active');
+          } else {
+            $report_images.removeClass('active')
+            $report_images.eq(4).addClass('active');
+          }
+        });
+        $this.on("mouseleave",function() {
+          requestTimeout(function() {
+            $report_images.removeClass('active')
+            $report_images.eq(0).addClass('active');
+          },200);
+        })
+      }
     }
   });
 
@@ -652,7 +654,6 @@ $(document).ready(function() {
     $body.addClass('overlayed');
     sizeOverlay();
     if (no_scroll_events) {
-      console.log('why');
       $window.scrollTop(0);
     }
     // Has to be longer than scroll check interval
@@ -663,27 +664,32 @@ $(document).ready(function() {
     var caption_html = '<div class="caption-num ff' + num + '">FF' + num + '</div>';
     caption_html += '<h4 class="caption-type">' + type + '</h4>';
     caption_html += '<div class="caption-title"> ' + title + '</div>';
+    if ($this.hasClass('pictograph-special')) {
+      caption_content = '<a href="http://pictograph.us" target="_blank">Pictograph</a>' + caption_content;
+    }
     caption_html += '<div class="caption-info">' + caption_content + '</div>';
     $overlay_centerer.html(html_content);
-    if (type == "Report") {
-      var pager = '<div class="pager-holder">';
-      pager += '<div class="pager-centerer">'
-      pager += '<div class="pager square"></div>'
-      pager += '<div class="pager square"></div>'
-      pager += '<div class="pager square"></div>'
-      pager += '<div class="pager square"></div>'
-      pager += '<div class="pager square"></div>'
-      pager += '</div>';
-      pager += '</div>';
-      $overlay_centerer.append(pager);
-    } else {
-      var seeker = '<div class="seeker-holder">';
-      seeker += '<div class="play-pause-holder"><div class="play-pause"></div></div>';
-      seeker += '<div class="seeker-bar">';
-      seeker += '<div class="seeker-progress"></div>';
-      seeker += '</div>';
-      seeker += '</div>';
-      $overlay_centerer.append(seeker);
+    if ( !$this.find('.report-image-hoverer').hasClass('disabled')) {
+      if (type == "Report") {
+        var pager = '<div class="pager-holder">';
+        pager += '<div class="pager-centerer">'
+        pager += '<div class="pager square"></div>'
+        pager += '<div class="pager square"></div>'
+        pager += '<div class="pager square"></div>'
+        pager += '<div class="pager square"></div>'
+        pager += '<div class="pager square"></div>'
+        pager += '</div>';
+        pager += '</div>';
+        $overlay_centerer.append(pager);
+      } else {
+        var seeker = '<div class="seeker-holder">';
+        seeker += '<div class="play-pause-holder"><div class="play-pause"></div></div>';
+        seeker += '<div class="seeker-bar">';
+        seeker += '<div class="seeker-progress"></div>';
+        seeker += '</div>';
+        seeker += '</div>';
+        $overlay_centerer.append(seeker);
+      }
     }
     if (type == "Report") {
       var $hoverer = $overlay_centerer.find('.report-image-hoverer');
@@ -693,22 +699,24 @@ $(document).ready(function() {
       var active_pane = 0;
       var hoverer_width = $hoverer.width();
       function setActive(index) {
-        $pagers.removeClass('active');
-        $report_images.removeClass('active');
-        $report_images.eq(index).addClass('active');
-        $pagers.eq(index).addClass('active');
-        if (touch_events) {
-          active_pane = index;
-          pane_number = $report_images.length;
-          $hoverer.addClass('animate');
-          if (is_safari) {
-            $hoverer.css('-webkit-transform','translate3d(' + -((active_pane/pane_number) * 100) + '%,0,0)');
-          } else {
-            $hoverer.css('transform','translate3d(' + -((active_pane/pane_number) * 100) + '%,0,0)');
+        if (!$this.find('.report-image-hoverer').hasClass('disabled')) {
+          $pagers.removeClass('active');
+          $report_images.removeClass('active');
+          $report_images.eq(index).addClass('active');
+          $pagers.eq(index).addClass('active');
+          if (touch_events) {
+            active_pane = index;
+            pane_number = $report_images.length;
+            $hoverer.addClass('animate');
+            if (is_safari) {
+              $hoverer.css('-webkit-transform','translate3d(' + -((active_pane/pane_number) * 100) + '%,0,0)');
+            } else {
+              $hoverer.css('transform','translate3d(' + -((active_pane/pane_number) * 100) + '%,0,0)');
+            }
+            requestTimeout(function(){
+              $hoverer.removeClass('animate');
+            },150);
           }
-          requestTimeout(function(){
-            $hoverer.removeClass('animate');
-          },150);
         }
       }
       if (!touch_events) {

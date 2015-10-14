@@ -32,7 +32,7 @@ button
 // Colors
 $cyan: #00dcec
 $magenta: #ee00ee
-$blue: #2755ff
+$purple: #8237b6
 
 .group:after
   content: ""
@@ -905,7 +905,7 @@ h4
 .ff02 .report-num, .ff02.caption-num
   background: $magenta
 .ff03 .report-num, .ff03.caption-num
-  background: $blue
+  background: $purple
 
 .blocker
   max-width: $width
@@ -1435,6 +1435,8 @@ input[type="submit"]
     font-size: 20px
     line-height: 1.5em
     font-family: "ff-tisa-sans-web-pro", sans-serif
+    a
+      color: $purple
   +breakpoint(overlay)
     width: 280px
     #caption-content
@@ -1549,6 +1551,12 @@ input[type="submit"]
     background: $magenta !important
   .pager.active:after
     background: $magenta !important
+
+#overlay-centerer.ff02
+  .seeker-progress
+    background: $purple !important
+  .pager.active:after
+    background: $purple !important
 
 .last
   margin-bottom: 0 !important

@@ -1021,7 +1021,7 @@ h4 {
   background: #ee00ee; }
 
 .ff03 .report-num, .ff03.caption-num {
-  background: #2755ff; }
+  background: #8237b6; }
 
 .blocker {
   max-width: 680px;
@@ -1580,6 +1580,8 @@ input[type="submit"] {
     font-size: 20px;
     line-height: 1.5em;
     font-family: "ff-tisa-sans-web-pro", sans-serif; }
+    #overlay-caption .caption-info a {
+      color: #8237b6; }
   @media (max-width: 1080px) {
     #overlay-caption {
       width: 280px; }
@@ -1718,6 +1720,11 @@ input[type="submit"] {
   background: #ee00ee !important; }
 #overlay-centerer.ff02 .pager.active:after {
   background: #ee00ee !important; }
+
+#overlay-centerer.ff02 .seeker-progress {
+  background: #8237b6 !important; }
+#overlay-centerer.ff02 .pager.active:after {
+  background: #8237b6 !important; }
 
 .last {
   margin-bottom: 0 !important; }
