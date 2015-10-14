@@ -1581,7 +1581,8 @@ input[type="submit"] {
     line-height: 1.5em;
     font-family: "ff-tisa-sans-web-pro", sans-serif; }
     #overlay-caption .caption-info a {
-      color: #8237b6; }
+      color: #8237b6;
+      font-weight: 700; }
   @media (max-width: 1080px) {
     #overlay-caption {
       width: 280px; }
