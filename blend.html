@@ -82,7 +82,7 @@
               <div class="f1 chambers absolute bold cyan" style="z-index: 9; left: -0.7rem; top: 0.25rem; touch-events: none;">FF01</div>
               <div class="chambers f3 col-6 sm-col px1">
                 <div class="full-holder">
-                  <div class="report-holder lh0 mb1">
+                  <div class="report-holder lh0 mb1" data-report="">
                     <img class="spacer" src="images/spacer.png">
                     <img class="active" src="images/nlg/00.jpg" />
                     <img src="images/nlg/01.jpg" />
@@ -416,6 +416,22 @@
         </div>
       </div>
 
+    </div>
+
+    <div id="overlay" class="fixed top-0 left-0" style="width: 100vw; height: 100vh; background: #000; z-index: 999;">
+      <div id="overlay-content" class="relative" style="height: 100vh; padding-right: 16rem; overflow-y: auto;">
+        <div id="overlay-content-inner" class="relative p2">
+          <img src="images/nlg/00.jpg" />
+          <img src="images/nlg/01.jpg" />
+          <img src="images/nlg/02.jpg" />
+          <img src="images/nlg/03.jpg" />
+          <img src="images/nlg/04.jpg" />
+        </div>
+      </div>
+      <div id="overlay-side" class="absolute top-0 border-box p2" style="right: 0; width: 16rem; height: 100vh; overflow-y: auto; background: #fff;">
+        <div id="overlay-info"></div>
+        <div id="overlay-close" class="absolute" style="right: 1rem; top: 1rem;"><img src="resources/images/x.svg" style="height: 1rem; position: relative; top: -0.1rem" /></div>
+      </div>
     </div>
 
     <script src="javascripts/d3.min.js"></script>

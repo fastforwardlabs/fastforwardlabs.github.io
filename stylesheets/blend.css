@@ -289,7 +289,8 @@ a.purple {
     fill: white; }
 
 .report-holder {
-  position: relative; }
+  position: relative;
+  cursor: zoom-in; }
   .report-holder img {
     position: absolute;
     left: 0;
@@ -416,3 +417,27 @@ input[type="submit"] {
     background: #00c9d8; }
   input[type="submit"]:active, input[type="submit"]:focus {
     border: none !important; }
+
+#overlay-close {
+  opacity: 0.2;
+  cursor: pointer; }
+  #overlay-close:hover {
+    opacity: 1; }
+
+#overlay {
+  display: none; }
+
+body.overlayed {
+  overflow: hidden; }
+  body.overlayed #overlay {
+    display: block; }
+
+#overlay-content img {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  line-height: 0; }
+  #overlay-content img:last-child {
+    margin-bottom: 0; }

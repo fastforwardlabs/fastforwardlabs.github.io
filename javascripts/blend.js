@@ -3,6 +3,8 @@ $(document).ready(function() {
   var width = $(window).width();
   var height = $(window).height();
 
+  var $body = $('body');
+
 	var $nav_links = $('.nav a');
 	$nav_links.click(function() {
 		var target = $(this.hash);
@@ -39,6 +41,59 @@ $(document).ready(function() {
     });
 	});
 
+  var $overlay_info = $('#overlay-info');
+  var $overlay_content = $('#overlay-content');
+  var $overlay_content_inner = $('#overlay-content-inner');
+
+  var reports = [];
+
+  var ff01_report = {};
+  ff01_report.color = "cyan";
+  ff01_report.number = "FF01";
+  ff01_report.title = "Natural Language Generation";
+  ff01_report.info = "Machines are beginning to speak our language. Through natural language generation, computers can take highly structured data and output human language narrative. This report explores machine systems for natural language generation.";
+  reports.push(ff01_report);
+
+  var ff02_report = {};
+  ff02_report.color = "magenta";
+  ff02_report.number = "FF02";
+  ff02_report.title = "Probabilistic Methods for Realtime Streams";
+  ff02_report.info = "Deep learning, or highly-connected neural networks, offers fascinating new capabilities for image analysis. Using deep learning, computers can now learn to identify objects in images. This report explores the history and current state of the field, predicts future developments, and explains how to apply deep learning today.";
+  reports.push(ff02_report);
+
+  var ff03_report = {};
+  ff03_report.color = "purple";
+  ff03_report.number = "FF03";
+  ff03_report.title = "Deep Learning: Image Analysis";
+  ff03_report.info = "Deep learning, or highly-connected neural networks, offers fascinating new capabilities for image analysis. Using deep learning, computers can now learn to identify objects in images. This report explores the history and current state of the field, predicts future developments, and explains how to apply deep learning today.";
+  reports.push(ff03_report);
+
+  function makeReportHtml(index) {
+    var report_obj = reports[index];
+    var html = '';
+    html += '<div id="report-num" class="' + report_obj.color + ' bold chambers">';
+    html += report_obj.number;
+    html += '</div>';
+    html += '<div id="report-title" class="chambers bold mb1">';
+    html += report_obj.title;
+    html += '</div>';
+    html += '<div id="report-info" class="chambers f3">';
+    html += report_obj.info;
+    html += '</div>';
+    return html;
+  }
+
+  $report_holder.click(function() {
+    $body.addClass('overlayed');
+    var $this = $(this);
+    var $images = $this.find('img').not(".spacer").clone();
+    var index = $report_holder.index($this);
+    var report_html = makeReportHtml(index);
+    $overlay_info.html(report_html);
+    $overlay_content_inner.html($images);
+    $overlay_content.scrollTop(0);
+  });
+
 	var $video_holder = $('.video-holder');
 	$video_holder.mouseenter(function() {
 		var $this = $(this);
@@ -67,6 +122,12 @@ $(document).ready(function() {
     $('html,body').animate({
       scrollTop: target.offset().top
     }, 200);
+    return false;
+  });
+
+  $overlay_close = $('#overlay-close');
+  $overlay_close.click(function() {
+    $body.removeClass('overlayed');
   });
 
   var force = d3.layout.force();
@@ -181,9 +242,9 @@ $(document).ready(function() {
                 return "spacer node";
               } else if (d.name == "natural language generation") {
                 return "nlg";
-              } else if (d.name == "probabilistic analysis methods") {
+              } else if (d.name == "probabilistic methods for realtime streams") {
                 return "pmrs";
-              } else if (d.name == "deep learning") {
+              } else if (d.name == "deep learning: image analysis") {
                 return "dlia";
               } else {
                 return "node";
