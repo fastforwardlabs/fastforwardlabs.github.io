@@ -1694,7 +1694,7 @@ input[type="submit"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/play.svg");
+  background-image: url("../../images/play.svg");
   background-size: auto 70%;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -1702,7 +1702,7 @@ input[type="submit"] {
 .play-pause-holder:hover {
   background-color: #dddddd; }
   .play-pause-holder:hover .play-pause {
-    background-image: url("../images/play-cyan.svg"); }
+    background-image: url("../../images/play-cyan.svg"); }
 
 .playing .play-pause {
   position: absolute;
@@ -1710,12 +1710,12 @@ input[type="submit"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/pause.svg");
+  background-image: url("../../images/pause.svg");
   background-size: auto 70%;
   background-position: center center;
   background-repeat: no-repeat; }
 .playing .play-pause-holder:hover .play-pause {
-  background-image: url("../images/pause-cyan.svg"); }
+  background-image: url("../../images/pause-cyan.svg"); }
 
 #overlay-centerer.ff02 .seeker-progress {
   background: #ee00ee !important; }
