@@ -68,19 +68,32 @@ $(document).ready(function() {
   ff03_report.info = "Deep learning, or highly-connected neural networks, offers fascinating new capabilities for image analysis. Using deep learning, computers can now learn to identify objects in images. This report explores the history and current state of the field, predicts future developments, and explains how to apply deep learning today.";
   reports.push(ff03_report);
 
-  function makeReportHtml(index) {
-    var report_obj = reports[index];
+  function makeInfoHtml(obj) {
     var html = '';
-    html += '<div id="report-num" class="' + report_obj.color + ' bold chambers">';
-    html += report_obj.number;
+    html += '<div class="' + obj.number + '">';
+    html += '<div id="report-num" class="' + obj.color + ' bold chambers">';
+    html += obj.number;
     html += '</div>';
     html += '<div id="report-title" class="chambers bold mb1">';
-    html += report_obj.title;
+    html += obj.title;
     html += '</div>';
     html += '<div id="report-info" class="chambers f3">';
-    html += report_obj.info;
+    html += obj.info;
+    html += '</div>';
     html += '</div>';
     return html;
+  }
+
+  function makeReportHtml(index) {
+    var report_obj = reports[index];
+    var info = makeInfoHtml(report_obj);
+    return info;
+  }
+
+  function makePrototypeHtml(index) {
+    var prototype_obj = prototypes[index];
+    var info = makeInfoHtml(prototype_obj);
+    return info;
   }
 
   $report_holder.click(function() {
@@ -115,6 +128,112 @@ $(document).ready(function() {
 	$video_holder.mouseleave(function() {
 	  $(this).find('video').get(0).pause();
 	});
+
+  var prototypes = [];
+
+  var ff01_prototype = {};
+  ff01_prototype.color = "cyan";
+  ff01_prototype.number = "FF01";
+  ff01_prototype.title = "RoboRealtor";
+  ff01_prototype.info = "Inspired by real estate sites, Roborealtor is a natural language generation prototype that takes the attributes for a hypothetical apartment and generates listings for it.";
+  prototypes.push(ff01_prototype);
+
+  var ff02_prototype = {};
+  ff02_prototype.color = "magenta";
+  ff02_prototype.number = "FF02";
+  ff02_prototype.title = "CliqueStream";
+  ff02_prototype.info = "CliqueStream displays popular topics across Twitter and Reddit as nodes in a force-directed graph where the connections are based on similarity of word use over all comments and tweets. Keyword groups add nodes based on how often the keyword is used. The probabilistic methods powering the prototype run in ~48 milliseconds. In a traditional analytics framework they would take around 15 minutes.";
+  prototypes.push(ff02_prototype);
+
+  var ff03_prototype = {};
+  ff03_prototype.color = "purple";
+  ff03_prototype.number = "FF03";
+  ff03_prototype.title = 'Pictograph and <a target="_blank" href="http://pictograph.us">Fathom</a>';
+  ff03_prototype.info = '<a href="http://pictograph.us" target="_blank">Pictograph</a> is our public image analysis prototype. It uses deep learning to analyze your Instagram photos and reveal your top interests in the form of a pictograph. Fathom is our more comprehensive, client-only, prototype. It allows you to explore our Instagram data set through categories, and you can see the algorithm at work on the photo detail pages.';
+  prototypes.push(ff03_prototype);
+
+  $video_holder.click(function() {
+    $body.addClass('overlayed');
+    var $this = $(this);
+    var index = $video_holder.index($(this));
+    var $video = $this.clone();
+    var report_html = makePrototypeHtml(index);
+    $overlay_info.html(report_html);
+    $overlay_content_inner.html($video);
+    $overlay_content.scrollTop(0);
+
+    var $video_inner = $overlay_content_inner.find('.video_inner');
+
+    $video = $overlay_content_inner.find($('video'));
+
+    var video = $video.get(0);
+    var progress_bar = '';
+    progress_bar += '<div class="progress-holder col-12 absolute left-0 mb2" style="bottom: -3rem">';
+    progress_bar += '<div class="progress"></div>';
+    progress_bar += '</div>';
+    console.log($video_inner);
+    console.log(progress_bar);
+    $video_inner.append(progress_bar);
+    var $progress_holder = $('.seeker-bar');
+    var $progress_indicator = $('.seeker-progress');
+
+    var $body_video = $(this).find('video').get(0);
+    // Reset body video to 0
+    $body_video.currentTime = 0;
+
+    //update HTML5 video current play time
+    $video.on('timeupdate', function() {
+      var currentPos = video.currentTime; //Get currenttime
+      var maxduration = video.duration; //Get video duration
+      var percentage = 100 * currentPos / maxduration; //in %
+      $progress_indicator.css('width', percentage+'%');
+    });
+
+    var timeDrag = false;   /* Drag status */
+    $progress_holder.mousedown(function(e) {
+      timeDrag = true;
+      updatebar(e.pageX);
+      return false;
+    });
+    $(document).mouseup(function(e) {
+      if(timeDrag) {
+        timeDrag = false;
+        updatebar(e.pageX);
+       }
+    });
+    $(document).mousemove(function(e) {
+      if(timeDrag) {
+        updatebar(e.pageX);
+      }
+    });
+
+    //update Progress Bar control
+    var updatebar = function(x) {
+       var maxduration = video.duration; //Video duraiton
+       var position = x - $progress_holder.offset().left; //Click pos
+       var percentage = 100 * position / $progress_holder.width();
+       //Check within range
+       if(percentage > 100) {
+          percentage = 100;
+       }
+       if(percentage < 0) {
+          percentage = 0;
+       }
+       //Update progress bar and video currenttime
+       $progress_indicator.css('width', percentage+'%');
+       video.currentTime = maxduration * percentage / 100;
+    };
+
+    $video.parent().on("click", function() {
+      if (video.paused) {
+        $overlay_centerer.addClass('playing');
+        video.play();
+      } else {
+        $overlay_centerer.removeClass('playing');
+        video.pause();
+      }
+    });
+  });
 
   var $learn_more = $('#learn-more');
   $learn_more.click(function() {

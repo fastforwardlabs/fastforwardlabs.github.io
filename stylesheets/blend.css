@@ -303,7 +303,9 @@ a.purple {
       z-index: 8; }
 
 .video-holder {
-  background: #efefef; }
+  cursor: zoom-in; }
+  .video-holder .video-inner {
+    background: #efefef; }
   .video-holder img, .video-holder video {
     width: 98%;
     position: absolute;
@@ -441,3 +443,46 @@ body.overlayed {
   line-height: 0; }
   #overlay-content img:last-child {
     margin-bottom: 0; }
+#overlay-content .video-holder .spacer {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0;
+  line-height: 0;
+  position: relative;
+  left: 0;
+  bottom: 0; }
+#overlay-content .video-holder video, #overlay-content .video-holder img {
+  width: 98%;
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+  height: auto;
+  margin-bottom: 0; }
+#overlay-content .video-holder img.dots {
+  height: 5%;
+  width: auto;
+  margin: 1.2% 0 0;
+  position: relative; }
+
+.ff01 a {
+  color: #00dcec; }
+
+.ff02 a {
+  color: #ee00ee; }
+
+.ff03 a {
+  color: #8237b6; }
+
+.progress-holder {
+  height: 1rem;
+  background: white;
+  background: red; }
+  .progress-holder .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1.5rem;
+    width: 0;
+    background: #00dcec; }

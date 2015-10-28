@@ -1,0 +1,17 @@
+          <div class="flex" style="flex-grow: 0; justify-content: center; height: 2rem; padding: 1rem 0;">
+            <div class="dot-holder">
+              <div class="dot"></div>
+            </div>
+            <div class="dot-holder">
+              <div class="dot"></div>
+            </div>
+            <div class="dot-holder">
+              <div class="dot"></div>
+            </div>
+            <div class="dot-holder">
+              <div class="dot"></div>
+            </div>
+            <div class="dot-holder">
+              <div class="dot"></div>
+            </div>
+          </div>

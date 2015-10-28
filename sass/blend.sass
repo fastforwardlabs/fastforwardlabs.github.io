@@ -1,0 +1,473 @@
+@import compass
+@import compass/reset
+@import compass/css3/transform
+@import compass/css3/transition
+@import compass/css3/user-interface
+
+// Everything flows from here
+$rembase: 18pt
+$baseline: $rembase * 2
+$basefont: $baseline/1.3
+$basechambers: $baseline/1.3
+$basecap: $baseline/1.5
+
+html
+  // Set rem to rembase
+  font-size: $rembase
+
+body
+  line-height: $baseline
+  font-size: $basefont
+
+.uppercase
+  text-transform: uppercase
+
+.container
+  max-width: 46rem
+  box-sizing: border-box
+
+.tisa
+  font-family: "ff-tisa-web-pro", serif
+
+.chambers
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-size: $basechambers
+
+// Helper mix-ins
+@mixin font-smoothing($value: antialiased)
+  @if $value == antialiased
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+  @else
+    -webkit-font-smoothing: subpixel-antialiased
+    -moz-osx-font-smoothing: auto
+
+@mixin centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin centerer-h
+  position: absolute
+  left: 50%
+  transform: translate(-50%, 0)
+
+.centerer
+  +centerer
+
+.centerer-h
+  +centerer-h
+
+
+@mixin coverer
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+@mixin coverer-fixed
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+// Tech Graph Gradient
+#shadow-holder
+  +coverer-fixed
+  overflow: hidden
+  pointer-events: none
+#shadow
+  +coverer
+  @include background-image(radial-gradient(100% 100%, rgba(0,0,0,0) 20%, rgba(0,0,0,0.2) 100%))
+  background-size: cover
+  pointer-events: none
+
+.normal
+  font-style: normal
+
+$cyan: #00dcec
+$magenta: #ee00ee
+$purple: #8237b6
+$dark_cyan: darken($cyan, 4%)
+
+::selection
+  background: #9df0fb
+
+.cyan
+  color: $cyan
+.magenta
+  color: $magenta
+.purple
+  color: $purple
+
+a
+  color: $cyan
+
+.bg-cyan
+  background: $cyan
+
+.mb05
+  margin-bottom: 0.25rem
+.mb25
+  margin-bottom: 1rem
+
+.f3
+  font-size: $basechambers * 0.7
+  line-height: $baseline * 0.7
+
+.lh0
+  line-height: 0
+
+.client
+  font-size: $basechambers * 0.6
+  line-height: $baseline * 0.6
+
+.nav
+  font-size: $basechambers * 0.6
+  line-height: $baseline * 0.6
+  border-top: solid 0.15rem rgba(0,0,0,0.1)
+  box-sizing: border-box
+  a
+    display: inline-block
+    padding: 0.5rem 0.2rem 0
+    color: $cyan
+    position: relative
+    color: rgba(0,0,0,0.25)
+    top: -0.18rem
+    border-top: solid 0.2rem transparent
+    background-image: none
+    +user-select(none)
+    &:hover
+      text-decoration: none
+      background-image: none
+      color: $cyan
+    &.active
+      // border-top-color: #000
+      color: #000
+  .right
+    a
+      color: $cyan
+      background-image: linear-gradient($cyan 0%, $cyan 100%)
+      background-size: 0.1rem 0.1rem
+      background-repeat: repeat-x
+      text-decoration: none
+      padding-bottom: 0.2rem
+      padding-left: 0
+      padding-right: 0
+      &:hover
+        color: $dark_cyan
+        background-image: linear-gradient($dark_cyan 0%, $dark_cyan 100%)
+
+.learn-more
+  // border-bottom: solid 0.15rem rgba(0,0,0,0.1)
+  font-size: $basechambers * 0.65
+  line-height: $baseline * 0.65
+  box-sizing: border-box
+  a
+    display: inline-block
+    color: $cyan
+    position: relative
+    // top: -0.18rem
+    // border-top: solid 0.2rem transparent
+    background-image: none
+    +user-select(none)
+    &.scrolled
+      display: none
+    &:hover
+      text-decoration: none
+      background-image: none
+
+.naver
+  font-size: $basechambers * 0.6
+  line-height: $baseline * 0.6
+
+.footer
+  font-size: $basechambers * 0.6
+  line-height: $baseline * 0.6
+  a
+    display: inline-block
+    color: $cyan
+    margin-left: 0.5rem
+
+.checker
+  color: #888
+  cursor: pointer
+  &:hover
+    color: #000
+
+.no-select
+  +user-select(none)
+
+.f1
+  font-size: $basefont * 2
+  line-height: $baseline * 2
+  &.chambers
+    font-size: $basechambers * 2
+
+a
+  background-image: linear-gradient($cyan 0%, $cyan 100%)
+  background-size: 0.1rem 0.1rem
+  background-position: 0 1rem
+  background-repeat: repeat-x
+  text-decoration: none
+  padding-bottom: 0.2rem
+  &.block
+    background-image: none
+    &:hover
+      background-image: none
+  &:hover
+    text-decoration: none
+    color: $dark_cyan
+    background-image: linear-gradient($dark_cyan 0%, $dark_cyan 100%)
+
+a.purple
+  background-image: linear-gradient($purple 0%, $purple 100%)
+  &:hover
+    color: darken($purple, 4%)
+    background-image: linear-gradient(darken($purple, 4%) 0%, darken($purple, 4%) 100%)
+
+.tisa a
+  background-size: 0.1rem 0.15rem
+  background-position: 0 2.2rem
+
+.logo
+  height: $basefont * 4
+
+#graph-holder
+  font-size: $basechambers/2.2
+  line-height: $baseline/2.2
+  font-family: "ff-chambers-sans-web"
+  fill: #aaa
+  cursor: default !important
+  +user-select(none)
+  .spacer
+    display: none
+  .rect
+    stroke-width: 2
+    stroke: #ddd
+    fill: #fafafa
+  .link
+    stroke-width: 2
+    stroke: #ddd
+  .node
+    cursor: default
+  .text
+    fill: #bbb
+  .nlg
+    .rect
+      fill: $cyan
+      stroke: $cyan
+    .text
+      fill: #fff
+  .pmrs
+    .rect
+      fill: $magenta
+      stroke: $magenta
+    .text
+      fill: #fff
+  .dlia
+    .rect
+      fill: $purple
+      stroke: $purple
+    .text
+      fill: #fff
+
+.report-holder
+  position: relative
+  cursor: zoom-in
+  img
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 7
+    &.spacer
+      position: relative
+      z-index: 7
+    &.active
+      z-index: 8
+
+.video-holder
+  cursor: zoom-in
+  .video-inner
+    background: #efefef
+  img, video
+    width: 98%
+    position: absolute
+    left: 1%
+    bottom: 1%
+    height: auto
+    &.spacer
+      position: relative
+      left: 0
+      bottom: 0
+      width: 100%
+  .dots
+    height: 5%
+    width: auto
+    margin-top: 1.2%
+    position: relative
+    .dot
+      background: blue
+
+.title
+  font-size: $basechambers * 1.5
+  line-height: $baseline * 1.5
+
+img
+  width: 100%
+
+.footlink
+  i
+    margin-right: 0.15rem
+
+.footlink
+  background-image: none
+  span
+    background-image: linear-gradient($cyan 0%, $cyan 100%)
+    background-size: 0.1rem 0.1rem
+    background-position: 0 1rem
+    background-repeat: repeat-x
+    text-decoration: none
+    padding-bottom: 0.2rem
+  &:hover
+    background-image: none
+    span
+      background-image: linear-gradient($dark_cyan 0%, $dark_cyan 100%)
+
+#first-nav
+  position: fixed
+
+.sp
+  width: 32px
+  height: 32px
+  clear: both
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: -16px
+  margin-left: -16px
+
+$spCol: #000
+
+/* Spinner Circle Rotation */
+.sp-circle
+  border: 0.2rem #efefef solid
+  border-top: 0.2rem $cyan solid
+  border-radius: 50%
+  -webkit-animation: spCircRot .6s infinite linear
+  animation: spCircRot .6s infinite linear
+@-webkit-keyframes spCircRot
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(359deg)
+@keyframes spCircRot
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
+.sp-circle
+  display: none
+.loading
+  .sp-circle
+    display: block
+
+input, textarea
+  font-family: "ff-tisa-web-pro", serif
+  border: none
+  line-height: $baseline
+  outline: none !important
+  box-shadow: none
+  border: solid 2px #efefef !important
+  border-radius: 0 !important
+  width: 100%
+  &:active, &:focus
+    outline: none !important
+    box-shadow: none !important
+    border-color:  #000 !important
+textarea
+  padding-top: 0.5rem
+  line-height: $baseline * 0.7
+
+input[type="submit"]
+  background: $cyan
+  color: #fff
+  font-family: "ff-chambers-sans-web"
+  border-radius: 0.2rem !important
+  border: none !important
+  cursor: pointer
+  &:hover
+    background: $dark_cyan
+  &:active, &:focus
+    border: none !important
+
+#overlay-close
+  opacity: 0.2
+  cursor: pointer
+  &:hover
+    opacity: 1
+
+#overlay
+  display: none
+
+body.overlayed
+  overflow: hidden
+  #overlay
+    display: block
+
+#overlay-content
+  img
+    width: auto
+    max-width: 100%
+    display: block
+    margin: 0 auto
+    margin-bottom: 1rem
+    line-height: 0
+    &:last-child
+      margin-bottom: 0
+  .video-holder
+    .spacer
+      width: auto
+      max-width: 100%
+      display: block
+      margin: 0 auto
+      margin-bottom: 0
+      line-height: 0
+      position: relative
+      left: 0
+      bottom: 0
+    video, img
+      width: 98%
+      position: absolute
+      left: 1%
+      bottom: 1%
+      height:  auto
+      margin-bottom: 0
+    img.dots
+      height: 5%
+      width: auto
+      margin: 1.2% 0 0
+      position: relative
+
+.ff01 a
+  color: $cyan
+.ff02 a
+  color: $magenta
+.ff03 a
+  color: $purple
+
+.progress-holder
+  height: 1rem
+  background: #fff
+  background: red
+  .progress
+    position: absolute
+    left: 0
+    top: 0
+    height: 1.5rem
+    width: 0
+    background: $cyan

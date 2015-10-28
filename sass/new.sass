@@ -1,0 +1,93 @@
+$cyan: #00dcec
+$magenta: #ee00ee
+
+html
+  font-size: 200%
+
+body
+  font-family: "ff-chambers-sans-web", sans-serif
+
+@mixin centerer-v
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+
+.centerer-v
+  +centerer-v
+
+a
+  font-weight: 700
+  color: $cyan
+
+.bg-grey
+  background: #eee
+
+.cyan
+  color: $cyan
+.magenta
+  color: $magenta
+
+.bg-cyan
+  background: $cyan
+
+.chambers
+  font-family: "ff-chambers-sans-web"
+
+.tisa
+  font-family: "ff-tisa-web-pro"
+
+video
+  max-width: 100%
+
+.lh0
+  line-height: 0
+.lh1
+  line-height: 1
+
+.f3
+  font-size: 3.7vw + 1.85vw
+
+.f2
+  font-size: 3.7vw
+  line-height: 1.25
+
+.f1
+  font-size: 1.85vw
+  line-height: 1.25
+
+.indent
+  padding-left: 2rem
+  // padding-right: 2rem
+  padding-bottom: 2rem
+  box-sizing: border-box
+  position: relative
+
+.ch1
+  height: 1rem
+.ch2
+  height: 2rem
+
+.border-cyan
+  border-color: $cyan
+
+.connector
+  width: 2px
+  margin: 0 auto
+  background: #eee
+  height: 100%
+
+.rp-block
+  // border-right: solid 8px $cyan
+  // border-bottom: solid 4px $cyan
+  &.rp-magenta
+    border-color: $magenta
+
+.divider
+  height: 3px
+  &.cyan
+    background: $cyan
+  &.magenta
+    background: $magenta
+
+img
+  width: 100%

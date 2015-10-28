@@ -1,0 +1,434 @@
+@import compass/css3/user-interface
+
+// Everything flows from here
+$rembase: 2.42vw
+$baseline: $rembase * 2
+$basefont: $baseline/1.3
+$basechambers: $baseline/1.35
+$basecap: $baseline/1.5
+
+html
+  // Set rem to rembase
+  font-size: $rembase
+
+body
+  line-height: $baseline
+  font-size: $basefont
+
+.tisa
+  font-family: "ff-tisa-web-pro", serif
+
+.chambers
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-size: $basechambers
+
+// Helper mix-ins
+@mixin font-smoothing($value: antialiased)
+  @if $value == antialiased
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+  @else
+    -webkit-font-smoothing: subpixel-antialiased
+    -moz-osx-font-smoothing: auto
+
+@mixin centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin centerer-h
+  position: absolute
+  left: 50%
+  transform: translate(-50%, 0)
+
+.centerer
+  +centerer
+
+.centerer-h
+  +centerer-h
+
+$cyan: #00dcec
+$magenta: #ee00ee
+
+::selection
+  background: #9df0fb
+
+.cyan
+  color: $cyan
+.magenta
+  color: $magenta
+
+.bg-cyan
+  background: $cyan
+
+.mb05
+  margin-bottom: 0.25rem
+
+a
+  color: darken($cyan,2%)
+
+a
+  background-image: linear-gradient(#fff 50%, $cyan 50%)
+  background-size: 1px 8px
+  background-position: 0 2rem
+  background-repeat: repeat-x
+  &:hover
+    text-decoration: none
+    color: darken($cyan, 4%)
+    background-image: linear-gradient(#fff 50%, darken($cyan,4%) 50%)
+
+.people
+  a span
+    background-image: linear-gradient(#fff 50%, $cyan 50%)
+    background-size: 1px 4px
+    background-position: 0 0.66rem
+    padding-bottom: 0.4rem
+    background-repeat: repeat-x
+    &:hover
+      text-decoration: none
+
+.border-top
+  border-top: solid 0.1rem #efefef
+  padding-top: 0.5rem
+
+.border-cyan
+  border: solid 0.1rem $cyan
+
+.nav
+  border-top: solid 0.1rem #efefef
+  box-sizing: border-box
+  line-height: 1 !important
+  a
+    color: $cyan
+    font-weight: 700
+    padding-top: 0.5rem
+    display: inline-block
+    padding-left: 0.25rem
+    padding-right: 0.25rem
+    letter-spacing: 0.02rem
+    border-top: solid 0.1rem transparent
+    margin-top: -0.1rem
+    background-repeat: repeat-x
+    text-transform: uppercase
+    font-size: $basecap/2
+    box-sizing: border-box
+    font-weight: 700
+    &:hover
+      color: darken($cyan, 4%)
+      border-top: solid 0.1rem ($cyan, 4%)
+    &.active
+      border-top: solid 0.1rem #000
+      padding-top: 0.5rem
+      background: transparent
+      background-image: none
+      color: #000
+      cursor: default
+  &.footer
+    a
+      padding-top: 0.5rem
+      text-transform: none
+      margin-top: 0
+      background-image: linear-gradient(#fff 50%, $cyan 50%)
+      background-size: 1px 4px
+      background-position: 0 0.6rem
+      letter-spacing: 0
+      background-repeat: repeat-x
+      padding: 0
+      padding-bottom: 0.4rem
+      margin-top: 0.81rem
+      margin-left: 0.5rem
+      &:hover
+        background-image: linear-gradient(#fff 50%, darken($cyan,4%) 50%)
+
+a.f3 .underline
+  background-image: linear-gradient(#fff 50%, $cyan 50%)
+  background-size: 1px 4px
+  background-position: 0 0.7rem
+  padding: 0 0 0.3rem
+  letter-spacing: 0
+  margin-top: 0.4rem
+  background-repeat: repeat-x
+  &:hover
+    color: darken($cyan,4%)
+    background-image: linear-gradient(#fff 50%, darken($cyan,4%) 50%)
+
+.underline
+  background-image: linear-gradient(#fff 50%, $cyan 50%)
+  background-size: 1rem 0.25rem
+  background-position: 0 1.35rem
+  padding: 0 0 0.3rem
+  background-repeat: repeat-x
+
+a .underline
+  background-image: linear-gradient(#fff 50%, $cyan 50%)
+  background-size: 1px 4px
+  background-position: 0 0.65rem
+  padding: 0 0 0.3rem
+  background-repeat: repeat-x
+a:hover .underline
+  color: darken($cyan,4%)
+  background-image: linear-gradient(#fff 50%, darken($cyan,4%) 50%)
+
+.indent
+  padding-left: 2rem
+  box-sizing: border-box
+  position: relative
+
+.lh0
+  line-height: 0
+
+.f1
+  font-size: $basefont * 2
+  line-height: $baseline * 2
+  margin-bottom: -0.25rem
+  &.chambers
+    font-size: $basechambers * 2
+
+.f3
+  font-size: $basefont/2
+  line-height: $baseline/2
+  &.chambers
+    font-size: $basechambers/2
+
+input, textarea
+  width: 100%
+  background: #fff
+  border: solid 0.1rem #fff !important
+  font-family: "ff-tisa-web-pro", serif
+  &:active, &:focus
+    outline: none !important
+    box-shadow: none !important
+    border: solid 0.1rem #ccc !important
+
+img
+  width: 100%
+.fa
+  margin-right: 0.15rem
+  position: relative
+  top: 0.05rem
+
+.border-white
+  border: solid 0.1rem #fff
+
+.video-holder
+  box-sizing: border-box
+  height: 33.9vw
+  background: #efefef
+  padding-left: 0.1rem
+  padding-right: 0.1rem
+  padding-top: 0.75rem
+  padding-left: 0.1em
+  position: relative
+  video
+    width: 100%
+    display: none
+  &.loaded
+    img
+      display: none
+    video
+      display: block
+
+.report-holder
+  height: 33.9vw
+
+$dot_size: 0.3rem
+.dots
+  float: left
+  height: 0.75rem
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  .dot
+    width: $dot_size
+    height: $dot_size
+    border-radius: $dot_size
+    background: #ccc
+    float: left
+    margin-top: (0.75rem - $dot_size)/2
+    margin-left: (0.75rem - $dot_size)/2
+
+.divider-holder
+  height: 0.255em
+  width: 100%
+  .divider
+    // background-image: linear-gradient(90deg, #efefef, #fff)
+    background: #efefef
+    height: 0.05em
+    width: 100%
+
+.divider
+  height: 0.1rem
+  width: 100%
+  background: #000
+
+.border-try
+  border: solid 0.5rem #000
+
+.grid, .grid_2
+  height: 400vh
+  width: 100%
+  position: absolute
+  left: 0
+  top: 0
+  .line
+    box-sizing: border-box
+    height: 1rem
+    width: 100%
+    position: relative
+    &:after
+      content: ""
+      height: 2px
+      width: 100%
+      position: absolute
+      left: 0
+      bottom: 0
+      background: red
+
+.grid_2
+  top: -0.5rem
+  .line:after
+    background: blue
+
+.report-holder
+  position: relative
+  img
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 7
+    &.active
+      z-index: 8
+
+.image-slider-holder, .video-seeker
+  height: 0.1rem
+  width: 100%
+  margin-top: 0.3rem
+  margin-bottom: 0.25rem
+  z-index: 9
+  background: #efefef
+  display: none
+  .image-slide-sect
+    width: 20%
+    height: 0.1rem
+
+.video-progress
+  height: 0.1rem
+  width: 0
+
+.nlg
+  .image-slide-sect.active, .video-progress
+    background: $cyan
+
+.pmrs
+  .image-slide-sect.active, .video-progress
+    background: $magenta
+
+.sp
+  width: 32px
+  height: 32px
+  clear: both
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: -16px
+  margin-left: -16px
+
+$spCol: #000
+
+/* Spinner Circle Rotation */
+.sp-circle
+  border: 0.2rem #efefef solid
+  border-top: 0.2rem $cyan solid
+  border-radius: 50%
+  -webkit-animation: spCircRot .6s infinite linear
+  animation: spCircRot .6s infinite linear
+@-webkit-keyframes spCircRot
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(359deg)
+@keyframes spCircRot
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
+.sp-circle
+  display: none
+.loading
+  .sp-circle
+    display: block
+
+.nlg
+  .sp-circle
+    border-top-color: $cyan
+.pmrs
+  .sp-circle
+    border-top-color: $magenta
+
+#contact-overlay
+  display: none
+
+.overlayed
+  overflow-y: hidden
+  #contact-overlay
+    display: block
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 99
+
+input[type="submit"]
+  &:hover
+    background: darken($cyan,4%)
+
+.select-none
+  +user-select(none)
+
+#arrow
+  fill: $cyan
+
+a:hover
+  #arrow
+    path
+      fill: darken($cyan,4%)
+
+#xer
+  fill: #aaa
+  display: none
+  &:hover
+    fill: #000
+
+.overlayed
+  #xer
+    display: block
+
+// Custom checkbox from http://codepen.io/jamesbarnett/pen/yILjk/
+
+input[type="checkbox"]
+  display: none !important
+
+input[type="checkbox"] + label:before
+  font-family: FontAwesome
+  display: block
+  width: 1.1rem
+  top: -0.02rem
+  position: relative
+  color: #fff
+  font-style: normal
+  font-size: 0.8rem
+  float: left
+
+input[type="checkbox"] + label:before
+  content: ""
+
+input[type="checkbox"]:checked + label:before
+  content: ""
+  color: #000
+
+#checkbox-holder
+  +user-select(none)

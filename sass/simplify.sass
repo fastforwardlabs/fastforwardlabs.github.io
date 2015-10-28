@@ -1,0 +1,295 @@
+$cyan: #00dcec
+$magenta: #ee00ee
+$purple: #8237b6
+
+.cyan
+  color: $cyan
+
+// Helper mix-ins
+@mixin font-smoothing($value: antialiased)
+  @if $value == antialiased
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+  @else
+    -webkit-font-smoothing: subpixel-antialiased
+    -moz-osx-font-smoothing: auto
+
+
+$min_font_size: 20px
+$min_width: 640px
+$max_width: 1024px
+$font_multiplier: $min_font_size/($min_width/100)
+
+@mixin breakpoint($point)
+  @if $point == medium
+    @media (max-width: $max_width)
+      @content
+  @if $point == small
+    @media (max-width: $min_width)
+      @content
+
+html
+  font-size: $font_multiplier * ($max_width/100)
+  +breakpoint(medium)
+    font-size: $font_multiplier + vw
+  +breakpoint(small)
+    font-size: $min_font_size
+
+body
+  font-family: "ff-tisa-web-pro", serif
+  line-height: 1.5
+  input
+    font-family: "ff-tisa-web-pro", serif
+
+.container
+  max-width: $max_width
+
+.sm-col-8
+  font-size: $font-multiplier * (($max_width * 0.75)/100)
+  input
+    font-size: $font-multiplier * (($max_width * 0.75)/100)
+  @media (max-width: $max_width * 0.75)
+    font-size: $font_multiplier + vw
+    input
+      font-size: $font_multiplier + vw
+  +breakpoint(small)
+    font-size: $min_font_size
+    input
+      font-size: $min_font_size
+
+.sm-col-7, .sm-col-6, .sm-col-5, .sm-col-4
+  font-size: $min_font_size
+  input
+    font-size: $min_font_size
+
+img
+  width: 100%
+
+input
+  &.field
+    width: 100%
+    padding: 0.5em
+    font-size: 1.1em
+    height: 2.5em
+    border: none
+    border-radius: 0
+    border-radius: 0.1rem
+    &[type="submit"]
+      width: auto
+      box-sizing: border-box
+      padding: 0.5em 1.75em
+      height: 2.5em
+      border: none
+      font-family: "ff-chambers-sans-web", sans-serif
+      font-weight: 700
+      // text-transform: uppercase
+      background: rgba(0,0,0,0.9)
+      color: #fff
+      border-radius: 2.5em
+      cursor: pointer
+      // border: solid 0.15em #fff
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-weight: 700
+  margin-top: 0
+  margin-bottom: 0
+
+// Header sizing as ems means they'll adjust to different column contexts
+h2, .h2
+  font-size: 2em
+  line-height: 1.2
+  margin-bottom: 0.15em
+h3, .h3
+  font-size: 1.5em
+  line-height: 1.2
+  margin-bottom: 0.25em
+h4, .h4
+  font-size: 1.25em
+  line-height: 1.2
+  margin-bottom: 0.35em
+
+a
+  color: $cyan
+
+.interface
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-weight: 700
+  font-size: 27px
+  +font-smoothing(antialiased)
+  @media (max-width: (27px/3.25 * 100))
+    font-size: 3.5vw
+    @media (max-width: 640px)
+      font-size: 20.8px
+
+.nav
+  // border-top: solid 0.1rem #000
+  font-size: 20px
+  text-transform: uppercase
+  color: #000
+  text-rendering: geometricPrecision
+  // background: #efefef
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-weight: 900
+  +font-smoothing(antialiased)
+  position: relative
+  overflow: hidden
+  &:after
+    position: absolute
+    left: 0
+    top: 0
+    height: 0.15rem
+    width: 100%
+    // background-image: url("../../resources/images/letterpress-back.jpg")
+    background: #000
+    display: none
+  a, span
+    padding: 0.25rem 0.1rem
+    display: inline-block
+  a
+    color: $cyan
+    +font-smoothing(antialiased)
+    &:hover
+      text-decoration: none
+      color: #000
+    &.active
+      color: #000
+      // background-image: url("../../resources/images/letterpress-back.jpg")
+      &:hover
+        color: #000
+
+.links
+  font-size: 20px
+  text-transform: uppercase
+  a, span
+    padding: 0.25rem 0.1rem
+    display: inline-block
+    font-weight: 900
+  a
+    color: $cyan
+    +font-smoothing(antialiased)
+
+.footer
+  // border-top: solid 0.1rem #000
+  font-family: "ff-chambers-sans-web", sans-serif
+  padding: 0.5rem 0
+  margin-bottom: 1rem
+
+p
+  margin-bottom: 1em
+  &:last-child
+    margin-bottom: 0
+
+.form-holder
+  padding: 1.5em 1.5em 1.5em
+  // box-shadow: 0 0 0.12rem rgba(0,0,0,0.4)
+  background-image: url("../../resources/images/letterpress-back.jpg")
+  border-radius: 0.15rem
+  .form-inner
+    // background-image: url("../../resources/images/letterpress-back.jpg")
+    // padding: 0 1.5em 1em
+    // margin: 0 -1.5em 1em
+
+form
+  // background: #efefef
+  // border: solid 0.2rem rgba(0,0,0,0.9)
+  // background: $cyan
+
+.mb1
+  margin-bottom: 0.5em
+.mb2
+  margin-bottom: 1em
+.mb3
+  margin-bottom: 2em
+
+.p1
+  padding: 0.5em
+.p2
+  padding: 1em
+.px2
+  padding: 0 0.5em
+.p3
+  padding: 2em
+.px3
+  padding-left: 2em
+  padding-right: 2em
+.py2
+  padding-top: 1em
+  padding-bottom: 1em
+
+label
+  font-family: "ff-chambers-sans-web", sans-serif
+  margin-bottom: 0.1em
+  margin-top: 0.2em
+  display: block
+  font-weight: 700
+
+// Report Holder Module
+.report-holder
+  position: relative
+  line-height: 0
+  .report-img
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: auto
+    display: none
+    &.active
+      display: block
+
+// Video Holder Module
+.video-holder
+  position: relative
+  line-height: 0
+  .video-screenshot, video
+    position: absolute
+    width: 98%
+    left: 1%
+    bottom: 1%
+  video
+    opacity: 0
+  .loaded
+    video
+      opacity: 1
+    .video-screenshot
+      display: none
+
+.sp
+  width: 32px
+  height: 32px
+  clear: both
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: -16px
+  margin-left: -16px
+
+$spCol: #000
+
+/* Spinner Circle Rotation */
+.sp-circle
+  border: 0.2rem #efefef solid
+  border-top: 0.2rem red solid
+  border-radius: 50%
+  -webkit-animation: spCircRot .6s infinite linear
+  animation: spCircRot .6s infinite linear
+  &.cyan
+    border-top-color: $cyan
+
+@-webkit-keyframes spCircRot
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(359deg)
+@keyframes spCircRot
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
+.sp-circle
+  display: none
+.video-holder .loading
+  .sp-circle
+    display: block
