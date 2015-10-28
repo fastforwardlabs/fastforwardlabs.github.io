@@ -94,12 +94,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
   font-weight: 700
   margin-top: 0
   margin-bottom: 0
+  color: #111
 
 // Header sizing as ems means they'll adjust to different column contexts
 h2, .h2
   font-size: 2em
   line-height: 1.2
-  margin-bottom: 0.15em
+  margin-bottom: 0.1em
+  text-rendering: optimizeLegibility
 h3, .h3
   font-size: 1.5em
   line-height: 1.2
@@ -123,7 +125,7 @@ a
       font-size: 20.8px
 
 .nav
-  // border-top: solid 0.1rem #000
+  border-top: solid 0.1rem #efefef
   font-size: 20px
   text-transform: uppercase
   color: #000
@@ -144,7 +146,7 @@ a
     background: #000
     display: none
   a, span
-    padding: 0.25rem 0.1rem
+    padding: 0.25rem 0.1rem 0.3rem
     display: inline-block
   a
     color: $cyan
@@ -174,6 +176,7 @@ a
   font-family: "ff-chambers-sans-web", sans-serif
   padding: 0.5rem 0
   margin-bottom: 1rem
+  font-size: 20px
 
 p
   margin-bottom: 1em
