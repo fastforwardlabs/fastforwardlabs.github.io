@@ -100,7 +100,7 @@ $(document).ready(function() {
       var $this = $(this);
       video_playing = true;
       if (video_inserted) {
-        $this.find('video').get(0).pause();
+        $this.find('video').get(0).play();
       } else {
         $this.addClass('loading');
         var resource = 'resources/videos/' + prototype.file_name + '.mp4';
