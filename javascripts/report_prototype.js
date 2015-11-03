@@ -11,6 +11,24 @@ $(document).ready(function() {
   reports.ff01.images = ["00.jpg", "01.jpg", "02.jpg", "03.jpg", "04.jpg"];
   reports.ff01.info = "Machines are beginning to speak our language. Through natural language generation, computers can take highly structured data and output human language narrative. This report explores machine systems for natural language generation.";
 
+  // FF02 config
+  reports.ff02 = {};
+  reports.ff02.color = "magenta";
+  reports.ff02.number = "FF02";
+  reports.ff02.title = "Probabilistic Methods for Realtime Streams";
+  reports.ff02.image_dir = "pmrs";
+  reports.ff02.images = ["00.jpg", "01.jpg", "02.jpg", "03.jpg", "04.jpg"];
+  reports.ff02.info = "Realtime analysis is a challenge for modern data systems. The probabilistic methods explored in this report offer highly efficient models for extracting value from streams of data as they are generated. This orders-of-magnitude improvement in efficiency enables many new applications and modes of computation.";
+
+  // FF02 config
+  reports.ff03 = {};
+  reports.ff03.color = "purple";
+  reports.ff03.number = "FF03";
+  reports.ff03.title = "Deep Learning: Image Analysis";
+  reports.ff03.image_dir = "dlia";
+  reports.ff03.images = ["00.jpg"];
+  reports.ff03.info = "Deep learning, or highly-connected neural networks, offers fascinating new capabilities for image analysis. Using deep learning, computers can now learn to identify objects in images. This report explores the history and current state of the field, predicts future developments, and explains how to apply deep learning today.";
+
   function reportModuleHtml(report) {
     var html = '';
     html += '<div>';
@@ -70,6 +88,20 @@ $(document).ready(function() {
   prototypes.roborealtor.name = "Roborealtor";
   prototypes.roborealtor.file_name = "roborealtor";
 
+  // CliqueStream
+  prototypes.cliquestream = {};
+  prototypes.cliquestream.color = "magenta";
+  prototypes.cliquestream.number = "FF02";
+  prototypes.cliquestream.name = "CliqueStream";
+  prototypes.cliquestream.file_name = "cliquestream";
+
+  // Fathom
+  prototypes.fathom = {};
+  prototypes.fathom.color = "purple";
+  prototypes.fathom.number = "FF03";
+  prototypes.fathom.name = "Fathom and Pictograph";
+  prototypes.fathom.file_name = "fathom";
+
   function videoModuleHtml(prototype) {
     var html = '';
     html += '<div>';
@@ -122,5 +154,54 @@ $(document).ready(function() {
       $this.find('video').get(0).pause();
     });
   });
+
+  window.overlay_objects = {};
+
+  function generateReportOverlayContent(report) {
+    var report_obj = reports[report];
+    var content = '<div class="mb2">';
+    content += '<p>' + report_obj.info + '</p>';
+    content += '</div>';
+    content += '<div class="report-overlay-images">';
+    for (var i=0; i<report_obj.images.length; i++) {
+      var image = report_obj.images[i];
+      var html = '<img src="images/' + report_obj.image_dir + '/' + image + '" />';
+      content += html;
+    }
+    content += '</div>';
+    return content;
+  }
+
+  var overlay_ender = '<div class="clearfix" style="margin-top: -0.5rem"><div class="nav clearfix mb2"><div class="right"><a href="#">Back to Product</a></div></div>';
+
+  window.overlay_objects.ff01 = {};
+  var ff01 = window.overlay_objects.ff01;
+  ff01.head_title = "FF01";
+  ff01.color = "cyan";
+  ff01.title = "Natural Language Generation";
+  ff01.links = ['<a class="active" href="#">Report</a>','<a class="" href="#">Prototype</a>'];
+  var content = generateReportOverlayContent("ff01");
+  ff01.content = content;
+  ff01.content += overlay_ender;
+
+  window.overlay_objects.ff02 = {};
+  var ff02 = window.overlay_objects.ff02;
+  ff02.head_title = "FF02";
+  ff02.color = "magenta";
+  ff02.title = "Probabilistic Methods for Realtime Streams";
+  ff02.links = ['<a class="active" href="#">Report</a>','<a class="" href="#">Prototype</a>'];
+  var content = generateReportOverlayContent("ff02");
+  ff02.content = content;
+  ff02.content += overlay_ender;
+
+  window.overlay_objects.ff03 = {};
+  var ff03 = window.overlay_objects.ff03;
+  ff03.head_title = "FF03";
+  ff03.color = "purple";
+  ff03.title = "Deep Learning: Image Analysis";
+  ff03.links = ['<a class="active" href="#">Report</a>','<a class="" href="#">Prototype</a>'];
+  var content = generateReportOverlayContent("ff03");
+  ff03.content = content;
+  ff03.content += overlay_ender;
 
 });

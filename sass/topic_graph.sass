@@ -1,0 +1,77 @@
+@import compass/css3/user-interface
+
+$cyan: #00dcec
+$magenta: #ee00ee
+$purple: #8237b6
+
+#graph-holder
+  font-size: 16px
+  line-height: 1.2
+  font-family: "ff-chambers-sans-web", sans-serif
+  fill: #aaa
+  background: #fafafa
+  cursor: default !important
+  +user-select(none)
+  .spacer
+    display: none
+  .rect
+    stroke-width: 2
+    stroke: #ddd
+    fill: #fafafa
+  .link
+    stroke-width: 2
+    stroke: #ddd
+  .node
+    cursor: default
+  .text
+    fill: #bbb
+  .nlg
+    .rect
+      fill: url(#cyan)
+      stroke-width: 0
+    .text
+      fill: #fff
+      text-transform: capitalize
+  .pmrs
+    .rect
+      fill: url(#magenta)
+      stroke-width: 0
+    .text
+      fill: #fff
+      text-transform: capitalize
+  .dlia
+    .rect
+      fill: url(#purple)
+      stroke-width: 0
+    .text
+      fill: #fff
+      text-transform: capitalize
+
+body.bottom
+  #shadow_holder
+    display: none
+  #graph-holder
+    background: #fff
+    .rect
+      fill: #fff
+    .nlg
+      .rect
+        fill: url(#cyan)
+        stroke-width: 0
+      .text
+        fill: #fff
+        text-transform: capitalize
+    .pmrs
+      .rect
+        fill: url(#magenta)
+        stroke-width: 0
+      .text
+        fill: #fff
+        text-transform: capitalize
+    .dlia
+      .rect
+        fill: url(#purple)
+        stroke-width: 0
+      .text
+        fill: #fff
+        text-transform: capitalize

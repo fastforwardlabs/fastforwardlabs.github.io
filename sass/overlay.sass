@@ -1,0 +1,53 @@
+$cyan: #00dcec
+$magenta: #ee00ee
+$purple: #8237b6
+
+#overlay
+  display: none
+
+body.overlayed
+  overflow: hidden
+  #overlay
+    display: block
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 99
+    // background: rgba(0,0,0,0.8)
+    background-image: url("../../images/noise.png")
+    padding: 2rem 0
+    box-sizing: border-box
+    overflow-y: auto
+    .overlay-color-cyan
+      .head_title
+        color: $cyan
+      a
+        color: $cyan !important
+    .overlay-color-magenta
+      .head_title
+        color: $magenta
+      a
+        color: $magenta !important
+    .overlay-color-purple
+      .head_title
+        color: $purple
+      a
+        color: $purple !important
+    a.active
+      color: #000 !important
+      cursor: default
+
+#overlay-close
+  cursor: pointer
+  img
+    height: 0.7em
+    position: relative
+    top: -0.12em
+
+.report-overlay-images
+  img
+    line-height: 0
+    margin-bottom: 1rem
+

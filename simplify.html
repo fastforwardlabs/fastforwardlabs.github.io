@@ -9,109 +9,292 @@
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheets/basscss.min.css">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/topic_graph.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/overlay.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/simplify.css">
 	</head>
 	<body>
 
-    <div id="intro" class="container px2 mb3 mt2">
-      <div class="nav clearfix">
-        <div class="left">
-          <a class="active" href="#intro">Intro</a>
-          <a href="#product">Product</a>
-          <a href="#contact">Contact</a>
-          <a href="#team">Team</a>
-        </div>
-        <div class="right">
-          <a href="#">Client Login</a>
-        </div>
-      </div>
-      <div class="center">
-        <h1 class="italic">Fast Forward Labs</h1>
-        <h3>Reporting on the Recently Possible</h3>
-      </div>
-    </div>
+    <div id="graph-holder" style="position: fixed; left: 0; top: 0; width: 100%; height: 100vh;"></div>
 
-    <div id="product" class="container px2 mb3">
-      <div class="nav clearfix">
-        <div class="left">
-          <a href="#intro">Intro</a>
-          <a class="active" href="#product">Product</a>
-          <a href="#contact">Contact</a>
-          <a href="#team">Team</a>
-        </div>
-      </div>
-      <h2>See the Near Future</h2>
-      <p>Fast Forward Labs helps organizations accelerate their data science and machine intelligence capabilities. Every quarter we profile a different near future technology, providing our clients a report on its development and a prototype demonstrating its application.</p>
-    </div>
+    <div id="intro">
 
-    <div id="contact" class="container px2 mb3">
-      <div class="nav clearfix">
-        <div class="left">
-          <div class="left">
-            <a href="#intro">Intro</a>
-            <a href="#product">Product</a>
-            <a class="active" href="#contact">Contact</a>
-            <a href="#team">Team</a>
+      <div class="fixed flex flex-center col-12" style="height: 100vh; pointer-events: none;">
+        <div class="center col-12" style="margin-top: -0.5rem;">
+          <img  style="height: 5.75rem; width: auto; margin-bottom: 0.05em;" src="resources/images/logos/ff-logo-extend.svg">
+          <div id="logo-info">
+            <h1 class="italic cyan" style="font-weight: 700; margin-bottom: 0.125em;">Fast Forward Labs</h1>
+            <div class="h5" style="font-size: 0.93em">Reporting on the Recently Possible</div>
           </div>
         </div>
       </div>
-      <h2>Work With Us</h2>
-      <p>We advise clients in a wide range of industries including insurance, publishing, finance, media, and government on data product development, technology, and culture.</p>
-      <p>Interested in learning more? Fill out our contact form below or email <a href="#">contact@fastforwardlabs.com</a>.</p>
-    </div>
-
-    <div id="team" class="container px2 mb3">
-      <div class="nav clearfix">
-        <div class="left">
-          <a href="#intro">Intro</a>
-          <a href="#product">Product</a>
-          <a href="#contact">Contact</a>
-          <a class="active" href="#team">Team</a>
-        </div>
+      <div class="fixed center links" style="bottom: 1.05rem; width: 100%; height: 0; overflow: visible;">
+        <a class="" href="#product" style="font-size: 20px; position: relative; top: -2.5em;">Learn More</a>
       </div>
 
-      <h2>Meet Our Team</h2>
-      <p>Led by CEO and Founder, Hilary Mason, the Fast Forward Labs team has a wide-range of professional experience in academia, consumer startups and large companies.</p>
+      <div id="shadow-holder">
+        <div id="shadow"></div>
+      </div>
 
-      <div class="mxn1 flex flex-wrap">
-        <div class="col-3 px1 border-box">
-          <img src="images/team/nick.jpg" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/mike.jpg" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/ryan.jpg" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/hilary.jpg" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/kathryn.jpg" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/jessica.jpg" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/micha.png" />
-        </div>
-        <div class="col-3 px1 border-box">
-          <img src="images/team/grant.png" />
+      <div class="fixed left-0 top-0" style="width: 100%; overflow: hidden;">
+        <div id="intro" class="container px2 mb3 mt2">
+          <div class="nav" style="height: 0; overflow: visible;">
+            <div class="left">
+              <a class="active" href="#intro">Intro</a>
+              <a href="#product">Product</a>
+              <a href="#purpose">Purpose</a>
+              <a href="#contact">Contact</a>
+              <a href="#team">Team</a>
+            </div>
+            <div class="right">
+              <a href="#">Client Login</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container clearfix px2 mb3 interface">
-      <div class="left relative cyan italic bold" style="height: 1.3rem; line-height: 1.35rem;  text-rendering: geometricPrecision">
-        <img class="left" style="height: 1.3rem; width: auto; margin-right: 0.5rem;" src="/resources/images/logos/ff-logo-extend.svg" />
-        Fast Forward Labs
+    <div class="spacer" style="height: 100vh;"></div>
+
+    <div class="bg-white relative clearfix" style="padding-top: 1.5rem; box-shadow: 0 0 3px rgba(0,0,0,0.3); margin-bottom: 100vh; margin-top: -1rem">
+
+      <div id="product" class="container px2 mb3">
+        <div class="nav clearfix">
+          <div class="left">
+            <a href="#intro">Intro</a>
+            <a class="active" href="#product">Product</a>
+            <a href="#purpose">Purpose</a>
+            <a href="#contact">Contact</a>
+            <a href="#team">Team</a>
+          </div>
+        </div>
+        <h2>See the Near Future</h2>
+        <p>Fast Forward Labs helps organizations accelerate their data science and machine intelligence capabilities. Every quarter we profile a different near future technology, providing our clients a report on its development and a prototype demonstrating its application. We supplement and support these deliveries with our advising services, sharing our future-tech expertise with your team.</p>
+        <div class="relative" style="padding-left: 1rem">
+          <div class="flex flex-wrap mxn1 relative">
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              Our <strong>reports</strong> include an overview of the state and trajectory of each technology in the academic, startup, and commercial spaces.
+            </div>
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              Our <strong>prototypes</strong> show the technology in action, revealing their engineering constraints and product opportunities.
+            </div>
+          </div>
+        </div>
+        <div class="relative" style="padding-left: 1rem; padding-top: 0rem;">
+          <div class="flex flex-wrap mxn1 relative">
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              <div class="report-holder overlayer" data-report="ff01" data-overlay="ff01">
+                <img class="spacer" src="images/spacer.png" />
+              </div>
+              <div class="">
+                <h3>Natural Language Generation</h3>
+              </div>
+            </div>
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              <div class="video-holder" data-prototype="roborealtor">
+                <img class="spacer" src="images/spacer.png" />
+              </div>
+              <div class="">
+                <h3>Roborealtor</h3>
+              </div>
+            </div>
+            <div class="numberer ff01">FF01</div>
+          </div>
+          <div class="flex flex-wrap mxn1 relative">
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              <div class="report-holder overlayer" data-report="ff02" data-overlay="ff02">
+                <img class="spacer" src="images/spacer.png" />
+              </div>
+              <div class="">
+                <h3>Probabilistic Methods for Realtime Streams</h3>
+              </div>
+            </div>
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              <div class="video-holder" data-prototype="cliquestream">
+                <img class="spacer" src="images/spacer.png" />
+              </div>
+              <div class="">
+                <h3>Cliquestream</h3>
+              </div>
+              <div class="numberer ff02">FF02</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap mxn1 relative">
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              <div class="report-holder overlayer" data-report="ff03" data-overlay="ff03">
+                <img class="spacer" src="images/spacer.png" />
+              </div>
+              <div class="">
+                <h3>Deep Learning: Image Analysis</h3>
+              </div>
+            </div>
+            <div class="col-12 sm-col-6 px1 border-box mb2">
+              <div class="video-holder" data-prototype="fathom">
+                <img class="spacer" src="images/spacer.png" />
+              </div>
+              <div class="">
+                <h3>Fathom and <a href="http://www.pictograph.us" target="_blank" style="color: #8237b6;">Pictograph</a></h3>
+              </div>
+            </div>
+            <div class="numberer ff03">FF03</div>
+          </div>
+        </div>
+
+        <div class="mb2">For access to these and future reports and prototypes:<br /> <a href="#">Learn how to work with us.</a></div>
+
       </div>
-      <div class="right" style="height: 1.3rem; line-height: 1.35rem;">
-        <a href="#">Email</a>
-        <a href="#">Twitter</a>
-        <a href="#">Blog</a>
+
+      <div id="purpose" class="container px2 mb3">
+        <div class="nav cleafrix">
+          <div class="left">
+            <a href="#intro">Intro</a>
+            <a href="#product">Product</a>
+            <a class="active" href="#purpose">Purpose</a>
+            <a href="#contact">Contact</a>
+            <a href="#team">Team</a>
+          </div>
+        </div>
+        <h2>A Better Process</h2>
+        <p>Fast Forward Labs was born out of a desire to fix a broken research process. To bridge the gap between start-ups, large companies and academia, and to move beyond a consulting model. We have designed each step in our process to empower our clients, giving them the info and the perspective necessary to best plot their own course into the future.</p>
+        <div class="flex flex-wrap mxn1 mb2">
+          <div class="sm-col-4 col-12 px1 border-box">
+            <h3>Research</h3>
+            <p>At the center of our process is prototyping. By putting our selected tech to the test in minimum viable product prototypes we build a robust understanding of their possibilities and limitations, wrestling with implementation realities and squeezing out any theoretical hand-waviness.</p>
+          </div>
+          <div class="sm-col-4 col-12 px1 border-box">
+            <h3>Development</h3>
+            <p>The prototypes feed our reports, where we record the lessons we learned and situate the technology within the broader landscape. Concise yet rigorous, our reports provide you with everything you need to know about what’s coming around the corner.</p>
+          </div>
+          <div class="sm-col-4 col-12 px1 border-box">
+            <h3>Advising</h3>
+            <p>Our client advising sharpens our reporting, fleshing out specific implementations relevant to the client’s interests. It also completes the virtuous circle of our process, as our clients concerns point us toward the places to concentrate. Because our subscribers span a wide range of industries we are able to observe patterns and needs across interests, giving us a broad perspective that we then share back with our client organizations.</p>
+          </div>
+        </div>
+        <div class="mxn1 flex flex-wrap">
+          <div class="sm-col-4 px1 border-box">
+            <h3>How We Choose Our Topics</h3>
+            <p>This is a question we get asked a lot and one we love to answer. It’s also a central part of our value to our clients.</p>
+          </div>
+          <div class="sm-col-8 px1 border-box">
+            <p>We sit our office and drink lots of coffee and come up with as many bad ideas as we can. Our prep work is reading good and bad sci-fi, reading academic papers for fun, building face morphing systems to run on each other, creating pulley systems to get our whiteboard up to the fifth floor. Engaging with our clients and their concerns. Just being weird people who like this stuff a lot.</p>
+            <p>It is a process we have a lot of fun with and one we take seriously. One of the reasons we are not a consulting company is that we believe in our ability to deliver more value by choosing the topics we work on. So that instead of playing catch-up you’re confident in your understanding and ability to make the most of recent developments.</p>
+          </div>
+        </div>
       </div>
+
+      <div id="contact" class="container px2 mb3">
+        <div class="nav clearfix">
+          <div class="left">
+            <div class="left">
+              <a href="#intro">Intro</a>
+              <a href="#product">Product</a>
+              <a class="active" href="#contact">Contact</a>
+              <a href="#team">Team</a>
+            </div>
+          </div>
+        </div>
+        <h2>Work With Us</h2>
+        <p>We advise clients in a wide range of industries including insurance, publishing, finance, media, and government on data product development, technology, and culture.</p>
+        <div class="mxn1 mb2 flex flex-wrap">
+          <div class="sm-col-6 px1 border-box">
+            <p>We work with <strong>established companies</strong> to help them understand the technical and human implications of machine intelligence and data technology for short and long-term planning.</p>
+          </div>
+          <div class="sm-col-6 px1 border-box">
+            <p>We work with <strong>select startups</strong> to help them build amazing products with cutting-edge technology and data capabilities.</p>
+          </div>
+        </div>
+        <p>We operate a subscription model, in which our clients receive quarterly reports and prototypes, along with a set number of hours of advising services for a substantial annual fee. Interested in learning more? Fill out our contact form below or email <a href="#">contact@fastforwardlabs.com</a>.</p>
+        <div class="mxn1 mb2 flex">
+          <div class="sm-col-7 px1 border-box">
+            <div class="form-holder">
+              <h3 class="mb1" style="text-transform: uppercase; text-align: center;">Get in Touch</h3>
+              <form class="relative">
+                <div class="form-inner">
+                  <div class="mb1">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" class="field" />
+                  </div>
+                  <div class="mb1">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" class="field" />
+                  </div>
+                  <div class="mb2">
+                    <label for="company">Message</label>
+                    <input id="company" type="text" class="field" />
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <input class="field right" type="submit" value="Send Message" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="sm-col-5 px1 border-box">
+            <h3>Sign Up for Our Newsletter</h3>
+            <h3>Visit Our Blog</h3>
+            <h3>Follow Us On Twitter</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="team" class="container px2 mb3">
+        <div class="nav clearfix">
+          <div class="left">
+            <a href="#intro">Intro</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+            <a class="active" href="#team">Team</a>
+          </div>
+        </div>
+
+        <h2>Meet Our Team</h2>
+        <p>Led by CEO and Founder, Hilary Mason, the Fast Forward Labs team has a wide-range of professional experience in academia, consumer startups and large companies.</p>
+
+        <div class="mxn1 flex flex-wrap">
+          <div class="col-4 px1 border-box">
+            <img src="images/mike-halftone.jpg" />
+            <div class="strong">Mike Williams</div>
+          </div>
+          <div class="col-4 px1 border-box">
+            <img src="images/me.png" />
+          </div>
+          <div class="col-4 px1 border-box">
+            <img src="images/mike-halftone.jpg" />
+          </div>
+          <div class="col-4 px1 border-box">
+            <img src="images/mike-halftone.jpg" />
+          </div>
+          <div class="col-4 px1 border-box">
+            <img src="images/mike-halftone.jpg" />
+          </div>
+          <div class="col-4 px1 border-box">
+            <img src="images/mike-halftone.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container clearfix px2">
+        <div class="footer clearfix interface">
+          <div class="left italic" style="font-size: 20px; padding-top: 0.3rem; display: inline-block;">Cool fun message here</div>
+          <div class="right links">
+            <a href="#">Intro</a>
+            <a href="#">Email</a>
+            <a href="#">Twitter</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom-check"></div>
+
     </div>
+
+
+    <script src="javascripts/d3.min.js"></script>
+    <script src="javascripts/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/topic_graph.js"></script>
+    <script src="javascripts/report_prototype.js"></script>
+    <script src="javascripts/overlay.js"></script>
 
 	</body>
 </html>
