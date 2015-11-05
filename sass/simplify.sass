@@ -80,7 +80,8 @@ input
     border: none
     border-radius: 0
     border-radius: 0.1rem
-    background: rgba(0,0,0,0.08)
+    // background: rgba(0,0,0,0.08)
+    background: #fff
     &[type="submit"]
       width: auto
       box-sizing: border-box
@@ -124,7 +125,7 @@ h4, .h4
   line-height: 1.2
   margin-bottom: 0.35em
 h5, .h5
-  font-size: 1em
+  font-size: 1.25em
   line-height: 1.2
   margin-bottom: 0.35em
 
@@ -212,7 +213,8 @@ p
   // background-image: url("../../images/letterpress-back.jpg")
   background-repeat: repeat
   border-radius: 0.15rem
-  border: solid 0.1rem rgba(0,0,0,0.08)
+  // border: solid 0.1rem rgba(0,0,0,0.08)
+  background: #efefef
   .form-inner
     // background-image: url("../../images/letterpress-back.jpg")
     // background-image: url("../../resources/images/letterpress-back.jpg")
@@ -260,12 +262,20 @@ label
   #intro
     display: none
 
+.side-numberer
+  line-height: 1
+  font-size: 2rem
+  font-family: "ff-chambers-sans-web", sans-serif
+  font-weight: 700
+  left: 0.5rem
+  top: 0.5rem
+
 .numberer
   position: absolute
-  left: -0.6rem
-  top: 0.8rem
+  left: 1.2rem
+  top: 0.7rem
   line-height: 1
-  font-size: 2.6rem
+  font-size: 2.5rem
   font-family: "ff-chambers-sans-web", sans-serif
   font-weight: 700
   &.ff01
@@ -370,3 +380,18 @@ $spCol: #000
 .video-holder .loading
   .sp-circle
     display: block
+
+#purpose-connector
+  position: absolute
+  width: 225%
+  left: 50%
+  margin-top: -0.05125rem
+  height: 0.125rem
+  top: 50%
+  background: $cyan
+  display: none
+  z-index: 0
+
+.ill-backer
+  // background: #efefef
+  border-radius: 50%
