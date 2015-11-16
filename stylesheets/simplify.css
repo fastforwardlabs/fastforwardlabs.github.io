@@ -56,7 +56,7 @@ input.field {
   border: none;
   border-radius: 0;
   border-radius: 0.1rem;
-  background: white; }
+  border: solid 0.1rem rgba(0, 0, 0, 0.08); }
   input.field[type="submit"] {
     width: auto;
     box-sizing: border-box;
@@ -189,7 +189,7 @@ p {
   padding: 1.5em 1.5em 1.5em;
   background-repeat: repeat;
   border-radius: 0.15rem;
-  background: #efefef; }
+  border: solid 0.1rem rgba(0, 0, 0, 0.08); }
 
 .lh1 {
   line-height: 1; }
@@ -359,7 +359,6 @@ label {
   height: 0.125rem;
   top: 50%;
   background: #00dcec;
-  display: none;
   z-index: 0; }
 
 .ill-backer {
