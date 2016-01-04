@@ -101,7 +101,7 @@
     </div>
 
     <div class="container px2 mb2 kinda-wide">
-      <div class="package-table">
+      <div class="package-table standard-selected">
         <div class="flex flex-wrap stretch bold header-row">
           <div class="flex-cell">
             <div class="inner-cell">
@@ -172,12 +172,12 @@
           </div>
           <div class="flex-cell">
             <div class="inner-cell bold center col-12">
-              $4000
+              $4,000
             </div>
           </div>
           <div class="flex-cell">
             <div class="inner-cell bold center col-12">
-              $5000
+              $5,000
             </div>
           </div>
         </div>
@@ -190,32 +190,28 @@
 
     <div class="bg-light-gray mb2">
       <div class="container py1 px2">
-        <form class="py2">
+        <form id="purchase_form" class="py2">
           <h2 class="center mb2">Purchase Form</h2>
-          <label class="block mb05">Package Type</label>
-          <div style="height: 2.25rem">
-            <select class="">
-              <option value="basic">Basic</option>
-              <option value="standard" selected="selected">Standard</option>
-              <option value="premium">Premium</option>
+          <label class="block mb05" autocomplete="on">Email <span class="h5 gray">(required)</span></label>
+          <input type="email" required class="form-email block col-12 mb1 field">
+          <label class="block mb05">Company</label>
+          <input type="text" class="block col-12 mb2 field">
+          <div class="clearfix mb1">
+            <label class="left mb05">Package Type</label>
+            <select id="select-package" class="right" style="margin-top: 0.2rem">
+              <option value="Basic">Basic Package: $250</option>
+              <option value="Standard" selected="selected">Standard Package: $4,000</option>
+              <option value="Premium">Premium Package: $5,000</option>
             </select>
           </div>
-          <label class="block mb05">Name</label>
-          <input type="text" class="block col-12 mb1 field">
-          <label class="block mb05">Email</label>
-          <input type="email" class="block col-12 mb1 field">
-          <label class="block mb05">Company</label>
-          <input type="text" class="block col-12 mb1 field">
-          <label class="block mb05">Mailing Address</label>
-          <textarea class="block col-12 mb2 field"></textarea>
           <div class="clearfix">
-            <button type="submit" class="btn btn-primary rounded right">Purchase</button>
+            <button type="submit" class="btn btn-primary rounded right">Pay with Card</button>
           </div>
         </form>
       </div>
     </div>
 
-    <div class="container px2 mb3 caption">
+    <div class="container px2 mb3 caption" style="margin-top: 1.75rem;">
       <p>Report and prototype source code and all associated intellectual property rights are owned by Fast Forward Labs.  This transaction does not include any license to use, copy, make derivative works based upon, or distribute the prototype or source code, or to copy, make derivative works based upon, or distribute any part or all of the report content.</p>
     </div>
 
@@ -231,5 +227,58 @@
 
     <script src="javascripts/jquery-2.1.1.min.js"></script>
     <script src="javascripts/report_prototype.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script>
+      var handler = StripeCheckout.configure({
+        key: 'pk_test_c5LkCQUvnQBBbrIneGvzb4Lq',
+        image: '/images/logo-for-stripe.png',
+        locale: 'auto',
+        token: function(token) {
+          // Use the token to create the charge with a server-side script.
+          // You can access the token ID with `token.id`
+        }
+      });
+
+      var $purchase_form = $('#purchase_form');
+      var plan_array = ['Basic','Standard','Premium'];
+      var plan_description_array = ['Short Report (PDF)', 'Report + Prototype', 'Report + Prototype + Advising'];
+      var price_array = [25000,400000,500000];
+
+      var $package_table = $('.package-table');
+
+      var $select_package = $('#select-package');
+      $select_package.on('change', function() {
+        var $this = $(this);
+        var plan = $this.val().toLowerCase();
+        var class_name = plan + '-selected';
+        console.log(class_name);
+        console.log($package_table);
+        $package_table.removeClass('basic-selected standard-selected premium-selected');
+        $package_table.addClass(class_name);
+      });
+
+      $purchase_form.on('submit', function(e) {
+        var $this = $(this);
+        var email = $this.find('.form-email').val();
+        var plan = $this.find('select').val();
+        var plan_index = plan_array.indexOf(plan);
+        var price = price_array[plan_index];
+        var plan_name = "NLG " + plan + " Package";
+        var plan_description = plan_description_array[plan_index];
+        var shipping_config = false;
+        if (plan_index > 0) {
+          shipping_config = true;
+        }
+        // Open Checkout with further options
+        handler.open({
+          name: plan_name,
+          email: email,
+          shippingAddress: shipping_config,
+          description: plan_description,
+          amount: price
+        });
+        e.preventDefault();
+      });
+    </script>
   </body>
  </html>

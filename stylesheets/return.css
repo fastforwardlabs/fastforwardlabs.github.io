@@ -83,8 +83,14 @@ h4 {
     border-left: solid 0.1rem #efefef;
     border-right: solid 0.1rem #efefef;
     margin-left: -0.05rem;
-    margin-right: -0.05rem;
-    background: #efefef; }
+    margin-right: -0.05rem; }
+
+.package-table.basic-selected .flex-cell:nth-child(3n+1) {
+  background: #efefef; }
+.package-table.standard-selected .flex-cell:nth-child(3n+2) {
+  background: #efefef; }
+.package-table.premium-selected .flex-cell:nth-child(3n+3) {
+  background: #efefef; }
 
 .border, .border-left, .border-top, .border-right, .border-bottom {
   border-width: 0.1rem;
@@ -150,6 +156,12 @@ label {
 
 .purchase-form {
   padding: 1.25rem; }
+
+.field:invalid {
+  border-color: rgba(0, 0, 0, 0.125); }
+
+.field:invalid:focus {
+  box-shadow: none; }
 
 .navigation a {
   text-transform: uppercase;
