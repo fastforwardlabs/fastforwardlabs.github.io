@@ -4,7 +4,7 @@
   box-sizing: border-box
 
 html
-  font-size: 23px
+  font-size: 22px
 
 body
   font-family: "ff-chambers-sans-web", sans-serif
@@ -13,12 +13,15 @@ body
 
 .container
   max-width: 34rem
-  &.wide
+  &.kinda-wide
     max-width: 48rem
+  &.wide
+    max-width: 58rem
 
 $cyan: #00dcec
 $magenta: #ee00ee
 $purple: #8237b6
+$link-cyan: #00ccdb
 
 .cyan
   color: $cyan
@@ -36,8 +39,9 @@ $purple: #8237b6
     -webkit-font-smoothing: subpixel-antialiased
     -moz-osx-font-smoothing: auto
 
-.chambers
-  font-family: "ff-chambers-sans-web", sans-serif
+a
+  color: $link-cyan
+  text-decoration: underline
 
 h1, h2, h3, h4, h5, h6
   margin: 0
@@ -50,11 +54,25 @@ h3
 h4
   font-style: italic
 
+.caption
+  font-size: 0.8rem
+  line-height: 1.45
+  font-style: italic
+  margin-bottom: 0.5rem
+
 .mb05
   margin-bottom: 0.25rem
 
 .grow
   flex-grow: 1
+
+.package-table
+  // font-size: 0.9rem
+  // line-height: 1.45
+  border: solid 0.1rem #efefef
+  // background: #fafafa
+  ul
+    margin-bottom: 0
 
 .justify-between
   justify-content: space-between
@@ -67,22 +85,49 @@ h4
 
 .bg-light-gray
   background: #efefef
+.bg-lighter-gray
+  background: #fafafa
+
 
 .flex-cell
   width: 33.33%
   display: flex
-  align-items: center
-  padding: 0.6rem 1rem 0.9rem
-  border-left: solid 0.1rem #efefef
-  border-bottom: solid 0.1rem #efefef
-  &:last-child
+  // align-items: center
+  padding: 0.25rem 1rem 0.5rem 1rem
+  // border-left: solid 0.1rem #efefef
+  // border-bottom: solid 0.1rem #efefef
+  &:nth-child(3n + 2)
+    // background: #efefef
+    border-left: solid 0.1rem #efefef
     border-right: solid 0.1rem #efefef
+    margin-left: -0.05rem
+    margin-right: - 0.05rem
+    background: #efefef
+  &:last-child
+    // border-right: solid 0.1rem #efefef
+  &:first-child
+    // border-right: solid 1px #efefef
+  &:last-child
+    // border-left: solid 1px #efefef
+
+.border, .border-left, .border-top, .border-right, .border-bottom
+  border-width: 0.1rem
+  border-color: #efefef
 
 .header-row
-  background: #efefef
-  font-family: "ff-chambers-sans-web", sans-serif
   .flex-cell
-    padding-bottom: 0.4rem
+    padding-top: 0.75rem
+.bottom-row
+  .flex-cell
+    padding-top: 0.5rem
+    padding-bottom: 0.75rem
+
+.header-row
+  // background: #efefef
+  // font-family: "ff-chambers-sans-web", sans-serif
+  // border-top: solid 0.1rem #efefef
+  .flex-cell
+    // padding-top: 0.75rem
     justify-content: center
 
 // Report Holder Module
@@ -118,3 +163,35 @@ h4
 
 .btn-primary
   background: $cyan
+
+ul
+  list-style: none
+  padding-left: 0
+  li
+    padding-left: 0.9em
+    background-image: url('/images/bullet.svg')
+    background-size: 0.45em auto
+    background-position: 0.05em 0.55em
+    background-repeat: no-repeat
+
+textarea
+  padding: 0.5rem
+  height: 2.25rem * 2
+
+label
+  // font-size: 0.8rem
+  font-style: italic
+
+.purchase-form
+  padding: 1.25rem
+
+.navigation
+  a
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: 700
+    float: left
+    margin-right: 0.5rem
+  &.right
+    a:last-child
+      margin-right: 0
