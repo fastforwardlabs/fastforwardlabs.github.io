@@ -54,6 +54,9 @@ h3
 h4
   font-style: italic
 
+.lh0
+  line-height: 0
+
 .caption
   font-size: 0.8rem
   line-height: 1.45
@@ -100,8 +103,6 @@ h4
     // background: #efefef
     border-left: solid 0.1rem #efefef
     border-right: solid 0.1rem #efefef
-    margin-left: -0.05rem
-    margin-right: - 0.05rem
   &:last-child
     // border-right: solid 0.1rem #efefef
   &:first-child
@@ -201,13 +202,57 @@ label
 .field:invalid:focus
   box-shadow: none
 
+.field:focus
+  border-color: #000
+  box-shadow: none
+
 .navigation
   a
-    text-transform: uppercase
-    text-decoration: none
     font-weight: 700
-    float: left
-    margin-right: 0.5rem
+    margin-right: 0.25rem
   &.right
     a:last-child
       margin-right: 0
+
+.field
+  background: #fafafa
+
+.flex-table-column
+  display: flex
+  align-self: stretch
+  flex-direction: column
+  justify-content: space-between
+  .grower
+    flex-grow: 1
+
+.package-table
+  .flex-table-column
+    border-bottom: solid 0.1rem #efefef
+    cursor: default
+    &:last-child
+      border-bottom: none
+    &.active
+      background: #efefef
+    .grower
+      padding-bottom: 0.5rem
+
+@media (min-width: 40em)
+  .package-table
+    .flex-table-column
+      border-bottom: none
+      border-right: solid 0.1rem #efefef
+      &:last-child
+        border-right: none
+
+.block-center
+  display: block
+  text-align: center
+
+@media (min-width: 40em)
+  .sm-left, .sm-right
+    text-align: left
+  .sm-left
+    float: left
+  .sm-right
+    float: right
+  

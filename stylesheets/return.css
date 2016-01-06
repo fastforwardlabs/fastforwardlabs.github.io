@@ -43,6 +43,9 @@ h3 {
 h4 {
   font-style: italic; }
 
+.lh0 {
+  line-height: 0; }
+
 .caption {
   font-size: 0.8rem;
   line-height: 1.45;
@@ -81,9 +84,7 @@ h4 {
   padding: 0.25rem 1rem 0.5rem 1rem; }
   .flex-cell:nth-child(3n + 2) {
     border-left: solid 0.1rem #efefef;
-    border-right: solid 0.1rem #efefef;
-    margin-left: -0.05rem;
-    margin-right: -0.05rem; }
+    border-right: solid 0.1rem #efefef; }
 
 .package-table.basic-selected .flex-cell:nth-child(3n+1) {
   background: #efefef; }
@@ -163,11 +164,53 @@ label {
 .field:invalid:focus {
   box-shadow: none; }
 
+.field:focus {
+  border-color: black;
+  box-shadow: none; }
+
 .navigation a {
-  text-transform: uppercase;
-  text-decoration: none;
   font-weight: 700;
-  float: left;
-  margin-right: 0.5rem; }
+  margin-right: 0.25rem; }
 .navigation.right a:last-child {
   margin-right: 0; }
+
+.field {
+  background: #fafafa; }
+
+.flex-table-column {
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: space-between; }
+  .flex-table-column .grower {
+    flex-grow: 1; }
+
+.package-table .flex-table-column {
+  border-bottom: solid 0.1rem #efefef;
+  cursor: default; }
+  .package-table .flex-table-column:last-child {
+    border-bottom: none; }
+  .package-table .flex-table-column.active {
+    background: #efefef; }
+  .package-table .flex-table-column .grower {
+    padding-bottom: 0.5rem; }
+
+@media (min-width: 40em) {
+  .package-table .flex-table-column {
+    border-bottom: none;
+    border-right: solid 0.1rem #efefef; }
+    .package-table .flex-table-column:last-child {
+      border-right: none; } }
+.block-center {
+  display: block;
+  text-align: center; }
+
+@media (min-width: 40em) {
+  .sm-left, .sm-right {
+    text-align: left; }
+
+  .sm-left {
+    float: left; }
+
+  .sm-right {
+    float: right; } }
