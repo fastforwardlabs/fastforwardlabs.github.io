@@ -36,7 +36,7 @@
         </div>
 
         <div class="container wide px2">
-          <h2 class="center mb2">NLG Report and Prototype</h2>
+          <h2>NLG Report and Prototype</h2>
           <div class="flex flex-wrap mxn1 relative">
             <div class="col-12 sm-col-6 mb1 px1">
               <div class="report-holder overlayer mb1" data-report="ff01" data-overlay="ff01">
@@ -175,6 +175,11 @@
             </div>
             <p class="caption gray" style="margin-bottom: 1rem;">Report and prototype source code and all associated intellectual property rights are owned by Fast Forward Labs.  This transaction does not include any license to use, copy, make derivative works based upon, or distribute the prototype or source code, or to copy, make derivative works based upon, or distribute any part or all of the report content.</p>
           </form>
+
+          <form name="token_form" id="token-form" action="/nlg/checkout">
+            <input type="text" id="token">
+          </form>
+
         </div>
 
       </div>
@@ -197,15 +202,21 @@
     <script src="https://checkout.stripe.com/checkout.js"></script>
 
     <script>
+
+      var $token_form = $('#token-form');
+      var $token_field = $('#token');
+
       var handler = StripeCheckout.configure({
         key: 'pk_test_c5LkCQUvnQBBbrIneGvzb4Lq',
         image: '/images/logo-for-stripe.png',
         locale: 'auto',
         token: function(token) {
+          console.log(token.id);
+          console.log(token);
           // Use the token to create the charge with a server-side script.
           // You can access the token ID with `token.id`
-          console.log('successful purchas');
-          console.log('token ' + token);
+          $token_field.val(JSON.stringify(token));
+          $token_field.submit();
         }
       });
 
@@ -254,6 +265,7 @@
         });
         e.preventDefault();
       });
+
     </script>
   </body>
  </html>
