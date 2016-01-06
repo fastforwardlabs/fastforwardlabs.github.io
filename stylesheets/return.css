@@ -11,10 +11,8 @@ body {
 
 .container {
   max-width: 34rem; }
-  .container.kinda-wide {
-    max-width: 48rem; }
   .container.wide {
-    max-width: 58rem; }
+    max-width: 46rem; }
 
 .cyan {
   color: #00dcec; }
@@ -30,18 +28,20 @@ a {
   text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
   font-family: "ff-chambers-sans-web", sans-serif;
-  font-weight: 700; }
-
-h1 {
-  margin-bottom: 0.5rem; }
+  font-weight: 700;
+  text-align: center; }
 
 h3 {
   font-style: italic; }
 
 h4 {
-  font-style: italic; }
+  font-style: italic;
+  text-align: left; }
+
+h5 {
+  font-style: italic;
+  text-align: left; }
 
 .lh0 {
   line-height: 0; }
@@ -78,34 +78,9 @@ h4 {
 .bg-lighter-gray {
   background: #fafafa; }
 
-.flex-cell {
-  width: 33.33%;
-  display: flex;
-  padding: 0.25rem 1rem 0.5rem 1rem; }
-  .flex-cell:nth-child(3n + 2) {
-    border-left: solid 0.1rem #efefef;
-    border-right: solid 0.1rem #efefef; }
-
-.package-table.basic-selected .flex-cell:nth-child(3n+1) {
-  background: #efefef; }
-.package-table.standard-selected .flex-cell:nth-child(3n+2) {
-  background: #efefef; }
-.package-table.premium-selected .flex-cell:nth-child(3n+3) {
-  background: #efefef; }
-
 .border, .border-left, .border-top, .border-right, .border-bottom {
   border-width: 0.1rem;
   border-color: #efefef; }
-
-.header-row .flex-cell {
-  padding-top: 0.75rem; }
-
-.bottom-row .flex-cell {
-  padding-top: 0.5rem;
-  padding-bottom: 0.75rem; }
-
-.header-row .flex-cell {
-  justify-content: center; }
 
 .report-holder {
   position: relative;
@@ -142,7 +117,7 @@ ul {
   list-style: none;
   padding-left: 0; }
   ul li {
-    padding-left: 0.9em;
+    padding-left: 1em;
     background-image: url("/images/bullet.svg");
     background-size: 0.45em auto;
     background-position: 0.05em 0.55em;
@@ -170,7 +145,7 @@ label {
 
 .navigation a {
   font-weight: 700;
-  margin-right: 0.4rem; }
+  margin-right: 0.5rem; }
 .navigation.right a:last-child {
   margin-right: 0; }
 
@@ -205,6 +180,9 @@ label {
   display: block;
   text-align: center; }
 
+.donot-show {
+  display: none; }
+
 @media (min-width: 40em) {
   .sm-left, .sm-right {
     text-align: left; }
@@ -213,18 +191,7 @@ label {
     float: left; }
 
   .sm-right {
-    float: right; } }
-#footer {
-  padding: 1.5rem 1rem; }
+    float: right; }
 
-@media (min-width: 40em) {
-  #page-wrap {
-    min-height: 100vh;
-    margin-bottom: -4.3rem; }
-    #page-wrap:after {
-      content: "";
-      display: block;
-      height: 4.3rem; }
-
-  #footer {
-    height: 4.3rem; } }
+  .sm-show {
+    display: block; } }

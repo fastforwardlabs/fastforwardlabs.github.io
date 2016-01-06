@@ -13,10 +13,8 @@ body
 
 .container
   max-width: 34rem
-  &.kinda-wide
-    max-width: 48rem
   &.wide
-    max-width: 58rem
+    max-width: 46rem
 
 $cyan: #00dcec
 $magenta: #ee00ee
@@ -44,15 +42,20 @@ a
   text-decoration: underline
 
 h1, h2, h3, h4, h5, h6
-  margin: 0
   font-family: "ff-chambers-sans-web", sans-serif
   font-weight: 700
+  text-align: center
 h1
-  margin-bottom: 0.5rem
+  // margin-bottom: 0.5rem
+  // margin-top: 1rem
 h3
   font-style: italic
 h4
   font-style: italic
+  text-align: left
+h5
+  font-style: italic
+  text-align: left
 
 
 
@@ -94,54 +97,10 @@ h4
   background: #fafafa
 
 
-.flex-cell
-  width: 33.33%
-  display: flex
-  // align-items: center
-  padding: 0.25rem 1rem 0.5rem 1rem
-  // border-left: solid 0.1rem #efefef
-  // border-bottom: solid 0.1rem #efefef
-  &:nth-child(3n + 2)
-    // background: #efefef
-    border-left: solid 0.1rem #efefef
-    border-right: solid 0.1rem #efefef
-  &:last-child
-    // border-right: solid 0.1rem #efefef
-  &:first-child
-    // border-right: solid 1px #efefef
-  &:last-child
-    // border-left: solid 1px #efefef
-
-.package-table
-  &.basic-selected
-    .flex-cell:nth-child(3n+1)
-      background: #efefef
-  &.standard-selected
-    .flex-cell:nth-child(3n+2)
-      background: #efefef
-  &.premium-selected
-    .flex-cell:nth-child(3n+3)
-      background: #efefef
-
 .border, .border-left, .border-top, .border-right, .border-bottom
   border-width: 0.1rem
   border-color: #efefef
 
-.header-row
-  .flex-cell
-    padding-top: 0.75rem
-.bottom-row
-  .flex-cell
-    padding-top: 0.5rem
-    padding-bottom: 0.75rem
-
-.header-row
-  // background: #efefef
-  // font-family: "ff-chambers-sans-web", sans-serif
-  // border-top: solid 0.1rem #efefef
-  .flex-cell
-    // padding-top: 0.75rem
-    justify-content: center
 
 // Report Holder Module
 .report-holder
@@ -181,7 +140,7 @@ ul
   list-style: none
   padding-left: 0
   li
-    padding-left: 0.9em
+    padding-left: 1em
     background-image: url('/images/bullet.svg')
     background-size: 0.45em auto
     background-position: 0.05em 0.55em
@@ -211,7 +170,7 @@ label
 .navigation
   a
     font-weight: 700
-    margin-right: 0.4rem
+    margin-right: 0.5rem
   &.right
     a:last-child
       margin-right: 0
@@ -250,6 +209,9 @@ label
   display: block
   text-align: center
 
+.donot-show
+  display: none
+
 @media (min-width: 40em)
   .sm-left, .sm-right
     text-align: left
@@ -257,17 +219,19 @@ label
     float: left
   .sm-right
     float: right
+  .sm-show
+    display: block
 
-#footer
-  padding: 1.5rem 1rem
+// #footer
+//   padding: 1.5rem 1rem
 
-@media (min-width: 40em)
-  #page-wrap
-    min-height: 100vh
-    margin-bottom: -4.3rem
-    &:after
-      content: ""
-      display: block
-      height: 4.3rem
-  #footer
-    height: 4.3rem
+// @media (min-width: 40em)
+//   #page-wrap
+//     min-height: 100vh
+//     margin-bottom: -4.3rem
+//     &:after
+//       content: ""
+//       display: block
+//       height: 4.3rem
+//   #footer
+//     height: 4.3rem
