@@ -54,6 +54,8 @@ h3
 h4
   font-style: italic
 
+
+
 .lh0
   line-height: 0
 
@@ -255,4 +257,17 @@ label
     float: left
   .sm-right
     float: right
-  
+
+#footer
+  padding: 1.5rem 1rem
+
+@media (min-width: 40em)
+  #page-wrap
+    min-height: 100vh
+    margin-bottom: -4.3rem
+    &:after
+      content: ""
+      display: block
+      height: 4.3rem
+  #footer
+    height: 4.3rem

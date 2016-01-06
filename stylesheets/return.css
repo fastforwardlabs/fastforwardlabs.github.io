@@ -214,3 +214,17 @@ label {
 
   .sm-right {
     float: right; } }
+#footer {
+  padding: 1.5rem 1rem; }
+
+@media (min-width: 40em) {
+  #page-wrap {
+    min-height: 100vh;
+    margin-bottom: -4.3rem; }
+    #page-wrap:after {
+      content: "";
+      display: block;
+      height: 4.3rem; }
+
+  #footer {
+    height: 4.3rem; } }
