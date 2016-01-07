@@ -169,15 +169,15 @@
             <label class="block mb1" autocomplete="on">Email <span class="h5 gray">(required)</span></label>
             <input type="email" required class="form-email block col-12 mb2 field">
             <label class="block mb1">Company</label>
-            <input type="text" class="block col-12 mb2 field">
+            <input type="text" id="company-field" class="block col-12 mb2 field">
             <div class="clearfix mb2">
               <button type="submit" class="btn btn-primary rounded right">Pay with Card</button>
             </div>
             <p class="caption gray" style="margin-bottom: 1rem;">Report and prototype source code and all associated intellectual property rights are owned by Fast Forward Labs.  This transaction does not include any license to use, copy, make derivative works based upon, or distribute the prototype or source code, or to copy, make derivative works based upon, or distribute any part or all of the report content.</p>
           </form>
 
-          <form name="token_form" id="token-form" action="/nlg/checkout">
-            <input type="text" id="token">
+          <form method="post" id="token-form" action="/nlg/checkout">
+            <input type="hidden" id="token">
           </form>
 
         </div>
@@ -202,6 +202,13 @@
     <script src="https://checkout.stripe.com/checkout.js"></script>
 
     <script>
+      var $purchase_form = $('#purchase_form');
+      var plan_array = ['Basic','Standard','Premium'];
+      var plan_description_array = ['Short Report (PDF)', 'Report + Prototype', 'Report + Prototype + Advising'];
+      var price_array = [25000,400000,500000];
+
+      var $package_columns = $('.package-table .flex-table-column');
+      var $select_package = $('#select-package');
 
       var $token_form = $('#token-form');
       var $token_field = $('#token');
@@ -211,22 +218,16 @@
         image: '/images/logo-for-stripe.png',
         locale: 'auto',
         token: function(token) {
-          console.log(token.id);
+          var plan = $select_package.val();
+          var plan_index = plan_array.indexOf(plan);
+          var company = $('#company-field').val();
+          token.item_id = plan_index;
+          token.company = company;
           console.log(token);
-          // Use the token to create the charge with a server-side script.
-          // You can access the token ID with `token.id`
           $token_field.val(JSON.stringify(token));
           $token_form.submit();
         }
       });
-
-      var $purchase_form = $('#purchase_form');
-      var plan_array = ['Basic','Standard','Premium'];
-      var plan_description_array = ['Short Report (PDF)', 'Report + Prototype', 'Report + Prototype + Advising'];
-      var price_array = [25000,400000,500000];
-
-      var $package_columns = $('.package-table .flex-table-column');
-      var $select_package = $('#select-package');
 
       $package_columns.click(function() {
         $package_columns.removeClass('active');
