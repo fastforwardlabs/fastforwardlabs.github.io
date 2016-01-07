@@ -41,6 +41,16 @@ $(document).ready(function() {
       html += '<img class="' + img_class + '" src="images/' + report.image_dir + '/' + report.images[i] + '" />'
     }
     html += '</div>';
+    html += '<div class="report-progress col-12 relative" style="margin-top: 1rem">';
+    html += '<div class="col-12" style="height: 0.1rem; background: #efefef">';
+    for (var i=0; i<report.images.length; i++) {
+      var marker_class = 'report-marker left';
+      if (i==0) {
+        marker_class += ' active';
+      }
+      html += '<div class="' + marker_class + '" style="width: 20%; height: 100%;"></div>';
+    }
+    html += '</div>';
     return html;
   }
 
@@ -57,6 +67,7 @@ $(document).ready(function() {
     $this.html($html);
 
     var $report_images = $html.find('.report-img');
+    var $report_markers = $html.find('.report-marker');
     var image_num = $report_images.length;
     var sect_width = width/image_num;
     $html.on("mousemove", function(e) {
@@ -67,16 +78,20 @@ $(document).ready(function() {
         if (mouse_x < sect_width * multiplier) {
           $report_images.removeClass('active');
           $report_images.eq(i).addClass('active');
+          $report_markers.removeClass('active');
+          $report_markers.eq(i).addClass('active');
           break;
         }
       }
     });
-    $html.on("mouseleave", function(e) {
-      setTimeout(function() {
-        $report_images.removeClass('active')
-        $report_images.eq(0).addClass('active');
-      },100);
-    });
+    // $html.on("mouseleave", function(e) {
+    //   setTimeout(function() {
+    //     $report_images.removeClass('active')
+    //     $report_images.eq(0).addClass('active');
+    //     $report_markers.removeClass('active');
+    //     $report_markers.eq(0).addClass('active');
+    //   },100);
+    // });
   });
 
   var prototypes = {};
@@ -104,10 +119,15 @@ $(document).ready(function() {
 
   function videoModuleHtml(prototype) {
     var html = '';
-    html += '<div>';
+    html += '<div class="relative">';
     html += '<img class="video-backer" src="resources/images/video-back.svg" />';
     html += '<img class="video-screenshot" src="resources/videos/' + prototype.file_name + '.png" />';
     html += '<div class="sp sp-circle ' + prototype.color + '"></div>'
+    html += '</div>';
+    html += '<div class="video-progress col-12 relative" style="margin-top: 1rem">';
+    html += '<div class="col-12" style="height: 0.1rem; background: #efefef">';
+    html += '<div class="progress-bar" style="width: 20%; height: 100%;"></div>';
+    html += '</div>';
     html += '</div>';
     return html;
   }

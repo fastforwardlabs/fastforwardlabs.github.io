@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheets/basscss.min.css">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/report_prototype.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/return.css">
   </head>
   <body>
@@ -37,7 +38,7 @@
 
         <div class="container wide px2">
           <h2>NLG Report and Prototype</h2>
-          <div class="flex flex-wrap mxn1 relative">
+          <div class="flex flex-wrap mxn1 relative ff01-module">
             <div class="col-12 sm-col-6 mb1 px1">
               <div class="report-holder overlayer mb1" data-report="ff01" data-overlay="ff01">
                 <img class="spacer" src="images/spacer.png" />
@@ -177,7 +178,7 @@
           </form>
 
           <form method="post" id="token-form" action="/nlg/checkout" method="POST">
-            <input type="hidden" id="token">
+            <input name="token" type="hidden" id="token">
           </form>
 
         </div>

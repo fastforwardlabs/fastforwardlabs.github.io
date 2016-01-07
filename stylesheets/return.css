@@ -82,34 +82,6 @@ h5 {
   border-width: 0.1rem;
   border-color: #efefef; }
 
-.report-holder {
-  position: relative;
-  line-height: 0; }
-  .report-holder .report-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    display: none; }
-    .report-holder .report-img.active {
-      display: block; }
-
-.video-holder {
-  position: relative;
-  line-height: 0; }
-  .video-holder .video-screenshot, .video-holder video {
-    position: absolute;
-    width: 98%;
-    left: 1%;
-    bottom: 1%; }
-  .video-holder video {
-    opacity: 0; }
-  .video-holder .loaded video {
-    opacity: 1; }
-  .video-holder .loaded .video-screenshot {
-    display: none; }
-
 .btn-primary {
   background: #00dcec; }
 
