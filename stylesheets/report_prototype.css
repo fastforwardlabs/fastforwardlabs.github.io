@@ -1,0 +1,35 @@
+.report-holder {
+  position: relative;
+  line-height: 0;
+  cursor: zoom-in; }
+  .report-holder .report-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: none; }
+    .report-holder .report-img.active {
+      display: block; }
+
+.video-holder {
+  position: relative;
+  line-height: 0;
+  cursor: zoom-in; }
+  .video-holder .video-screenshot, .video-holder video {
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    bottom: 1%; }
+  .video-holder video {
+    opacity: 0; }
+  .video-holder .loaded video {
+    opacity: 1; }
+  .video-holder .loaded .video-screenshot {
+    display: none; }
+
+.report-marker.active {
+  background: black; }
+
+.ff01-module .report-marker.active {
+  background: #00dcec; }
