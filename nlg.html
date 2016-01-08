@@ -220,7 +220,8 @@
         key: 'pk_test_Z5FDvAm7OS7ZZ2JYKvqFXfxQ',
         image: '/images/logo-for-stripe.png',
         locale: 'auto',
-        token: function(token) {
+        token: function(token, args) {
+          token.args = args;
           var plan = $select_package.val();
           var plan_index = plan_array.indexOf(plan);
           var company = $('#company-field').val();
@@ -262,8 +263,7 @@
         handler.open({
           name: plan_name,
           email: email,
-          shippingAddress: true,
-          billingAddress: true,
+          shippingAddress: shipping_config,
           description: plan_description,
           amount: price
         });
