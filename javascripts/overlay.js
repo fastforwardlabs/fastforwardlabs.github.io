@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var supportsTouch = !!('ontouchstart' in window) || !!(navigator.msMaxTouchPoints);
-  supportsTouch = true;
+  // supportsTouch = true;
   var noTouch = !supportsTouch;
 
   var $body = $('body');
