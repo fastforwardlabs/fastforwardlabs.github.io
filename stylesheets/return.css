@@ -185,6 +185,17 @@ label {
 
   .sm-show {
     display: block; } }
+#page-wrap {
+  min-height: 100vh;
+  margin-bottom: -85px; }
+  #page-wrap:after {
+    content: "";
+    display: block;
+    height: 85px; }
+
+#footer {
+  height: 85px; }
+
 .fake-link {
   cursor: pointer;
   text-decoration: underline;
