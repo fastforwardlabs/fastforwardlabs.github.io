@@ -23,7 +23,7 @@ body
 $cyan: #00dcec
 $magenta: #ee00ee
 $purple: #8237b6
-$link-cyan: #00ccdb
+$link-cyan: #00D4E3
 
 .cyan
   color: $cyan
@@ -42,8 +42,23 @@ $link-cyan: #00ccdb
     -moz-osx-font-smoothing: auto
 
 a
-  color: $link-cyan
-  text-decoration: underline
+  color: $cyan
+  text-decoration: none
+  background-image: linear-gradient(#fff 0%, $cyan 100%)
+  background-repeat: repeat-x
+  background-size: 1px 0.1rem
+  background-position: 0 0.98em
+  padding-bottom: 0.1em
+  margin-bottom: -0.1em
+  &.no-underline
+    background-image: none
+  &:hover
+    text-decoration: none
+
+p
+  a
+    color: $link-cyan
+    background-image: linear-gradient(#fff 0%, $link-cyan 100%)
 
 h1, h2, h3, h4, h5, h6
   font-family: "ff-chambers-sans-web", sans-serif

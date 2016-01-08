@@ -28,8 +28,22 @@ body {
   color: #8237b6; }
 
 a {
-  color: #00ccdb;
-  text-decoration: underline; }
+  color: #00dcec;
+  text-decoration: none;
+  background-image: linear-gradient(#ffffff 0%, #00dcec 100%);
+  background-repeat: repeat-x;
+  background-size: 1px 0.1rem;
+  background-position: 0 0.98em;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em; }
+  a.no-underline {
+    background-image: none; }
+  a:hover {
+    text-decoration: none; }
+
+p a {
+  color: #00d4e3;
+  background-image: linear-gradient(#ffffff 0%, #00d4e3 100%); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "ff-chambers-sans-web", sans-serif;

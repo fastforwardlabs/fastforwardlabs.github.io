@@ -1561,3 +1561,57 @@ input[type="submit"]
 
 .last
   margin-bottom: 0 !important
+
+#special-offer
+  display: none
+
+body.special
+  #special-offer
+    display: block
+    text-align: center
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background: $cyan
+    padding: 0.5rem 0
+    font-size: 0.9em
+    line-height: 1em
+    color: #fff
+    z-index: 9999
+    font-weight: 700
+    +font-smoothing(antialiased)
+    a
+      color: #fff
+      font-weight: 700
+    .short-message
+      display: none
+    +breakpoint(two)
+      .short-message
+        display: block
+      .long-message
+        display: none
+  $message_height: 35px
+  #nav
+    top: $message_height
+    &.scrolled
+      top: $message_height
+  #whiteboard-control
+    top: 15px + $message_height
+    +breakpoint(two)
+      top: 60px + $message_height
+      right: 157px
+    +breakpoint(three)
+      right: 150px
+      font-size: 20px
+      top: 56px + $message_height
+    +breakpoint(four)
+      display: none
+  #whiteboard-box
+    top: 15px + $message_height
+    +breakpoint(two)
+      top: 60px + $message_height
+    +breakpoint(three)
+      top: 56px + $message_height
+    +breakpoint(four)
+      top: 38px + $message_height
