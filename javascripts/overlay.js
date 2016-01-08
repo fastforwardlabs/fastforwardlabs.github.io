@@ -36,7 +36,7 @@ $(document).ready(function() {
     html += '</div>';
     html += '<h1>' + info.title + '</h1>';
     html += content;
-    html += '<div class="clearfix border-top mt3 py2 center h5"><span class="overlay-close bold fake-link">Close This</span></div>';
+    html += '<div class="clearfix border-top mt3 py2 center h5"><span class="overlay-close bold fake-link">Return to Main</span></div>';
     html += '</div>';
     html += '</div>';
     return html;
