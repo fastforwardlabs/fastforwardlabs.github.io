@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  var supportsTouch = !!('ontouchstart' in window) || !!(navigator.msMaxTouchPoints);
+  supportsTouch = true;
+  var noTouch = !supportsTouch;
+
   var $body = $('body');
   var $overlay = false;
 
@@ -44,66 +48,73 @@ $(document).ready(function() {
   }
 
   function attachPrototypeHandlers($overlay) {
-    var $video_holder = $('.overlay-video');
-    $video_holder.addClass('initial');
-
     $overlay.on('click', '.overlay-video', function() {
-      $video_holder = $('.overlay-video');
-      $video_holder.removeClass('initial');
-      var $video = $video_holder.find('video');
-      var video = $video.get(0);
-      var $progress_holder = $('.progress-bar-holder ');
-      var $progress_indicator = $('.progress-bar-indicator');
+      if (noTouch) {
+        $video_holder = $('.overlay-video');
+        $video_holder.removeClass('initial');
+        var $video = $video_holder.find('video');
+        var video = $video.get(0);
+        var $progress_holder = $('.progress-bar-holder ');
+        var $progress_indicator = $('.progress-bar-indicator');
 
-      //update HTML5 video current play time
-      $video.on('timeupdate', function() {
-        var currentPos = video.currentTime; //Get currenttime
-        var maxduration = video.duration; //Get video duration
-        var percentage = 100 * currentPos / maxduration; //in %
-        $progress_indicator.css('width', percentage+'%');
-      });
+        //update HTML5 video current play time
+        $video.on('timeupdate', function() {
+          var currentPos = video.currentTime; //Get currenttime
+          var maxduration = video.duration; //Get video duration
+          var percentage = 100 * currentPos / maxduration; //in %
+          $progress_indicator.css('width', percentage+'%');
+        });
 
-      var timeDrag = false;   /* Drag status */
-      $progress_holder.mousedown(function(e) {
-        timeDrag = true;
-        updatebar(e.pageX);
-        return false;
-      });
-      $(document).mouseup(function(e) {
-        if(timeDrag) {
-          timeDrag = false;
+        var timeDrag = false;   /* Drag status */
+        $progress_holder.mousedown(function(e) {
+          timeDrag = true;
           updatebar(e.pageX);
-         }
-      });
-      $(document).mousemove(function(e) {
-        if(timeDrag) {
-          updatebar(e.pageX);
+          return false;
+        });
+        $(document).mouseup(function(e) {
+          if(timeDrag) {
+            timeDrag = false;
+            updatebar(e.pageX);
+           }
+        });
+        $(document).mousemove(function(e) {
+          if(timeDrag) {
+            updatebar(e.pageX);
+          }
+        });
+
+        //update Progress Bar control
+        var updatebar = function(x) {
+           var maxduration = video.duration; //Video duraiton
+           var position = x - $progress_holder.offset().left; //Click pos
+           var percentage = 100 * position / $progress_holder.width();
+           //Check within range
+           if(percentage > 100) {
+              percentage = 100;
+           }
+           if(percentage < 0) {
+              percentage = 0;
+           }
+           //Update progress bar and video currenttime
+           $progress_indicator.css('width', percentage+'%');
+           video.currentTime = maxduration * percentage / 100;
+        };
+
+        if (!$video_holder.hasClass('playing')) {
+          $video_holder.addClass('playing');
+          video.play();
+        } else {
+          $video_holder.removeClass('playing');
+          video.pause();
         }
-      });
-
-      //update Progress Bar control
-      var updatebar = function(x) {
-         var maxduration = video.duration; //Video duraiton
-         var position = x - $progress_holder.offset().left; //Click pos
-         var percentage = 100 * position / $progress_holder.width();
-         //Check within range
-         if(percentage > 100) {
-            percentage = 100;
-         }
-         if(percentage < 0) {
-            percentage = 0;
-         }
-         //Update progress bar and video currenttime
-         $progress_indicator.css('width', percentage+'%');
-         video.currentTime = maxduration * percentage / 100;
-      };
-
-      if (!$video_holder.hasClass('playing')) {
-        $video_holder.addClass('playing');
-        video.play();
       } else {
-        $video_holder.removeClass('playing');
-        video.pause();
+        $video_holder = $('.overlay-video');
+        var screenshot_src = $video_holder.find('.video-screenshot').attr('src');
+        console.log(screenshot_src);
+        var video_source = screenshot_src.replace('png','mp4');
+        console.log(video_source);
+        console.log('touch click');
+        window.location.href = video_source;
       }
     });
   }
@@ -115,6 +126,7 @@ $(document).ready(function() {
       $overlay.click(function() {
         closeOverlay();
       });
+      attachPrototypeHandlers($overlay);
     }
     $body.addClass('overlayed');
     var attr = $(this).attr('data-overlay');
@@ -123,7 +135,10 @@ $(document).ready(function() {
     $overlay.scrollTop(0);
     $overlay.html(html);
 
-    attachPrototypeHandlers($overlay);
+    if (info.type == 'prototype') {
+      var $video_holder = $('.overlay-video');
+      $video_holder.addClass('initial');
+    }
 
     $overlay.on('click', '.overlay-close', function() {
       closeOverlay();

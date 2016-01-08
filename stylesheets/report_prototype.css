@@ -28,6 +28,11 @@
   .video-holder .loaded .video-screenshot {
     display: none; }
 
+.overlay-video.touch .progress-bar-holder {
+  display: none; }
+.overlay-video.touch .loaded .video-screenshot {
+  display: block; }
+
 .overlay-video {
   cursor: pointer; }
   .overlay-video .status-indicator {

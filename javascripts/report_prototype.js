@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
   var supportsTouch = !!('ontouchstart' in window) || !!(navigator.msMaxTouchPoints);
-
-  // supportsTouch = true;
+  supportsTouch = true;
   var noTouch = !supportsTouch;
 
   var reports = {};
@@ -187,7 +186,6 @@ $(document).ready(function() {
           $this.addClass('loading');
           var resource = 'http://www.fastforwardlabs.com/resources/videos/' + prototype.file_name + '.mp4';
           var $video = $('<video src="' + resource + '" loop="true"></video>');
-          console.log($this);
           $this.find('.video-inside').append($video);
           video_inserted = true;
 
@@ -240,10 +238,18 @@ $(document).ready(function() {
     var resource = 'http://www.fastforwardlabs.com/resources/videos/' + prototype_obj.file_name + '.mp4';
     content += '<p>' + prototype_obj.info + '</p>';
     content += '</div>';
-    content += '<div class="video-holder container relative overlay-video" style="max-width: 38rem; margin-bottom: 0.75rem;">';
+    if (noTouch) { 
+      var touchClass = ''
+    } else { 
+      var touchClass = 'touch'
+    };
+    content += '<div class="video-holder container relative overlay-video ' + touchClass + '" style="max-width: 38rem; margin-bottom: 0.75rem;">';
     content += '<div class="loaded">'
+    content += '<img class="video-screenshot" src="resources/videos/' + prototype_obj.file_name + '.png" />';
     content += '<img class="video-backer" src="resources/images/video-back.svg" />';
-    content += '<video src="' + resource + '" class="col-12" loop="true"></video>';
+    if (noTouch) {
+      content += '<video src="' + resource + '" class="col-12" loop="true"></video>';
+    }
     content += '</div>';
     content += '<div class="status-indicator">';
     content += '<i class="fa fa-play"></i>';
