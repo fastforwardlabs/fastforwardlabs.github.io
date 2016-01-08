@@ -13,6 +13,10 @@ body {
   max-width: 34rem; }
   .container.wide {
     max-width: 46rem; }
+  .container.overlay-container {
+    max-width: 48rem; }
+  .container.narrower {
+    max-width: 32rem; }
 
 .cyan {
   color: #00dcec; }
@@ -167,3 +171,38 @@ label {
 
   .sm-show {
     display: block; } }
+.fake-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00dcec; }
+
+.right-nav a, .right-nav .fake-link {
+  float: left;
+  margin-right: 0.5rem; }
+  .right-nav a.active, .right-nav .fake-link.active {
+    text-decoration: none;
+    color: black;
+    cursor: default; }
+  .right-nav a:last-child, .right-nav .fake-link:last-child {
+    margin-right: 0; }
+
+.x-box {
+  height: 1.2em;
+  width: 1.2em;
+  float: left;
+  margin-left: 0em;
+  position: relative;
+  cursor: pointer; }
+  .x-box .close-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0.2rem;
+    background: #dddddd;
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform-origin: center center; }
+    .x-box .close-line:last-child {
+      -webkit-transform: rotate(45deg); }
+  .x-box:hover .close-line {
+    background: black; }

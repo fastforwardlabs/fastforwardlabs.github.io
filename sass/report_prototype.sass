@@ -36,11 +36,91 @@ $purple: #8237b6
     .video-screenshot
       display: none
 
-.report-marker
-  &.active
-    background: #000
+$status_size: 5rem
 
-.ff01-module
-  .report-marker
-    &.active
-      background: $cyan
+.overlay-video
+  cursor: pointer
+  .status-indicator
+    position
+    height: $status_size
+    width: $status_size
+    border-radius: 50%
+    background: #efefef
+    position: absolute
+    left: 50%
+    top: 50%
+    margin-left: -($status_size/2)
+    margin-top: -($status_size/2)
+    line-height: $status_size
+    text-align: center
+    font-size: $status_size/2.2
+    display: none
+    .fa-pause
+      display: none
+  &:hover
+    .status-indicator
+      display: block
+      color: $cyan
+  &.playing
+    .status-indicator
+      .fa-play
+        display: none
+      .fa-pause
+        display: inline
+.overlay-video.initial
+  .status-indicator
+    display: block
+
+
+.progress-bar-holder
+  background: #efefef
+  height: 0.25rem
+  position: relative
+  cursor: pointer
+.progress-bar-indicator
+  height: 100%
+  background: $cyan
+  width: 0
+
+.sp
+  width: 32px
+  height: 32px
+  clear: both
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: -16px
+  margin-left: -16px
+
+$spCol: #000
+
+/* Spinner Circle Rotation */
+.sp-circle
+  border: 0.2rem #efefef solid
+  border-top: 0.2rem red solid
+  border-radius: 50%
+  -webkit-animation: spCircRot .6s infinite linear
+  animation: spCircRot .6s infinite linear
+  &.cyan
+    border-top-color: $cyan
+  &.magenta
+    border-top-color: $magenta
+  &.purple
+    border-top-color: $purple
+
+@-webkit-keyframes spCircRot
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(359deg)
+@keyframes spCircRot
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
+.sp-circle
+  display: none
+.video-holder .loading
+  .sp-circle
+    display: block
