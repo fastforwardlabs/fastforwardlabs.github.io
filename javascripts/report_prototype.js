@@ -184,7 +184,7 @@ $(document).ready(function() {
           $this.find('video').get(0).play();
         } else {
           $this.addClass('loading');
-          var resource = 'http://www.fastforwardlabs.com/resources/videos/' + prototype.file_name + '.mp4';
+          var resource = 'resources/videos/' + prototype.file_name + '.mp4';
           var $video = $('<video src="' + resource + '" loop="true"></video>');
           $this.find('.video-inside').append($video);
           video_inserted = true;
@@ -235,7 +235,7 @@ $(document).ready(function() {
   function generatePrototypeOverlayContent(prototype) {
     var prototype_obj = prototypes[prototype];
     var content = '<div class="container narrower">';
-    var resource = 'http://www.fastforwardlabs.com/resources/videos/' + prototype_obj.file_name + '.mp4';
+    var resource = 'resources/videos/' + prototype_obj.file_name + '.mp4';
     content += '<p>' + prototype_obj.info + '</p>';
     content += '</div>';
     if (noTouch) { 

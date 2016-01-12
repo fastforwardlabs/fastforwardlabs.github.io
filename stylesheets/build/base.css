@@ -1,0 +1,16 @@
+html {
+  font-size: 120%; }
+
+body {
+  font-family: "ff-chambers-sans-web", "Chambers Sans OT", sans-serif; }
+
+a {
+  font-weight: 700;
+  color: #00dcec; }
+
+.swatch {
+  height: 100px;
+  width: 100px; }
+
+.style-container {
+  max-width: 46rem; }

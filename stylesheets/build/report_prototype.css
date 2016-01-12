@@ -1,0 +1,122 @@
+.report-holder {
+  position: relative;
+  line-height: 0;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in; }
+  .report-holder .report-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: none; }
+    .report-holder .report-img.active {
+      display: block; }
+
+.video-holder {
+  position: relative;
+  line-height: 0;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in; }
+  .video-holder .video-screenshot, .video-holder video {
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    bottom: 1%; }
+  .video-holder video {
+    opacity: 0; }
+  .video-holder .loaded video {
+    opacity: 1; }
+  .video-holder .loaded .video-screenshot {
+    display: none; }
+
+.overlay-video.touch .progress-bar-holder {
+  display: none; }
+.overlay-video.touch .loaded .video-screenshot {
+  display: block; }
+
+.overlay-video {
+  cursor: pointer; }
+  .overlay-video .status-indicator {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: #efefef;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2.27273rem;
+    display: none; }
+    .overlay-video .status-indicator .fa-pause {
+      display: none; }
+  .overlay-video:hover .status-indicator {
+    display: block;
+    color: #00dcec; }
+  .overlay-video.playing .status-indicator .fa-play {
+    display: none; }
+  .overlay-video.playing .status-indicator .fa-pause {
+    display: inline; }
+
+.overlay-video.initial .status-indicator {
+  display: block; }
+
+.progress-bar-holder {
+  background: #efefef;
+  height: 0.25rem;
+  position: relative;
+  cursor: pointer; }
+
+.progress-bar-indicator {
+  height: 100%;
+  background: #00dcec;
+  width: 0; }
+
+.sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -16px;
+  margin-left: -16px; }
+
+/* Spinner Circle Rotation */
+.sp-circle {
+  border: 0.2rem #efefef solid;
+  border-top: 0.2rem red solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot 0.6s infinite linear;
+  animation: spCircRot 0.6s infinite linear; }
+  .sp-circle.cyan {
+    border-top-color: #00dcec; }
+  .sp-circle.magenta {
+    border-top-color: #ee00ee; }
+  .sp-circle.purple {
+    border-top-color: #8237b6; }
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(359deg); } }
+
+@keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+
+.sp-circle {
+  display: none; }
+
+.video-holder .loading .sp-circle {
+  display: block; }

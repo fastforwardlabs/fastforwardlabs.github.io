@@ -9,9 +9,16 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="stylesheets/basscss.min.css">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/report_prototype.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/overlay.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/return.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/build/report_prototype.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/build/overlay.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/build/return.css">
+    <script>
+      // redirect to https if not there
+      var host = location.host;
+      if (host != "clients.fastforwardlabs.com") {
+        window.location.replace("https://clients.fastforwardlabs.com/nlg.html");
+      }
+    </script>
   </head>
   <body>
 
@@ -123,7 +130,7 @@
                   <div class="italic">Includes:</div>
                   <ul>
                     <li>Physical Report</li>
-                    <li>Online Report & Prototype (10 Users)</li>
+                    <li>Online Report & Prototype <br/>(10 Users)</li>
                   </ul>
                 </div>
               </div>
@@ -143,7 +150,7 @@
                   <div class="italic">Includes:</div>
                   <ul>
                     <li>Physical Report</li>
-                    <li>Online Report & Prototype (10 Users)</li>
+                    <li>Online Report & Prototype <br/>(10 Users)</li>
                     <li>1 Hour Advising</li>
                   </ul>
                 </div>
@@ -217,7 +224,7 @@
       var $token_field = $('#token');
 
       var handler = StripeCheckout.configure({
-        key: 'pk_test_Z5FDvAm7OS7ZZ2JYKvqFXfxQ',
+        key: 'pk_live_WLwkpRTczQmjuh28vS3l7EvP',
         image: '/images/logo-for-stripe.png',
         locale: 'auto',
         token: function(token, args) {

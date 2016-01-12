@@ -1,0 +1,67 @@
+#graph-holder {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "ff-chambers-sans-web", sans-serif;
+  fill: #aaaaaa;
+  background: #fafafa;
+  cursor: default !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none; }
+  #graph-holder .spacer {
+    display: none; }
+  #graph-holder .rect {
+    stroke-width: 2;
+    stroke: #dddddd;
+    fill: #fafafa; }
+  #graph-holder .link {
+    stroke-width: 2;
+    stroke: #dddddd; }
+  #graph-holder .node {
+    cursor: default; }
+  #graph-holder .text {
+    fill: #bbbbbb; }
+  #graph-holder .nlg .rect {
+    fill: url(#cyan);
+    stroke-width: 0; }
+  #graph-holder .nlg .text {
+    fill: white;
+    text-transform: capitalize; }
+  #graph-holder .pmrs .rect {
+    fill: url(#magenta);
+    stroke-width: 0; }
+  #graph-holder .pmrs .text {
+    fill: white;
+    text-transform: capitalize; }
+  #graph-holder .dlia .rect {
+    fill: url(#purple);
+    stroke-width: 0; }
+  #graph-holder .dlia .text {
+    fill: white;
+    text-transform: capitalize; }
+
+body.bottom #shadow_holder {
+  display: none; }
+body.bottom #graph-holder {
+  background: white; }
+  body.bottom #graph-holder .rect {
+    fill: white; }
+  body.bottom #graph-holder .nlg .rect {
+    fill: url(#cyan);
+    stroke-width: 0; }
+  body.bottom #graph-holder .nlg .text {
+    fill: white;
+    text-transform: capitalize; }
+  body.bottom #graph-holder .pmrs .rect {
+    fill: url(#magenta);
+    stroke-width: 0; }
+  body.bottom #graph-holder .pmrs .text {
+    fill: white;
+    text-transform: capitalize; }
+  body.bottom #graph-holder .dlia .rect {
+    fill: url(#purple);
+    stroke-width: 0; }
+  body.bottom #graph-holder .dlia .text {
+    fill: white;
+    text-transform: capitalize; }
