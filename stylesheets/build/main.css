@@ -1851,7 +1851,7 @@ body.special #special-offer {
   font-size: 0.9em;
   line-height: 1em;
   color: white;
-  z-index: 9999;
+  z-index: 998;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
