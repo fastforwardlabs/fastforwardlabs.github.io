@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Extractive Summarization Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/basscss.min.css">
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      color: #222;
+    }
+    html {
+      font-size: 18px;
+    }
+    body {
+      padding-right: 340px;
+    }
+    .container {
+      max-width: 40rem;
+    }
+    #demo-text {
+      border: solid 1px #ccc;
+      padding: 1rem 1rem 0;
+    }
+    .editable {
+      background: #fafafa;
+    }
+    .btn {
+      background: #eee;
+      border-radius: 6px;
+      color: #666;
+    }
+    .btn:hover {
+      background: #ddd;
+    }
+    a {
+      color: #005dac;
+    }
+    .btn.primary {
+      background: #005dac;
+      color: #fff;
+    }
+    .btn.primary:hover {
+      background: #004e92;
+    }
+    .bg-yellow {
+      background: #c1d4ff;
+    }
+    .stopword {
+      color: transparent;
+      text-shadow: 0 0 0.2rem rgba(0,0,0,0.6);
+    }
+    .stopword.unblur {
+      color: #222;
+      text-shadow: none;
+    }
+    #wordlist {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 340px;
+      border-left: solid 1px #ccc;
+      box-shadow: 0 0 2px rgba(0,0,0,0.3);
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .top-sentence, .summary-highlight {
+      background: yellow;
+      padding: 0 0.1em;
+    }
+  </style>
+  <body>
+    <div class="container px2">
+<!--       <div class="border-bottom mb2">
+        <h1>Extractive Summarization Demo</h1>
+        <p>Based on the summarization algorithm described in H.P. Luhn's <a href="http://courses.ischool.berkeley.edu/i256/f06/papers/luhn58.pdf" target="_blank">&ldquo;The Automatic Creation of Literature Abstracts&rdquo; (PDF)</a>, this demo provides a simple example of the steps involved in extractive summarization. It was created by Fast Forward Labs as an illustration for our report on Text Summarization.</p>
+      </div> -->
+      <!-- Sample Text from https://simple.wikipedia.org/wiki/DNA Protein Synthesis section -->
+      <div class="mb2 clearfix mt2">
+        <div id="step-title" class="left bold h4" style="line-height: 2.25rem;"></div>
+        <div class="right">
+          <button id="step-button" class="btn primary left" style="margin-left: 1rem;"></button>
+        </div>
+      </div>
+      <div id="step-help" class="p2 bg-yellow mb2"></div>
+      <div id="demo-text" class="editable mb3" contenteditable="true" class="col-12 border-bottom mb2">
+        <p>A section of DNA that contains instructions to make a protein is called a gene. Each gene has the sequence for at least one polypeptide. Proteins form structures, and also form enzymes. The enzymes do most of the work in cells. Proteins are made out of smaller polypeptides, which are formed of amino acids. To make a protein to do a particular job, the correct amino acids have to be joined up in the correct order.</p>
+        <p>Proteins are made by tiny machines in the cell called ribosomes. Ribosomes are in the main body of the cell, but DNA is only in the nucleus of the cell. The codon is part of the DNA, but DNA never leaves the nucleus. Because DNA cannot leave the nucleus, the cell makes a copy of the DNA sequence in RNA. This is smaller and can get through the holes – pores – in the membrane of the nucleus and out into the cell.</p>
+        <p>Genes encoded in DNA are transcribed into messenger RNA (mRNA) by proteins such as RNA polymerase. Mature mRNA is then used as a template for protein synthesis by the ribosome. Ribosomes read codons, 'words' made of three base pairs that tell the ribosome which amino acid to add. The ribosome scans along an mRNA, reading the code while it makes protein. Another RNA called tRNA helps match the right amino acid to each codon.</p>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/husl.min.js"></script>
+    <script src="js/pluralize.js"></script>
+    <script src="js/luhn.js"></script>
+  </body>
+</html>
