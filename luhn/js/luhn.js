@@ -107,7 +107,6 @@ function textWithoutFormatting() {
   $paragraphs.each(function(i, paragraph) {
     text += '<p>' + $(paragraph).text() + '</p>';
   });
-  console.log(text);
   return text;
 }
 
@@ -234,7 +233,6 @@ function matchSentences() {
   if (sentences == null) {
     sentences = [$demo_text.text()];
   }
-  console.log(sentences);
   var sentence_matches = [];
   $.each(sentences, function(i, sentence) {
     var sentence_obj = {};
@@ -429,11 +427,7 @@ function transformToAssocArray( prmstr ) {
 }
 var params = getSearchParameters();
 
-console.log(params);
-
 if (params.text !== undefined) {
-  console.log(params.text);
-  console.log($('#demo-text'));
   $('#demo-text').html(decodeURIComponent(params.text));
 }
 
