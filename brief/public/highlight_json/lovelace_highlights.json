@@ -1,0 +1,2696 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 55, 
+      "score": 0.28908774256706238, 
+      "sent": "The Astronomical Society he'd co-founded awarded him a medal for the idea, and in 1823 the British government agreed to provide funding for the construction of such an engine."
+    }, 
+    {
+      "index": 373, 
+      "score": 0.28833308815956116, 
+      "sent": "But if you fix that, it's easy to get a modern version of what Ada did:  And here's what the same scheme gives for next two (nonzero) Bernoulli numbers."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.28688362240791321, 
+      "sent": "Babbage was slightly distracted in 1824 by the prospect of joining a life insurance startup, for which he did a collection of life-table calculations."
+    }, 
+    {
+      "index": 312, 
+      "score": 0.28547605872154236, 
+      "sent": "Meanwhile, the fragment of the Difference Engine that had been built in Babbage's time was deposited at the Science Museum in London."
+    }, 
+    {
+      "index": 431, 
+      "score": 0.28223720192909241, 
+      "sent": "And it's this idea of universal computation that for example makes software possible--and that launched the whole computer revolution in the 20th century."
+    }, 
+    {
+      "index": 392, 
+      "score": 0.27996277809143066, 
+      "sent": "For example, from 1837 there's \"Elimination between two equations of the first degree\"--essentially the evaluation of a rational function:  There are a few very simple recurrence relations:  Then from 1838, there's a computation of the coefficients in the product of two polynomials:  But there's nothing as sophisticated--or as clean--as Ada's computation of the Bernoulli numbers."
+    }, 
+    {
+      "index": 391, 
+      "score": 0.27910059690475464, 
+      "sent": "Meanwhile, in the collection of Babbage's papers at the Science Museum, there are some sketches of higher-level operations on the Analytical Engine."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.27865681052207947, 
+      "sent": "And in preparation for her bicentennial, I decided to try to solve what for me has always been the \"mystery of Ada\"."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.27764293551445007, 
+      "sent": "What Babbage imagined is that there could be a machine--a Difference Engine--that could be set up to compute any polynomial up to a certain degree using the method of differences, and then automatically step through values and print the results, taking humans and their propensity for errors entirely out of the loop."
+    }, 
+    {
+      "index": 341, 
+      "score": 0.27588605880737305, 
+      "sent": "Then she discusses the idea of using loops to reduce the number of cards needed, and the value of rearranging operations to optimize their execution on the Analytical Engine, ultimately showing that just 3 cards could do what might seem like it should require 330."
+    }, 
+    {
+      "index": 150, 
+      "score": 0.27480015158653259, 
+      "sent": "Ada's Paper Despite the lack of support in England, Babbage's ideas developed some popularity elsewhere, and in 1840 Babbage was invited to lecture on the Analytical Engine in Turin, and given honors by the Italian government."
+    }, 
+    {
+      "index": 389, 
+      "score": 0.27358192205429077, 
+      "sent": "In it, there's a dated list of \"446 Notations of the Analytical Engine\", each essentially a representations of how some operation--like division--could be done on the Analytical Engine."
+    }, 
+    {
+      "index": 372, 
+      "score": 0.27129656076431274, 
+      "sent": "And in the end, the final result of the computation appears in location 24:  As it's printed, there's a bug in Ada's execution trace on line 4: the fraction is upside down."
+    }, 
+    {
+      "index": 148, 
+      "score": 0.2707768976688385, 
+      "sent": "In parliament the idea of funding the Difference Engine was finally killed with quips like that the machine should be set to compute when it would be of use."
+    }, 
+    {
+      "index": 321, 
+      "score": 0.27031561732292175, 
+      "sent": "Charmingly, Bowden notes that in Ada's granddaughter's book Thoroughbred Racing Stock, there is use of binary in computing pedigrees."
+    }, 
+    {
+      "index": 142, 
+      "score": 0.26881280541419983, 
+      "sent": "It was a modest sum relative to other government expenditures, but the project was unusual enough to lead to a fair amount of discussion."
+    }, 
+    {
+      "index": 151, 
+      "score": 0.26622161269187927, 
+      "sent": "Babbage had never published a serious account of the Difference Engine, and had never published anything at all about the Analytical Engine."
+    }, 
+    {
+      "index": 403, 
+      "score": 0.26559022068977356, 
+      "sent": "Ada's achievement was to distill from these details a clear exposition of the abstract operation of the machine--something which Babbage never did."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.26543068885803223, 
+      "sent": "But he set up a workshop in his stable (his \"garage\"), and kept on having ideas about the Difference Engine and how its components could be made with the tools of his time."
+    }, 
+    {
+      "index": 374, 
+      "score": 0.26488888263702393, 
+      "sent": "As Ada figured out it doesn't ultimately take any more storage locations (specified by Variable Cards) to compute higher Bernoulli numbers, just more operations."
+    }, 
+    {
+      "index": 369, 
+      "score": 0.26486355066299438, 
+      "sent": "But in the end she successfully produced a description of how B8 (which she called B7) could be computed:  This is effectively the execution trace of a program that runs for 25 steps (plus a loop) on the Analytical Engine."
+    }, 
+    {
+      "index": 137, 
+      "score": 0.26461967825889587, 
+      "sent": "But back in 1826 Babbage had invented something he called Mechanical Notation--that was intended to provide a symbolic representation for the operation of machinery in the same kind of way that mathematical notation provides a symbolic representation for operations in mathematics."
+    }, 
+    {
+      "index": 242, 
+      "score": 0.26241275668144226, 
+      "sent": "In 1848 Babbage developed a hare-brained scheme to construct an engine that played tic-tac-toe, and to tour it around the country as a way to raise money for his projects."
+    }, 
+    {
+      "index": 343, 
+      "score": 0.26226139068603516, 
+      "sent": "And as an example she discusses the three-body problem, and the fact that in her time, of \"about 295 coefficients of lunar perturbations\" there were many on which different peoples' computations didn't agree."
+    }, 
+    {
+      "index": 468, 
+      "score": 0.26187017560005188, 
+      "sent": "Babbage's primary conception of the Analytical Engine was as a machine for automatically producing mathematical tables--either printing them out by typesetting, or giving them as plots by drawing onto a plate."
+    }, 
+    {
+      "index": 378, 
+      "score": 0.26164069771766663, 
+      "sent": "Curiously, even in our record-breaking computation of Bernoulli numbers a few years ago, we were basically using the same algorithm as Ada--though now there are slightly faster algorithms that effectively compute Bernoulli number numerators modulo a sequence of primes, then reconstruct the full numbers using the Chinese Remainder Theorem."
+    }, 
+    {
+      "index": 390, 
+      "score": 0.26142960786819458, 
+      "sent": "The dates start in the 1830s, and run through the mid-1840s, with not much happening in the summer of 1843."
+    }, 
+    {
+      "index": 426, 
+      "score": 0.26142582297325134, 
+      "sent": "As something of a favor to Babbage, she wrote an exposition of the Analytical Engine, and in doing so she developed a more abstract understanding of it than Babbage had--and got a glimpse of the incredibly powerful idea of universal computation."
+    }, 
+    {
+      "index": 336, 
+      "score": 0.26078170537948608, 
+      "sent": "The Difference Engine is the embodying of one particular and very limited set of operations...\" Charmingly, at least for me, considering the years I have spent working on Mathematica, she continues at a later point: \"We may consider the engine as the material and mechanical representative of analysis, and that our actual working powers in this department of human study will be enabled more effectually than heretofore to keep pace with our theoretical knowledge of its principles and laws, through the complete control which the engine gives us over the executive manipulation of algebraical and numerical symbols.\""
+    }, 
+    {
+      "index": 79, 
+      "score": 0.25998884439468384, 
+      "sent": "And soon Babbage was opening up to her about many intellectual topics, as well as about the trouble he was having with the government over funding of the Difference Engine."
+    }, 
+    {
+      "index": 342, 
+      "score": 0.25989910960197449, 
+      "sent": "Ada talks about just how far the Analytical Engine can go in computing what was previously not computable, at least with any accuracy."
+    }, 
+    {
+      "index": 410, 
+      "score": 0.25892579555511475, 
+      "sent": "His first example was a hydraulic device:  Then he gave the example of a clock, showing on the left a kind of \"execution trace\" of how the components of the clock change, and on the right a kind of \"block diagram\" of their relationships:  It's a pretty nice way to represent how a system works, similar in some ways to a modern timing diagram--but not quite the same."
+    }, 
+    {
+      "index": 141, 
+      "score": 0.25889286398887634, 
+      "sent": "Babbage's original Difference Engine project had cost the British government PS17,500 or the equivalent of perhaps $2 million today."
+    }, 
+    {
+      "index": 125, 
+      "score": 0.25876826047897339, 
+      "sent": "Babbage tried his hand at politics, running for parliament twice on a manufacturing-oriented platform, but failed to get elected, partly because of claims of misuse of government funds on the Difference Engine."
+    }, 
+    {
+      "index": 362, 
+      "score": 0.25842016935348511, 
+      "sent": "She started from the fact that Bernoulli numbers appear in the series expansion  Then by rearranging this and matching up powers of x, she got a sequence of equations for the Bernoulli numbers Bn--which she then \"unravelled\" to give a recurrence relation of the form:  Now Ada had to specify how to actually compute this on the Analytical Engine."
+    }, 
+    {
+      "index": 370, 
+      "score": 0.25624996423721313, 
+      "sent": "At each step, the trace shows what operation is performed on which Variable Cards, and which Variable Cards receive the results."
+    }, 
+    {
+      "index": 121, 
+      "score": 0.25614726543426514, 
+      "sent": "The central question was whether there is evidence of a deity from the apparent design seen in nature."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.25612983107566833, 
+      "sent": "In 1827, Babbage's table of logarithms--computed by hand--was finally finished, and would be reprinted for nearly 100 years."
+    }, 
+    {
+      "index": 360, 
+      "score": 0.25603917241096497, 
+      "sent": "Today, of course, it's instantaneous to do the computation in the Wolfram Language:  And, as it happens, a few years ago, just to show off new algorithms, we even computed 10 million of them."
+    }, 
+    {
+      "index": 335, 
+      "score": 0.25597986578941345, 
+      "sent": "Or, as she says: \"The Analytical Engine is an embodying of the science of operations, constructed with peculiar reference to abstract number as the subject of those operations."
+    }, 
+    {
+      "index": 427, 
+      "score": 0.25590232014656067, 
+      "sent": "The Difference Engine and things like it are special-purpose computers, with hardware that's built to do only one kind of thing."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.25554966926574707, 
+      "sent": "Dispirited by his wife's death, Babbage took a trip to continental Europe, and being impressed by what he saw of the science being done there, wrote a book entitled Reflections on the Decline of Science in England, that ended up being mainly a diatribe against the Royal Society (of which he was a member)."
+    }, 
+    {
+      "index": 358, 
+      "score": 0.25545284152030945, 
+      "sent": "Back in the 1600s, people spent their lives making tables of sums of powers of integers--in other words, tabulating values of  for different m and n. But Jakob Bernoulli pointed out that all such sums can be expressed as polynomials in m, with the coefficients being related to what are now called Bernoulli numbers."
+    }, 
+    {
+      "index": 354, 
+      "score": 0.25533294677734375, 
+      "sent": "The Bernoulli Number Computation What's become the most famous part of what Ada wrote is the computation of Bernoulli numbers, in Note G. This seems to have come out of a letter she wrote to Babbage, in July 1843."
+    }, 
+    {
+      "index": 140, 
+      "score": 0.2547583281993866, 
+      "sent": "But it may have been Babbage's greatest invention--because apparently it's what let him figure out all his elaborate designs."
+    }, 
+    {
+      "index": 72, 
+      "score": 0.25385093688964844, 
+      "sent": "And in 1834, Ada went along on a philanthropic tour of mills in the north of England that her mother was doing, and was quite taken with the then-high-tech equipment they had."
+    }, 
+    {
+      "index": 388, 
+      "score": 0.25363138318061829, 
+      "sent": "When Babbage died, he was writing a \"History of the Analytical Engine\", which his son completed."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.25332701206207275, 
+      "sent": "Pascal made one in 1642, and we now know there was even one in antiquity."
+    }, 
+    {
+      "index": 152, 
+      "score": 0.25327235460281372, 
+      "sent": "But he talked about the Analytical Engine in Turin, and notes were taken by a certain Luigi Menabrea, who was then a 30-year-old army engineer--but who, 27 years later, became prime minister of Italy (and also made contributions to the mathematics of structural analysis)."
+    }, 
+    {
+      "index": 122, 
+      "score": 0.25320819020271301, 
+      "sent": "Babbage's book is quite hard to read, opening for example with, \"The notions we acquire of contrivance and design arise from comparing our observations on the works of other beings with the intentions of which we are conscious in our own undertakings.\""
+    }, 
+    {
+      "index": 401, 
+      "score": 0.25306332111358643, 
+      "sent": "To me, there's little doubt about what happened: Ada had an idea of what the Analytical Engine should be capable of, and was asking Babbage questions about how it could be achieved."
+    }, 
+    {
+      "index": 415, 
+      "score": 0.25175365805625916, 
+      "sent": "Indeed, his only other publication about \"Mechanical Notation\" is the flyer he had printed up for the Great Exhibition in 1851--apparently a pitch for standardization in drawings of mechanical components (and indeed these notations appear on Babbage's diagrams like the one above)."
+    }, 
+    {
+      "index": 339, 
+      "score": 0.25174421072006226, 
+      "sent": "Ada talks about \"cycles\" and \"cycles of cycles, etc\", now known as loops and nested loops, giving a mathematical notation for them:  There's a lot of modern-seeming content in Ada's notes."
+    }, 
+    {
+      "index": 359, 
+      "score": 0.25171306729316711, 
+      "sent": "And in 1713 Bernoulli was proud to say that he'd computed the first 10 Bernoulli numbers \"in a quarter of an hour\"--reproducing years of other peoples' work."
+    }, 
+    {
+      "index": 94, 
+      "score": 0.25020086765289307, 
+      "sent": "Her letters to de Morgan about calculus are not unlike letters from a calculus student today--except for the Victorian English."
+    }, 
+    {
+      "index": 311, 
+      "score": 0.25010257959365845, 
+      "sent": "When Babbage died, many documents and spare parts from his Difference Engine project passed to his son Major-General Henry Babbage, who published some of the documents, and privately assembled a few more devices, including part of the Mill for the Analytical Engine."
+    }, 
+    {
+      "index": 124, 
+      "score": 0.24986803531646729, 
+      "sent": "He makes statements like \"computations of great complexity can be effected by mechanical means\", but then goes on to claim (with rather weak examples) that a mechanical engine can produce sequences of numbers that show unexpected changes that are like miracles."
+    }, 
+    {
+      "index": 432, 
+      "score": 0.2498597651720047, 
+      "sent": "Gottfried Leibniz had already had a philosophical concept of something like universal computation back in the 1600s."
+    }, 
+    {
+      "index": 385, 
+      "score": 0.24973557889461517, 
+      "sent": "In the surviving archive of Babbage's papers (discovered years later in his lawyer's family's cowhide trunk), there are a remarkable number of drafts of expositions of the Analytical Engine, starting in the 1830s, and continuing for decades, with titles like \"Of the Analytical Engine\" and \"The Science of Number Reduced to Mechanism\"."
+    }, 
+    {
+      "index": 327, 
+      "score": 0.24924467504024506, 
+      "sent": "A project was mounted, and in 2002, after a heroic effort, a complete Difference Engine was built, with only one correction in the plans being made."
+    }, 
+    {
+      "index": 120, 
+      "score": 0.24849109351634979, 
+      "sent": "In 1837, he weighed in on the then-popular subject of natural theology, appending his Ninth Bridgewater Treatise to the series of treatises written by other people."
+    }, 
+    {
+      "index": 133, 
+      "score": 0.24798780679702759, 
+      "sent": "Instead of making a machine that would just compute differences, he imagined an \"Analytical Engine\" that supported a whole list of possible kinds of operations, that could in effect be done in an arbitrarily programmed sequence."
+    }, 
+    {
+      "index": 135, 
+      "score": 0.24797619879245758, 
+      "sent": "But, most important, he figured out how to control the steps in a computation using punched cards of the kind that had been invented in 1801 by Jacquard for specifying patterns of weaving on looms."
+    }, 
+    {
+      "index": 338, 
+      "score": 0.24783959984779358, 
+      "sent": "Ada then goes through how a sequence of specific kinds of computations would work on the Analytical Engine, with \"Operation Cards\" defining the operations to be done, and \"Variable Cards\" defining the locations of values."
+    }, 
+    {
+      "index": 430, 
+      "score": 0.24772673845291138, 
+      "sent": "And instead it's a fundamental fact that it's possible to make general-purpose computers, where a single fixed piece of hardware can be programmed to do any computation."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.24742382764816284, 
+      "sent": "By early 1822, the 30-year-old Babbage was busy studying different types of machinery, and producing plans and prototypes of what the Difference Engine could be."
+    }, 
+    {
+      "index": 405, 
+      "score": 0.24683132767677307, 
+      "sent": "Babbage's Secret Sauce For all his various shortcomings, the very fact that Babbage figured out how to build even a functioning Difference Engine--let alone an Analytical Engine--is extremely impressive."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.24682457745075226, 
+      "sent": "The whole story is entwined with the customs of 19th-century British high society."
+    }, 
+    {
+      "index": 98, 
+      "score": 0.24678084254264832, 
+      "sent": "She was pleased by the mathematical abilities she discovered in herself, and by de Morgan's positive feedback about them."
+    }, 
+    {
+      "index": 409, 
+      "score": 0.24659767746925354, 
+      "sent": "His idea was to take a detailed structure of a machine and abstract a kind of symbolic diagram of how its part acts on each other."
+    }, 
+    {
+      "index": 99, 
+      "score": 0.24652555584907532, 
+      "sent": "She also continued to interact with Babbage, and on one visit to her estate (in January 1841, when she was 25), she charmingly told the then-49-year-old Babbage, \"If you are a Skater, pray bring Skates to Ockham; that being the fashionable occupation here now, & one I have much taken to.\""
+    }, 
+    {
+      "index": 123, 
+      "score": 0.24647797644138336, 
+      "sent": "In apparent resonance with some of my own work 150 years later, he talks about the relationship between mechanical processes, natural laws and free will."
+    }, 
+    {
+      "index": 250, 
+      "score": 0.24601437151432037, 
+      "sent": "She had a highly emotional experience visiting for the first time her father's family's former estate in the north of England--and got into an argument with her mother about it."
+    }, 
+    {
+      "index": 334, 
+      "score": 0.24596931040287018, 
+      "sent": "She then explains that the Difference Engine can compute values of any 6th degree polynomial--but the Analytical Engine is different, because it can perform any sequence of operations."
+    }, 
+    {
+      "index": 351, 
+      "score": 0.24588818848133087, 
+      "sent": "Ada seems to have understood, though, that the \"science of operations\" implemented by the engine would not only apply to traditional mathematical operations."
+    }, 
+    {
+      "index": 402, 
+      "score": 0.2451489269733429, 
+      "sent": "If my own experiences with hardware designers in modern times are anything to go by, the answers will often have been very detailed."
+    }, 
+    {
+      "index": 44, 
+      "score": 0.24401888251304626, 
+      "sent": "In 1819 Babbage visited France, and learned about the large-scale government project there to make logarithm and trigonometry tables."
+    }, 
+    {
+      "index": 93, 
+      "score": 0.24398717284202576, 
+      "sent": "But in keeping with the math education traditions of the time (and still today), de Morgan set Ada on studying calculus."
+    }, 
+    {
+      "index": 348, 
+      "score": 0.24383565783500671, 
+      "sent": "But she also notes that in actually putting \"the truths and the formulae of analysis\" into a form amenable to the engine, \"the nature of many subjects in that science are necessarily thrown into new lights, and more profoundly investigated.\""
+    }, 
+    {
+      "index": 81, 
+      "score": 0.24344131350517273, 
+      "sent": "He was a friend of Mary Somerville's son, had been educated at Eton (the same school where I went 150 years later) and Cambridge, and then had been a civil servant, most recently at an outpost of the British Empire in the Greek islands."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.24319404363632202, 
+      "sent": "But in Babbage's day such machines were still just curiosities, not reliable enough for everyday practical use."
+    }, 
+    {
+      "index": 186, 
+      "score": 0.2424999326467514, 
+      "sent": "She saw herself as being a successful expositor and interpreter of Babbage's work, setting it in a broader conceptual framework that she hoped could be built on."
+    }, 
+    {
+      "index": 89, 
+      "score": 0.24188755452632904, 
+      "sent": "The person identified was Augustus de Morgan, first professor of mathematics at University College London, noted logician, author of several textbooks, and not only a friend of Babbage's, but also the husband of the daughter of Ada's mother's main childhood teacher."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.2414870411157608, 
+      "sent": "Though often distracted, Babbage continued to work on the Difference Engine, generating thousands of pages of notes and designs."
+    }, 
+    {
+      "index": 350, 
+      "score": 0.24120952188968658, 
+      "sent": "She goes on to say that \"in devising for mathematical truths a new form in which to record and throw themselves out for actual use, views are likely to be induced, which should again react on the more theoretical phase of the subject\", or in other words--as I have also often said--representing mathematical truths in a computable form is likely to help one understand those truths themselves better."
+    }, 
+    {
+      "index": 344, 
+      "score": 0.2410770058631897, 
+      "sent": "Finally comes Ada's Note G. Early on, she states: \"The Analytical Engine has no pretensions whatever to originate anything."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.2410418689250946, 
+      "sent": "But after quite a bit of research--including going to see many original documents--I feel like I've finally gotten to know Ada Lovelace, and gotten a grasp on her story."
+    }, 
+    {
+      "index": 467, 
+      "score": 0.24077907204627991, 
+      "sent": "Binary wasn't well known in the mid-1800s, but it did appear in puzzles, and Babbage, at least, was quite into puzzles: a notable example being his question of how to make a square of words with \"bishop\" along the top and side (which now takes just a few lines of Wolfram Language code to solve)."
+    }, 
+    {
+      "index": 445, 
+      "score": 0.24054901301860809, 
+      "sent": "And what we now know (embodied for example in my Principle of Computational Equivalence) is that beyond a low threshold a very wide range of systems--even of very simple construction--are actually capable of universal computation."
+    }, 
+    {
+      "index": 448, 
+      "score": 0.24054878950119019, 
+      "sent": "So in retrospect, it's not surprising that the Analytical Engine was capable of universal computation."
+    }, 
+    {
+      "index": 180, 
+      "score": 0.24038805067539215, 
+      "sent": "Ada was clearly excited about it, sending reprints to her mother, and explaining that \"No one can estimate the trouble & interminable labour of having to revise the printing of mathematical formulae."
+    }, 
+    {
+      "index": 156, 
+      "score": 0.23996931314468384, 
+      "sent": "But in any case, by February 1843, Ada had resolved to do the translation but add extensive notes of her own."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.23986811935901642, 
+      "sent": "To some she is a great hero in the history of computing; to others an overestimated minor figure."
+    }, 
+    {
+      "index": 247, 
+      "score": 0.23984956741333008, 
+      "sent": "But in 1848 he wrote one more substantial piece, comparing the productivity of agriculture in France and England, based on detailed statistics, with observations like \"It is demonstrable, not only that the Frenchman is much worse off than the Englishman, but that he is less well fed than during the devastating exhaustion of the empire.\""
+    }, 
+    {
+      "index": 422, 
+      "score": 0.2393994927406311, 
+      "sent": "At the age of 30 he thought of making mathematical tables by machine, and continued to pursue this idea until he died 49 years later, inventing the Analytical Engine as a way to achieve his objective."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.23919139802455902, 
+      "sent": "The next several years of Ada's life seem to have been dominated by having three children and managing a large household--though she had some time for horse riding, learning the harp, and mathematics (including topics like spherical trigonometry)."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.2387966513633728, 
+      "sent": "On the way back, Ada taught some mathematics to the daughters of one of her mother's friends."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.23879183828830719, 
+      "sent": "Tables were made by human computers, with the work divided across a team, and the lowest-level computations being based on evaluating polynomials (say from series expansions) using the method of differences."
+    }, 
+    {
+      "index": 155, 
+      "score": 0.23874062299728394, 
+      "sent": "Many years later Babbage claimed he suggested to Ada that she write her own account of the Analytical Engine, and that she had responded that the thought hadn't occurred to her."
+    }, 
+    {
+      "index": 88, 
+      "score": 0.23785634338855743, 
+      "sent": "She told Babbage she wanted to find a \"mathematical Instructor\" in London, though asked that in making enquiries he not mention her name, presumably for fear of society gossip."
+    }, 
+    {
+      "index": 175, 
+      "score": 0.23783281445503235, 
+      "sent": "But Babbage wanted one more thing: he wanted to add an anonymous preface (written by him) that explained how the British government had failed to support the project."
+    }, 
+    {
+      "index": 375, 
+      "score": 0.23743164539337158, 
+      "sent": "The Analytical Engine, as it was designed in 1843, was supposed to store 1000 40-digit numbers, which would in principle have allowed it to compute up to perhaps B50 (=495057205241079648212477525/66)."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.23713541030883789, 
+      "sent": "I've been curious for a long time what the real story is."
+    }, 
+    {
+      "index": 263, 
+      "score": 0.23707385361194611, 
+      "sent": "And on August 19, she asked Babbage's friend Charles Dickens to visit and read her an account of death from one of his books."
+    }, 
+    {
+      "index": 115, 
+      "score": 0.23697704076766968, 
+      "sent": "But her husband William seems to have talked her out of this, and by late 1842 she was back to doing mathematics."
+    }, 
+    {
+      "index": 411, 
+      "score": 0.23694834113121033, 
+      "sent": "And over the years that Babbage worked on the Analytical Engine, his notes show ever more complex diagrams."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.23671941459178925, 
+      "sent": "In addition to writing poetry and flouting the social norms of his time, he was often doing the unusual: keeping a tame bear in his college rooms in Cambridge, living it up with poets in Italy and \"five peacocks on the grand staircase\", writing a grammar book of Armenian, and--had he not died too soon--leading troops in the Greek war of independence (as celebrated by a big statue in Athens), despite having no military training whatsoever."
+    }, 
+    {
+      "index": 340, 
+      "score": 0.23637796938419342, 
+      "sent": "She comments that \"There is in existence a beautiful woven portrait of Jacquard, in the fabrication of which 24,000 cards were required.\""
+    }, 
+    {
+      "index": 255, 
+      "score": 0.23587670922279358, 
+      "sent": "The exhibition was a high point of Victorian science and technology, and Ada, Babbage and their scientific social circle were all involved (though Babbage less so than he thought he should be)."
+    }, 
+    {
+      "index": 324, 
+      "score": 0.23491586744785309, 
+      "sent": "Babbage's Difference Engine prototype had been given to the Science Museum in London, but even though I spent lots of time at the Science Museum as a child in the 1960s, I'm pretty sure I never saw it there."
+    }, 
+    {
+      "index": 274, 
+      "score": 0.23484702408313751, 
+      "sent": "Ada's daughter married a somewhat wild poet, spent many years in the Middle East, and became the world's foremost breeder of Arabian horses."
+    }, 
+    {
+      "index": 181, 
+      "score": 0.23434586822986603, 
+      "sent": "This is a pleasant prospect for the future, as I suppose many hundreds & thousands of such formulae will come forth from my pen, in one way or another.\""
+    }, 
+    {
+      "index": 130, 
+      "score": 0.23401176929473877, 
+      "sent": "But somehow, after a decade of work--and despite lots of precision machine tool development--the actual engine wasn't done."
+    }, 
+    {
+      "index": 419, 
+      "score": 0.23370131850242615, 
+      "sent": "And even though systems engineering has progressed a long way since Babbage's time, there may yet be inspiration to be had from what Babbage did."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.23363581299781799, 
+      "sent": "In 1838, William was made an earl for his government work, and Ada become the Countess of Lovelace."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.23318032920360565, 
+      "sent": "There was enough scandal around him to fuel hundreds of books, and the PR battle between the supporters of Lady Byron (as Ada's mother styled herself) and of him lasted a century or more."
+    }, 
+    {
+      "index": 162, 
+      "score": 0.23314641416072845, 
+      "sent": "I am in much dismay at having got into so amazing a quagmire & botheration with these Numbers, that I cannot possibly get the thing done today."
+    }, 
+    {
+      "index": 74, 
+      "score": 0.23238392174243927, 
+      "sent": "She continued by mail, noting that this could be \"the commencement of 'A Sentimental Mathematical Correspondence carried on for years between two ladies of rank' to be hereafter published no doubt for the edification of mankind, or womankind\"."
+    }, 
+    {
+      "index": 393, 
+      "score": 0.23236514627933502, 
+      "sent": "Babbage certainly helped and commented on Ada's work, but she was definitely the driver of it."
+    }, 
+    {
+      "index": 420, 
+      "score": 0.23209911584854126, 
+      "sent": "The Bigger Picture OK, so what's the bigger picture of what happened with Ada, Babbage and the Analytical Engine?"
+    }, 
+    {
+      "index": 12, 
+      "score": 0.23174619674682617, 
+      "sent": "It's a complex story, and to understand it, we'll have to start by going over quite a lot of facts and narrative."
+    }, 
+    {
+      "index": 129, 
+      "score": 0.23166386783123016, 
+      "sent": "Babbage had hired one of the leading engineers of his day to actually build the engine."
+    }, 
+    {
+      "index": 70, 
+      "score": 0.2314215749502182, 
+      "sent": "Back to Ada Ada's encounter with the Difference Engine seems to be what ignited her interest in mathematics."
+    }, 
+    {
+      "index": 187, 
+      "score": 0.2310672402381897, 
+      "sent": "There's lots to say about the actual content of Ada's notes."
+    }, 
+    {
+      "index": 371, 
+      "score": 0.23030784726142883, 
+      "sent": "Lacking a symbolic notation for loops, Ada just indicated loops in the execution trace using braces, noting in English that parts are repeated."
+    }, 
+    {
+      "index": 315, 
+      "score": 0.23028178513050079, 
+      "sent": "And when programming began to be understood in the 1940s, Babbage's work--and Ada's Notes--were rediscovered."
+    }, 
+    {
+      "index": 368, 
+      "score": 0.2300868034362793, 
+      "sent": "With the Analytical Engine design that existed at the time, Ada had to basically unroll these loops."
+    }, 
+    {
+      "index": 131, 
+      "score": 0.22985002398490906, 
+      "sent": "Back in 1833, shortly after he met Ada, Babbage had tried to rein in the project--but the result was that his engineer quit, and insisted that he got to keep all the plans for the Difference Engine, even the ones that Babbage himself had drawn."
+    }, 
+    {
+      "index": 397, 
+      "score": 0.22951176762580872, 
+      "sent": "So also was the algebraic working out of the different problems, except, indeed, that relating to the numbers of Bernoulli, which I had offered to do to save Lady Lovelace the trouble."
+    }, 
+    {
+      "index": 19, 
+      "score": 0.22919082641601562, 
+      "sent": "Byron had a wild life--and became perhaps the top \"bad boy\" of the 19th century--with dark episodes in childhood, and lots of later romantic and other excesses."
+    }, 
+    {
+      "index": 332, 
+      "score": 0.22907866537570953, 
+      "sent": "What Ada Actually Wrote OK, so now that I've talked (at length) about the life of Ada Lovelace, what about the actual content of her Notes on the Analytical Engine?"
+    }, 
+    {
+      "index": 347, 
+      "score": 0.22868743538856506, 
+      "sent": "Ada seems to have understood with some clarity the traditional view of programming: that we engineer programs to do things we know how to do."
+    }, 
+    {
+      "index": 171, 
+      "score": 0.22849716246128082, 
+      "sent": "As she wrote to Babbage: \"It is not my wish to proclaim who has written it; at the same time I rather wish to append anything that may tend hereafter to individualize, & identify it, with the other productions of the said A.A.L.\""
+    }, 
+    {
+      "index": 119, 
+      "score": 0.22833336889743805, 
+      "sent": "Still, he wrote what turned out to be a fairly influential book, On the Economy of Machinery and Manufactures, dealing with such things as how to break up tasks in factories (an issue that had actually come up in connection with the human computation of mathematical tables)."
+    }, 
+    {
+      "index": 337, 
+      "score": 0.22813798487186432, 
+      "sent": "A little later, she explains that punched cards are how the Analytical Engine is controlled, and then makes the classic statement that \"the Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves\"."
+    }, 
+    {
+      "index": 306, 
+      "score": 0.22810646891593933, 
+      "sent": "One wonders why he didn't invent a sound-masking solution, but his campaign was so notable, and so odd, that when he died it was a leading element of his obituary."
+    }, 
+    {
+      "index": 363, 
+      "score": 0.22778700292110443, 
+      "sent": "First, she used the fact that odd Bernoulli numbers (other than B1) are zero, then computed Bn, which is our modern B2n (or BernoulliB[2n] in Wolfram Language)."
+    }, 
+    {
+      "index": 451, 
+      "score": 0.22773990035057068, 
+      "sent": "And I think one can fairly say that Ada Lovelace was the first person ever to glimpse with any clarity what has become a defining phenomenon of our technology and even our civilization: the notion of universal computation."
+    }, 
+    {
+      "index": 153, 
+      "score": 0.2276538759469986, 
+      "sent": "In October 1842, Menabrea published a paper in French based on his notes."
+    }, 
+    {
+      "index": 329, 
+      "score": 0.22720929980278015, 
+      "sent": "Building it cost about the same, inflation adjusted, as Babbage had requested from the British government back in 1823."
+    }, 
+    {
+      "index": 105, 
+      "score": 0.22718691825866699, 
+      "sent": "But by February 6, 1841, Ada was feeling good enough about herself and her mathematics to write a very open letter to her mother about her thoughts and aspirations."
+    }, 
+    {
+      "index": 205, 
+      "score": 0.22702300548553467, 
+      "sent": "If he does consent to what I propose, I shall probably be enabled to keep him out of much hot water; & to bring his engine to consummation, (which all I have seen of him & his habits the last 3 months, makes me scarcely anticipate it ever will be, unless someone really exercises a strong coercive influence over him)."
+    }, 
+    {
+      "index": 158, 
+      "score": 0.22687824070453644, 
+      "sent": "And though in those days letters were sent by post (which did come 6 times a day in London at the time) or carried by a servant (Ada lived about a mile from Babbage when she was in London), they read a lot like emails about a project might today, apart from being in Victorian English."
+    }, 
+    {
+      "index": 95, 
+      "score": 0.22660434246063232, 
+      "sent": "Even many of the confusions are the same--though Ada was more sensitive than some to the bad notations of calculus (\"why can't one multiply by dx?"
+    }, 
+    {
+      "index": 441, 
+      "score": 0.22653204202651978, 
+      "sent": "Then when electronic computers were built in the 1940s, it was realized they too exhibited universal computation, and the connection was made with Turing's work."
+    }, 
+    {
+      "index": 352, 
+      "score": 0.2263677716255188, 
+      "sent": "For example, she notes that if \"the fundamental relations of pitched sounds in the science of harmony\" were amenable to abstract operations, then the engine could use them to \"compose elaborate and scientific pieces of music of any degree of complexity or extent\"."
+    }, 
+    {
+      "index": 387, 
+      "score": 0.22608248889446259, 
+      "sent": "They seem like perfectly decent descriptions of the basic operation of the engine--though they are definitely more pedestrian than what Ada produced."
+    }, 
+    {
+      "index": 154, 
+      "score": 0.22607478499412537, 
+      "sent": "When Ada saw the paper, she decided to translate it into English and submit it to a British publication."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.22594676911830902, 
+      "sent": "Babbage graduated from Cambridge in 1814 (a year before Ada Lovelace was born), went to live in London with his new wife, and started establishing himself on the London scientific and social scene."
+    }, 
+    {
+      "index": 384, 
+      "score": 0.22590839862823486, 
+      "sent": "She wanted to explain what the overall point was--as well as relate it, as she put it, to \"large, general, & metaphysical views\"."
+    }, 
+    {
+      "index": 229, 
+      "score": 0.22585421800613403, 
+      "sent": "And indeed later that year, she wrote to a friend (who was also her lawyer, as well as being Mary Somerville's son): \"It does not appear to me that cerebral matter need be more unmanageable to mathematicians than sidereal & planetary matter & movements; if they would but inspect it from the right point of view."
+    }, 
+    {
+      "index": 319, 
+      "score": 0.22582019865512848, 
+      "sent": "It was a certain Bertram Bowden--a British nuclear physicist who went into the computer industry and eventually became Minister of Science and Education--who \"rediscovered\" Ada."
+    }, 
+    {
+      "index": 449, 
+      "score": 0.22571292519569397, 
+      "sent": "Today, with computers and software all around us, the notion of universal computation seems almost obvious: of course we can use software to compute anything we want."
+    }, 
+    {
+      "index": 434, 
+      "score": 0.22559365630149841, 
+      "sent": "And Babbage's Analytical Engine is the first explicit example we know of a machine that would have been capable of universal computation."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.22557465732097626, 
+      "sent": "She had gotten to know Mary Somerville, translator of Laplace and a well-known expositor of science--and partly with her encouragement, was soon, for example, enthusiastically studying Euclid."
+    }, 
+    {
+      "index": 77, 
+      "score": 0.22556580603122711, 
+      "sent": "Babbage seems at first to have underestimated Ada, trying to interest her in the Silver Lady automaton toy that he used as a conversation piece for his parties (and noting his addition of a turban to it)."
+    }, 
+    {
+      "index": 534, 
+      "score": 0.22553262114524841, 
+      "sent": "But at least now I think I have an idea of what the original Ada born 200 years ago today was like: a fitting personality on the road to universal computation and the present and future achievements of computational thinking."
+    }, 
+    {
+      "index": 136, 
+      "score": 0.22542555630207062, 
+      "sent": "Babbage created some immensely complicated designs, and today it seems remarkable that they could work."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.22478102147579193, 
+      "sent": "And there's a surprising amount of misinformation and misinterpretation out there."
+    }, 
+    {
+      "index": 438, 
+      "score": 0.22452688217163086, 
+      "sent": "When Ada wrote about Babbage's machine, she wanted to explain what it did in the clearest way--and to do this she looked at the machine more abstractly, with the result that she ended up exploring and articulating something quite recognizable as the modern notion of universal computation."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.22413185238838196, 
+      "sent": "Still, by 1832 a working prototype of a small Difference Engine (without a printer) had successfully been completed."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.22381444275379181, 
+      "sent": "Within a few months of the birth of her third child in 1839, Ada decided to get more serious about mathematics again."
+    }, 
+    {
+      "index": 302, 
+      "score": 0.22353197634220123, 
+      "sent": "Then in 1864 he published his autobiography, Passages from the Life of a Philosopher--a strange and rather bitter document."
+    }, 
+    {
+      "index": 412, 
+      "score": 0.22295868396759033, 
+      "sent": "It's not quite clear what something like this means:  But it looks surprisingly like a modern Modelica representation--say in Wolfram SystemModeler."
+    }, 
+    {
+      "index": 444, 
+      "score": 0.22215497493743896, 
+      "sent": "And by that time, something new was emerging--notably through work I was doing: that universal computation was not only something that's possible, but that it's actually common."
+    }, 
+    {
+      "index": 126, 
+      "score": 0.222120001912117, 
+      "sent": "Babbage also continued to have upscale parties at his large and increasingly disorganized house in London, attracting such luminaries as Charles Dickens, Charles Darwin, Florence Nightingale, Michael Faraday and the Duke of Wellington--with his aged mother regularly in attendance."
+    }, 
+    {
+      "index": 189, 
+      "score": 0.22210125625133514, 
+      "sent": "While Babbage's preface wasn't itself a great idea, one good thing it did for posterity was to cause Ada on August 14, 1843 to write Babbage a fascinating, and very forthright, 16-page letter."
+    }, 
+    {
+      "index": 357, 
+      "score": 0.22192998230457306, 
+      "sent": "Ada's choice of Bernoulli numbers to show off the Analytical Engine was an interesting one."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.22091813385486603, 
+      "sent": "In some ways it's an ennobling and inspiring story; in some ways it's frustrating and tragic."
+    }, 
+    {
+      "index": 66, 
+      "score": 0.22045284509658813, 
+      "sent": "He was quite hands on when it came to personally drafting plans or doing machine-shop experiments."
+    }, 
+    {
+      "index": 399, 
+      "score": 0.21983817219734192, 
+      "sent": "When I first read this, I thought Babbage was saying that he basically ghostwrote all of Ada's Notes."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.21965493261814117, 
+      "sent": "But he was quite hands off in managing the engineers he hired---and he did not do well at managing costs."
+    }, 
+    {
+      "index": 320, 
+      "score": 0.21922509372234344, 
+      "sent": "In researching his 1953 book Faster Than Thought (yes, about computers), he located Ada's granddaughter Lady Wentworth (the daughter of Ada's daughter), who told him the family lore about Ada, both accurate and inaccurate, and let him look at some of Ada's papers."
+    }, 
+    {
+      "index": 144, 
+      "score": 0.21911019086837769, 
+      "sent": "He also claimed that he eventually spent PS20,000 of his own money--or the majority of his fortune (no, I don't see how the numbers add up)--on his various projects."
+    }, 
+    {
+      "index": 271, 
+      "score": 0.21866762638092041, 
+      "sent": "But the obituaries were kind, if Victorian in their sentiments:  William outlived her by 41 years, eventually remarrying."
+    }, 
+    {
+      "index": 408, 
+      "score": 0.21853172779083252, 
+      "sent": "He first wrote about it in 1826 under the title \"On a Method of Expressing by Signs the Action of Machinery\"."
+    }, 
+    {
+      "index": 138, 
+      "score": 0.21850837767124176, 
+      "sent": "Babbage was disappointed already in 1826 that people didn't appreciate his invention."
+    }, 
+    {
+      "index": 118, 
+      "score": 0.21826981008052826, 
+      "sent": "After several attempts, he'd rather honorifically been appointed Lucasian Professor of Mathematics at Cambridge--but never really even spent time in Cambridge."
+    }, 
+    {
+      "index": 193, 
+      "score": 0.21806979179382324, 
+      "sent": "It wasn't an easy pitch to make, especially given Babbage's personality."
+    }, 
+    {
+      "index": 188, 
+      "score": 0.21726682782173157, 
+      "sent": "But before we get to that, let's finish the story of Ada herself."
+    }, 
+    {
+      "index": 326, 
+      "score": 0.21705099940299988, 
+      "sent": "As interest in Babbage and Ada increased, so did curiosity about whether the Difference Engine would actually have worked if it had been built from Babbage's plans."
+    }, 
+    {
+      "index": 316, 
+      "score": 0.21632941067218781, 
+      "sent": "People knew that \"AAL\" was Ada Augusta Lovelace, and that she was Byron's daughter."
+    }, 
+    {
+      "index": 367, 
+      "score": 0.21630729734897614, 
+      "sent": "To compute Bernoulli numbers the way Ada wanted takes two nested loops of operations."
+    }, 
+    {
+      "index": 308, 
+      "score": 0.21621964871883392, 
+      "sent": "A gossip column of the time records impressions of him:  Apparently he was fond of saying that he would gladly give up the remainder of his life if he could spend just 3 days 500 years in the future."
+    }, 
+    {
+      "index": 182, 
+      "score": 0.2159319669008255, 
+      "sent": "She said that her husband William had been excitedly giving away copies to his friends too, and Ada wrote, \"William especially conceives that it places me in a much juster & truer position & light, than anything else can."
+    }, 
+    {
+      "index": 289, 
+      "score": 0.21574746072292328, 
+      "sent": "But many thousands of pages of Ada's documents still remain, scattered around the world."
+    }, 
+    {
+      "index": 194, 
+      "score": 0.21564316749572754, 
+      "sent": "But she was skillful in making her case, and as part of it, she discussed their different motivation structures."
+    }, 
+    {
+      "index": 277, 
+      "score": 0.21554602682590485, 
+      "sent": "In 1905, a year before he died, Ada's youngest son--who had been largely brought up by Ada's mother--published a book about the whole thing, with such choice lines as \"Lord Byron's life contained nothing of any interest except what ought not to have been told\"."
+    }, 
+    {
+      "index": 228, 
+      "score": 0.2147832065820694, 
+      "sent": "But by October 1844, it seemed that David Brewster (inventor of the kaleidoscope, among other things) would write about the Analytical Engine, and Ada asked if perhaps Brewster could suggest another topic for her, saying \"I rather think some physiological topics would suit me as well as any.\""
+    }, 
+    {
+      "index": 114, 
+      "score": 0.21453270316123962, 
+      "sent": "She was very keen to excel in something, and began to get the idea that perhaps it should be music and literature rather than math."
+    }, 
+    {
+      "index": 440, 
+      "score": 0.2144082635641098, 
+      "sent": "But as the field of mathematical logic developed, the idea of universal computation arose again, most clearly in the work of Alan Turing in 1936."
+    }, 
+    {
+      "index": 516, 
+      "score": 0.21405643224716187, 
+      "sent": "For that is in a sense exactly what she did in the Notes she wrote: she took Babbage's detailed engineering, and made it more abstract and \"metaphysical\"--and in the process gave us a first glimpse of the idea of universal computation."
+    }, 
+    {
+      "index": 106, 
+      "score": 0.21372842788696289, 
+      "sent": "She wrote: \"I believe myself to possess a most singular combination of qualities exactly fitted to make me pre-eminently a discoverer of the hidden realities of nature.\""
+    }, 
+    {
+      "index": 305, 
+      "score": 0.21355079114437103, 
+      "sent": "For some reason Babbage waged a campaign against street musicians who he claimed woke him up at 6 am, and caused him to lose a quarter of his productive time."
+    }, 
+    {
+      "index": 517, 
+      "score": 0.21354390680789948, 
+      "sent": "The Final Story The story of Ada and Babbage has many interesting themes."
+    }, 
+    {
+      "index": 134, 
+      "score": 0.21349413692951202, 
+      "sent": "At first, he just thought about having the machine evaluate fixed formulas, but as he studied different use cases, he added other capabilities, like conditionals--and figured out often very clever ways to implement them mechanically."
+    }, 
+    {
+      "index": 469, 
+      "score": 0.21308209002017975, 
+      "sent": "He imagined that humans would be the main users of these tables--although he did think of the idea of having libraries of pre-computed cards that would provide machine-readable versions."
+    }, 
+    {
+      "index": 145, 
+      "score": 0.21252568066120148, 
+      "sent": "And he kept on trying to get further government support, and created plans for a Difference Engine No."
+    }, 
+    {
+      "index": 380, 
+      "score": 0.21247933804988861, 
+      "sent": "The Analytical Engine and its construction were all Babbage's work."
+    }, 
+    {
+      "index": 275, 
+      "score": 0.2118343859910965, 
+      "sent": "Ada's youngest son inherited the family title, and spent most of his life on the family estate."
+    }, 
+    {
+      "index": 230, 
+      "score": 0.21170426905155182, 
+      "sent": "I hope to bequeath to the generations a Calculus of the Nervous System.\""
+    }, 
+    {
+      "index": 47, 
+      "score": 0.21158461272716522, 
+      "sent": "Back in England, Babbage and Herschel started a project to produce tables for their new Astronomical Society, and it was in the effort to check these tables that Babbage is said to have exclaimed, \"I wish to God these tables had been made by steam!\""
+    }, 
+    {
+      "index": 483, 
+      "score": 0.2115284651517868, 
+      "sent": "But none of this actually happened, and instead Ada died young, the Analytical Engine was never finished, and it took until the 20th century for the power of computation to be discovered."
+    }, 
+    {
+      "index": 322, 
+      "score": 0.2114032506942749, 
+      "sent": "Ada, and the Analytical Engine, of course, used decimal, with no binary in sight."
+    }, 
+    {
+      "index": 416, 
+      "score": 0.2112557590007782, 
+      "sent": "I'm not sure why Babbage didn't do more to explain his Mechanical Notation and his diagrams."
+    }, 
+    {
+      "index": 273, 
+      "score": 0.21107956767082214, 
+      "sent": "Ada thought he might have gone to America (he was apparently in San Francisco in 1851), but in fact he died at 26 working in a shipyard in England."
+    }, 
+    {
+      "index": 222, 
+      "score": 0.21107685565948486, 
+      "sent": "hypnosis), all the while watching their effects on, as she put it, \"that portion of the material forces of the world entitled the body of A.A.L.\""
+    }, 
+    {
+      "index": 249, 
+      "score": 0.21068720519542694, 
+      "sent": "She and William moved into a new house in London, intensifying their exposure to the London scientific social scene."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.21067850291728973, 
+      "sent": "Mathematical tables were of considerable military and commercial significance in those days, being used across science, engineering and finance, as well as in areas like navigation."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.21046636998653412, 
+      "sent": "But in any case, Ada and he hit it off, and they were married on July 8, 1835, with Ada keeping the news quiet until the last minute to avoid paparazzi-like coverage."
+    }, 
+    {
+      "index": 168, 
+      "score": 0.20969861745834351, 
+      "sent": "They have been made out with extreme care, & all the indices most minutely & scrupulously attended to.\""
+    }, 
+    {
+      "index": 61, 
+      "score": 0.20943661034107208, 
+      "sent": "Also in 1827, Babbage's father died, leaving him about PS100k, or perhaps $14 million today, setting up Babbage financially for the rest of his life."
+    }, 
+    {
+      "index": 303, 
+      "score": 0.20886886119842529, 
+      "sent": "The chapter on the Analytical Engine opens with a quote from a poem by Byron--\"Man wrongs, and Time avenges\"--and goes on from there."
+    }, 
+    {
+      "index": 160, 
+      "score": 0.20859883725643158, 
+      "sent": "She was clearly in charge, but felt she was first and foremost explaining Babbage's work, so wanted to check things with him--though she got annoyed when Babbage, for example, tried to make his own corrections to her manuscript."
+    }, 
+    {
+      "index": 238, 
+      "score": 0.20835497975349426, 
+      "sent": "William had a never-ending series of elaborate--and often quite innovative--construction projects (he seems to have been particularly keen on towers and tunnels)."
+    }, 
+    {
+      "index": 75, 
+      "score": 0.20812253654003143, 
+      "sent": "It wasn't sophisticated math, but what Ada said was clear, complete with admonitions like \"You should never select an indirect proof, when a direct one can be given.\""
+    }, 
+    {
+      "index": 349, 
+      "score": 0.20755928754806519, 
+      "sent": "In other words--as I often point out--actually programming something inevitably lets one do more exploration of it."
+    }, 
+    {
+      "index": 383, 
+      "score": 0.20753319561481476, 
+      "sent": "Babbage had shown her lots of plans and examples of the Analytical Engine."
+    }, 
+    {
+      "index": 398, 
+      "score": 0.20741847157478333, 
+      "sent": "This she sent back to me for an amendment, having detected a grave mistake which I had made in the process.\""
+    }, 
+    {
+      "index": 493, 
+      "score": 0.20738232135772705, 
+      "sent": "The one big exception to this was his almost-50-year persistence in trying to automate the process of computation."
+    }, 
+    {
+      "index": 301, 
+      "score": 0.20729662477970123, 
+      "sent": "He wrote papers with titles like \"On the Statistics of Light-Houses\", \"Table of the Relative Frequency of Occurrences of the Causes of Breaking Plate-Glass Windows\", and \"On Remains of Human Art, mixed with the Bones of Extinct Races of Animals\"."
+    }, 
+    {
+      "index": 421, 
+      "score": 0.20653395354747772, 
+      "sent": "Charles Babbage was an energetic man who had many ideas, some of them good."
+    }, 
+    {
+      "index": 127, 
+      "score": 0.20622381567955017, 
+      "sent": "But even though the degrees and honors that he listed after his name ran to 6 lines, he was increasingly bitter about his perceived lack of recognition."
+    }, 
+    {
+      "index": 278, 
+      "score": 0.20621354877948761, 
+      "sent": "When Ada died, there was a certain air of scandal that seemed to hang around her."
+    }, 
+    {
+      "index": 262, 
+      "score": 0.20548129081726074, 
+      "sent": "By August 1852, she wrote, \"I begin to understand Death; which is going on quietly & gradually every minute, & will never be a thing of one particular moment\"."
+    }, 
+    {
+      "index": 442, 
+      "score": 0.20507930219173431, 
+      "sent": "There was still, though, a suspicion that perhaps some other way of making computers might lead to a different form of computation."
+    }, 
+    {
+      "index": 317, 
+      "score": 0.20507395267486572, 
+      "sent": "Alan Turing read her Notes, and coined the term \"Lady Lovelace's Objection\" (\"an AI can't originate anything\") in his 1950 Turing Test paper."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.20496393740177155, 
+      "sent": "Apparently she charmed the host, and he invited her and her mother to come back for a demonstration of his newly constructed Difference Engine: a 2-foot-high hand-cranked contraption with 2000 brass parts, now to be seen at the Science Museum in London:  Ada's mother called it a \"thinking machine\", and reported that it \"raised several Nos."
+    }, 
+    {
+      "index": 286, 
+      "score": 0.20460356771945953, 
+      "sent": "On September 1, 1852--the same day as her confession to William--Ada had written, \"It is my earnest and dying request that all my friends who have letters from me will deliver them to my mother Lady Noel Byron after my death.\""
+    }, 
+    {
+      "index": 6, 
+      "score": 0.20458103716373444, 
+      "sent": "The personalities in the story are hard to read."
+    }, 
+    {
+      "index": 161, 
+      "score": 0.20451299846172333, 
+      "sent": "It's charming to read Ada's letter as she works on debugging her computation of Bernoulli numbers: \"My Dear Babbage."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.20438970625400543, 
+      "sent": "When Ada was 11, she went with her mother and an entourage on a year-long tour of Europe."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.2043122798204422, 
+      "sent": "The technology is difficult to understand."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.20430772006511688, 
+      "sent": "The Early Life of Ada Let's begin at the beginning."
+    }, 
+    {
+      "index": 276, 
+      "score": 0.20412677526473999, 
+      "sent": "Ada's mother died in 1860, but even then the gossip about her and Byron continued, with books and articles appearing, including Harriet Beecher Stowe's 1870 Lady Byron Vindicated."
+    }, 
+    {
+      "index": 256, 
+      "score": 0.20321720838546753, 
+      "sent": "Babbage gave out many copies of a flyer on his Mechanical Notation."
+    }, 
+    {
+      "index": 82, 
+      "score": 0.20309841632843018, 
+      "sent": "William seems to have been a precise, conscientious and decent man, if somewhat stiff."
+    }, 
+    {
+      "index": 234, 
+      "score": 0.20284305512905121, 
+      "sent": "Like that, at that time, as a woman, she couldn't get access to the Royal Society's library in London, even though her husband, partly through her efforts, was a member of the society."
+    }, 
+    {
+      "index": 269, 
+      "score": 0.20267432928085327, 
+      "sent": "Her mother built a memorial that included a sonnet entitled \"The Rainbow\" that Ada wrote."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.20246775448322296, 
+      "sent": "She finally recovered in time to follow the custom for society girls of the period: on turning 17 she went to London for a season of socializing."
+    }, 
+    {
+      "index": 244, 
+      "score": 0.20191432535648346, 
+      "sent": "The idea was raised for Babbage to meet Prince Albert to discuss his engines, but it never happened."
+    }, 
+    {
+      "index": 364, 
+      "score": 0.2018505334854126, 
+      "sent": "Then she started from B0, and successively computed Bn for larger n, storing each value she got."
+    }, 
+    {
+      "index": 495, 
+      "score": 0.20141732692718506, 
+      "sent": "I am fortunate to have lived in a time when ambient technology made this much easier to achieve, but in every large project I have done it has still taken a certain singlemindedness and gritty tenacity--as well as leadership--to actually get it finished."
+    }, 
+    {
+      "index": 199, 
+      "score": 0.20128251612186432, 
+      "sent": "At noon the next day she wrote to Babbage again, asking if he would help in \"the final revision\"."
+    }, 
+    {
+      "index": 185, 
+      "score": 0.2009742259979248, 
+      "sent": "She explained to her mother that she and William \"are by no means desirous of making it a secret, altho' I do not wish the importance of the thing to be exaggerated and overrated\"."
+    }, 
+    {
+      "index": 300, 
+      "score": 0.20094026625156403, 
+      "sent": "He tried working on the Analytical Engine again in 1856, but made no great progress."
+    }, 
+    {
+      "index": 239, 
+      "score": 0.20087170600891113, 
+      "sent": "And to finance them, they had to turn to Ada's mother, who often made things difficult."
+    }, 
+    {
+      "index": 169, 
+      "score": 0.20086544752120972, 
+      "sent": "Then she added that William (or \"Lord L.\" as she referred to him) \"is at this moment kindly inking it all over for me."
+    }, 
+    {
+      "index": 147, 
+      "score": 0.20067949593067169, 
+      "sent": "By 1842, the government had changed, and Babbage insisted on meeting with the new prime minister (Robert Peel), but ended up just berating him."
+    }, 
+    {
+      "index": 258, 
+      "score": 0.20061691105365753, 
+      "sent": "But within a year, Ada's health situation was dire."
+    }, 
+    {
+      "index": 532, 
+      "score": 0.20035551488399506, 
+      "sent": "And I suspect that, like Ada, I have been put in a position where I can potentially see glimpses of some of the great ideas of the future."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.20021450519561768, 
+      "sent": "Babbage had them printed on yellow paper on the theory that this would minimize user error."
+    }, 
+    {
+      "index": 192, 
+      "score": 0.20019088685512543, 
+      "sent": "She says that \"Your affairs have been, & are, deeply occupying both myself and Lord Lovelace.... And the result is that I have plans for you...\" Then she proceeds to ask, \"If I am to lay before you in the course of a year or two, explicit & honorable propositions for executing your engine ... would there be any chance of allowing myself ... to conduct the business for you; your own undivided energies being devoted to the execution of the work ...\"  In other words, she basically proposed to take on the role of CEO, with Babbage becoming CTO."
+    }, 
+    {
+      "index": 206, 
+      "score": 0.2001156210899353, 
+      "sent": "He is beyond measure careless & desultory at times."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.19999250769615173, 
+      "sent": "State of the Art There were mechanical calculators long before Babbage."
+    }, 
+    {
+      "index": 313, 
+      "score": 0.19986508786678314, 
+      "sent": "Rediscovery After Babbage died, his life work on his engines was all but forgotten (though did, for example, get a mention in the 1911 Encyclopaedia Britannica)."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.1998097151517868, 
+      "sent": "After various schools and tutors, Babbage went to Cambridge to study mathematics, but soon was intent on modernizing the way mathematics was done there, and with his lifelong friends John Herschel (son of the discoverer of Uranus) and George Peacock (later a pioneer in abstract algebra), founded the Analytical Society (which later became the Cambridge Philosophical Society) to push for reforms like replacing Newton's (\"British\") dot-based notation for calculus with Leibniz's (\"Continental\") function-based one."
+    }, 
+    {
+      "index": 376, 
+      "score": 0.19980277121067047, 
+      "sent": "It would have been reasonably fast too; the Analytical Engine was intended to do about 7 operations per second."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.19975979626178741, 
+      "sent": "And this is what Ada Lovelace saw in June 1833."
+    }, 
+    {
+      "index": 207, 
+      "score": 0.19973026216030121, 
+      "sent": "-- I shall be willing to be his Whipper-in during the next 3 years if I see fair prospect of success.\""
+    }, 
+    {
+      "index": 396, 
+      "score": 0.19963592290878296, 
+      "sent": "About Ada's Notes, he writes: \"We discussed together the various illustrations that might be introduced: I suggested several, but the selection was entirely her own."
+    }, 
+    {
+      "index": 211, 
+      "score": 0.19940555095672607, 
+      "sent": "The next week, Ada wrote to Babbage that \"We are quite delighted at your (somewhat unhoped for) proposal\" [of a long visit with Ada and her husband]."
+    }, 
+    {
+      "index": 78, 
+      "score": 0.19936203956604004, 
+      "sent": "But Ada continued to interact with (as she put it) Mr. Babbage and Mrs. Somerville, both separately and together."
+    }, 
+    {
+      "index": 100, 
+      "score": 0.19927212595939636, 
+      "sent": "Ada's relationship with her mother was a complex one."
+    }, 
+    {
+      "index": 184, 
+      "score": 0.19910766184329987, 
+      "sent": "Within days, there was also apparently society gossip about Ada's publication."
+    }, 
+    {
+      "index": 463, 
+      "score": 0.19882871210575104, 
+      "sent": "Another major way that modern computers reduce hardware is by dealing with numbers in binary rather than decimal."
+    }, 
+    {
+      "index": 533, 
+      "score": 0.19869735836982727, 
+      "sent": "But the challenge is to be enough of an Ada to grasp what's there--or at least to find an Ada who does."
+    }, 
+    {
+      "index": 104, 
+      "score": 0.19803632795810699, 
+      "sent": "And she increasingly criticized Ada for her child rearing, household management and deportment in society."
+    }, 
+    {
+      "index": 139, 
+      "score": 0.19758069515228271, 
+      "sent": "Undoubtedly people didn't understand it, since even now it's not clear how it worked."
+    }, 
+    {
+      "index": 232, 
+      "score": 0.19718123972415924, 
+      "sent": "Both Babbage and Mary Somerville had started their scientific publishing careers with translations, and she saw herself as doing the same, saying that perhaps her next works would be reviews of Whewell and Ohm, and that she might eventually become a general \"prophet of science\"."
+    }, 
+    {
+      "index": 183, 
+      "score": 0.19706350564956665, 
+      "sent": "And he tells me that it has already placed him in a far more agreeable position in this country.\""
+    }, 
+    {
+      "index": 345, 
+      "score": 0.19698722660541534, 
+      "sent": "It can do whatever we know how to order it to perform."
+    }, 
+    {
+      "index": 417, 
+      "score": 0.19692255556583405, 
+      "sent": "Perhaps he was just bitter about peoples' failure to appreciate it in 1826."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.19686079025268555, 
+      "sent": "In 1837, Queen Victoria (then 18) came to the throne, and as a member of high society, Ada met her."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.19654102623462677, 
+      "sent": "When she returned she was enthusiastically doing things like studying what she called \"flyology\"--and imagining how to mimic bird flight with steam-powered machines."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.19643957912921906, 
+      "sent": "Her mother, Annabella Milbanke, was a 23-year-old heiress committed to progressive causes, who inherited the title Baroness Wentworth."
+    }, 
+    {
+      "index": 241, 
+      "score": 0.19601213932037354, 
+      "sent": "Meanwhile, she continued to have a good social relationship with Babbage, seeing him with considerable frequency, though in her letters talking more about dogs and pet parrots than the Analytical Engine."
+    }, 
+    {
+      "index": 386, 
+      "score": 0.19590885937213898, 
+      "sent": "Why Babbage never published any of these isn't  clear."
+    }, 
+    {
+      "index": 268, 
+      "score": 0.19589963555335999, 
+      "sent": "And--much to her mother's chagrin--she had herself buried in the Byron family vault next to her father, who, like her, died at age 36 (Ada lived 254 days longer)."
+    }, 
+    {
+      "index": 266, 
+      "score": 0.19560164213180542, 
+      "sent": "Florence Nightingale, nursing pioneer and friend of Ada's, wrote: \"They said she could not possibly have lived so long, were it not for the tremendous vitality of the brain, that would not die.\""
+    }, 
+    {
+      "index": 36, 
+      "score": 0.19533465802669525, 
+      "sent": "to the 2nd & 3rd powers, and extracted the root of a Quadratic Equation\"."
+    }, 
+    {
+      "index": 204, 
+      "score": 0.19487224519252777, 
+      "sent": "He has so strong an idea of the advantage of having my pen as his servant, that he will probably yield; though I demand very strong concessions."
+    }, 
+    {
+      "index": 331, 
+      "score": 0.19475492835044861, 
+      "sent": "So far, no real version of it has ever been built--or even fully simulated."
+    }, 
+    {
+      "index": 220, 
+      "score": 0.19467169046401978, 
+      "sent": "For a while it was just that Ada had to take care of household and family things that she'd neglected while concentrating on her Notes."
+    }, 
+    {
+      "index": 225, 
+      "score": 0.19407325983047485, 
+      "sent": "She talked about her first publication as her \"first-born\", \"with a colouring & undercurrent (rather hinted at & suggested than definitely expressed) of large, general, & metaphysical views\", and said that \"He [the publication] will make an excellent head (I hope) of a large family of brothers & sisters\"."
+    }, 
+    {
+      "index": 443, 
+      "score": 0.19405046105384827, 
+      "sent": "And it actually wasn't until the 1980s that universal computation became widely accepted as a robust notion."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.19397853314876556, 
+      "sent": "In the spring of 1835, when Ada was 19, she met 30-year-old William King (or, more accurately, William, Lord King)."
+    }, 
+    {
+      "index": 400, 
+      "score": 0.19322481751441956, 
+      "sent": "But reading what he wrote again, I realize it actually says almost nothing, other than that he suggested things that Ada may or may not have used."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.19315028190612793, 
+      "sent": "--and began his lifelong effort to mechanize the production of tables."
+    }, 
+    {
+      "index": 231, 
+      "score": 0.19258975982666016, 
+      "sent": "An impressive vision--10 years before, for example, George Boole would talk about similar things."
+    }, 
+    {
+      "index": 236, 
+      "score": 0.19206392765045166, 
+      "sent": "She had a whole series of problems, though in 1846 she was still saying optimistically \"Nothing is needed but a year or two more of patience & cure\"."
+    }, 
+    {
+      "index": 248, 
+      "score": 0.19149287045001984, 
+      "sent": "1850 was a notable year for Ada."
+    }, 
+    {
+      "index": 240, 
+      "score": 0.1912921816110611, 
+      "sent": "Ada's children were also approaching teenage-hood, and Ada was exercised by many issues that were coming up with them."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.19097018241882324, 
+      "sent": "His father was an enterprising and successful (if personally distant) goldsmith and banker."
+    }, 
+    {
+      "index": 195, 
+      "score": 0.19085597991943359, 
+      "sent": "She wrote, \"My own uncompromising principle is to endeavour to love truth & God before fame & glory ...\", while \"Yours is to love truth & God ... but to love fame, glory, honours, yet more.\""
+    }, 
+    {
+      "index": 170, 
+      "score": 0.19070769846439362, 
+      "sent": "I had to do it in pencil...\"    William was also apparently the one who suggested that she sign the translation and notes."
+    }, 
+    {
+      "index": 505, 
+      "score": 0.19052097201347351, 
+      "sent": "Unlike Babbage, we don't know of any specific research she did in mathematics, so it's hard to judge how good she would have been; Babbage was respectable though unremarkable."
+    }, 
+    {
+      "index": 425, 
+      "score": 0.1905045211315155, 
+      "sent": "Ada Lovelace was an intelligent woman who became friends with Babbage (there's zero evidence they were ever romantically involved)."
+    }, 
+    {
+      "index": 270, 
+      "score": 0.19038426876068115, 
+      "sent": "The Aftermath Ada's funeral was small; neither her mother nor Babbage attended."
+    }, 
+    {
+      "index": 307, 
+      "score": 0.19011896848678589, 
+      "sent": "Babbage never remarried after his wife died, and his last years seem to have been lonely ones."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.19010205566883087, 
+      "sent": "Her father, Lord Byron (George Gordon Byron) was 27 years old, and had just achieved rock-star status in England for his poetry."
+    }, 
+    {
+      "index": 457, 
+      "score": 0.18988022208213806, 
+      "sent": "The thing would have been the size of a train locomotive, with maybe 50,000 moving parts."
+    }, 
+    {
+      "index": 92, 
+      "score": 0.18960751593112946, 
+      "sent": "In Ada's correspondence with Babbage, she showed interest in discrete mathematics, and wondered, for example, if the game of solitaire \"admits of being put into a mathematical Formula, and solved\"."
+    }, 
+    {
+      "index": 456, 
+      "score": 0.18939808011054993, 
+      "sent": "Maybe Babbage would have had to revise his plans a bit, but I'm sure he would have made it work."
+    }, 
+    {
+      "index": 196, 
+      "score": 0.18902687728404999, 
+      "sent": "Still, she explained, \"Far be it from me, to disclaim the influence of ambition & fame."
+    }, 
+    {
+      "index": 177, 
+      "score": 0.18884080648422241, 
+      "sent": "Babbage tried to insist, even suggesting that without the preface the whole publication should be withdrawn."
+    }, 
+    {
+      "index": 251, 
+      "score": 0.18877206742763519, 
+      "sent": "And she got more deeply involved in betting on horseracing, and lost some money doing it."
+    }, 
+    {
+      "index": 198, 
+      "score": 0.18854236602783203, 
+      "sent": "She ended the letter, \"I wonder if you will choose to retain the lady-fairy in your service or not.\""
+    }, 
+    {
+      "index": 520, 
+      "score": 0.18852071464061737, 
+      "sent": "It is a story of people who had the confidence to be original and creative."
+    }, 
+    {
+      "index": 471, 
+      "score": 0.188271164894104, 
+      "sent": "But in Babbage's day--with the idea of a massive Analytical Engine--this way of doing things would have been unthinkable."
+    }, 
+    {
+      "index": 218, 
+      "score": 0.18820546567440033, 
+      "sent": "And Ada described herself to her mother as serving as the \"High-Priestess of Babbage's Engine\"."
+    }, 
+    {
+      "index": 355, 
+      "score": 0.18780246376991272, 
+      "sent": "She begins the letter with \"I am working very hard for you; like the Devil in fact; (which perhaps I am)\"."
+    }, 
+    {
+      "index": 197, 
+      "score": 0.18759234249591827, 
+      "sent": "No living soul ever was more imbued with it than myself ... but I certainly would not deceive myself or others by pretending it is other than a very important motive & ingredient in my character & nature.\""
+    }, 
+    {
+      "index": 235, 
+      "score": 0.18757885694503784, 
+      "sent": "But the most serious issue was still Ada's health."
+    }, 
+    {
+      "index": 499, 
+      "score": 0.18737019598484039, 
+      "sent": "As an adult, she was emotionally quite mature--probably more so than Babbage--and seems to have had a good practical grasp of people and the world."
+    }, 
+    {
+      "index": 264, 
+      "score": 0.1872180700302124, 
+      "sent": "Her mother moved into her house, keeping other people away from her, and on September 1, Ada made an unknown confession that apparently upset William."
+    }, 
+    {
+      "index": 174, 
+      "score": 0.18648314476013184, 
+      "sent": "She was proud of them, and Babbage was complimentary about them."
+    }, 
+    {
+      "index": 437, 
+      "score": 0.18628674745559692, 
+      "sent": "But in the effort to design this, he ended up with a universal computer."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.18597275018692017, 
+      "sent": "Annabella Milbanke was an educated, religious and rather proper woman, interested in reform and good works, and nicknamed by Byron \"Princess of Parallelograms\"."
+    }, 
+    {
+      "index": 110, 
+      "score": 0.18589790165424347, 
+      "sent": "But then, three weeks later, her mother dropped a bombshell, claiming that before Ada was born, Byron and his half-sister had had a child together."
+    }, 
+    {
+      "index": 267, 
+      "score": 0.18579734861850739, 
+      "sent": "Ada had made Babbage the executor of her will."
+    }, 
+    {
+      "index": 504, 
+      "score": 0.18571339547634125, 
+      "sent": "In mathematics, she successfully learned up to the state of the art in her time--probably about the same level as Babbage."
+    }, 
+    {
+      "index": 109, 
+      "score": 0.18567895889282227, 
+      "sent": "And she talked about how after 25 years she had become less \"secretive & suspicious\" with respect to her mother."
+    }, 
+    {
+      "index": 423, 
+      "score": 0.1855735182762146, 
+      "sent": "He was good--even inspired--at the engineering details."
+    }, 
+    {
+      "index": 488, 
+      "score": 0.18550524115562439, 
+      "sent": "He gave good parties, and put great value in connecting with the highest strata of intellectual society."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.18536420166492462, 
+      "sent": "It was often claimed that errors in tables could make ships run aground or bridges collapse."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.18503332138061523, 
+      "sent": "It would change the course of Ada's life."
+    }, 
+    {
+      "index": 447, 
+      "score": 0.18471510708332062, 
+      "sent": "But as soon as one adds just a little more, one will have universal computation."
+    }, 
+    {
+      "index": 219, 
+      "score": 0.18464715778827667, 
+      "sent": "After the Paper But unfortunately that's not how things worked out."
+    }, 
+    {
+      "index": 346, 
+      "score": 0.18407720327377319, 
+      "sent": "... Its province is to assist us in making available what we are already acquainted with.\""
+    }, 
+    {
+      "index": 132, 
+      "score": 0.1837649792432785, 
+      "sent": "But right around this time, Babbage decided he'd had a better idea anyway."
+    }, 
+    {
+      "index": 224, 
+      "score": 0.18353371322154999, 
+      "sent": "She'd interacted with Michael Faraday, who apparently referred to her as \"the rising star of Science\"."
+    }, 
+    {
+      "index": 290, 
+      "score": 0.18289311230182648, 
+      "sent": "Back-and-forth letters that read like a modern text stream, setting up meetings, or mentioning colds and other ailments."
+    }, 
+    {
+      "index": 377, 
+      "score": 0.18275369703769684, 
+      "sent": "So Ada's B8 would have taken about 5 seconds and B50 would have taken perhaps a minute."
+    }, 
+    {
+      "index": 323, 
+      "score": 0.18263976275920868, 
+      "sent": "But even in the 1960s, Babbage--and Ada--weren't exactly well known."
+    }, 
+    {
+      "index": 282, 
+      "score": 0.18251660466194153, 
+      "sent": "Perhaps it was a reflection of her father's \"bad boy\" image."
+    }, 
+    {
+      "index": 458, 
+      "score": 0.1824067234992981, 
+      "sent": "And no doubt it would have been able to compute mathematical tables to 30- or 50-digit precision at the rate of perhaps one result every 4 seconds."
+    }, 
+    {
+      "index": 310, 
+      "score": 0.1823994368314743, 
+      "sent": "Even though Babbage never finished his Difference Engine, a Swedish company did, and even already displayed part of it at the Great Exhibition."
+    }, 
+    {
+      "index": 214, 
+      "score": 0.1823405921459198, 
+      "sent": "Then, on Sept. 9, Babbage wrote to Ada, expressing his admiration for her and (famously) describing her as \"Enchantress of Number\" and \"my dear and much admired Interpreter\"."
+    }, 
+    {
+      "index": 414, 
+      "score": 0.18218861520290375, 
+      "sent": "But even though Babbage used his various kinds of diagrams extensively himself, he didn't write papers about them."
+    }, 
+    {
+      "index": 117, 
+      "score": 0.18206971883773804, 
+      "sent": "He'd been doing all sorts of things, with varying degrees of success."
+    }, 
+    {
+      "index": 102, 
+      "score": 0.1820492297410965, 
+      "sent": "But in many ways she seems to have found her controlling and manipulative."
+    }, 
+    {
+      "index": 299, 
+      "score": 0.18169170618057251, 
+      "sent": "He lived 18 more years after Ada, dying in 1871."
+    }, 
+    {
+      "index": 208, 
+      "score": 0.18167975544929504, 
+      "sent": "But on Babbage's copy of Ada's letter, he scribbled, \"Saw A.A.L."
+    }, 
+    {
+      "index": 112, 
+      "score": 0.18167738616466522, 
+      "sent": "Ada took the whole thing very hard, and it derailed her from mathematics."
+    }, 
+    {
+      "index": 179, 
+      "score": 0.18159134685993195, 
+      "sent": "In the end, Ada's translation appeared, signed \"AAL\", without the preface, followed by her notes headed \"Translator's Note\"."
+    }, 
+    {
+      "index": 113, 
+      "score": 0.18156346678733826, 
+      "sent": "Ada had had intermittent health problems for years, but in 1841 they apparently worsened, and she started systematically taking opiates."
+    }, 
+    {
+      "index": 365, 
+      "score": 0.18138374388217926, 
+      "sent": "The algorithm she used for the computation was (in modern terms):  On the Analytical Engine, the idea was to have a sequence of operations (specified by \"Operation Cards\") performed by the \"Mill\", with operands coming from the \"Store\" (with addresses specified by \"Variable Cards\")."
+    }, 
+    {
+      "index": 428, 
+      "score": 0.18131618201732635, 
+      "sent": "One might have thought that to do lots of different kinds of things would necessarily require lots of different kinds of computers."
+    }, 
+    {
+      "index": 259, 
+      "score": 0.18113049864768982, 
+      "sent": "For a while her doctors were just telling her to spend more time at the seaside."
+    }, 
+    {
+      "index": 318, 
+      "score": 0.18054358661174774, 
+      "sent": "But Ada herself was still largely a footnote at that point."
+    }, 
+    {
+      "index": 304, 
+      "score": 0.18052235245704651, 
+      "sent": "There are chapters on \"Theatrical experience\", \"Hints for travellers\" (including on advice about how to get an RV-like carriage in Europe), and, perhaps most peculiar, \"Street nuisances\"."
+    }, 
+    {
+      "index": 513, 
+      "score": 0.18019005656242371, 
+      "sent": "But she was drawn to abstract ways of thinking, not only in mathematics and science, but also in more metaphysical areas."
+    }, 
+    {
+      "index": 253, 
+      "score": 0.17999733984470367, 
+      "sent": "In May 1851 the Great Exhibition opened at the Crystal Palace in London."
+    }, 
+    {
+      "index": 531, 
+      "score": 0.17996016144752502, 
+      "sent": "Like Babbage, I have spent much of my life pursuing particular goals--though unlike Babbage, I have been able to see a fair fraction of them achieved."
+    }, 
+    {
+      "index": 490, 
+      "score": 0.17989730834960938, 
+      "sent": "Babbage was never a terribly good judge of people, or of how what he said would be perceived by them."
+    }, 
+    {
+      "index": 103, 
+      "score": 0.17984651029109955, 
+      "sent": "Ada's mother was constantly announcing that she had medical problems and might die imminently (she actually lived to age 64)."
+    }, 
+    {
+      "index": 292, 
+      "score": 0.17975151538848877, 
+      "sent": "Three Greek sisters seeking money from Ada because their dead brother had been a page for Lord Byron."
+    }, 
+    {
+      "index": 97, 
+      "score": 0.17940561473369598, 
+      "sent": "Ada was a tenacious student, and seemed to have had a great time learning more and more about mathematics."
+    }, 
+    {
+      "index": 291, 
+      "score": 0.17918668687343597, 
+      "sent": "Charles Babbage complaining about the postal service."
+    }, 
+    {
+      "index": 157, 
+      "score": 0.17866559326648712, 
+      "sent": "Over the months that followed she worked very hard--often exchanging letters almost daily with Babbage (despite sometimes having other \"pressing and unavoidable engagements\")."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.17825599014759064, 
+      "sent": "But then she got sick with measles (and perhaps encephalitis)--and ended up bedridden and in poor health for 3 years."
+    }, 
+    {
+      "index": 418, 
+      "score": 0.17809806764125824, 
+      "sent": "Or perhaps he saw it as the secret that let him create his designs."
+    }, 
+    {
+      "index": 167, 
+      "score": 0.17786256968975067, 
+      "sent": "You will admire the Table & Diagram extremely."
+    }, 
+    {
+      "index": 128, 
+      "score": 0.17767129838466644, 
+      "sent": "Central to this was what had happened with the Difference Engine."
+    }, 
+    {
+      "index": 210, 
+      "score": 0.17743013799190521, 
+      "sent": "Yet on August 18, Babbage wrote to Ada about bringing drawings and papers when he would next come to visit her."
+    }, 
+    {
+      "index": 296, 
+      "score": 0.17736150324344635, 
+      "sent": "And then, mixed in with all the rest, serious intellectual discussion about the Analytical Engine and many other things."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.17731745541095734, 
+      "sent": "She had had eight children with him, but only three survived to adulthood."
+    }, 
+    {
+      "index": 328, 
+      "score": 0.17681415379047394, 
+      "sent": "Amazingly, the machine worked."
+    }, 
+    {
+      "index": 474, 
+      "score": 0.17679578065872192, 
+      "sent": "If Ada had lived as long as Babbage, she would still have been around in the 1890s when Herman Hollerith was doing card-based electromechanical tabulation for the census (and founding what would eventually become IBM)."
+    }, 
+    {
+      "index": 514, 
+      "score": 0.17668873071670532, 
+      "sent": "And she seems to have concluded that her greatest strength would be in bridging the scientific with the metaphysical--perhaps in what she called \"poetical science\"."
+    }, 
+    {
+      "index": 407, 
+      "score": 0.17650528252124786, 
+      "sent": "I think the key was what he called his Mechanical Notation."
+    }, 
+    {
+      "index": 528, 
+      "score": 0.17595712840557098, 
+      "sent": "That Ada touched what would become a defining intellectual idea of our time was good fortune."
+    }, 
+    {
+      "index": 260, 
+      "score": 0.17559076845645905, 
+      "sent": "But eventually they admitted she had cancer (from what we know now, probably cervical cancer)."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.17556619644165039, 
+      "sent": "Her very brief marriage to Byron fell apart when Ada was just 5 weeks old, and Ada never saw Byron again (though he kept a picture of her on his desk and famously mentioned her in his poetry)."
+    }, 
+    {
+      "index": 466, 
+      "score": 0.17534357309341431, 
+      "sent": "And if George Boole had followed up on his meeting with Babbage at the Great Exhibition, maybe that would have led to something."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.17529948055744171, 
+      "sent": "Charles Babbage What was the story of Charles Babbage?"
+    }, 
+    {
+      "index": 461, 
+      "score": 0.17479196190834045, 
+      "sent": "After all, Charles Wheatstone, who was intimately involved in the development of the electric telegraph in the 1830s, was a good friend of theirs."
+    }, 
+    {
+      "index": 476, 
+      "score": 0.17469698190689087, 
+      "sent": "Perhaps Ada would have used the Analytical Engine--as she began to imagine--to produce algorithmic music."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.17455936968326569, 
+      "sent": "Ada learned history, literature, languages, geography, music, chemistry, sewing, shorthand and mathematics (taught in part through experiential methods) to the level of elementary geometry and algebra."
+    }, 
+    {
+      "index": 227, 
+      "score": 0.17437697947025299, 
+      "sent": "The postponement of that will however only render it more perfect.\""
+    }, 
+    {
+      "index": 14, 
+      "score": 0.17431764304637909, 
+      "sent": "Ada Byron, as she was then called, was born in London on December 10, 1815 to recently married high-society parents."
+    }, 
+    {
+      "index": 272, 
+      "score": 0.17421209812164307, 
+      "sent": "Her oldest son--with whom Ada had many difficulties--joined the navy several years before she died, but deserted."
+    }, 
+    {
+      "index": 4, 
+      "score": 0.17341768741607666, 
+      "sent": "It was much harder than I expected."
+    }, 
+    {
+      "index": 111, 
+      "score": 0.17340950667858124, 
+      "sent": "Incest like that wasn't actually illegal in England at the time, but it was scandalous."
+    }, 
+    {
+      "index": 108, 
+      "score": 0.17331127822399139, 
+      "sent": "She talked of her \"insatiable & restless energy\" which she believed she finally had found a purpose for."
+    }, 
+    {
+      "index": 23, 
+      "score": 0.17325447499752045, 
+      "sent": "He died at the age of 36, at the height of his celebrityhood, when Ada was 8."
+    }, 
+    {
+      "index": 470, 
+      "score": 0.17304550111293793, 
+      "sent": "Today--in the Wolfram Language for example--we never store much in the way of mathematical tables; we just compute what we need when we need it."
+    }, 
+    {
+      "index": 462, 
+      "score": 0.17288725078105927, 
+      "sent": "And by transmitting information electrically through wires, rather than mechanically through rods, the hardware for the machine would have been dramatically reduced, and its reliability (which would have been a big issue) would have been dramatically increased."
+    }, 
+    {
+      "index": 62, 
+      "score": 0.17256160080432892, 
+      "sent": "The same year, though, his wife died."
+    }, 
+    {
+      "index": 356, 
+      "score": 0.17190447449684143, 
+      "sent": "Then she asks for some specific references, and finally ends with, \"I want to put in something about Bernoulli's Numbers, in one of my Notes, as an example of how an implicit function may be worked out by the engine, without having been worked out by human head & hands first.... Give me the necessary data & formulae.\""
+    }, 
+    {
+      "index": 333, 
+      "score": 0.17172379791736603, 
+      "sent": "They start crisply: \"The particular function whose integral the Difference Engine was constructed to tabulate, is ...\"."
+    }, 
+    {
+      "index": 149, 
+      "score": 0.17142458260059357, 
+      "sent": "(The transcripts of debates about the Difference Engine have a certain charm--especially when they discuss its possible uses for state statistics that strangely parallel computable-country opportunities with Wolfram|Alpha today.)"
+    }, 
+    {
+      "index": 107, 
+      "score": 0.1706780344247818, 
+      "sent": "She talked of her ambition to do great things."
+    }, 
+    {
+      "index": 361, 
+      "score": 0.17065046727657318, 
+      "sent": "But, OK, so how did Ada plan to do it?"
+    }, 
+    {
+      "index": 173, 
+      "score": 0.17064777016639709, 
+      "sent": "By the end of July 1843, Ada had pretty much finished writing her notes."
+    }, 
+    {
+      "index": 221, 
+      "score": 0.17044855654239655, 
+      "sent": "But then her health collapsed, and she spent many months going between doctors and various \"cures\" (her mother suggested \"mesmerism\", i.e."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.17026898264884949, 
+      "sent": "Ada's parents were something of a study in opposites."
+    }, 
+    {
+      "index": 217, 
+      "score": 0.16948050260543823, 
+      "sent": "\", and Babbage signed off on his next letter as \"Your faithful Slave\"."
+    }, 
+    {
+      "index": 314, 
+      "score": 0.16940808296203613, 
+      "sent": "Mechanical computers nevertheless continued to be developed, gradually giving way to electromechanical ones, and eventually to electronic ones."
+    }, 
+    {
+      "index": 257, 
+      "score": 0.16926847398281097, 
+      "sent": "William won an award for brick-making."
+    }, 
+    {
+      "index": 489, 
+      "score": 0.16925185918807983, 
+      "sent": "But particularly in his later years, he spent most of his time alone in his large house, filled with books and papers and unfinished projects."
+    }, 
+    {
+      "index": 480, 
+      "score": 0.16836786270141602, 
+      "sent": "If they had developed the Analytical Engine, would they have found a business model for it?"
+    }, 
+    {
+      "index": 472, 
+      "score": 0.16830681264400482, 
+      "sent": "So, OK: would the Analytical Engine have gotten beyond computing mathematical tables?"
+    }, 
+    {
+      "index": 285, 
+      "score": 0.16827301681041718, 
+      "sent": "It didn't help that Ada's mother and her youngest son both seemed against her."
+    }, 
+    {
+      "index": 265, 
+      "score": 0.16778014600276947, 
+      "sent": "She seemed close to death, but she hung on, in great pain, for nearly 3 more months, finally dying on November 27, 1852, at the age of 36."
+    }, 
+    {
+      "index": 450, 
+      "score": 0.16768403351306915, 
+      "sent": "But in the abstract, things might not be that way."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.16689357161521912, 
+      "sent": "--and was supported, if modestly, by his father and his wife's family."
+    }, 
+    {
+      "index": 178, 
+      "score": 0.16663689911365509, 
+      "sent": "Ada was furious, and told Babbage so."
+    }, 
+    {
+      "index": 353, 
+      "score": 0.16619452834129333, 
+      "sent": "Not a bad level of understanding for 1843."
+    }, 
+    {
+      "index": 435, 
+      "score": 0.16514220833778381, 
+      "sent": "Babbage didn't think of it in these terms, though."
+    }, 
+    {
+      "index": 246, 
+      "score": 0.16497211158275604, 
+      "sent": "He had already written short reports with titles like \"Method of growing Beans and Cabbages on the same Ground\" and \"On the Culture of Mangold-Wurzel\"."
+    }, 
+    {
+      "index": 166, 
+      "score": 0.1648651510477066, 
+      "sent": "Later she told Babbage: \"I have worked incessantly, & most successfully, all day."
+    }, 
+    {
+      "index": 436, 
+      "score": 0.16470174491405487, 
+      "sent": "He just wanted a machine that was as effective as possible at producing mathematical tables."
+    }, 
+    {
+      "index": 395, 
+      "score": 0.16425728797912598, 
+      "sent": "In his autobiography written 26 years later, he had a hard time saying anything nice about anyone or anything."
+    }, 
+    {
+      "index": 424, 
+      "score": 0.16389013826847076, 
+      "sent": "He was bad at keeping a project on track."
+    }, 
+    {
+      "index": 530, 
+      "score": 0.16377681493759155, 
+      "sent": "For someone like me the story of Ada and Babbage has particular resonance."
+    }, 
+    {
+      "index": 518, 
+      "score": 0.162777379155159, 
+      "sent": "It is a story of technical prowess meeting abstract \"big picture\" thinking."
+    }, 
+    {
+      "index": 477, 
+      "score": 0.16254307329654694, 
+      "sent": "Perhaps they would have used it to solve things like the three-body problem, maybe even by simulation."
+    }, 
+    {
+      "index": 379, 
+      "score": 0.16253437101840973, 
+      "sent": "Babbage vs. Ada?"
+    }, 
+    {
+      "index": 500, 
+      "score": 0.16173373162746429, 
+      "sent": "Like Babbage, she was independently wealthy, and had no need to work for a living."
+    }, 
+    {
+      "index": 261, 
+      "score": 0.16143065690994263, 
+      "sent": "Opium no longer controlled her pain; she experimented with cannabis."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.16126538813114166, 
+      "sent": "Her mother, often absent for various (quite wacky) health cures, enforced a system of education for Ada that involved long hours of study and exercises in self control."
+    }, 
+    {
+      "index": 479, 
+      "score": 0.16123427450656891, 
+      "sent": "Neither Babbage nor Ada ever made money commercially (and, as Babbage took pains to point out, his government contracts just paid his engineers, not him)."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.16088631749153137, 
+      "sent": "Ada Lovelace was born 200 years ago today."
+    }, 
+    {
+      "index": 101, 
+      "score": 0.16088059544563293, 
+      "sent": "Outwardly, Ada treated her mother with great respect."
+    }, 
+    {
+      "index": 478, 
+      "score": 0.16034862399101257, 
+      "sent": "If they'd figured out binary, maybe they would even have simulated things like cellular automata."
+    }, 
+    {
+      "index": 482, 
+      "score": 0.16005966067314148, 
+      "sent": "Maybe they would even have operated a kind of cloud computing service for Victorian science, technology, finance and more."
+    }, 
+    {
+      "index": 413, 
+      "score": 0.15758870542049408, 
+      "sent": "(One difference in modern times is that subsystems are represented much more hierarchically; another is that everything is now computable, so that actual behavior of the system can be simulated from the representation.)"
+    }, 
+    {
+      "index": 90, 
+      "score": 0.15752533078193665, 
+      "sent": "(Yes, it was a small world."
+    }, 
+    {
+      "index": 501, 
+      "score": 0.15742902457714081, 
+      "sent": "But she was ambitious, and wanted to make something of herself."
+    }, 
+    {
+      "index": 226, 
+      "score": 0.15727546811103821, 
+      "sent": "When her notes were published, Babbage had said \"You should have written an original paper."
+    }, 
+    {
+      "index": 233, 
+      "score": 0.15708734095096588, 
+      "sent": "There were roadblocks, to be sure."
+    }, 
+    {
+      "index": 404, 
+      "score": 0.15702538192272186, 
+      "sent": "(In his autobiography, he basically just refers to Ada's Notes.)"
+    }, 
+    {
+      "index": 223, 
+      "score": 0.15699279308319092, 
+      "sent": "She was still excited about science, though."
+    }, 
+    {
+      "index": 146, 
+      "score": 0.1568705141544342, 
+      "sent": "2, requiring only 8000 parts instead of 25,000."
+    }, 
+    {
+      "index": 506, 
+      "score": 0.15684442222118378, 
+      "sent": "When one reads Ada's letters, what comes through is a smart, sophisticated person, with a clear, logical mind."
+    }, 
+    {
+      "index": 503, 
+      "score": 0.15680807828903198, 
+      "sent": "She was also capable of great and sustained focus, for example over the months she spent writing her Notes."
+    }, 
+    {
+      "index": 76, 
+      "score": 0.15670512616634369, 
+      "sent": "(There's a lot of underlining, here shown as italics, in all Ada's handwritten correspondence.)"
+    }, 
+    {
+      "index": 487, 
+      "score": 0.15660355985164642, 
+      "sent": "Early in life he was idealistic (\"do my best to leave the world wiser than I found it\"); later he was almost a Dickensian caricature of a bitter old man."
+    }, 
+    {
+      "index": 366, 
+      "score": 0.15645517408847809, 
+      "sent": "(In the Store, each number was represented by a sequence of wheels, each turned to the appropriate value for each digit.)"
+    }, 
+    {
+      "index": 212, 
+      "score": 0.15631984174251556, 
+      "sent": "And Ada wrote to her mother: \"Babbage & I are I think more friends than ever."
+    }, 
+    {
+      "index": 116, 
+      "score": 0.15606223046779633, 
+      "sent": "Back to Babbage What had Babbage been up to while all this had been going on?"
+    }, 
+    {
+      "index": 491, 
+      "score": 0.15582053363323212, 
+      "sent": "And even in his eighties, he was still quite child-like in his polemics."
+    }, 
+    {
+      "index": 507, 
+      "score": 0.15565495193004608, 
+      "sent": "What she says is often dressed in Victorian pleasantaries--but underneath, the ideas are clear and often quite forceful."
+    }, 
+    {
+      "index": 492, 
+      "score": 0.15523791313171387, 
+      "sent": "He was also notoriously poor at staying focused; he always had a new idea to pursue."
+    }, 
+    {
+      "index": 201, 
+      "score": 0.15433834493160248, 
+      "sent": "Perhaps you will not choose to have anything more to do with me."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.15403266251087189, 
+      "sent": "met the king), she went to a party at the house of 41-year-old Charles Babbage (whose oldest son was the same age as Ada)."
+    }, 
+    {
+      "index": 216, 
+      "score": 0.15401706099510193, 
+      "sent": "The next day, Ada responded to Babbage, \"You are a brave man to give yourself wholly up to Fairy-Guidance!"
+    }, 
+    {
+      "index": 382, 
+      "score": 0.15376086533069611, 
+      "sent": "Ada saw herself first and foremost as an expositor."
+    }, 
+    {
+      "index": 512, 
+      "score": 0.15363900363445282, 
+      "sent": "For many years, partly at her mother's behest, she eschewed things like poetry."
+    }, 
+    {
+      "index": 519, 
+      "score": 0.1528649628162384, 
+      "sent": "It is a story of friendship between old and young."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.15270425379276276, 
+      "sent": "On June 5, 1833, 26 days after she was \"presented at Court\" (i.e."
+    }, 
+    {
+      "index": 281, 
+      "score": 0.15254202485084534, 
+      "sent": "There's scant evidence of either."
+    }, 
+    {
+      "index": 446, 
+      "score": 0.15219508111476898, 
+      "sent": "A Difference Engine doesn't get there."
+    }, 
+    {
+      "index": 475, 
+      "score": 0.15202859044075012, 
+      "sent": "The Analytical Engine could have done much more."
+    }, 
+    {
+      "index": 502, 
+      "score": 0.15154506266117096, 
+      "sent": "In person, beyond the polished Victorian upper-class exterior, I suspect she was something of a nerd, complete with math jokes and everything."
+    }, 
+    {
+      "index": 200, 
+      "score": 0.15034489333629608, 
+      "sent": "Then she added, \"You will have had my long letter this morning."
+    }, 
+    {
+      "index": 237, 
+      "score": 0.15019433200359344, 
+      "sent": "There were also problems with money."
+    }, 
+    {
+      "index": 254, 
+      "score": 0.14876994490623474, 
+      "sent": "(When Ada visited the site back in January, Babbage advised, \"Pray put on worsted stockings, cork soles and every other thing which can keep you warm.\")"
+    }, 
+    {
+      "index": 213, 
+      "score": 0.14859555661678314, 
+      "sent": "I have never seen him so agreeable, so reasonable, or in such good spirits!\""
+    }, 
+    {
+      "index": 455, 
+      "score": 0.14831051230430603, 
+      "sent": "I don't doubt that the Analytical Engine would have been built."
+    }, 
+    {
+      "index": 330, 
+      "score": 0.14797742664813995, 
+      "sent": "What about the Analytical Engine?"
+    }, 
+    {
+      "index": 17, 
+      "score": 0.14781078696250916, 
+      "sent": "Her father said he gave her the name \"Ada\" because \"It is short, ancient, vocalic\"."
+    }, 
+    {
+      "index": 522, 
+      "score": 0.1477476954460144, 
+      "sent": "A tragedy for Babbage, who lost so many people in his life, and whose personality pushed others away and prevented him from realizing his ambitions."
+    }, 
+    {
+      "index": 91, 
+      "score": 0.1473182886838913, 
+      "sent": "De Morgan was also a friend of George Boole's--and was the person who indirectly caused Boolean algebra to be invented.)"
+    }, 
+    {
+      "index": 459, 
+      "score": 0.14684005081653595, 
+      "sent": "Would they have figured that the machine could be electromechanical rather than purely mechanical?"
+    }, 
+    {
+      "index": 191, 
+      "score": 0.14681270718574524, 
+      "sent": "In it, she explains that while he is often \"implicit\" in what he says, she is herself \"always a very 'explicit function of x'\"."
+    }, 
+    {
+      "index": 527, 
+      "score": 0.14677567780017853, 
+      "sent": "Or an Alan Turing, understanding the abstract idea of universal computation?"
+    }, 
+    {
+      "index": 283, 
+      "score": 0.14660382270812988, 
+      "sent": "But before long there were claims that she'd pawned the family jewels (twice!"
+    }, 
+    {
+      "index": 508, 
+      "score": 0.1465604305267334, 
+      "sent": "Ada was very conscious of her family background, and of being \"Lord Byron's daughter\"."
+    }, 
+    {
+      "index": 245, 
+      "score": 0.14544270932674408, 
+      "sent": "William also dipped his toe into publishing."
+    }, 
+    {
+      "index": 529, 
+      "score": 0.1447003185749054, 
+      "sent": "Babbage did not know what he had; Ada started to see glimpses and successfully described them."
+    }, 
+    {
+      "index": 325, 
+      "score": 0.14452308416366577, 
+      "sent": "Still, by the 1980s, particularly after the US Department of Defense named its ill-fated programming language after Ada, awareness of Ada Lovelace and Charles Babbage began to increase, and biographies began to appear, though sometimes with hair-raising errors (my favorite is that the mention of \"the problem of three bodies\" in a letter from Babbage indicated a romantic triangle between Babbage, Ada and William--while it actually refers to the three-body problem in celestial mechanics!)."
+    }, 
+    {
+      "index": 494, 
+      "score": 0.14449246227741241, 
+      "sent": "I myself have shared a modern version of this very goal in my own life (..., Mathematica, Wolfram|Alpha, Wolfram Language, ...)--though so far only for 40 years."
+    }, 
+    {
+      "index": 252, 
+      "score": 0.14275446534156799, 
+      "sent": "(It wouldn't have been out of character for Babbage or her to invent some mathematical scheme for betting, but there's no evidence that they did.)"
+    }, 
+    {
+      "index": 42, 
+      "score": 0.14247088134288788, 
+      "sent": "He didn't have a job as such, but gave public lectures on astronomy and wrote respectable if unspectacular papers about various mathematical topics (functional equations, continued products, number theory, etc.)"
+    }, 
+    {
+      "index": 298, 
+      "score": 0.14206710457801819, 
+      "sent": "So what happened to Babbage?"
+    }, 
+    {
+      "index": 509, 
+      "score": 0.14196829497814178, 
+      "sent": "At some level, his story and success no doubt fueled her ambition, and her willingness to try new things."
+    }, 
+    {
+      "index": 143, 
+      "score": 0.1417461633682251, 
+      "sent": "Babbage was fond of emphasizing that--unlike many of his contemporaries--he hadn't taken government money himself (despite chargebacks for renovating his stable as a fireproof workshop, etc.)."
+    }, 
+    {
+      "index": 439, 
+      "score": 0.14174310863018036, 
+      "sent": "What Ada did was lost for many years."
+    }, 
+    {
+      "index": 288, 
+      "score": 0.14147751033306122, 
+      "sent": "But others complied, and, later on, when her son organized them, he destroyed some."
+    }, 
+    {
+      "index": 297, 
+      "score": 0.14097456634044647, 
+      "sent": "What Happened to Babbage?"
+    }, 
+    {
+      "index": 526, 
+      "score": 0.13934122025966644, 
+      "sent": "A Steve-Jobs-like figure who would lead the vision of the Analytical Engine?"
+    }, 
+    {
+      "index": 515, 
+      "score": 0.13880650699138641, 
+      "sent": "It was likely a correct self perception."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.13834340870380402, 
+      "sent": "(When I was in elementary school, logarithm tables were still the fast way to do multiplication.)"
+    }, 
+    {
+      "index": 159, 
+      "score": 0.13817164301872253, 
+      "sent": "Ada asks Babbage questions; he responds; she figures things out; he comments on them."
+    }, 
+    {
+      "index": 243, 
+      "score": 0.13757063448429108, 
+      "sent": "Ada talked him out of it."
+    }, 
+    {
+      "index": 209, 
+      "score": 0.13754352927207947, 
+      "sent": "this morning and refused all the conditions\"."
+    }, 
+    {
+      "index": 172, 
+      "score": 0.13727913796901703, 
+      "sent": "(for \"Ada Augusta Lovelace\")."
+    }, 
+    {
+      "index": 536, 
+      "score": 0.13716354966163635, 
+      "sent": "Quite a few organizations and people helped in getting information and material for this post."
+    }, 
+    {
+      "index": 406, 
+      "score": 0.13637465238571167, 
+      "sent": "So how did he do it?"
+    }, 
+    {
+      "index": 293, 
+      "score": 0.13578486442565918, 
+      "sent": "Charles Dickens talking about chamomile tea."
+    }, 
+    {
+      "index": 429, 
+      "score": 0.13536465167999268, 
+      "sent": "But this isn't true."
+    }, 
+    {
+      "index": 165, 
+      "score": 0.13505358994007111, 
+      "sent": "Tant mieux.\""
+    }, 
+    {
+      "index": 25, 
+      "score": 0.13431738317012787, 
+      "sent": "Ada led an isolated childhood on her mother's rented country estates, with governesses and tutors and her pet cat, Mrs."
+    }, 
+    {
+      "index": 5, 
+      "score": 0.13387396931648254, 
+      "sent": "Historians disagree."
+    }, 
+    {
+      "index": 394, 
+      "score": 0.13371394574642181, 
+      "sent": "So what did Babbage say about that?"
+    }, 
+    {
+      "index": 521, 
+      "score": 0.13364849984645844, 
+      "sent": "It is also a tragedy."
+    }, 
+    {
+      "index": 481, 
+      "score": 0.13235290348529816, 
+      "sent": "No doubt they would have sold some engines to governments."
+    }, 
+    {
+      "index": 295, 
+      "score": 0.13192985951900482, 
+      "sent": "And household accounts, with entries for note paper, musicians, and ginger biscuits."
+    }, 
+    {
+      "index": 215, 
+      "score": 0.13182215392589569, 
+      "sent": "(Yes, despite what's often quoted, he wrote \"Number\" not \"Numbers\".)"
+    }, 
+    {
+      "index": 511, 
+      "score": 0.13126227259635925, 
+      "sent": "But I also suspect his troubles loomed over her."
+    }, 
+    {
+      "index": 525, 
+      "score": 0.13122460246086121, 
+      "sent": "Another Mary Somerville, famous Victorian expositor of science?"
+    }, 
+    {
+      "index": 284, 
+      "score": 0.13080252707004547, 
+      "sent": "), or lost, some said, PS20,000, or maybe even PS40,000 (equivalent to about $7 million today) betting on horses."
+    }, 
+    {
+      "index": 535, 
+      "score": 0.13046544790267944, 
+      "sent": "It's been a pleasure getting to know you, Ada."
+    }, 
+    {
+      "index": 381, 
+      "score": 0.13017827272415161, 
+      "sent": "So what did Ada add?"
+    }, 
+    {
+      "index": 176, 
+      "score": 0.12986262142658234, 
+      "sent": "Ada thought it a bad idea."
+    }, 
+    {
+      "index": 486, 
+      "score": 0.12815892696380615, 
+      "sent": "He was, I think, a good conversationalist."
+    }, 
+    {
+      "index": 523, 
+      "score": 0.12758898735046387, 
+      "sent": "A tragedy for Ada, who was just getting started in something she loved when her health failed."
+    }, 
+    {
+      "index": 465, 
+      "score": 0.12735059857368469, 
+      "sent": "Leibniz knew about binary."
+    }, 
+    {
+      "index": 453, 
+      "score": 0.12543904781341553, 
+      "sent": "What if Ada's health hadn't failed--and she had successfully taken over the Analytical Engine project?"
+    }, 
+    {
+      "index": 433, 
+      "score": 0.12458942085504532, 
+      "sent": "But it wasn't followed up."
+    }, 
+    {
+      "index": 287, 
+      "score": 0.1245458573102951, 
+      "sent": "Babbage refused."
+    }, 
+    {
+      "index": 279, 
+      "score": 0.12373422086238861, 
+      "sent": "Had she had affairs?"
+    }, 
+    {
+      "index": 190, 
+      "score": 0.12276343256235123, 
+      "sent": "(Unlike her usual letters, which were on little folded pages, this was on large sheets.)"
+    }, 
+    {
+      "index": 294, 
+      "score": 0.12168034166097641, 
+      "sent": "Pleasantries from a person Ada met at Paddington Station."
+    }, 
+    {
+      "index": 280, 
+      "score": 0.12038407474756241, 
+      "sent": "Had she run up huge gambling debts?"
+    }, 
+    {
+      "index": 485, 
+      "score": 0.11702356487512589, 
+      "sent": "If one had met Charles Babbage, what would he have been like?"
+    }, 
+    {
+      "index": 498, 
+      "score": 0.11643493175506592, 
+      "sent": "She came from the upper classes, but didn't wear especially fashionable clothes, and carried herself much less like a stereotypical countess than like an intellectual."
+    }, 
+    {
+      "index": 164, 
+      "score": 0.11487562954425812, 
+      "sent": "I am now going out on horseback."
+    }, 
+    {
+      "index": 497, 
+      "score": 0.11444086581468582, 
+      "sent": "From everything I can tell, she was a clear speaking, clear thinking individual."
+    }, 
+    {
+      "index": 537, 
+      "score": 0.11324864625930786, 
+      "sent": "I'd like to thank the British Library, the Museum of the History of Science, Oxford, Science Museum, London; the Bodleian Library, Oxford (with permission from the Earl of Lytton, Ada's great-great grandson, and one of her 10 living descendants); the New York Public Library;  St. Mary Magdalene Church, Hucknall, Nottinghamshire (Ada's burial place); and Betty Toole (author of a collection of Ada's letters); as well as two old friends: Tim Robinson (re-creator of Babbage engines) and Nathan Myhrvold (funder of Difference Engine #2 re-creation)."
+    }, 
+    {
+      "index": 464, 
+      "score": 0.11224538832902908, 
+      "sent": "Would they have figured that idea out?"
+    }, 
+    {
+      "index": 524, 
+      "score": 0.11179126054048538, 
+      "sent": "We will never know what Ada could have become."
+    }, 
+    {
+      "index": 510, 
+      "score": 0.11001802235841751, 
+      "sent": "(I can't help thinking of her leading the engineers of the Analytical Engine as a bit like Lord Byron leading the Greek army.)"
+    }, 
+    {
+      "index": 454, 
+      "score": 0.10575275868177414, 
+      "sent": "What might have happened then?"
+    }, 
+    {
+      "index": 202, 
+      "score": 0.10016783326864243, 
+      "sent": "But I hope the best...\"     At 5 pm that day, Ada was in London, and wrote to her mother: \"I am uncertain as yet how the Babbage business will end...."
+    }, 
+    {
+      "index": 496, 
+      "score": 0.10011853277683258, 
+      "sent": "So what about Ada?"
+    }, 
+    {
+      "index": 473, 
+      "score": 0.097099758684635162, 
+      "sent": "I suspect so."
+    }, 
+    {
+      "index": 460, 
+      "score": 0.096955582499504089, 
+      "sent": "I suspect so."
+    }, 
+    {
+      "index": 484, 
+      "score": 0.095715999603271484, 
+      "sent": "What Were They Like?"
+    }, 
+    {
+      "index": 96, 
+      "score": 0.088138982653617859, 
+      "sent": "\", etc.)."
+    }, 
+    {
+      "index": 309, 
+      "score": 0.084822714328765869, 
+      "sent": "When he died, his brain was preserved, and is still on display..."
+    }, 
+    {
+      "index": 203, 
+      "score": 0.075812123715877533, 
+      "sent": "I have written to him ... very explicitly; stating my own conditions ..."
+    }, 
+    {
+      "index": 452, 
+      "score": 0.070049256086349487, 
+      "sent": "What If...?"
+    }, 
+    {
+      "index": 26, 
+      "score": 0.069877497851848602, 
+      "sent": "Puff."
+    }, 
+    {
+      "index": 163, 
+      "score": 0.06342218816280365, 
+      "sent": "...."
+    }
+  ], 
+  "title": null
+}

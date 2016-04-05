@@ -1,0 +1,966 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 2, 
+      "score": 0.29574549198150635, 
+      "sent": "It has sat in its present position since the late Mycenaean period (1300-1200 bc), which is roughly when the historical figures behind Homer's epics are thought to have strode the earth."
+    }, 
+    {
+      "index": 4, 
+      "score": 0.28143244981765747, 
+      "sent": "At the end of Book 10 the Greek heroes Diomedes and Odysseus go into the sea to wash off the sweat they have worked up during a night mission in which they have slaughtered a dozen Thracians and captured their horses."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.27899712324142456, 
+      "sent": "The problem with this particular bathtub is that the hero who is supposed to collapse into it to wash off the day's fighting can never do so."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.27643123269081116, 
+      "sent": "But the magically appearing bathtubs at the end of Book 10 are a marker of a very deep-seated feature of Homeric poetry."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.27448299527168274, 
+      "sent": "The Iliad is a poem of surprises - mostly nasty, when death rips into domestic life and a bath is left to cool as a wife grieves."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.26810133457183838, 
+      "sent": "Homer's baths show how important domesticity is to his poem, but they also illustrate two other features of the Iliad that have got rather lost in contemporary poetic reactions to it."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.26421183347702026, 
+      "sent": "The way Homeric narrative deals with objects is determined not by probability or the laws of physics, but by social ambience, and by what a poet thinks an audience is likely to expect."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.26335114240646362, 
+      "sent": "Bathtubs play a small but significant role in the Iliad."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.26118806004524231, 
+      "sent": "The Greeks (or Achaians as Homer calls them) have been camping out on the shore near Troy for nine years, so it's conceivable that they had equipped their huts with a full Nestorian en suite."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.25720158219337463, 
+      "sent": "Alternatively the presence of these bathtubs may be a sign that the free-standing episode related in Book 10 (traditionally called the 'Doloneia') was, as most scholars now believe, composed by someone other than 'Homer', who was a bit more prone to nod than the writer he emulated."
+    }, 
+    {
+      "index": 25, 
+      "score": 0.25692325830459595, 
+      "sent": "But both Oswald and Logue risk turning Homer's socially subtle and carefully constructed narrative into a Poundian snuff movie, a poem in which one violent and vivid image of death succeeds another."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.24410003423690796, 
+      "sent": "Alice Oswald's Memorial (2011) makes the poem a string of elegies for the dead interspersed with similes, and pares away almost all narrative elements."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.24144147336483002, 
+      "sent": "A little later the singularity of heroes' spears is again an issue, this time a tragic one."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.23686890304088593, 
+      "sent": "This can be illustrated if we backtrack from Hector's missed bath to the fighting that precedes his death, and follow the progress of one of the key implements of death in the poem: spears."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.23290897905826569, 
+      "sent": "Nestor's bath is a substantial piece of decorated terracotta fixed into a weighty base."
+    }, 
+    {
+      "index": 17, 
+      "score": 0.23175050318241119, 
+      "sent": "Inside the walls of Troy there is no problem about the presence of baths or any other amenity: it is a well-built domestic space where there is weaving and warm linen."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.23167410492897034, 
+      "sent": "*Whether this thesis is true or not, it does allow us to see some of the poem's more curious moments as the product of art rather than accident, or of art happily co-operating with accident."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.23031662404537201, 
+      "sent": "Both of these versions are powerful re-imaginings of the Iliad from which anyone, whether they can read the original or not, can learn."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.22783778607845306, 
+      "sent": "Or maybe they packed portable baths in their hollow ships as they set off for Troy, on the principle that for a long siege you would need a lot of kit including if not the kitchen sink then at least the bath."
+    }, 
+    {
+      "index": 23, 
+      "score": 0.2270294725894928, 
+      "sent": "Christopher Logue's dazzling paraphrases adopt a fragmentary form which appears to have been broken apart by the violence it represents, which is often grotesque ('His neck was cut clean through/Except for a skein of flesh off which/His head hung down like a melon')."
+    }, 
+    {
+      "index": 61, 
+      "score": 0.22663205862045288, 
+      "sent": "Oral formulae and conventional scenes are not simply recombined in order to chunter out yet another combat: they are used to generate a set of expectations, which are then varied to create surprise and horror."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.22590139508247375, 
+      "sent": "It's the most moving episode in the whole poem, which again forces a conjunction between a domestic world within and the fighting outside the walls of Troy."
+    }, 
+    {
+      "index": 180, 
+      "score": 0.22352774441242218, 
+      "sent": "It is a goal which, in respect of the Iliad's narrative if not always of its poetic texture, Peter Green achieves."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.21939951181411743, 
+      "sent": "In the Iliad as we have it the single spear seems to bilocate, and then a god obligingly returns it to its owner, because on a battlefield once you have thrown your spear you're effectively left with three options: close combat, death or divine intervention."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.21617847681045532, 
+      "sent": "This moment of Marvel Comic heroism prompts a footnote from Green, who describes it as a 'physical improbability that suggests this passage may be the work of an interpolator'."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.21601685881614685, 
+      "sent": "The poem was grounded in a complex oral tradition which had grown up in the centuries after the Mycenaean bronze age, but which refashioned that tradition on a scale and with a sophistication that probably depended on writing."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.21601171791553497, 
+      "sent": "The empty bath is a reminder of the way war abuts and busts up domestic life."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.21450106799602509, 
+      "sent": "The Empty Bath Colin Burrow    BuyHomer: 'The Iliad' translated by Peter Green California, 560 pp, PS19.95, May 2015, ISBN 978 0 520 28141 7        At sandy Pylos (as Homer calls it) on the western coast of Greece it's still possible to see the bathtub of Nestor, who figures in the Iliad as an ancient, well-meaning but rather long-winded hero."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.21334266662597656, 
+      "sent": "More recent scholars, including Green in his wise and learned introduction to his translation, argue that the Iliad was composed probably by a single person sometime between 800 and 650 bc."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.21054825186729431, 
+      "sent": "Objects can be conjured out of the air by a set of rules for narrative plausibility which are not ours."
+    }, 
+    {
+      "index": 170, 
+      "score": 0.20975764095783234, 
+      "sent": "Suddenly Priam, in the house of a killer, is compared to a killer seeking refuge."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.20930926501750946, 
+      "sent": "It used to be held, chiefly by 19th-century German scholars, that the received text of the Iliad includes a number of interpolations by later hands."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.20789231359958649, 
+      "sent": "Another bathtub figures towards the end of the poem, when the Trojan hero Hector (as I will call him: Peter Green believes we should eradicate the familiar Roman equivalents for Homer's names, so he calls him Hektor) has been killed by Achilles (and, phew, Green calls him Achilles rather than Akhilleus: two cheers for inconsistency)."
+    }, 
+    {
+      "index": 185, 
+      "score": 0.20720131695270538, 
+      "sent": "Green also provides a detailed plot summary and a glossary of places and people, which combines wry and perceptive observations about Homer's characters with a mass of lightly worn historical scholarship."
+    }, 
+    {
+      "index": 181, 
+      "score": 0.20708788931369781, 
+      "sent": "His main virtue, which is impossible to illustrate by selective quotation, is that he always makes it clear exactly what is happening in the poem and why."
+    }, 
+    {
+      "index": 186, 
+      "score": 0.20419535040855408, 
+      "sent": "He is very much a historian, and describes the Iliad as 'a wonderful compendium of cultural evidence from all periods of its evolution', as though it were a versified archaeological site, layering civilised layer on Mycenaean foundations, rather than a poem so full of wonders and surprises that it more or less had to generate wave on wave of poetic and critical responses."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.20350266993045807, 
+      "sent": "The repetition of the phrase 'let fly his far-shadowing spear' highlights the asymmetry between the two heroes and anticipates what happens next."
+    }, 
+    {
+      "index": 78, 
+      "score": 0.20298974215984344, 
+      "sent": "Homer's gods have motives, and human favourites, and an overall sense of what the larger outcomes of the combat will be."
+    }, 
+    {
+      "index": 169, 
+      "score": 0.20220993459224701, 
+      "sent": "All that danger and strangeness is encapsulated in the great simile with which Homer evokes Achilles' wonder when he sees Priam embracing his knees and kissing 'those terrible murderous hands, that had killed so many of his sons':As when blind delusion possesses a man to murdersomeone in his own country, and he flees to an alien people,to some wealthy man's house, and wonder grips those who see him -so Achilles was amazed at the sight of godlike Priam.This is the biggest of all the jolts Homer gives to his audience's expectations."
+    }, 
+    {
+      "index": 138, 
+      "score": 0.20180962979793549, 
+      "sent": "He does so to test their morale, and presumably in the hope that his proposal that they should chuck it all in will make them buckle on their brazen armour for a final assault."
+    }, 
+    {
+      "index": 160, 
+      "score": 0.20146214962005615, 
+      "sent": "The very last episode of the poem, in which Priam supplicates Achilles (who has killed so many of his sons) for the return of Hector's body, is fraught with the danger that the rhythm of the poem (in which so many unexpected things occur) has created."
+    }, 
+    {
+      "index": 5, 
+      "score": 0.20138101279735565, 
+      "sent": "Then they 'climbed into polished bathtubs and bathed themselves'."
+    }, 
+    {
+      "index": 100, 
+      "score": 0.2013595849275589, 
+      "sent": "How much of his uncertainty carries across to Hector's speech to his wife, which shares two lines with Agamemnon's, and similarly incorporates variability into the future it imagines?"
+    }, 
+    {
+      "index": 171, 
+      "score": 0.2009386420249939, 
+      "sent": "And by beginning the simile with the blind delusion that prompts someone to kill (Green, here as always, is scrupulous to follow the sequence of the Greek), Homer doesn't instantly discharge the tension."
+    }, 
+    {
+      "index": 70, 
+      "score": 0.20070888102054596, 
+      "sent": "That rhythm of action, which combines repetition with asymmetry, is the rhythm of Homeric narrative and of the Homeric style."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.20042359828948975, 
+      "sent": "He is in the nightmare that precedes death:As in a dream one can't overtake the quarry one's chasing -the fugitive can't get away, nor his pursuer catch him -so Achilles could not catch up, nor Hektor get clear away ...What this spear-play reveals is something central to Homer, and to many of the arguments about Homer which have raged over the past two centuries."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.20028883218765259, 
+      "sent": "Recent English poetic responses to the Iliad have tended to emphasise its violence."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.19967091083526611, 
+      "sent": "Andromache gives her husband the option of staying by the wild fig tree to fight a rearguard campaign."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.19845864176750183, 
+      "sent": "In the process strange things can happen to both people and objects."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.19783225655555725, 
+      "sent": "The son of Thetis has a god to help him."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.19682765007019043, 
+      "sent": "Was it locked by convention into the shield of its adversary, or did it pass with a unique energy right through it?"
+    }, 
+    {
+      "index": 175, 
+      "score": 0.19601623713970184, 
+      "sent": "They make it a magical poem not in the sense of a fairyland of wishes fulfilled, or of massive soldiers hurling stones it would take three men today to lift, but in the sense of presenting human events as perilously engineered and surrounded by fear - the terror of possible death, of things going wrong, of Troy not falling because Menelaus succumbs to a flesh wound and the allies give up the aim of winning Helen back."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.19475613534450531, 
+      "sent": "It creates rhythms of expectation around objects and events, and then varies those rhythms with extraordinary emotional skill."
+    }, 
+    {
+      "index": 93, 
+      "score": 0.19470588862895966, 
+      "sent": "He seems to think of her fate as a cluster of the kinds of thing that could happen to her given that Troy will fall, rather than as a certain future that precludes all other possibilities."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.19306553900241852, 
+      "sent": "Achilles has finally been drawn back into the battle with the Trojans after Hector has killed the gentle Patroclus."
+    }, 
+    {
+      "index": 152, 
+      "score": 0.19267852604389191, 
+      "sent": "Priam isn't sure if Hermes is an enemy, but with a mule train of rich gifts for Achilles behind him he can't take any risks."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.19259296357631683, 
+      "sent": "Moments later Poseidon interrupts the battle in order to save Aeneas by shot-putting him right out of the fray, which some might argue is more of a physical improbability than a spear ripping through a shield."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.1925092488527298, 
+      "sent": "The next orthodoxy had it that 'Homer' was really a tradition of oral formulaic poets, and if strange things happen it is probably because the poet was on oral formulaic autopilot (spears - well, they stick in shields or in the ground and sometimes you forget which you've said happened)."
+    }, 
+    {
+      "index": 75, 
+      "score": 0.19146837294101715, 
+      "sent": "The rhythm of expectation and surprise which runs through the Iliad interacts in curious ways with the larger principles that appear to underly the poem."
+    }, 
+    {
+      "index": 90, 
+      "score": 0.19135643541812897, 
+      "sent": "Is the 'necessity' he talks of just the male force that will compel Andromache to labour in Argos, or does it imply a larger metaphysical drive?"
+    }, 
+    {
+      "index": 177, 
+      "score": 0.18989437818527222, 
+      "sent": "One of the sensible things Arnold said about Homer was that a translation should 'reproduce on the intelligent scholar, as nearly as possible, the general effect of Homer'."
+    }, 
+    {
+      "index": 92, 
+      "score": 0.18921090662479401, 
+      "sent": "He says Andromache could be enslaved in 'Messeis or Hyperia', and in the Greek he uses a mixture of the subjunctive and the optative to describe her future (Green's 'will lead you away' could be rendered as 'may lead you away')."
+    }, 
+    {
+      "index": 168, 
+      "score": 0.18859539926052094, 
+      "sent": "But we also know that the gods don't always say what they mean and that people don't always obey the gods, and that Achilles can do things that are completely outside the norms of human behaviour."
+    }, 
+    {
+      "index": 145, 
+      "score": 0.18834809958934784, 
+      "sent": "This is a densely political world in which everyone is telling a slightly different story, and in which by a series of nudges the overall arc of a narrative is finally generated out of a series of insubordinate episodes."
+    }, 
+    {
+      "index": 131, 
+      "score": 0.18818232417106628, 
+      "sent": "So he sends Agamemnon a message which isn't true and which will lead to the deaths of many Achaians."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.18799515068531036, 
+      "sent": "Hector's wife, Andromache, calls her maids to heat water for 'a hot bath for Hektor when he came home from the fighting -/unaware, in her folly, that far from all baths he'd been slain'."
+    }, 
+    {
+      "index": 188, 
+      "score": 0.18796184659004211, 
+      "sent": "Most of the time they result in a translation that is accurate without being pedantic, and vivid without being aggressively contemporary."
+    }, 
+    {
+      "index": 72, 
+      "score": 0.1860603541135788, 
+      "sent": "The moments when (perhaps) lines or episodes have been added to the poem, or when material inconsistencies occur, shouldn't simply be regarded as boluses of inauthenticity."
+    }, 
+    {
+      "index": 114, 
+      "score": 0.18594512343406677, 
+      "sent": "There is an immense moral seriousness to the Iliad: it conveys - as Jasper Griffin brilliantly showed three decades ago in Homer on Life and Death - the contrast between the darkness of death and the fragile joy of living."
+    }, 
+    {
+      "index": 91, 
+      "score": 0.18581126630306244, 
+      "sent": "He is, however, not simply displaying his sister Cassandra's gift of prophecy."
+    }, 
+    {
+      "index": 112, 
+      "score": 0.18334093689918518, 
+      "sent": "In order to achieve these ends (and to enable him to take potshots at Victorian translators) he made Homer sound solid, uncomplex and ethically consistent."
+    }, 
+    {
+      "index": 79, 
+      "score": 0.1827721893787384, 
+      "sent": "They can sometimes pitch a favourite out of the battlefield or hide them in a cloud, but they don't pull human destinies about like puppet masters, and sometimes they have to let their own offspring die."
+    }, 
+    {
+      "index": 111, 
+      "score": 0.18190720677375793, 
+      "sent": "He wanted to see heroic primitiveness in Homer, and he wanted to import a Hellenic directness to English poetry."
+    }, 
+    {
+      "index": 157, 
+      "score": 0.18037925660610199, 
+      "sent": "He has worked out that even if a god has prompted you to go to your mortal enemy's dwelling by night you don't assume that everyone you meet along the way will be a friend, or that you will arrive."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.18006773293018341, 
+      "sent": "The god doesn't want Achilles to be disadvantaged too much, however, so he pulls 'his well-bronzed ash-wood spear/out from the shield of great-hearted Aineias, and set[s] it/at the feet of Achilles'."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.17992888391017914, 
+      "sent": "Diomedes and Odysseus are rich and powerful."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.17983369529247284, 
+      "sent": "It is also magical in a particular way."
+    }, 
+    {
+      "index": 147, 
+      "score": 0.17922033369541168, 
+      "sent": "There can be an Arnoldian directness to Homeric combat (a warrior vaunts, unleashes a far-shadowing spear, an opponent crashes to the ground skewered through the liver) but the key note of most of the political and social encounters depicted in the poem is anything but direct: deep interpersonal wariness prevails and the unwary get played, even if they are the king of the gods."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.17819303274154663, 
+      "sent": "And it is designed to hold you in its spell as much as the rhythm of a line: the beat of repetition tells you this must happen, then, behold a wonder, it does not."
+    }, 
+    {
+      "index": 117, 
+      "score": 0.17776373028755188, 
+      "sent": "This is particularly true of relationships between Zeus and men, which, because the king of the gods is too lofty to set foot on the battlefield, are conducted by intermediaries."
+    }, 
+    {
+      "index": 81, 
+      "score": 0.17766523361206055, 
+      "sent": "'Fate' in the Iliad can sometimes mean more or less 'if you pursue this option rather than that, then some day soon you will die,' as when Achilles chooses a short life with glory rather than a long life of ease by returning to the battlefield."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.17741800844669342, 
+      "sent": "They are, for a reader of the received text (which would include every epic poet in the Western tradition), part of the magic."
+    }, 
+    {
+      "index": 137, 
+      "score": 0.17662680149078369, 
+      "sent": "Agamemnon makes a fine speech to the assembled army telling them that it's time to pack up and go home."
+    }, 
+    {
+      "index": 151, 
+      "score": 0.17516157031059265, 
+      "sent": "He encounters the god Hermes (in disguise), who has been sent by Zeus to conduct him on his way."
+    }, 
+    {
+      "index": 82, 
+      "score": 0.17467646300792694, 
+      "sent": "The choice limits his life options, but it doesn't book him in for the morgue on 24 November."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.17415037751197815, 
+      "sent": "But Hector says he must 'win great glory both for my father and myself', and then imagines Andromache's future:For this I know well, in my heart and in my mind:A day will come when sacred Ilion will perish,with Priam, lord of the fine ash spear, and Priam's people."
+    }, 
+    {
+      "index": 130, 
+      "score": 0.17357377707958221, 
+      "sent": "In order not to annoy his wife, Hera, too much (she is hostile to the Trojans because Paris preferred Aphrodite to her), Zeus goes about achieving this aim like a politician."
+    }, 
+    {
+      "index": 148, 
+      "score": 0.17238511145114899, 
+      "sent": "When Hera washes herself with ambrosia and ties 'a sash with a hundred tassels' around her waist and comes over all coochy-coo with Zeus, he ought to be experienced enough to notice that she's distracting his attention so that Poseidon can help the Achaians below, but she is ambrosia from head to foot, and Zeus (as he tactlessly reminds her) has form when it comes to the ladies."
+    }, 
+    {
+      "index": 187, 
+      "score": 0.17225576937198639, 
+      "sent": "But his historical knowledge and his desire to get things right only very occasionally weigh the poem down."
+    }, 
+    {
+      "index": 106, 
+      "score": 0.17155183851718903, 
+      "sent": "*In 'On Translating Homer' Matthew Arnold described Homer as 'eminently noble', 'eminently rapid' and 'eminently plain and direct' in style and ideas."
+    }, 
+    {
+      "index": 62, 
+      "score": 0.1713121086359024, 
+      "sent": "A bath is prepared for a warrior, because warriors bathe after victory."
+    }, 
+    {
+      "index": 74, 
+      "score": 0.17026494443416595, 
+      "sent": "This is a world in which spears can sometimes be in two places at once."
+    }, 
+    {
+      "index": 77, 
+      "score": 0.16769349575042725, 
+      "sent": "Like the belief that the poem is all about black blood bursting forth before warriors bite the ground this is at best a partial truth."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.16762058436870575, 
+      "sent": "This is the spear which we were told only moments before had passed right through Aeneas' shield and stuck in the ground."
+    }, 
+    {
+      "index": 176, 
+      "score": 0.16748179495334625, 
+      "sent": "It presents living as one possibility among myriad possibilities, most of which are fatal."
+    }, 
+    {
+      "index": 115, 
+      "score": 0.16738441586494446, 
+      "sent": "But the poem can also be whimsical, magical, ironical and circuitous."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.16736689209938049, 
+      "sent": "He throws his 'far-shadowing spear', so 'massive and strong, that no other Achaian fighter/could wield' it, at the Trojan Aeneas:Aineias, crouching down, held his shield out away from himin terror: the flung spear passed over his shoulder, stuckin the ground, after breaking through both layersof the sheltering shield."
+    }, 
+    {
+      "index": 76, 
+      "score": 0.16668364405632019, 
+      "sent": "Homer is sometimes said to have believed in something called fate."
+    }, 
+    {
+      "index": 173, 
+      "score": 0.16598100960254669, 
+      "sent": "This final scene is so powerful not because it tidily presents a moral (Achilles, having become inhumanly violent in his rage at the death of Patroclus, accepts his mortal nature, decides to reassume humanity and return the body he has abused to its father), but because it is fringed with other possible worlds, in which Priam is killed, or Priam is betrayed and ransomed."
+    }, 
+    {
+      "index": 120, 
+      "score": 0.16579581797122955, 
+      "sent": "Iris then usually goes and says exactly the same words to the recipient of the message, like a mini-version of the zombie oral formulaic poet Homer is sometimes supposed to be."
+    }, 
+    {
+      "index": 179, 
+      "score": 0.164652019739151, 
+      "sent": "of the 'intelligent scholar', this is a demanding but desirable goal for translators."
+    }, 
+    {
+      "index": 139, 
+      "score": 0.1637415736913681, 
+      "sent": "But they 'with loud hullabaloo' run off to pack their ships for the journey home."
+    }, 
+    {
+      "index": 167, 
+      "score": 0.16245852410793304, 
+      "sent": "We know that a god has told Priam to go, and we know that a god has told Achilles to grant his request."
+    }, 
+    {
+      "index": 47, 
+      "score": 0.16183765232563019, 
+      "sent": "Hector calls for another from Deiphobos, but his mortal friend is 'nowhere near at hand'."
+    }, 
+    {
+      "index": 101, 
+      "score": 0.16170898079872131, 
+      "sent": "If Agamemnon is wrong about Menelaus' future might not Hector be wrong about Andromache's?"
+    }, 
+    {
+      "index": 99, 
+      "score": 0.16136081516742706, 
+      "sent": "His certainty that Ilion (Troy) will fall is matched by uncertainty about whether his brother will die, and whether, consequentially, Troy will not in fact fall."
+    }, 
+    {
+      "index": 184, 
+      "score": 0.16123870015144348, 
+      "sent": "But taken as a whole this is the best line-for-line translation of the poem I know."
+    }, 
+    {
+      "index": 150, 
+      "score": 0.15902464091777802, 
+      "sent": "In the terrifying final book of the poem he goes by night to ask Achilles to return Hector's body."
+    }, 
+    {
+      "index": 42, 
+      "score": 0.1588737964630127, 
+      "sent": "Achilles 'let fly his far-shadowing spear' at Hector during their final combat."
+    }, 
+    {
+      "index": 159, 
+      "score": 0.15856924653053284, 
+      "sent": "You need to work out just who you are talking to and deal with them slyly if you don't want to end up as a nasty mess on the battlefield."
+    }, 
+    {
+      "index": 135, 
+      "score": 0.15792682766914368, 
+      "sent": "But then he calls a council of the entire army."
+    }, 
+    {
+      "index": 183, 
+      "score": 0.15686739981174469, 
+      "sent": "Once or twice he nods: his description of a lion struck in the chest as it leaps 'and thus it's its own courage that destroys it' sounds like a mnemonic for distinguishing 'its' from 'it's' rather than a line of Homer."
+    }, 
+    {
+      "index": 94, 
+      "score": 0.15644568204879761, 
+      "sent": "Hector's speech is further complicated by the fact that, two books before, the Greek leader Agamemnon had uttered very similar words when his brother Menelaus (for whose wife, Helen, the whole war is fought) was wounded:A day will come when sacred Ilion will perish,with Priam, lord of the fine ash spear, and Priam's people;And Zeus, high-throned son of Kronos, the sky dweller,will, in fury at such deceit, shake his black-cloud aegisover them all."
+    }, 
+    {
+      "index": 55, 
+      "score": 0.15485283732414246, 
+      "sent": "This would explain why Achilles' spear can be simultaneously stuck in the ground and in Aeneas' shield: a dopey interpolator messed up."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.15479066967964172, 
+      "sent": "They are exhausted and they have been successful."
+    }, 
+    {
+      "index": 174, 
+      "score": 0.15455517172813416, 
+      "sent": "Those obliquely suggested other worlds are everywhere in the Iliad."
+    }, 
+    {
+      "index": 149, 
+      "score": 0.15422558784484863, 
+      "sent": "The king of Troy, Priam, is wiser in this respect."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.15401934087276459, 
+      "sent": "It may then have been augmented in various ways."
+    }, 
+    {
+      "index": 143, 
+      "score": 0.15377664566040039, 
+      "sent": "Does this circuitous process of misinformation display the 'liquid clearness of an Ionian sky'?"
+    }, 
+    {
+      "index": 107, 
+      "score": 0.15307514369487762, 
+      "sent": "Homer 'has, besides, the pure lines of an Ionian horizon, the liquid clearness of an Ionian sky'."
+    }, 
+    {
+      "index": 122, 
+      "score": 0.1529308557510376, 
+      "sent": "An 'eminently plain and direct' poet would make everybody always do what Zeus says, and would make Zeus always say what he means."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.15257561206817627, 
+      "sent": "Rich and powerful warriors have baths, so the bathtubs have to be there and must be 'polished'."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.15201845765113831, 
+      "sent": "But Hector is not so lucky: he too 'let fly his far-shadowing spear'."
+    }, 
+    {
+      "index": 105, 
+      "score": 0.15162429213523865, 
+      "sent": "Both sides know Troy will fall, but the how and the when and who it takes with it are not certain."
+    }, 
+    {
+      "index": 124, 
+      "score": 0.15136893093585968, 
+      "sent": "Repetition tends to bring variation, and can unleash a whole set of unpredictable reactions."
+    }, 
+    {
+      "index": 172, 
+      "score": 0.15074397623538971, 
+      "sent": "Is blind delusion going to spread to Achilles, and make him kill another suppliant?"
+    }, 
+    {
+      "index": 158, 
+      "score": 0.14834627509117126, 
+      "sent": "Events unfold crabwise, and your unexpected death or betrayal might be part of that unfolding."
+    }, 
+    {
+      "index": 165, 
+      "score": 0.14746133983135223, 
+      "sent": "And now Priam is supplicating Achilles, having slipped by night to his hut."
+    }, 
+    {
+      "index": 142, 
+      "score": 0.14676418900489807, 
+      "sent": "Human wishes trickle up obliquely to the gods - Thetis asks Zeus a favour for her mortal son - and then are executed in unpredictable ways by false messages that lead to perverse actions."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.1464228481054306, 
+      "sent": "Hector, by contrast, can't even find a mortal friend."
+    }, 
+    {
+      "index": 140, 
+      "score": 0.14586549997329712, 
+      "sent": "Hera then tells Athene to tell Odysseus to tell the Greeks to stop running away, which he does."
+    }, 
+    {
+      "index": 119, 
+      "score": 0.1453622579574585, 
+      "sent": "Generally, if Zeus has something to say to a mortal or a god he says it to Iris, the goddess of the rainbow."
+    }, 
+    {
+      "index": 98, 
+      "score": 0.14484305679798126, 
+      "sent": "He can also misjudge the mood of his troops."
+    }, 
+    {
+      "index": 96, 
+      "score": 0.14483766257762909, 
+      "sent": "But dreadful sorrow for you will be mine, Menelaos my brother,if you die now, and fulfil your lifetime's destiny;and a contemptible creature I'd be, back in thirsty Argos,for at once the Achaians' minds will turn to their native land,and we'd be leaving the Trojans and Priam a cause for boastingin Argive Helen!Agamemnon gets a great deal wrong in the poem."
+    }, 
+    {
+      "index": 136, 
+      "score": 0.14459946751594543, 
+      "sent": "At this council we might expect Zeus' words to be repeated a final time, but they are not."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.14414402842521667, 
+      "sent": "Hector then knows he's had it."
+    }, 
+    {
+      "index": 125, 
+      "score": 0.14401352405548096, 
+      "sent": "Sometimes Iris slips in postscripts of her own, as when she adds to Zeus' message to Athene, or 'Miss Grey-Eyes' (Green has fun with the vocative use of Homeric epithets): 'you're a real horror, you shameless bitch, if you truly/dare to lift up your prodigious spear against Zeus."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.14241050183773041, 
+      "sent": "He misses and it sticks in the ground."
+    }, 
+    {
+      "index": 129, 
+      "score": 0.14109095931053162, 
+      "sent": "He has been primed by Achilles' mother, Thetis, to hurt the Greeks in revenge for the way that Agamemnon has treated her son."
+    }, 
+    {
+      "index": 123, 
+      "score": 0.14101347327232361, 
+      "sent": "But Homer isn't a plain and direct poet."
+    }, 
+    {
+      "index": 97, 
+      "score": 0.14046603441238403, 
+      "sent": "Early on he confiscates Achilles' war-prize, the slave-girl Briseis, and provokes Achilles' withdrawal from battle."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.14035794138908386, 
+      "sent": "Human beings also appear to be able to predict some things that are going to happen."
+    }, 
+    {
+      "index": 89, 
+      "score": 0.13960921764373779, 
+      "sent": "Is Hector foreseeing a fixed destiny and just heroically deciding to live it through to death?"
+    }, 
+    {
+      "index": 134, 
+      "score": 0.13881617784500122, 
+      "sent": "Agamemnon repeats it to the Achaian leaders."
+    }, 
+    {
+      "index": 110, 
+      "score": 0.13716045022010803, 
+      "sent": "They are a projection of what Arnold wanted to believe."
+    }, 
+    {
+      "index": 127, 
+      "score": 0.13703355193138123, 
+      "sent": "In Book 2 he sends a dream to Agamemnon, and tells the dream to 'Bid him to arm the long-haired Achaians for battle/as quickly as may be, for now he may take the broad-streeted city/of the Trojans.'"
+    }, 
+    {
+      "index": 19, 
+      "score": 0.13623698055744171, 
+      "sent": "Hector is dead."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.1334603875875473, 
+      "sent": "So do readers of the poem."
+    }, 
+    {
+      "index": 133, 
+      "score": 0.13312044739723206, 
+      "sent": "The dream (disguised as ancient Nestor) repeats it to Agamemnon."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.13295432925224304, 
+      "sent": "Things happen repeatedly, then suddenly they differ."
+    }, 
+    {
+      "index": 161, 
+      "score": 0.13201023638248444, 
+      "sent": "Tros supplicated Achilles on the battlefield."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.13115604221820831, 
+      "sent": "Where did the spear actually end up?"
+    }, 
+    {
+      "index": 146, 
+      "score": 0.13109196722507477, 
+      "sent": "Lying dreams issue in lies which issue, ultimately, in slaughter."
+    }, 
+    {
+      "index": 102, 
+      "score": 0.1299605518579483, 
+      "sent": "How much do any mortals know about what will happen to them?"
+    }, 
+    {
+      "index": 88, 
+      "score": 0.12977510690689087, 
+      "sent": "Yet it's not the Trojans' coming miseries that so concern me -not what Hekabe will endure, or our sovereign Priam,or my brothers, so many, so valiant, who all may end uptrodden into the dust by their hate-filled enemies - no,it's your grief I think of, when some bronze-corsleted Achaianwill lead you away, weeping, your day of freedom gone,to work the loom, maybe in Argos, for some other mistress,or fetch water back from the spring - Messeis or Hyperia -resentful, unwilling, but burdened by harsh necessity."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.12924137711524963, 
+      "sent": "Their interventions in human affairs often go wrong."
+    }, 
+    {
+      "index": 104, 
+      "score": 0.12842628359794617, 
+      "sent": "Time has its rhythms, its repeated certainties, but it also has its surprises."
+    }, 
+    {
+      "index": 103, 
+      "score": 0.12795421481132507, 
+      "sent": "The Iliad leaves these questions open."
+    }, 
+    {
+      "index": 126, 
+      "score": 0.12638413906097412, 
+      "sent": "'Elsewhere Zeus is perverse and oblique."
+    }, 
+    {
+      "index": 132, 
+      "score": 0.12580516934394836, 
+      "sent": "The misleading message is repeated twice."
+    }, 
+    {
+      "index": 182, 
+      "score": 0.12472125887870789, 
+      "sent": "There are a few moments when some readers might reach for a dictionary to translate the translation (hands up who could identify a 'barley groat' or a 'thole pin' or who could draw a 'gleaming baldric')."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.12451186031103134, 
+      "sent": "A god does not intervene."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.123902328312397, 
+      "sent": "A god intervenes."
+    }, 
+    {
+      "index": 44, 
+      "score": 0.12300349771976471, 
+      "sent": "Athene helpfully fetches it back."
+    }, 
+    {
+      "index": 113, 
+      "score": 0.12251100689172745, 
+      "sent": "Homer is not any of these things."
+    }, 
+    {
+      "index": 166, 
+      "score": 0.12247396260499954, 
+      "sent": "What will be the outcome?"
+    }, 
+    {
+      "index": 121, 
+      "score": 0.12233707308769226, 
+      "sent": "And usually (it being aegis-bearing Zeus talking) people obey."
+    }, 
+    {
+      "index": 116, 
+      "score": 0.11901414394378662, 
+      "sent": "Above all it is repeatedly surprising."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.1189756840467453, 
+      "sent": "In Book 6 Andromache urges Hector not to fight."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.11864753812551498, 
+      "sent": "It bounces off Achilles' shield."
+    }, 
+    {
+      "index": 95, 
+      "score": 0.1180616095662117, 
+      "sent": "These matters will not fail of fulfilment."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.11638140678405762, 
+      "sent": "But this warrior does not come back."
+    }, 
+    {
+      "index": 153, 
+      "score": 0.11593575030565262, 
+      "sent": "Hermes asks Priam where he is going."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.11464131623506546, 
+      "sent": "A far-shadowing spear is thrown."
+    }, 
+    {
+      "index": 66, 
+      "score": 0.11361116915941238, 
+      "sent": "Another far-shadowing spear is thrown."
+    }, 
+    {
+      "index": 109, 
+      "score": 0.11277110874652863, 
+      "sent": "I find that strange because they seem plain crazy to me."
+    }, 
+    {
+      "index": 156, 
+      "score": 0.11188638955354691, 
+      "sent": "King Priam has lived a long time."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.11110542714595795, 
+      "sent": "A mortal dies."
+    }, 
+    {
+      "index": 163, 
+      "score": 0.10961563885211945, 
+      "sent": "Lykaon supplicated Achilles on the battlefield."
+    }, 
+    {
+      "index": 118, 
+      "score": 0.10960426181554794, 
+      "sent": "Here, too, things don't always turn out as they should."
+    }, 
+    {
+      "index": 108, 
+      "score": 0.10829252004623413, 
+      "sent": "These assertions are often quoted."
+    }, 
+    {
+      "index": 128, 
+      "score": 0.10771742463111877, 
+      "sent": "Zeus doesn't actually mean what his dream says."
+    }, 
+    {
+      "index": 154, 
+      "score": 0.10544776171445847, 
+      "sent": "Priam doesn't say, but tries to nudge Hermes into revealing who he is by flattering him with 'your parents are truly blessed.'"
+    }, 
+    {
+      "index": 141, 
+      "score": 0.10305293649435043, 
+      "sent": "So they do eventually fight."
+    }, 
+    {
+      "index": 155, 
+      "score": 0.10016905516386032, 
+      "sent": "When Hermes deflects the implied question, Priam asks again: 'Who are you, most noble sir, and who, pray, are your parents?'"
+    }, 
+    {
+      "index": 164, 
+      "score": 0.089776575565338135, 
+      "sent": "He was killed."
+    }, 
+    {
+      "index": 162, 
+      "score": 0.089392252266407013, 
+      "sent": "He was killed."
+    }, 
+    {
+      "index": 189, 
+      "score": 0.089151397347450256, 
+      "sent": "Vol."
+    }, 
+    {
+      "index": 178, 
+      "score": 0.085982337594032288, 
+      "sent": "Setting aside the smug fiction (or is it an oxymoron?)"
+    }, 
+    {
+      "index": 144, 
+      "score": 0.084344230592250824, 
+      "sent": "My arse it does."
+    }, 
+    {
+      "index": 190, 
+      "score": 0.06698685884475708, 
+      "sent": "37 No."
+    }, 
+    {
+      "index": 191, 
+      "score": 0.012934918515384197, 
+      "sent": "12 * 18 June 2015 >> Colin Burrow >> The Empty Bath pages 5-8 | 4565 words"
+    }
+  ], 
+  "title": null
+}

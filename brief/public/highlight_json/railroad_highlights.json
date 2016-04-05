@@ -1,0 +1,291 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 3, 
+      "score": 0.3512457013130188, 
+      "sent": "Many forces have come together to shape Iowa's data-center industry (which will be discussed in further detail in another story), but it's the state's history as a junction for another major network--railroads--that put it at the top of my list for Cloud sightseeing."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.31449693441390991, 
+      "sent": "The new owners apparently don't bother replacing the poles with their names or logos--presumably because it's not really financially worthwhile to send someone to put Level 3 stickers over thousands of Global Crossing or Williams Communications logos on signage that's more or less designed to be ignored by 99 percent of the public, like most network infrastructure."
+    }, 
+    {
+      "index": 47, 
+      "score": 0.30851951241493225, 
+      "sent": "In the end, I was a little disappointed at the apparent pragmatism of Google's decision to place its Iowa data centers in the starting point of the transcontinental railroad."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.30487281084060669, 
+      "sent": "The histories of these places isn't always immediately obvious, but it's there, forming a kind of infrastructural palimpsest, with new technologies to annihilate space and time inheriting the idealized promise and the political messiness of their predecessors."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.30483970046043396, 
+      "sent": "Ingrid BurringtonFormed in 1864 (the same year Council Bluffs was selected as the railroad's starting point and the same year that Durant conspicuously acquired a whole lot of soon-to-be-valuable land in Omaha, Council Bluffs's next-door neighbor), Credit Mobilier was the shell company through which the Union Pacific ran contracts for construction of the railroad."
+    }, 
+    {
+      "index": 4, 
+      "score": 0.30394652485847473, 
+      "sent": "My favorite part of looking for network infrastructure in America is really all the ghosts."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.29240939021110535, 
+      "sent": "Dodge and Durant had worked together during the Civil War to smuggle contraband cotton out of the south, but Durant is probably best-known for instigating the Credit Mobilier scandal, a massive graft scheme that took advantage of the U.S. government subsidies for transcontinental-railroad construction."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.28774571418762207, 
+      "sent": "In a twist of historical resonance, the chief engineer behind the western route of the transcontinental railroad was also a pioneer of military intelligence, leading a small corps that would later be absorbed into the Bureau of Military Information, the earliest formal American-government intelligence agency."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.28590542078018188, 
+      "sent": "Microsoft, Google, and Facebook have all built custom data centers in the state over the past seven years, and all three are expanding in the region."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.2844235897064209, 
+      "sent": "This New York Times story from 2000 documents the moment well; it also uses the delightful (and today, woefully underused) term \"cyberage\" and mentions an exciting new player in the telecom scene, Enron Broadband Services."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.28318867087364197, 
+      "sent": "Durant had been ousted from Credit Mobilier and the Union Pacific long before then, resigning his posts shortly after the completion of the transcontinental railroad in 1869."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.28225031495094299, 
+      "sent": "It's pretty much impossible to talk about American Internet infrastructure without talking about railroads, and Iowa is a state rich with railroad history."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.28116244077682495, 
+      "sent": "And they go to great lengths to shield that information when it inadvertently appears, as seen in the Pluto Switch incident in 2012."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.28059172630310059, 
+      "sent": "It's a hell of a lot more efficient to run a cable along a single straight shot of property than negotiating easements with every single landowner between, say, Denver and Salt Lake City.For railroads, this was a win-win, as the right-of-way agreements generate passive income, and the networks could be used for internal operations of the railroads themselves."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.27980580925941467, 
+      "sent": "It also is a history that, despite the meritocratic bootstrapping narratives of the Valley, has always been driven by the financial support and influence of the state."
+    }, 
+    {
+      "index": 25, 
+      "score": 0.27655065059661865, 
+      "sent": "The histories, scoundrels, and scandals of the transcontinental railroad can't be seen at the Google's two data centers in Council Bluffs, Iowa."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.27252843976020813, 
+      "sent": "Dodge liked the route primarily because of the 42nd parallel's uniform grade running to the Rocky Mountains--it was a route of least resistance across the plains (except, of course, all the resistance that comes from brutal winters and the Native American populations who weren't particularly enthralled with the rhetorical promise of the railroad)."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.27138906717300415, 
+      "sent": "In between that meeting with Lincoln and the official selection of Council Bluffs in 1864, Dodge served in the Civil War (a war that shaped the future of railroads in America as much as the railroads shaped its outcome)."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.27107369899749756, 
+      "sent": "The orange part usually has a label warning people to call before digging, a phone number to call, and sometimes the name of the company or government agency that happens to own the buried cable."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.26739135384559631, 
+      "sent": "The selection of Council Bluffs as the start of the Union Pacific route is mostly credited to Grenville Dodge."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.26356634497642517, 
+      "sent": "Dodge would later become the UP's chief engineer but first recommended the route in 1859, in an informal meeting with then-presidential candidate Abraham Lincoln."
+    }, 
+    {
+      "index": 42, 
+      "score": 0.26268014311790466, 
+      "sent": "Given their massive scale, they don't really blend into the landscape that well, and because Google brands itself as open and accessible, they kind of have to call attention to themselves with accents of the traditional company color scheme and signage."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.26195645332336426, 
+      "sent": "In turn, Credit Mobilier purchased and sold Union Pacific bonds on the market, funnelling the profits back to its Union Pacific owners like Durant."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.26149538159370422, 
+      "sent": "Surely someone in the company had a sense of irony, or at least a sense of legacy."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.26043111085891724, 
+      "sent": "Sam KronickI keep going back to a very early example of this faith in networks, a passage from Bloodgood vs. Mohawk & H.R.R., an easement case from 1837."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.26012358069419861, 
+      "sent": "While the first data center is surrounded by bland industrial services along a fairly busy intersection, the second is literally in a cornfield, in an area where nearly every house we passed had an American flag on display out front."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.25998792052268982, 
+      "sent": "Some railroad companies followed Sprint's suit in this period, creating their own telecom services, like CSX Fiber Networks.The markers of this right-of-way race along railroad routes (and highways, which have a similar right-of-way appeal to telecoms) are not especially impressive, but pretty hard to ignore."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.25895377993583679, 
+      "sent": "They came for the fiber, which runs parallel to Iowa's many railroads and interstates."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.25711199641227722, 
+      "sent": "The U.S. government supported the construction of railroads with many of the same motives that supported the development of the Internet.Telecommunications companies quickly recognized the value of rail right-of-way as real estate for running cable networks long before the Internet--the first substantial use of rail networks for telecommunication networks starts with telegraphs."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.25567835569381714, 
+      "sent": "A CIA history of Civil War intelligence notes Dodge's ferocious commitment to opsec: \"Well aware that telegraph wires could be tapped, he enciphered his dispatches and sent them by messenger ... His security precautions were so thorough that little still is known about his operations or the names of most of his agents."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.2555503249168396, 
+      "sent": "In it, the judge describes the inherent value of railroads thusly: \"...they tend to annihilate distance, bringing in effect places that are distant near to each other: tending in their magic influence to the extension of personal acquaintance, the enlargement of business relations, and cementing more firmly the bond of fellowship and union between the inhabitants of the States.\""
+    }, 
+    {
+      "index": 31, 
+      "score": 0.24981214106082916, 
+      "sent": "Banks's work on the history of the term \"online\"), the constellation of companies that form the network (most famously with Sprint emerging from the Southern Pacific Railroad's internal-communications network), and, most relevant to this story, the actual routes that fiber-optic networks run."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.24906127154827118, 
+      "sent": "Of the two data centers, the second one (currently under construction) is a bit more spectacular."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.24901345372200012, 
+      "sent": "It is difficult to read this hopeful passage and not be reminded of J.P. Barlow in Davos exalting the liberation of the \"global conveyance of thought\" in 1996."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.24886390566825867, 
+      "sent": "The U.S. government heavily subsidized and supported the construction of railroads for the same reasons it subsidized and supported the development of the Internet itself: military strategy, economic development, and a zealous, romantic vision of the both liberatory and unifying potential of being able to traverse or defy the limits of greater and greater distances."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.24849450588226318, 
+      "sent": "An 1882 sketch of the railroad depot at Council Bluffs, Iowa                                                                   British Library / Wikimedia                                                                               Council Bluffs is a mid-sized town in Iowa, right on that state's border with Nebraska."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.24760293960571289, 
+      "sent": "Ingrid BurringtonGoogle's Iowa data centers aren't entirely designed to be ignored."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.24669604003429413, 
+      "sent": "While Google does offer a polished, carefully curated online tour of their data centers, they don't tend to publicize their addresses or talk in great detail about what they're doing inside."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.2463686466217041, 
+      "sent": "Labeled this way, fiber markers become a testament to telecom history, bearing names of companies that fell in the bursting of the first bubble, long ago absorbed into larger telecom networks."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.24565255641937256, 
+      "sent": "But flickers of freight rail and orange markers alongside highways followed us through Iowa, keeping the ghosts of annihilated distance if not always in mind then at least out of the corner of my eye, as we drove toward arguably the most unexpected pilgrimage I've ever made: a tour of a Facebook data center."
+    }, 
+    {
+      "index": 23, 
+      "score": 0.24286365509033203, 
+      "sent": "By the time the scam was revealed in 1872, the shell company managed to reap $72 million in profits from a railroad only worth $53 million."
+    }, 
+    {
+      "index": 55, 
+      "score": 0.24209575355052948, 
+      "sent": "Our pilgrimage to Council Bluffs failed to feature too many obvious moments of resonance (it did not help that we passed through the day that the Union Pacific Railroad Museum happened to be closed)."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.24186283349990845, 
+      "sent": "Although better known for cultivating presidential candidates than server racks, Iowa is a pretty popular site for data centers, especially new data centers built by major tech companies."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.24155719578266144, 
+      "sent": "We came to Council Bluffs because the Union Pacific railroad route for the first transcontinental railroad began in Council Bluffs, a starting point selected for reasons both physical and political."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.23743107914924622, 
+      "sent": "They usually take the form of orange-tipped white poles, or orange metal signs, spaced out a few meters apart running parallel to the rails."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.23318083584308624, 
+      "sent": "The history of American networks has always been the history of spooks, graft, questionable labor and supply chains, and territorial conquest, long before the Internet acquired its history rife with spooks, graft, questionable labor and supply chains, and territorial conquest."
+    }, 
+    {
+      "index": 5, 
+      "score": 0.22677832841873169, 
+      "sent": "Networks tend to follow networks, and telecommunications and transportation networks tend to end up piled on top of each other."
+    }, 
+    {
+      "index": 44, 
+      "score": 0.21921773254871368, 
+      "sent": "Placed beneath cresting hills or along thoroughfares that don't have readily accessible shoulders, they are hard to really stop and look at, remaining unknown industrial buildings always glimpsed just barely out of the corner of one's eye while driving."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.21582925319671631, 
+      "sent": "As the first dot-com bubble expanded, more and more telecoms rushed to place their cables along rail routes."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.2121499627828598, 
+      "sent": "Rail infrastructure has shaped the language of the network (as noted in David A."
+    }, 
+    {
+      "index": 19, 
+      "score": 0.20948712527751923, 
+      "sent": "\"Dodge went to work for the Union Pacific in 1866, working under Charles Durant, who is the kind of historical figure who gets described in even the driest of texts as \"Mephistophelean\" and \"a born manipulator.\""
+    }, 
+    {
+      "index": 17, 
+      "score": 0.20295169949531555, 
+      "sent": "Hurlbut then threatened to cut off Dodge's spy funds."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.19736030697822571, 
+      "sent": "Iowa is no exception."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.1964384913444519, 
+      "sent": "Google data centers are more often obscured through landscape design choices and a security-through-obscurity logic."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.19530157744884491, 
+      "sent": "Google didn't come to Council Bluffs because of historical resonance."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.19441249966621399, 
+      "sent": "When Dodge's commander, Major General Stephen A. Hurlbut, demanded those names, Dodge refused."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.12999805808067322, 
+      "sent": "[Ulysses S.] Grant backed Dodge."
+    }
+  ], 
+  "title": null
+}

@@ -1,0 +1,1631 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 44, 
+      "score": 0.32198348641395569, 
+      "sent": "But for Chris Goldfinger, a paleoseismologist at Oregon State University and one of the world's leading experts on a little-known fault line, the main quake was itself a kind of foreshock: a preview of another earthquake still to come."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.30053341388702393, 
+      "sent": "The shaking earlier in the week turned out to be the foreshocks of the largest earthquake in the nation's recorded history."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.28744164109230042, 
+      "sent": "Earthquakes are common in Japan--that one was the third of the week--and the participants were, after all, at a seismology conference."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.28406649827957153, 
+      "sent": "The 1989 earthquake in Loma Prieta, California, which killed sixty-three people and caused six billion dollars' worth of damage, lasted about fifteen seconds and had a magnitude of 6.9."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.27536496520042419, 
+      "sent": "A minute-long quake is in the high sevens, a two-minute quake has entered the eights, and a three-minute quake is in the high eights."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.27501678466796875, 
+      "sent": "The next full-margin rupture of the Cascadia subduction zone will spell the worst natural disaster in the history of the continent."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.26416042447090149, 
+      "sent": "In 2005, however, at a conference in Hokudan, a Japanese geologist named Yasutaka Ikeda had argued that the nation should expect a magnitude 9.0 in the near future--with catastrophic consequences, because Japan's famous earthquake-and-tsunami preparedness, including the height of its sea walls, was based on incorrect science."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.26317459344863892, 
+      "sent": "If, on that occasion, only the southern part of the Cascadia subduction zone gives way--your first two fingers, say--the magnitude of the resulting quake will be somewhere between 8.0 and 8.6."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.26267656683921814, 
+      "sent": "Most people in the United States know just one fault line by name: the San Andreas, which runs nearly the length of California and is perpetually rumored to be on the verge of unleashing \"the big one.\""
+    }, 
+    {
+      "index": 7, 
+      "score": 0.26211744546890259, 
+      "sent": "A thirty-second earthquake generally has a magnitude in the mid-sevens."
+    }, 
+    {
+      "index": 5, 
+      "score": 0.25507959723472595, 
+      "sent": "Seismologists know that how long an earthquake lasts is a decent proxy for its magnitude."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.25465923547744751, 
+      "sent": "The \"subduction zone\" part refers to a region of the planet where one tectonic plate is sliding underneath (subducting) another."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.25232312083244324, 
+      "sent": "Tectonic plates are those slabs of mantle and crust that, in their epochs-long drift, rearrange the earth's continents and oceans."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.25038421154022217, 
+      "sent": "For the San Andreas, one of the most extensively studied and best understood fault lines in the world, that upper limit is roughly an 8.2--a powerful earthquake, but, because the Richter scale is logarithmic, only six per cent as strong as the 2011 event in Japan."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.24989570677280426, 
+      "sent": "The building itself was base-isolated, a seismic-safety technology in which the body of a structure rests on movable bearings rather than directly on its foundation."
+    }, 
+    {
+      "index": 70, 
+      "score": 0.24836954474449158, 
+      "sent": "There is a backstop--the craton, that ancient unbudgeable mass at the center of the continent--and, sooner or later, North America will rebound like a spring."
+    }, 
+    {
+      "index": 218, 
+      "score": 0.24809855222702026, 
+      "sent": "So is Oregon's critical energy-infrastructure hub, a six-mile stretch of Portland through which flows ninety per cent of the state's liquid fuel and which houses everything from electrical substations to natural-gas terminals."
+    }, 
+    {
+      "index": 215, 
+      "score": 0.24777084589004517, 
+      "sent": "The shaking from the Cascadia quake will set off landslides throughout the region--up to thirty thousand of them in Seattle alone, the city's emergency-management office estimates."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.24379575252532959, 
+      "sent": "If the entire zone gives way at once, an event that seismologists call a full-margin rupture, the magnitude will be somewhere between 8.7 and 9.2."
+    }, 
+    {
+      "index": 173, 
+      "score": 0.24326886236667633, 
+      "sent": "If you divide ten thousand by forty-one, you get two hundred and forty-three, which is Cascadia's recurrence interval: the average amount of time that elapses between earthquakes."
+    }, 
+    {
+      "index": 108, 
+      "score": 0.24208912253379822, 
+      "sent": "But, sooner or later, every field has its field day, and the discovery of the Cascadia subduction zone stands as one of the greatest scientific detective stories of our time."
+    }, 
+    {
+      "index": 179, 
+      "score": 0.23877295851707458, 
+      "sent": "The devastation in Japan in 2011 was the result of a discrepancy between what the best science predicted and what the region was prepared to withstand."
+    }, 
+    {
+      "index": 216, 
+      "score": 0.23867198824882507, 
+      "sent": "It will also induce a process called liquefaction, whereby seemingly solid ground starts behaving like a liquid, to the detriment of anything on top of it."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.2368905246257782, 
+      "sent": "Credit Illustration by Christoph Niemann; Map by Ziggymaj / Getty\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \t\t\t\t\t\t\tWhen the 2011 earthquake and tsunami struck Tohoku, Japan, Chris Goldfinger was two hundred miles away, in the city of Kashiwa, at an international meeting on seismology."
+    }, 
+    {
+      "index": 138, 
+      "score": 0.23673270642757416, 
+      "sent": "As the events of 2011 made clear, that coast is vulnerable to tsunamis, and the Japanese have kept track of them since at least 599 A.D."
+    }, 
+    {
+      "index": 180, 
+      "score": 0.23557068407535553, 
+      "sent": "The same will hold true in the Pacific Northwest--but here the discrepancy is enormous."
+    }, 
+    {
+      "index": 243, 
+      "score": 0.23440039157867432, 
+      "sent": "Twenty-nine per cent of the state's population is disabled, and that figure rises in many coastal counties."
+    }, 
+    {
+      "index": 110, 
+      "score": 0.23296703398227692, 
+      "sent": "Almost all of the world's most powerful earthquakes occur in the Ring of Fire, the volcanically and seismically volatile swath of the Pacific that runs from New Zealand up through Indonesia and Japan, across the ocean to Alaska, and down the west coast of the Americas to Chile."
+    }, 
+    {
+      "index": 273, 
+      "score": 0.23208540678024292, 
+      "sent": "But whatever the ultimate figure--and even though U.S. taxpayers will cover seventy-five to a hundred per cent of the damage, as happens in declared disasters--the economy of the Pacific Northwest will collapse."
+    }, 
+    {
+      "index": 197, 
+      "score": 0.229716956615448, 
+      "sent": "In theory, those who are at home when it hits should be safest; it is easy and relatively inexpensive to seismically safeguard a private dwelling."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.22897341847419739, 
+      "sent": "When the next full-margin rupture happens, that region will suffer the worst natural disaster in the history of North America."
+    }, 
+    {
+      "index": 226, 
+      "score": 0.22884869575500488, 
+      "sent": "For the seventy-one thousand people who live in Cascadia's inundation zone, that will mean evacuating in the narrow window after one disaster ends and before another begins."
+    }, 
+    {
+      "index": 172, 
+      "score": 0.22872848808765411, 
+      "sent": "Thanks to that work, we now know that the Pacific Northwest has experienced forty-one subduction-zone earthquakes in the past ten thousand years."
+    }, 
+    {
+      "index": 96, 
+      "score": 0.22830572724342346, 
+      "sent": "The truly worrisome figures in this story are these: Thirty years ago, no one knew that the Cascadia subduction zone had ever produced a major earthquake."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.22764773666858673, 
+      "sent": "The place where they meet is the Cascadia subduction zone."
+    }, 
+    {
+      "index": 210, 
+      "score": 0.22620394825935364, 
+      "sent": "FEMA calculates that, across the region, something on the order of a million buildings--more than three thousand of them schools--will collapse or be compromised in the earthquake."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.22456693649291992, 
+      "sent": "Now, Goldfinger realized as the shaking hit the four-minute mark, the planet was proving the Japanese Cassandra right."
+    }, 
+    {
+      "index": 134, 
+      "score": 0.22395014762878418, 
+      "sent": "Since trees do not grow in the winter, he and Atwater concluded that sometime between August of 1699 and May of 1700 an earthquake had caused the land to drop and killed the cedars."
+    }, 
+    {
+      "index": 42, 
+      "score": 0.22382713854312897, 
+      "sent": "In the end, the magnitude-9.0 Tohoku earthquake and subsequent tsunami killed more than eighteen thousand people, devastated northeast Japan, triggered the meltdown at the Fukushima power plant, and cost an estimated two hundred and twenty billion dollars."
+    }, 
+    {
+      "index": 135, 
+      "score": 0.22364962100982666, 
+      "sent": "That time frame predated by more than a hundred years the written history of the Pacific Northwest--and so, by rights, the detective story should have ended there."
+    }, 
+    {
+      "index": 144, 
+      "score": 0.22274492681026459, 
+      "sent": "Finally, in a 1996 article in Nature, a seismologist named Kenji Satake and three colleagues, drawing on the work of Atwater and Yamaguchi, matched that orphan to its parent--and thereby filled in the blanks in the Cascadia story with uncanny specificity."
+    }, 
+    {
+      "index": 160, 
+      "score": 0.2219705730676651, 
+      "sent": "Still, the reconstruction of the Cascadia earthquake of 1700 is one of those rare natural puzzles whose pieces fit together as tectonic plates do not: perfectly."
+    }, 
+    {
+      "index": 93, 
+      "score": 0.2214193195104599, 
+      "sent": "Thanks to work done by him and his colleagues, we now know that the odds of the big Cascadia earthquake happening in the next fifty years are roughly one in three."
+    }, 
+    {
+      "index": 207, 
+      "score": 0.22139261662960052, 
+      "sent": "Until 1974, the state of Oregon had no seismic code, and few places in the Pacific Northwest had one appropriate to a magnitude-9.0 earthquake until 1994."
+    }, 
+    {
+      "index": 106, 
+      "score": 0.22020882368087769, 
+      "sent": "It took another fifty years to uncover and interpret the region's seismic history."
+    }, 
+    {
+      "index": 174, 
+      "score": 0.21983440220355988, 
+      "sent": "That timespan is dangerous both because it is too long--long enough for us to unwittingly build an entire civilization on top of our continent's worst fault line--and because it is not long enough."
+    }, 
+    {
+      "index": 114, 
+      "score": 0.21947948634624481, 
+      "sent": "And nearly all the volcanoes are caused by the oceanic plates sliding deep beneath the continental ones, eventually reaching temperatures and pressures so extreme that they melt the rock above them."
+    }, 
+    {
+      "index": 107, 
+      "score": 0.21911641955375671, 
+      "sent": "Geology, as even geologists will tell you, is not normally the sexiest of disciplines; it hunkers down with earthly stuff while the glory accrues to the human and the cosmic--to genetics, neuroscience, physics."
+    }, 
+    {
+      "index": 225, 
+      "score": 0.21886831521987915, 
+      "sent": "The only likely way to outlive one is not to be there when it happens: to steer clear of the vulnerable area in the first place, or get yourself to high ground as fast as possible."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.21837267279624939, 
+      "sent": "The \"Cascadia\" part of its name comes from the Cascade Range, a chain of volcanic mountains that follow the same course a hundred or so miles inland."
+    }, 
+    {
+      "index": 150, 
+      "score": 0.21817280352115631, 
+      "sent": "In 1964, Chief Louis Nookmis, of the Huu-ay-aht First Nation, in British Columbia, told a story, passed down through seven generations, about the eradication of Vancouver Island's Pachena Bay people."
+    }, 
+    {
+      "index": 92, 
+      "score": 0.21782228350639343, 
+      "sent": "In fact, the science is robust, and one of the chief scientists behind it is Chris Goldfinger."
+    }, 
+    {
+      "index": 209, 
+      "score": 0.21726430952548981, 
+      "sent": "Ian Madin, who directs the Oregon Department of Geology and Mineral Industries (DOGAMI), estimates that seventy-five per cent of all structures in the state are not designed to withstand a major Cascadia quake."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.21715670824050903, 
+      "sent": "For a moment, that was pretty cool: a real-time revolution in earthquake science."
+    }, 
+    {
+      "index": 133, 
+      "score": 0.21695397794246674, 
+      "sent": "Yamaguchi took samples of the cedars and found that they had died simultaneously: in tree after tree, the final rings dated to the summer of 1699."
+    }, 
+    {
+      "index": 113, 
+      "score": 0.21695378422737122, 
+      "sent": "Nearly all the earthquakes in the region are caused by continental plates getting stuck on oceanic plates--as North America is stuck on Juan de Fuca--and then getting abruptly unstuck."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.21609072387218475, 
+      "sent": "Kenneth Murphy, who directs FEMA's Region X, the division responsible for Oregon, Washington, Idaho, and Alaska, says, \"Our operating assumption is that everything west of Interstate 5 will be toast.\""
+    }, 
+    {
+      "index": 77, 
+      "score": 0.21609024703502655, 
+      "sent": "Some of that shift will take place beneath the ocean, displacing a colossal quantity of seawater."
+    }, 
+    {
+      "index": 95, 
+      "score": 0.21605736017227173, 
+      "sent": "Even those numbers do not fully reflect the danger--or, more to the point, how unprepared the Pacific Northwest is to face it."
+    }, 
+    {
+      "index": 170, 
+      "score": 0.21586108207702637, 
+      "sent": "During subduction-zone earthquakes, torrents of land rush off the continental slope, leaving a permanent deposit on the bottom of the ocean."
+    }, 
+    {
+      "index": 139, 
+      "score": 0.21342621743679047, 
+      "sent": "In that fourteen-hundred-year history, one incident has long stood out for its strangeness."
+    }, 
+    {
+      "index": 90, 
+      "score": 0.21336261928081512, 
+      "sent": "Another twenty-seven thousand will be injured, and the agency expects that it will need to provide shelter for a million displaced people, and food and water for another two and a half million."
+    }, 
+    {
+      "index": 217, 
+      "score": 0.2128932923078537, 
+      "sent": "Fifteen per cent of Seattle is built on liquefiable land, including seventeen day-care centers and the homes of some thirty-four thousand five hundred people."
+    }, 
+    {
+      "index": 125, 
+      "score": 0.21219082176685333, 
+      "sent": "Their discovery is best illustrated in a place called the ghost forest, a grove of western red cedars on the banks of the Copalis River, near the Washington coast."
+    }, 
+    {
+      "index": 61, 
+      "score": 0.21201089024543762, 
+      "sent": "That is what the Juan de Fuca plate is doing: slipping steadily beneath North America."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.21133626997470856, 
+      "sent": "By four minutes, an earthquake has hit magnitude 9.0."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.20995825529098511, 
+      "sent": "That rumor is misleading, no matter what the San Andreas ever does."
+    }, 
+    {
+      "index": 66, 
+      "score": 0.20976860821247101, 
+      "sent": "Under pressure from Juan de Fuca, the stuck edge of North America is bulging upward and compressing eastward, at the rate of, respectively, three to four millimetres and thirty to forty millimetres a year."
+    }, 
+    {
+      "index": 141, 
+      "score": 0.207988440990448, 
+      "sent": "The Japanese understood that tsunamis were the result of earthquakes, yet no one felt the ground shake before the Genroku event."
+    }, 
+    {
+      "index": 171, 
+      "score": 0.2078547328710556, 
+      "sent": "By counting the number and the size of deposits in each sample, then comparing their extent and consistency along the length of the Cascadia subduction zone, Goldfinger and his colleagues were able to determine how much of the zone has ruptured, how often, and how drastically."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.20751932263374329, 
+      "sent": "The flagpole atop the building he and his colleagues had just vacated was whipping through an arc of forty degrees."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.20657721161842346, 
+      "sent": "Just north of the San Andreas, however, lies another fault line."
+    }, 
+    {
+      "index": 82, 
+      "score": 0.20608185231685638, 
+      "sent": "By the time the shaking has ceased and the tsunami has receded, the region will be unrecognizable."
+    }, 
+    {
+      "index": 272, 
+      "score": 0.2056346982717514, 
+      "sent": "How much all this will cost is anyone's guess; FEMA puts every number on its relief-and-recovery plan except a price."
+    }, 
+    {
+      "index": 296, 
+      "score": 0.20490577816963196, 
+      "sent": "The last person I met with in the Pacific Northwest was Doug Dougherty, the superintendent of schools for Seaside, which lies almost entirely within the tsunami-inundation zone."
+    }, 
+    {
+      "index": 81, 
+      "score": 0.20450925827026367, 
+      "sent": "The other side will rush east, in a seven-hundred-mile liquid wall that will reach the Northwest coast, on average, fifteen minutes after the earthquake begins."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.20402964949607849, 
+      "sent": "Your right hand represents the North American tectonic plate, which bears on its back, among other things, our entire continent, from One World Trade Center to the Space Needle, in Seattle."
+    }, 
+    {
+      "index": 279, 
+      "score": 0.20396433770656586, 
+      "sent": "On the face of it, earthquakes seem to present us with problems of space: the way we live along fault lines, in brick buildings, in homes made valuable by their proximity to the sea."
+    }, 
+    {
+      "index": 263, 
+      "score": 0.20383730530738831, 
+      "sent": "The earthquake will have wrought its worst havoc west of the Cascades but caused damage as far away as Sacramento, California--as distant from the worst-hit areas as Fort Wayne, Indiana, is from New York."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.20330312848091125, 
+      "sent": "Your left hand represents an oceanic plate called Juan de Fuca, ninety thousand square miles in size."
+    }, 
+    {
+      "index": 191, 
+      "score": 0.20300213992595673, 
+      "sent": "That is enough time for earthquake early-warning systems, such as those in use throughout Japan, to automatically perform a variety of lifesaving functions: shutting down railways and power plants, opening elevators and firehouse doors, alerting hospitals to halt surgeries, and triggering alarms so that the general public can take cover."
+    }, 
+    {
+      "index": 282, 
+      "score": 0.20264726877212524, 
+      "sent": "The brevity of our lives breeds a kind of temporal parochialism--an ignorance of or an indifference to those planetary gears which turn more slowly than our own."
+    }, 
+    {
+      "index": 76, 
+      "score": 0.20251800119876862, 
+      "sent": "When the next very big earthquake hits, the northwest edge of the continent, from California to Canada and the continental shelf to the Cascades, will drop by as much as six feet and rebound thirty to a hundred feet to the west--losing, within minutes, all the elevation and compression it has gained over centuries."
+    }, 
+    {
+      "index": 293, 
+      "score": 0.20248739421367645, 
+      "sent": "The Cascadia situation, a calamity in its own right, is also a parable for this age of ecological reckoning, and the questions it raises are ones that we all now face."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.20229318737983704, 
+      "sent": "Thirty minutes after Goldfinger first stepped outside, he watched the tsunami roll in, in real time, on a two-inch screen."
+    }, 
+    {
+      "index": 112, 
+      "score": 0.20222969353199005, 
+      "sent": "The Ring of Fire, it turns out, is really a ring of subduction zones."
+    }, 
+    {
+      "index": 188, 
+      "score": 0.20119589567184448, 
+      "sent": "The first sign that the Cascadia earthquake has begun will be a compressional wave, radiating outward from the fault line."
+    }, 
+    {
+      "index": 227, 
+      "score": 0.20074576139450073, 
+      "sent": "They will be notified to do so only by the earthquake itself--\"a vibrate-alert system,\" Kevin Cupples, the city planner for the town of Seaside, Oregon, jokes--and they are urged to leave on foot, since the earthquake will render roads impassable."
+    }, 
+    {
+      "index": 312, 
+      "score": 0.20069482922554016, 
+      "sent": "When the tsunami comes, the only place to go in Gearhart is a small ridge just behind the school."
+    }, 
+    {
+      "index": 175, 
+      "score": 0.19962571561336517, 
+      "sent": "Counting from the earthquake of 1700, we are now three hundred and fifteen years into a two-hundred-and-forty-three-year cycle."
+    }, 
+    {
+      "index": 165, 
+      "score": 0.19961273670196533, 
+      "sent": "\" Goldfinger told me this in his lab at Oregon State, a low prefab building that a passing English major might reasonably mistake for the maintenance department."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.19952251017093658, 
+      "sent": "Most of the time, their movement is slow, harmless, and all but undetectable."
+    }, 
+    {
+      "index": 124, 
+      "score": 0.19876094162464142, 
+      "sent": "In the late nineteen-eighties, Brian Atwater, a geologist with the United States Geological Survey, and a graduate student named David Yamaguchi found the answer, and another major clue in the Cascadia puzzle."
+    }, 
+    {
+      "index": 119, 
+      "score": 0.19822017848491669, 
+      "sent": "Yet not once in recorded history has it caused a major earthquake--or, for that matter, any quake to speak of."
+    }, 
+    {
+      "index": 4, 
+      "score": 0.19807593524456024, 
+      "sent": "Then everyone in the room checked the time."
+    }, 
+    {
+      "index": 265, 
+      "score": 0.19802096486091614, 
+      "sent": "As for casualties: the figures I cited earlier--twenty-seven thousand injured, almost thirteen thousand dead--are based on the agency's official planning scenario, which has the earthquake striking at 9:41 A.M. on February 6th."
+    }, 
+    {
+      "index": 271, 
+      "score": 0.19770599901676178, 
+      "sent": "Those estimates do not apply to the tsunami-inundation zone, which will remain all but uninhabitable for years."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.19763974845409393, 
+      "sent": "Known as the Cascadia subduction zone, it runs for seven hundred miles off the coast of the Pacific Northwest, beginning near Cape Mendocino, California, continuing along Oregon and Washington, and terminating around Vancouver Island, Canada."
+    }, 
+    {
+      "index": 224, 
+      "score": 0.19703508913516998, 
+      "sent": "Among natural disasters, tsunamis may be the closest to being completely unsurvivable."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.19702023267745972, 
+      "sent": "It can do so for quite some time, because, as continent stuff goes, it is young, made of rock that is still relatively elastic."
+    }, 
+    {
+      "index": 47, 
+      "score": 0.19673095643520355, 
+      "sent": "Every fault line has an upper limit to its potency, determined by its length and width, and by how far it can slip."
+    }, 
+    {
+      "index": 185, 
+      "score": 0.19651323556900024, 
+      "sent": "I've been through one of these massive earthquakes in the most seismically prepared nation on earth."
+    }, 
+    {
+      "index": 140, 
+      "score": 0.19642931222915649, 
+      "sent": "On the eighth day of the twelfth month of the twelfth year of the Genroku era, a six-hundred-mile-long wave struck the coast, levelling homes, breaching a castle moat, and causing an accident at sea."
+    }, 
+    {
+      "index": 262, 
+      "score": 0.1963733583688736, 
+      "sent": "The inundation zone will be scoured of structures from California to Canada."
+    }, 
+    {
+      "index": 102, 
+      "score": 0.19608096778392792, 
+      "sent": "The continent's far expanses were so unknown to its white explorers that Thomas Jefferson, who commissioned the journey, thought that the men would come across woolly mammoths."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.19592943787574768, 
+      "sent": "Almost immediately, though, it became extremely uncool, because Goldfinger and every other seismologist standing outside in Kashiwa knew what was coming."
+    }, 
+    {
+      "index": 156, 
+      "score": 0.19580675661563873, 
+      "sent": "In a 2005 study, Ruth Ludwin, then a seismologist at the University of Washington, together with nine colleagues, collected and analyzed Native American reports of earthquakes and saltwater floods."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.19579069316387177, 
+      "sent": "Then it ticked past the sixty-second mark, making it longer than the others that week."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.19565066695213318, 
+      "sent": "As the shaking started, everyone in the room began to laugh."
+    }, 
+    {
+      "index": 261, 
+      "score": 0.19563059508800507, 
+      "sent": "To see the full scale of the devastation when that tsunami recedes, you would need to be in the international space station."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.19469551742076874, 
+      "sent": "For decades, seismologists had believed that Japan could not experience an earthquake stronger than magnitude 8.4."
+    }, 
+    {
+      "index": 149, 
+      "score": 0.19432392716407776, 
+      "sent": "Once scientists had reconstructed the 1700 earthquake, certain previously overlooked accounts also came to seem like clues."
+    }, 
+    {
+      "index": 233, 
+      "score": 0.19359003007411957, 
+      "sent": "The time to save people from a tsunami is before it happens, but the region has not yet taken serious steps toward doing so."
+    }, 
+    {
+      "index": 211, 
+      "score": 0.19282634556293488, 
+      "sent": "So will half of all highway bridges, fifteen of the seventeen bridges spanning Portland's two rivers, and two-thirds of railways and airports; also, one-third of all fire stations, half of all police stations, and two-thirds of all hospitals."
+    }, 
+    {
+      "index": 183, 
+      "score": 0.19239643216133118, 
+      "sent": "But the gap between what we know and what we should do about it is getting bigger and bigger, and the action really needs to turn to responding."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.19237911701202393, 
+      "sent": "Goldfinger, who is tall and solidly built, thought, No way am I crouching under one of those for cover."
+    }, 
+    {
+      "index": 198, 
+      "score": 0.19161690771579742, 
+      "sent": "But, lulled into nonchalance by their seemingly benign environment, most people in the Pacific Northwest have not done so."
+    }, 
+    {
+      "index": 89, 
+      "score": 0.19093027710914612, 
+      "sent": "FEMA projects that nearly thirteen thousand people will die in the Cascadia earthquake and tsunami."
+    }, 
+    {
+      "index": 264, 
+      "score": 0.19039835035800934, 
+      "sent": "FEMA expects to coordinate search-and-rescue operations across a hundred thousand square miles and in the waters off four hundred and fifty-three miles of coastline."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.19033472239971161, 
+      "sent": "One of them pulled out a cell phone and started streaming videos from the Japanese broadcasting station NHK, shot by helicopters that had flown out to sea soon after the shaking started."
+    }, 
+    {
+      "index": 214, 
+      "score": 0.19024166464805603, 
+      "sent": "Subduction-zone earthquakes operate on the opposite principle: one enormous problem causes many other enormous problems."
+    }, 
+    {
+      "index": 236, 
+      "score": 0.18919260799884796, 
+      "sent": "In those cases, builders are required only to consult with DOGAMI about evacuation plans."
+    }, 
+    {
+      "index": 178, 
+      "score": 0.18757763504981995, 
+      "sent": "It is not possible, however, to dispute the scale of the problem."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.18755096197128296, 
+      "sent": "The presentation was met with polite applause and thereafter largely ignored."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.18752284348011017, 
+      "sent": "The speaker at the lectern was wondering if he should carry on with his talk."
+    }, 
+    {
+      "index": 317, 
+      "score": 0.18745468556880951, 
+      "sent": "Dougherty's office is deep inside the inundation zone, a few blocks from the beach."
+    }, 
+    {
+      "index": 281, 
+      "score": 0.18742328882217407, 
+      "sent": "The earth is 4.5 billion years old, but we are a young species, relatively speaking, with an average individual allotment of three score years and ten."
+    }, 
+    {
+      "index": 122, 
+      "score": 0.18679793179035187, 
+      "sent": "You can spend a lifetime in many parts of the Northwest--several, in fact, if you had them to spend--and not feel so much as a quiver."
+    }, 
+    {
+      "index": 196, 
+      "score": 0.18654781579971313, 
+      "sent": "If it happens at night, the ensuing catastrophe will unfold in darkness."
+    }, 
+    {
+      "index": 120, 
+      "score": 0.18629893660545349, 
+      "sent": "By contrast, other subduction zones produce major earthquakes occasionally and minor ones all the time: magnitude 5.0, magnitude 4.0, magnitude why are the neighbors moving their sofa at midnight."
+    }, 
+    {
+      "index": 115, 
+      "score": 0.18618878722190857, 
+      "sent": "The Pacific Northwest sits squarely within the Ring of Fire."
+    }, 
+    {
+      "index": 242, 
+      "score": 0.18496668338775635, 
+      "sent": "Twenty-two per cent of Oregon's coastal population is sixty-five or older."
+    }, 
+    {
+      "index": 223, 
+      "score": 0.18468451499938965, 
+      "sent": "Then the wave will arrive, and the real destruction will begin."
+    }, 
+    {
+      "index": 159, 
+      "score": 0.1846182644367218, 
+      "sent": "It does not speak well of European-Americans that such stories counted as evidence for a proposition only after that proposition had been proved."
+    }, 
+    {
+      "index": 145, 
+      "score": 0.18432654440402985, 
+      "sent": "At approximately nine o' clock at night on January 26, 1700, a magnitude-9.0 earthquake struck the Pacific Northwest, causing sudden land subsidence, drowning coastal forests, and, out in the ocean, lifting up a wave half the length of a continent."
+    }, 
+    {
+      "index": 117, 
+      "score": 0.18392188847064972, 
+      "sent": "Inland, the Cascade volcanoes mark the line where, far below, the Juan de Fuca plate is heating up and melting everything above it."
+    }, 
+    {
+      "index": 148, 
+      "score": 0.18369089066982269, 
+      "sent": "It reached Japan on January 27, 1700: by the local calendar, the eighth day of the twelfth month of the twelfth year of Genroku."
+    }, 
+    {
+      "index": 297, 
+      "score": 0.18368704617023468, 
+      "sent": "Of the four schools that Dougherty oversees, with a total student population of sixteen hundred, one is relatively safe."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.18358495831489563, 
+      "sent": "The conference was wrapping up for the day."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.18345028162002563, 
+      "sent": "It is stuck, wedged tight against the surface of the other plate."
+    }, 
+    {
+      "index": 137, 
+      "score": 0.18337593972682953, 
+      "sent": "If you travel five thousand miles due west from the ghost forest, you reach the northeast coast of Japan."
+    }, 
+    {
+      "index": 290, 
+      "score": 0.18322868645191193, 
+      "sent": "But such apocalyptic visions are a form of escapism, not a moral summons, and still less a plan of action."
+    }, 
+    {
+      "index": 132, 
+      "score": 0.18309275805950165, 
+      "sent": "To find out, he teamed up with Yamaguchi, a specialist in dendrochronology, the study of growth-ring patterns in trees."
+    }, 
+    {
+      "index": 206, 
+      "score": 0.1825612336397171, 
+      "sent": "Across the region, other, larger structures will also start to fail."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.18253608047962189, 
+      "sent": "The trees, still hung with the previous autumn's dead leaves, were making a strange rattling sound."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.18110258877277374, 
+      "sent": "In the Pacific Northwest, the area of impact will cover some hundred and forty thousand square miles, including Seattle, Tacoma, Portland, Eugene, Salem (the capital city of Oregon), Olympia (the capital of Washington), and some seven million people."
+    }, 
+    {
+      "index": 157, 
+      "score": 0.18104960024356842, 
+      "sent": "Some of those reports contained enough information to estimate a date range for the events they described."
+    }, 
+    {
+      "index": 305, 
+      "score": 0.18094335496425629, 
+      "sent": "The state makes money available for seismic upgrades, but buildings within the inundation zone cannot apply."
+    }, 
+    {
+      "index": 105, 
+      "score": 0.18065324425697327, 
+      "sent": "A century and a half elapsed before anyone had any inkling that the Pacific Northwest was not a quiet place but a place in a long period of quiet."
+    }, 
+    {
+      "index": 213, 
+      "score": 0.18053156137466431, 
+      "sent": "For want of a nail, the war was lost; for fifteen independently insignificant errors, the jetliner was lost."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.18045757710933685, 
+      "sent": "The base was lurching, too, back and forth a foot at a time, digging a trench in the yard."
+    }, 
+    {
+      "index": 268, 
+      "score": 0.1800391674041748, 
+      "sent": "OSSPAC estimates that in the I-5 corridor it will take between one and three months after the earthquake to restore electricity, a month to a year to restore drinking water and sewer service, six months to a year to restore major highways, and eighteen months to restore health-care facilities."
+    }, 
+    {
+      "index": 190, 
+      "score": 0.17983931303024292, 
+      "sent": "They are not very harmful, but they are potentially very useful, since they travel fast enough to be detected by sensors thirty to ninety seconds ahead of other seismic waves."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.17981326580047607, 
+      "sent": "The earthquake was not particularly strong."
+    }, 
+    {
+      "index": 169, 
+      "score": 0.17959798872470856, 
+      "sent": "Each sample contains the history, written in seafloorese, of the past ten thousand years."
+    }, 
+    {
+      "index": 266, 
+      "score": 0.17841798067092896, 
+      "sent": "If, instead, it strikes in the summer, when the beaches are full, those numbers could be off by a horrifying margin."
+    }, 
+    {
+      "index": 103, 
+      "score": 0.1780126690864563, 
+      "sent": "Native Americans had lived in the Northwest for millennia, but they had no written language, and the many things to which the arriving Europeans subjected them did not include seismological inquiries."
+    }, 
+    {
+      "index": 118, 
+      "score": 0.17779693007469177, 
+      "sent": "In other words, the Cascadia subduction zone has, as Goldfinger put it, \"all the right anatomical parts.\""
+    }, 
+    {
+      "index": 250, 
+      "score": 0.17769500613212585, 
+      "sent": "Madin estimates that up to a hundred and fifty thousand people visit Oregon's beaches on summer weekends."
+    }, 
+    {
+      "index": 192, 
+      "score": 0.17736680805683136, 
+      "sent": "The Pacific Northwest has no early-warning system."
+    }, 
+    {
+      "index": 195, 
+      "score": 0.17719137668609619, 
+      "sent": "Soon after that shaking begins, the electrical grid will fail, likely everywhere west of the Cascades and possibly well beyond."
+    }, 
+    {
+      "index": 154, 
+      "score": 0.17677421867847443, 
+      "sent": "Before his own time, he said, all the water had receded from Washington State's Neah Bay, then suddenly poured back in, inundating the entire region."
+    }, 
+    {
+      "index": 253, 
+      "score": 0.17668481171131134, 
+      "sent": "Those who cannot get out of the inundation zone under their own power will quickly be overtaken by a greater one."
+    }, 
+    {
+      "index": 158, 
+      "score": 0.1764882504940033, 
+      "sent": "On average, the midpoint of that range was 1701."
+    }, 
+    {
+      "index": 280, 
+      "score": 0.17529395222663879, 
+      "sent": "But, covertly, they also present us with problems of time."
+    }, 
+    {
+      "index": 116, 
+      "score": 0.17523042857646942, 
+      "sent": "Off its coast, an oceanic plate is slipping beneath a continental one."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.1752149909734726, 
+      "sent": "It was, Goldfinger thought, like driving through rocky terrain in a vehicle with no shocks, if both the vehicle and the terrain were also on a raft in high seas."
+    }, 
+    {
+      "index": 260, 
+      "score": 0.17476135492324829, 
+      "sent": "It will be a five-story deluge of pickup trucks and doorframes and cinder blocks and fishing boats and utility poles and everything else that once constituted the coastal towns of the Pacific Northwest."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.17475186288356781, 
+      "sent": "Roughly three thousand people died in San Francisco's 1906 earthquake."
+    }, 
+    {
+      "index": 91, 
+      "score": 0.17471712827682495, 
+      "sent": "\"This is one time that I'm hoping all the science is wrong, and it won't happen for another thousand years,\" Murphy says."
+    }, 
+    {
+      "index": 313, 
+      "score": 0.17409124970436096, 
+      "sent": "At its tallest, it is forty-five feet high--lower than the expected wave in a full-margin earthquake."
+    }, 
+    {
+      "index": 306, 
+      "score": 0.17389088869094849, 
+      "sent": "At present, all Dougherty can do is make sure that his students know how to evacuate."
+    }, 
+    {
+      "index": 123, 
+      "score": 0.17327812314033508, 
+      "sent": "The question facing geologists in the nineteen-seventies was whether the Cascadia subduction zone had ever broken its eerie silence."
+    }, 
+    {
+      "index": 94, 
+      "score": 0.17269103229045868, 
+      "sent": "The odds of the very big one are roughly one in ten."
+    }, 
+    {
+      "index": 146, 
+      "score": 0.17227593064308167, 
+      "sent": "It took roughly fifteen minutes for the Eastern half of that wave to strike the Northwest coast."
+    }, 
+    {
+      "index": 314, 
+      "score": 0.17226217687129974, 
+      "sent": "For now, the route to the ridge is marked by signs that say \"Temporary Tsunami Assembly Area.\""
+    }, 
+    {
+      "index": 72, 
+      "score": 0.17178544402122498, 
+      "sent": "That's the big one."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.17166417837142944, 
+      "sent": "That is what North America is not doing."
+    }, 
+    {
+      "index": 320, 
+      "score": 0.17146560549736023, 
+      "sent": "All across the region, seismologists are looking at their watches, wondering how long we have, and what we will do, before geological time catches up to our own."
+    }, 
+    {
+      "index": 98, 
+      "score": 0.17145167291164398, 
+      "sent": "In May of 1804, Meriwether Lewis and William Clark, together with their Corps of Discovery, set off from St. Louis on America's first official cross-country expedition."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.17140217125415802, 
+      "sent": "One side will rush west, toward Japan."
+    }, 
+    {
+      "index": 208, 
+      "score": 0.17112746834754944, 
+      "sent": "The vast majority of buildings in the region were constructed before then."
+    }, 
+    {
+      "index": 222, 
+      "score": 0.17064821720123291, 
+      "sent": "For another few minutes, the region, upended, will continue to fall apart on its own."
+    }, 
+    {
+      "index": 111, 
+      "score": 0.17023533582687378, 
+      "sent": "Japan, 2011, magnitude 9.0; Indonesia, 2004, magnitude 9.1; Alaska, 1964, magnitude 9.2; Chile, 1960, magnitude 9.5--not until the late nineteen-sixties, with the rise of the theory of plate tectonics, could geologists explain this pattern."
+    }, 
+    {
+      "index": 189, 
+      "score": 0.16999714076519012, 
+      "sent": "Compressional waves are fast-moving, high-frequency waves, audible to dogs and certain other animals but experienced by humans only as a sudden jolt."
+    }, 
+    {
+      "index": 278, 
+      "score": 0.16997408866882324, 
+      "sent": "But, by many metrics, it will be as bad or worse to be there afterward."
+    }, 
+    {
+      "index": 25, 
+      "score": 0.16987806558609009, 
+      "sent": "The quake passed the two-minute mark."
+    }, 
+    {
+      "index": 104, 
+      "score": 0.16962413489818573, 
+      "sent": "The newcomers took the land they encountered at face value, and at face value it was a find: vast, cheap, temperate, fertile, and, to all appearances, remarkably benign."
+    }, 
+    {
+      "index": 153, 
+      "score": 0.16945952177047729, 
+      "sent": "A hundred years earlier, Billy Balch, a leader of the Makah tribe, recounted a similar story."
+    }, 
+    {
+      "index": 62, 
+      "score": 0.16941066086292267, 
+      "sent": "When you try it, your right hand will slide up your left arm, as if you were pushing up your sleeve."
+    }, 
+    {
+      "index": 163, 
+      "score": 0.16873100399971008, 
+      "sent": "And it was terrible news for the millions of inhabitants of the Pacific Northwest."
+    }, 
+    {
+      "index": 55, 
+      "score": 0.16813796758651733, 
+      "sent": "Occasionally, at the borders where they meet, it is not."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.16801731288433075, 
+      "sent": "When Goldfinger looked at his watch, it was quarter to three."
+    }, 
+    {
+      "index": 276, 
+      "score": 0.16711729764938354, 
+      "sent": "OSSPAC predicts a mass-displacement event and a long-term population downturn."
+    }, 
+    {
+      "index": 295, 
+      "score": 0.16691391170024872, 
+      "sent": "How can it begin to right itself when its entire infrastructure and culture developed in a way that leaves it profoundly vulnerable to natural disaster?"
+    }, 
+    {
+      "index": 286, 
+      "score": 0.16684241592884064, 
+      "sent": "That is no longer a problem of information; we now understand very well what the Cascadia fault line will someday do."
+    }, 
+    {
+      "index": 193, 
+      "score": 0.16680194437503815, 
+      "sent": "When the Cascadia earthquake begins, there will be, instead, a cacophony of barking dogs and a long, suspended, what-was-that moment before the surface waves arrive."
+    }, 
+    {
+      "index": 220, 
+      "score": 0.16664572060108185, 
+      "sent": "Any one of these second-order disasters could swamp the original earthquake in terms of cost, damage, or casualties--and one of them definitely will."
+    }, 
+    {
+      "index": 131, 
+      "score": 0.16653800010681152, 
+      "sent": "But, by 1987, Atwater, who had found in soil layers evidence of sudden land subsidence along the Washington coast, suspected that that was backward--that the trees had died quickly when the ground beneath them plummeted."
+    }, 
+    {
+      "index": 285, 
+      "score": 0.16649264097213745, 
+      "sent": "It poses a danger to us today because we have not thought deeply enough about the future."
+    }, 
+    {
+      "index": 19, 
+      "score": 0.16636623442173004, 
+      "sent": "At a minute and a half, everyone in the room got up and went outside."
+    }, 
+    {
+      "index": 270, 
+      "score": 0.16632804274559021, 
+      "sent": "Whoever chooses or has no choice but to stay there will spend three to six months without electricity, one to three years without drinking water and sewage systems, and three or more years without hospitals."
+    }, 
+    {
+      "index": 302, 
+      "score": 0.16631875932216644, 
+      "sent": "The tax increase for residents amounted to two dollars and sixteen cents per thousand dollars of property value."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.16546127200126648, 
+      "sent": "Nor, from the feel of it, was there ground on the ground."
+    }, 
+    {
+      "index": 257, 
+      "score": 0.16543871164321899, 
+      "sent": "It will not look like a Hokusai-style wave, rising up from the surface of the sea and breaking from above."
+    }, 
+    {
+      "index": 256, 
+      "score": 0.16520991921424866, 
+      "sent": "Its height will vary with the contours of the coast, from twenty feet to more than a hundred feet."
+    }, 
+    {
+      "index": 74, 
+      "score": 0.16518755257129669, 
+      "sent": "That's the very big one."
+    }, 
+    {
+      "index": 229, 
+      "score": 0.16455990076065063, 
+      "sent": "That time line does not allow for finding a flashlight, tending to an earthquake injury, hesitating amid the ruins of a home, searching for loved ones, or being a Good Samaritan."
+    }, 
+    {
+      "index": 321, 
+      "score": 0.16440382599830627, 
+      "sent": "An earlier version of this article misstated the location of the area of impact."
+    }, 
+    {
+      "index": 121, 
+      "score": 0.16399775445461273, 
+      "sent": "You can scarcely spend a week in Japan without feeling this sort of earthquake."
+    }, 
+    {
+      "index": 205, 
+      "score": 0.16393627226352692, 
+      "sent": "Unmoored on the undulating ground, the homes will begin to collapse."
+    }, 
+    {
+      "index": 301, 
+      "score": 0.16387556493282318, 
+      "sent": "Four years later, to foot the hundred-and-twenty-eight-million-dollar bill, the district put up a bond measure."
+    }, 
+    {
+      "index": 235, 
+      "score": 0.16286596655845642, 
+      "sent": "In Oregon, it has been illegal since 1995 to build hospitals, schools, firehouses, and police stations in the inundation zone, but those which are already in it can stay, and any other new construction is permissible: energy facilities, hotels, retirement homes."
+    }, 
+    {
+      "index": 255, 
+      "score": 0.16286323964595795, 
+      "sent": "The tsunami will be moving more than twice that fast when it arrives."
+    }, 
+    {
+      "index": 126, 
+      "score": 0.16257455945014954, 
+      "sent": "When I paddled out to it last summer, with Atwater and Yamaguchi, it was easy to see how it got its name."
+    }, 
+    {
+      "index": 161, 
+      "score": 0.16247431933879852, 
+      "sent": "It is wonderful science."
+    }, 
+    {
+      "index": 79, 
+      "score": 0.16114504635334015, 
+      "sent": "The water will surge upward into a huge hill, then promptly collapse."
+    }, 
+    {
+      "index": 300, 
+      "score": 0.16087354719638824, 
+      "sent": "In 2009, Dougherty told me, he found some land for sale outside the inundation zone, and proposed building a new K-12 campus there."
+    }, 
+    {
+      "index": 322, 
+      "score": 0.16052091121673584, 
+      "sent": "Watch: A radioactive site in Queens that may become New York City's next Superfund site."
+    }, 
+    {
+      "index": 204, 
+      "score": 0.16043512523174286, 
+      "sent": "Houses that are not bolted to their foundations will slide off--or, rather, they will stay put, obeying inertia, while the foundations, together with the rest of the Northwest, jolt westward."
+    }, 
+    {
+      "index": 292, 
+      "score": 0.1600857675075531, 
+      "sent": "That problem is not specific to earthquakes, of course."
+    }, 
+    {
+      "index": 152, 
+      "score": 0.15964826941490173, 
+      "sent": "According to another tribal history, \"They sank at once, were all drowned; not one survived.\""
+    }, 
+    {
+      "index": 17, 
+      "score": 0.15948842465877533, 
+      "sent": "The seats in the conference room were small plastic desks with wheels."
+    }, 
+    {
+      "index": 315, 
+      "score": 0.15925924479961395, 
+      "sent": "I asked Dougherty about the state's long-range plan."
+    }, 
+    {
+      "index": 177, 
+      "score": 0.15906251966953278, 
+      "sent": "Recurrence intervals are averages, and averages are tricky: ten is the average of nine and eleven, but also of eighteen and two."
+    }, 
+    {
+      "index": 181, 
+      "score": 0.15860885381698608, 
+      "sent": "\"The science part is fun,\" Goldfinger says."
+    }, 
+    {
+      "index": 186, 
+      "score": 0.1581944078207016, 
+      "sent": "If that was Portland\"--Goldfinger finished the sentence with a shake of his head before he finished it with words."
+    }, 
+    {
+      "index": 100, 
+      "score": 0.15770347416400909, 
+      "sent": "The United States was, at the time, twenty-nine years old."
+    }, 
+    {
+      "index": 258, 
+      "score": 0.15681509673595428, 
+      "sent": "It will look like the whole ocean, elevated, overtaking land."
+    }, 
+    {
+      "index": 234, 
+      "score": 0.15587867796421051, 
+      "sent": "Hotels and businesses are not required to post evacuation routes or to provide employees with evacuation training."
+    }, 
+    {
+      "index": 294, 
+      "score": 0.15586423873901367, 
+      "sent": "How should a society respond to a looming crisis of uncertain timing but of catastrophic proportions?"
+    }, 
+    {
+      "index": 212, 
+      "score": 0.15543028712272644, 
+      "sent": "Certain disasters stem from many small problems conspiring to cause one very large problem."
+    }, 
+    {
+      "index": 249, 
+      "score": 0.15531584620475769, 
+      "sent": "Washington State Park properties within the inundation zone see an average of seventeen thousand and twenty-nine guests a day."
+    }, 
+    {
+      "index": 274, 
+      "score": 0.15484802424907684, 
+      "sent": "Crippled by a lack of basic services, businesses will fail or move away."
+    }, 
+    {
+      "index": 308, 
+      "score": 0.15451809763908386, 
+      "sent": "At an elementary school in the community of Gearhart, the children will be trapped."
+    }, 
+    {
+      "index": 99, 
+      "score": 0.15435624122619629, 
+      "sent": "Eighteen months later, they reached the Pacific Ocean and made camp near the present-day town of Astoria, Oregon."
+    }, 
+    {
+      "index": 143, 
+      "score": 0.15314629673957825, 
+      "sent": "When scientists began studying it, they called it an orphan tsunami."
+    }, 
+    {
+      "index": 151, 
+      "score": 0.15286801755428314, 
+      "sent": "\"I think it was at nighttime that the land shook,\" Nookmis recalled."
+    }, 
+    {
+      "index": 128, 
+      "score": 0.15242810547351837, 
+      "sent": "Leafless, branchless, barkless, they are reduced to their trunks and worn to a smooth silver-gray, as if they had always carried their own tombstones inside them."
+    }, 
+    {
+      "index": 289, 
+      "score": 0.1523282527923584, 
+      "sent": "As those movies attest, we excel at imagining future scenarios, including awful ones."
+    }, 
+    {
+      "index": 127, 
+      "score": 0.1519009917974472, 
+      "sent": "The cedars are spread out across a low salt marsh on a wide northern bend in the river, long dead but still standing."
+    }, 
+    {
+      "index": 167, 
+      "score": 0.15187178552150726, 
+      "sent": "Inside the freezer are floor-to-ceiling racks filled with cryptically labelled tubes, four inches in diameter and five feet long."
+    }, 
+    {
+      "index": 254, 
+      "score": 0.1516767293214798, 
+      "sent": "A grown man is knocked over by ankle-deep water moving at 6.7 miles an hour."
+    }, 
+    {
+      "index": 194, 
+      "score": 0.15149654448032379, 
+      "sent": "Surface waves are slower, lower-frequency waves that move the ground both up and down and side to side: the shaking, starting in earnest."
+    }, 
+    {
+      "index": 164, 
+      "score": 0.1514260470867157, 
+      "sent": "As Goldfinger put it, \"In the late eighties and early nineties, the paradigm shifted to 'uh-oh.'"
+    }, 
+    {
+      "index": 176, 
+      "score": 0.15105295181274414, 
+      "sent": "It is possible to quibble with that number."
+    }, 
+    {
+      "index": 168, 
+      "score": 0.1509442925453186, 
+      "sent": "Each tube contains a core sample of the seafloor."
+    }, 
+    {
+      "index": 130, 
+      "score": 0.1505691260099411, 
+      "sent": "It had long been assumed that they died slowly, as the sea level around them gradually rose and submerged their roots."
+    }, 
+    {
+      "index": 319, 
+      "score": 0.15056861937046051, 
+      "sent": "Eighty miles farther out, ten thousand feet below the surface of the sea, the hand of a geological clock is somewhere in its slow sweep."
+    }, 
+    {
+      "index": 228, 
+      "score": 0.15025602281093597, 
+      "sent": "Depending on location, they will have between ten and thirty minutes to get out."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.15021182596683502, 
+      "sent": "Without moving your hands, curl your right knuckles up, so that they point toward the ceiling."
+    }, 
+    {
+      "index": 284, 
+      "score": 0.1498938649892807, 
+      "sent": "The Cascadia subduction zone remained hidden from us for so long because we could not see deep enough into the past."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.14922623336315155, 
+      "sent": "There was a chill in the air, and snow flurries, but no snow on the ground."
+    }, 
+    {
+      "index": 259, 
+      "score": 0.14913660287857056, 
+      "sent": "Nor will it be made only of water--not once it reaches the shore."
+    }, 
+    {
+      "index": 147, 
+      "score": 0.14811980724334717, 
+      "sent": "It took ten hours for the other half to cross the ocean."
+    }, 
+    {
+      "index": 304, 
+      "score": 0.14796826243400574, 
+      "sent": "Dougherty tried seeking help from Oregon's congressional delegation but came up empty."
+    }, 
+    {
+      "index": 291, 
+      "score": 0.1474420577287674, 
+      "sent": "Where we stumble is in conjuring up grim futures in a way that helps to avert them."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.14661663770675659, 
+      "sent": "Goldfinger lurched over to take a look."
+    }, 
+    {
+      "index": 221, 
+      "score": 0.14649423956871033, 
+      "sent": "Four to six minutes after the dogs start barking, the shaking will subside."
+    }, 
+    {
+      "index": 166, 
+      "score": 0.14595910906791687, 
+      "sent": "Inside the lab is a walk-in freezer."
+    }, 
+    {
+      "index": 202, 
+      "score": 0.14507853984832764, 
+      "sent": "Refrigerators will walk out of kitchens, unplugging themselves and toppling over."
+    }, 
+    {
+      "index": 318, 
+      "score": 0.14477476477622986, 
+      "sent": "All day long, just out of sight, the ocean rises up and collapses, spilling foamy overlapping ovals onto the shore."
+    }, 
+    {
+      "index": 97, 
+      "score": 0.14427071809768677, 
+      "sent": "Forty-five years ago, no one even knew it existed."
+    }, 
+    {
+      "index": 162, 
+      "score": 0.14419163763523102, 
+      "sent": "It was wonderful for science."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.14361019432544708, 
+      "sent": "But it cannot do so indefinitely."
+    }, 
+    {
+      "index": 288, 
+      "score": 0.14357151091098785, 
+      "sent": "If you are so inclined, you can watch an earthquake destroy much of the West Coast this summer in Brad Peyton's \"San Andreas,\" while, in neighboring theatres, the world threatens to succumb to Armageddon by other means: viruses, robots, resource scarcity, zombies, aliens, plague."
+    }, 
+    {
+      "index": 184, 
+      "score": 0.14355511963367462, 
+      "sent": "Otherwise, we're going to be hammered."
+    }, 
+    {
+      "index": 155, 
+      "score": 0.14350087940692902, 
+      "sent": "Those who survived later found canoes hanging from the trees."
+    }, 
+    {
+      "index": 129, 
+      "score": 0.14257222414016724, 
+      "sent": "What killed the trees in the ghost forest was saltwater."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.14240489900112152, 
+      "sent": "He thought better of it, and lurched away."
+    }, 
+    {
+      "index": 277, 
+      "score": 0.14194628596305847, 
+      "sent": "Chris Goldfinger didn't want to be there when it happened."
+    }, 
+    {
+      "index": 241, 
+      "score": 0.14095978438854218, 
+      "sent": "\" These lax safety policies guarantee that many people inside the inundation zone will not get out."
+    }, 
+    {
+      "index": 230, 
+      "score": 0.14062386751174927, 
+      "sent": "\"When that tsunami is coming, you run,\" Jay Wilson, the chair of the Oregon Seismic Safety Policy Advisory Commission (OSSPAC), says."
+    }, 
+    {
+      "index": 252, 
+      "score": 0.13979442417621613, 
+      "sent": "\"And the beaches are the hardest place to evacuate from.\""
+    }, 
+    {
+      "index": 109, 
+      "score": 0.13969239592552185, 
+      "sent": "The first clue came from geography."
+    }, 
+    {
+      "index": 219, 
+      "score": 0.13942226767539978, 
+      "sent": "Together, the sloshing, sliding, and shaking will trigger fires, flooding, pipe failures, dam breaches, and hazardous-material spills."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.13926169276237488, 
+      "sent": "The shaking intensified."
+    }, 
+    {
+      "index": 299, 
+      "score": 0.13888522982597351, 
+      "sent": "When the tsunami comes, they will be as much as forty-five feet below it."
+    }, 
+    {
+      "index": 287, 
+      "score": 0.13851082324981689, 
+      "sent": "Nor is it a problem of imagination."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.13841158151626587, 
+      "sent": "Almost two thousand died in Hurricane Katrina."
+    }, 
+    {
+      "index": 283, 
+      "score": 0.13831298053264618, 
+      "sent": "This problem is bidirectional."
+    }, 
+    {
+      "index": 201, 
+      "score": 0.13777966797351837, 
+      "sent": "Anything indoors and unsecured will lurch across the floor or come crashing down: bookshelves, lamps, computers, cannisters of flour in the pantry."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.13759614527225494, 
+      "sent": "He was thinking about sushi."
+    }, 
+    {
+      "index": 269, 
+      "score": 0.13716699182987213, 
+      "sent": "On the coast, those numbers go up."
+    }, 
+    {
+      "index": 307, 
+      "score": 0.135163813829422, 
+      "sent": "Some of them, however, will not be able to do so."
+    }, 
+    {
+      "index": 311, 
+      "score": 0.13486911356449127, 
+      "sent": "On one side lies the ocean; on the other, a wide, roadless bog."
+    }, 
+    {
+      "index": 75, 
+      "score": 0.13338448107242584, 
+      "sent": "Flick your right fingers outward, forcefully, so that your hand flattens back down again."
+    }, 
+    {
+      "index": 251, 
+      "score": 0.13262736797332764, 
+      "sent": "\"Most of them won't have a clue as to how to evacuate,\" he says."
+    }, 
+    {
+      "index": 101, 
+      "score": 0.13214699923992157, 
+      "sent": "Canada was not yet a country."
+    }, 
+    {
+      "index": 23, 
+      "score": 0.13161469995975494, 
+      "sent": "The earth snapped and popped and rippled."
+    }, 
+    {
+      "index": 88, 
+      "score": 0.13159351050853729, 
+      "sent": "Almost three hundred died in Hurricane Sandy."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.13097746670246124, 
+      "sent": "Now slide your left hand under your right one."
+    }, 
+    {
+      "index": 303, 
+      "score": 0.13058389723300934, 
+      "sent": "The measure failed by sixty-two per cent."
+    }, 
+    {
+      "index": 244, 
+      "score": 0.13058081269264221, 
+      "sent": "\"We can't save them,\" Kevin Cupples says."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.13023537397384644, 
+      "sent": "Oh, shit, Goldfinger thought, although not in dread, at first: in amazement."
+    }, 
+    {
+      "index": 187, 
+      "score": 0.1301899254322052, 
+      "sent": "\"Let's just say I would rather not be here.\""
+    }, 
+    {
+      "index": 32, 
+      "score": 0.12939140200614929, 
+      "sent": "His watch swept past the three-minute mark and kept going."
+    }, 
+    {
+      "index": 237, 
+      "score": 0.12920752167701721, 
+      "sent": "\"So you come in and sit down,\" Ian Madin says."
+    }, 
+    {
+      "index": 142, 
+      "score": 0.1287560760974884, 
+      "sent": "The wave had no discernible origin."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.12839864194393158, 
+      "sent": "Take your hands and hold them palms down, middle fingertips touching."
+    }, 
+    {
+      "index": 316, 
+      "score": 0.12698628008365631, 
+      "sent": "\"There is no long-range plan,\" he said."
+    }, 
+    {
+      "index": 298, 
+      "score": 0.12543411552906036, 
+      "sent": "The others sit five to fifteen feet above sea level."
+    }, 
+    {
+      "index": 324, 
+      "score": 0.12417741864919662, 
+      "sent": "Sign up for the daily newsletter: the best of The New Yorker every day."
+    }, 
+    {
+      "index": 309, 
+      "score": 0.12327026575803757, 
+      "sent": "\"They can't make it out from that school,\" Dougherty said."
+    }, 
+    {
+      "index": 203, 
+      "score": 0.12174160033464432, 
+      "sent": "Water heaters will fall and smash interior gas lines."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.11952053010463715, 
+      "sent": "(Rocks, like us, get stiffer as they age.)"
+    }, 
+    {
+      "index": 267, 
+      "score": 0.11861524730920792, 
+      "sent": "Wineglasses, antique vases, Humpty Dumpty, hip bones, hearts: what breaks quickly generally mends slowly, if at all."
+    }, 
+    {
+      "index": 200, 
+      "score": 0.11799538135528564, 
+      "sent": "So will everything made of glass."
+    }, 
+    {
+      "index": 248, 
+      "score": 0.11644983291625977, 
+      "sent": "Nor will anyone save the tourists."
+    }, 
+    {
+      "index": 231, 
+      "score": 0.11497087776660919, 
+      "sent": "\"You protect yourself, you don't turn around, you don't go back to save anybody."
+    }, 
+    {
+      "index": 275, 
+      "score": 0.11255152523517609, 
+      "sent": "Many residents will flee as well."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.11218074709177017, 
+      "sent": "It was March."
+    }, 
+    {
+      "index": 232, 
+      "score": 0.1118021234869957, 
+      "sent": "You run for your life.\""
+    }, 
+    {
+      "index": 310, 
+      "score": 0.11171112209558487, 
+      "sent": "\"They have no place to go.\""
+    }, 
+    {
+      "index": 238, 
+      "score": 0.11101683974266052, 
+      "sent": "\"And I say, 'That's a stupid idea.'"
+    }, 
+    {
+      "index": 78, 
+      "score": 0.11077281087636948, 
+      "sent": "(Watch what your fingertips do when you flatten your hand.)"
+    }, 
+    {
+      "index": 199, 
+      "score": 0.1080712229013443, 
+      "sent": "That nonchalance will shatter instantly."
+    }, 
+    {
+      "index": 245, 
+      "score": 0.10688124597072601, 
+      "sent": "\"I'm not going to sugarcoat it and say, 'Oh, yeah, we'll go around and check on the elderly.'"
+    }, 
+    {
+      "index": 182, 
+      "score": 0.10617257654666901, 
+      "sent": "\"And I love doing it."
+    }, 
+    {
+      "index": 136, 
+      "score": 0.10326792299747467, 
+      "sent": "But it did not."
+    }, 
+    {
+      "index": 323, 
+      "score": 0.098262384533882141, 
+      "sent": "Sign up for the daily newsletter."
+    }, 
+    {
+      "index": 240, 
+      "score": 0.095069266855716705, 
+      "sent": "Now we've consulted.'"
+    }, 
+    {
+      "index": 239, 
+      "score": 0.093015819787979126, 
+      "sent": "And you say, 'Thanks."
+    }, 
+    {
+      "index": 247, 
+      "score": 0.087540775537490845, 
+      "sent": "We won't.\""
+    }, 
+    {
+      "index": 246, 
+      "score": 0.068066529929637909, 
+      "sent": "No."
+    }
+  ], 
+  "title": null
+}

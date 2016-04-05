@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Brief</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <script src="https://use.typekit.net/csv4ijt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/basscss.min.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jan.css">
+  </head>
+  <body class="">
+    <div id="content" class="relative"></div>
+  </body>
+
+  <script id="header-template" type="text/x-handlebars-template">
+    <div id="history-header" class="container px2 center">
+      <h1 class="mb1">
+        <span id="logo">Brief</span>
+      </h1>
+      <div class="mt1">
+        <em>Read the Highlights</em>
+      </div>
+    </div>
+    <div class="mt3 px2 sans-serif left-align" style="font-size: 0.9rem; line-height: 1.65; padding-bottom: 1px;">
+      <p>Brief is a summarization prototype by <a target="_blank" href="http://www.fastforwardlabs.com">Fast Forward Labs</a>. Using the algorithms detailed in our Summarization report, Brief highlights the most interesting sentences within any article.</p>
+      <p>In the full, clients-only prototype, Brief can be used for any article on the web. For this public preview, we have provided a sample of Brief's results across twelve articles. Select an article below to see Brief in action.</p>
+    </div>
+  </script>
+
+  <script id="form-template" type="text/x-handlebars-template">
+  </script>
+
+  <script id="history-header-template" type="text/x-handlebars-template">
+    <div class="bg-light-gray mt2 bold clearfix relative col-12">
+      <div class="px2 sans-serif py1">Summarized Articles</div>
+    </div>
+  </script>
+
+  <script id="article-link-holder-template" type="text/x-handlebars-template">
+    <div id="link-holder">
+    </div>
+  </script>
+
+  <script id="article-link-template" type="text/x-handlebars-template">
+    <div class="border-top">
+      <a href="{{this.inner_link}}" class="article-link block relative bg-white p2 border-bottom {{optional_class}}" data-url="{{this.url}}">
+        <div class="article-link-content">
+          <div class="mb1">
+            <span class="highlight">{{this.first_sentence}}</span>
+          </div>
+          <div class="sans-serif h5">
+            <strong>{{this.title}}</strong> &middot; {{this.domain}}
+          </div>
+        </div>
+      </a>
+    </div>
+  </script>
+
+  <script id="readable-article-template" type="text/x-handlebars-template">
+    <div id="article-toggle" class="bg-light-gray clearfix border-top">
+      <div id="toggle-inner">
+        <div class="reading-label h6 sans-serif px2 bold py1">
+          <span class="hide-wide">Reading </span>Mode</div>
+        <div class="toggle-holder flex">
+          <div class="col-6 center p1 sans-serif h6 bold border toggle-button highlight-mode-toggle" data-mode="highlight" title="Highlight mode highlights high-scoring sentences.">
+            Highlight
+          </div>
+          <div class="col-6 center p1 h6 sans-serif bold border toggle-button skim-mode-toggle" data-mode="skim" style="border-left: none;" title="Skim mode blurs low-scoring sentences.">
+            Skim
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="article-holder" class="clearfix">
+      <div id="loading-bar" class="py1 px2 bg-highlight bold sans-serif">
+        <div class="sp sp-circle sp-sider left" style="margin-top: 0.05rem;"></div>
+        Loading Highlights
+      </div>
+      <div class="container px2">
+        <div class="mb2">
+          <div class="border-bottom mb1">
+            <h2 id="article-title">{{this.title}}</h2>
+          </div>
+          <div class="h5 sans-serif secondary-text">
+            <a href="{{this.url}}" target="_blank">{{this.domain}}</a>
+            &middot;
+            {{this.minute_count}} min read
+          </div>
+        </div>
+        <div id="article-content">
+          {{{this.html}}}
+        </div>
+      </diV>
+    </div>
+  </script>
+
+  <script id="sidebar-shell" type="text/x-handlebars-template">
+    <div id="header">
+      <div class="h3 relative black bold border-bottom" style="height: 100%;">
+        <div id="toggle-sidebar" title="Toggle highlight sidebar" title="Toggle highlight sidebar."><i class="fa fa-align-left" style="transform: scaleY(-1);
+        "></i></div>
+        <a href="/brief" id="article-logo">Brief</a>
+        <div id="menu-opener" class="absolute right-0 top-0 sans-serif h6 px2 border-left border-bottom center" style="border-right: none; width: 5rem;">
+          MENU
+        </div>
+      </div>
+    </div>
+    <div class="px2 py2 border-bottom" id="mobile-title">
+      <div id="mobile-title-label">ARTICLE SUMMARY</div>
+      {{this.title}}
+    </div>
+    <div id="sidebar" class="clearfix relative">
+      <div class="h4 sans-serif bold px2 py1 bg-light-gray" style="margin-bottom: -1px;">Top Highlights</div>
+      <div id="sidebar-content">
+        <div class="py3 lh0">
+          <div class="sp sp-circle" style="margin-bottom: 0.45rem"></div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="sidebar-highlights" type="text/x-handlebars-template">
+    <div class="border-top">
+      {{#each sentences}}
+        <div class="highlight-link px2 py2 border-bottom" style="padding-bottom: 0.5rem;" data-link="highlight-{{this.index}}">
+          <div class="mb1">
+            <span class="highlight">{{{this.sent}}}</span>
+          </div>
+          <div class="sans-serif h6 secondary-text">
+            Score: {{this.adjusted_score}}
+            &middot;
+            Scroll: {{this.scroll}}%
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </script>
+
+  <script id="menu-template" type="text/x-handlebars-template">
+    <div id="overlay"></div>
+    <div id="menu" class="absolute top-0 left-0 col-12" style="background: #efefef; height: 100%;">
+      <div id="menu-header" class="sans-serif h5 px2 border-left bold border-bottom">
+        MENU
+        <div id="menu-closer" class="absolute right-0 top-0 bold center border-bottom border-left h3" style="width: 5rem;">
+          &times;
+        </div>
+      </div>
+      <div class="h2 mb1 mt2 center bold block">Brief</div>
+      <div class="px2 sans-serif mb2" style="font-size: 0.85rem; line-height: 1.5;">
+        <p>Brief highlights the most interesting sentences within any article. In the full, clients-only prototype, Brief can be used for any article on the web. For this public preview, we have provided a sample of Brief's results across twelve articles.</p>
+        <p>Brief can be used in default highlight mode, where it highlights high-scoring sentences; or skim mode, where it blurs low-scoring ones.</p>
+        <p>Brief's article parsing is powered by our friends at <a href="http://www.instaparser.com" target="_blank">Instaparser</a>.</p>
+      </div>
+      <div class="bg-light-gray bold clearfix relative col-12">
+        <div class="px2 sans-serif py1">Summarized Articles</div>
+      </div>
+    </div>
+  </script>
+
+  <script id="link-trasher" type="text/x-handlebars-template">
+    <div class="article-link-deleter absolute right-0 top-0 bg-red border-bottom" style="height: 100%;">
+      <div class="centerer h6 absolute sans-serif bold white">
+        delete article
+      </div>
+    </div>
+  </script>
+
+  <script id="empty-history" type="text/x-handlebars-template">
+    <div class="border p2 center sans-serif" style="background: #fafafa;">
+      A list of articles you have summarized will appear here.
+    </div>
+  </script>
+
+  <script id="footer-template" type="text/x-handlebars-template">
+    <div id="footer">
+      <div class="container px2 center py3 relative sans-serif" style="color: #666;">
+        <a target="_blank" href="http://www.fastforwardlabs.com" class="inline-block lh0" style="margin-bottom: 0.6rem;">
+          <img src="images/ff-logo-extend.svg" class="inline-block" style="height: 2.1rem;" />
+        </a>
+        <div style="font-size: 0.75rem; line-height: 1.5;">
+          A summarization prototype by<br/> <a href="http://www.fastforwardlabs.com" class="bold" target="_blank" style="">Fast Forward Labs</a>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="request-loading-template" type="text/x-handlebars-template">
+    <div class="sans-serif center absolute left-0 right-0" style="top: 2rem; font-size: 1rem; line-height: 1;">
+      <div class="px2">
+        <div class="py3 lh0">
+          <div class="sp sp-circle" style="margin-bottom: 0.45rem"></div>
+        </div>
+        <div class="mb3">
+          <strong>Loading Highlighted Article</strong>
+        </div>
+        <div style="font-size: 0.8rem; color: #aaa;">
+          Taking longer than 30 seconds to load?</em>&nbsp; <a href="#reload" style="color: #aaa;" onclick="location.reload(); return false;">Try Reloading</a>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script src="javascripts/diff_match_patch.js"></script>
+  <script src="javascripts/esrever.js"></script>
+  <script src="javascripts/jquery-2.1.1.min.js"></script>
+  <script src="javascripts/handlebars-v4.0.5.js"></script>
+  <script src="javascripts/public.js"></script>
+</html>

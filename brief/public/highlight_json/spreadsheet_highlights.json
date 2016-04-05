@@ -1,0 +1,1411 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 4, 
+      "score": 0.32090243697166443, 
+      "sent": "As Dan Bricklin remembers it, the idea first came to him in the spring of 1978 while he was sitting in a classroom at the Harvard Business School."
+    }, 
+    {
+      "index": 44, 
+      "score": 0.30591574311256409, 
+      "sent": "And the spreadsheet has begun to be a forceful agent of decentralization, breaking down hierarchies in large companies and diminishing the power of data processing."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.29821836948394775, 
+      "sent": "It is not far-fetched to imagine that the introduction of the electronic spreadsheet will have an effect like that brought about by the development during the Renaissance of double-entry bookkeeping."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.29194316267967224, 
+      "sent": "This was the assignment: he and several other students had been asked to project the complicated financial implications- the shift in numbers and dollars, and the shifts resulting from these shifts- of one company's acquisition of another."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.29173570871353149, 
+      "sent": "One measure of the spreadsheet's impact is clear, however, and it is a source of satisfaction to Dan Bricklin: every student in the Harvard Business School is now required to be proficient in using electronic spreadsheets."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.27858078479766846, 
+      "sent": "A virtual cult of the spreadsheet has formed, complete with gurus and initiates, detailed lore, arcane rituals - and an unshakable belief that the way the world works can be embodied in rows and columns of numbers and formulas."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.27796697616577148, 
+      "sent": "Already, the spreadsheet has redefined the nature of some jobs; to be an accountant in the age of spreadsheet program is -- well, almost sexy."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.27363330125808716, 
+      "sent": "Run your finger across, say, a row of figures representing mortgage payments for a certain property, and the number in each \"cell\" of the horizontal row would be the figure paid in the time period represented by that particular vertical column."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.27226057648658752, 
+      "sent": "Bricklin had graduated from MIT, where--and this is crucial to the idea he would have that afternoon in 1978-- he had worked intimately with computers."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.27017465233802795, 
+      "sent": "They allow businessmen to calculate the effects of sudden changes in the corporate environment (a decrease in the prime rate) and to experiment with scenarios (anything from the expansion of a product line to a merger) - all with an ease inconceivable five years ago."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.26654115319252014, 
+      "sent": "There has been much talk in recent years about an \"entrepreneurial renaissance\" and a new breed of risk-taker who creates businesses where none previously existed."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.26464509963989258, 
+      "sent": "It was a tedious task, and few people who earned their MBAs at Harvard expected to work with spreadsheets very much."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.2636527419090271, 
+      "sent": "As for sophisticated \"modeling\" tasks - which, among other things, enable executives to project costs for their companies - these tasks could be done only on big mainframe computers by the data-processing people who worked for the companies Harvard MBAs managed."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.25979390740394592, 
+      "sent": "These models can be used not only to keep track of transactions but also to analyze the nature of a business itself."
+    }, 
+    {
+      "index": 25, 
+      "score": 0.25972366333007812, 
+      "sent": "With a computer programmer friend from MIT named Bob Frankston, he set to work developing the first electronic spreadsheet program."
+    }, 
+    {
+      "index": 42, 
+      "score": 0.25938811898231506, 
+      "sent": "And just as double-entry changed not only individual businesses but business, so has the electronic spreadsheet."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.25606855750083923, 
+      "sent": "Before deciding to go to graduate school he had worked for two major computer companies-- first for Wang, then for the Digital Equipment Corporation, for whom he helped design a word-processing program."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.25529813766479492, 
+      "sent": "The spreadsheet is a tool, and it is also a world view -- reality by the numbers."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.24959956109523773, 
+      "sent": "Like the new spreadsheet, the double-entry ledger, with its separation of debits and credits, gave merchants a more accurate picture of their businesses and let them see - there, on the page - how they might grow by pruning here, investing there."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.24912053346633911, 
+      "sent": "A row on the ledger might represent an expense of a category of revenue; a column might represent a specific period of time - a day, a month, a year."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.24873676896095276, 
+      "sent": "The biggest firms, the most diversified corporations, can be neatly translated into spreadsheet \"models\" - each box of the grid a window on to once-overlooked facts or relationships."
+    }, 
+    {
+      "index": 225, 
+      "score": 0.24846823513507843, 
+      "sent": "According to William Greider's book The Education of David Stockman and Other Americans, a mainframe computer had been programmed with an elaborate model of the nation's economic behavior."
+    }, 
+    {
+      "index": 113, 
+      "score": 0.24736271798610687, 
+      "sent": "Sneider bought an Apple in 1978, but he was not able to make it useful in his business until he saw an early copy of VisiCalc and became one of the first professionals to use the program."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.24716822803020477, 
+      "sent": "A Spreadsheet Way of KnowledgeA generation ago, a tool unleashed the power of business modeling -- and created the entrepreneurial boom that has transformed our economyI learned, belatedly, that last October 17 was Spreadsheet Day, marking the 35th anniversary of VisiCalc, the Apple II program that started it all."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.24485936760902405, 
+      "sent": "The electronic spreadsheet is to double entry what an oil painting is to a sketch."
+    }, 
+    {
+      "index": 194, 
+      "score": 0.24469631910324097, 
+      "sent": "And so it is that spreadsheets help in the drive for paper profits, and are a prime tool of takeover architects."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.24315561354160309, 
+      "sent": "In 1983, less than a year after selling its first 1-2-3 package, Lotus went public, a move that brought Kapor's personal net worth to more than $75 million."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.24261057376861572, 
+      "sent": "Only by painstakingly filling in the pale green grids of the spreadsheets would they get an accurate picture of the merger and its consequences."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.24229298532009125, 
+      "sent": "Entrepreneurs and their venture-capitalist backers are emerging as new culture heroes, settlers of another American frontier."
+    }, 
+    {
+      "index": 17, 
+      "score": 0.2420785129070282, 
+      "sent": "The problem with ledger sheets was that if one monthly expense went up or down, everything - everything - had to be recalculated."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.24166193604469299, 
+      "sent": "We were talking in his modest office in the old iron-casting factory in Cambridge, Massachusetts, that is now Lotus's headquarters."
+    }, 
+    {
+      "index": 226, 
+      "score": 0.24140912294387817, 
+      "sent": "When Stockman used the model to project the effects of Reagan's plan to reduce income taxes and increase defense spending, the computer calculated that the plan would lead to unprecedented federal deficits."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.2412702888250351, 
+      "sent": "Photo by Mark Mathosian.Today, VisiCalc and its newer rivals - most notably, a more powerful spreadsheet program designed by the Lotus Development Corporation called 1-2-3 - are making fundamental changes in the way American businesses work."
+    }, 
+    {
+      "index": 204, 
+      "score": 0.24107111990451813, 
+      "sent": "There were no formulas in Lotus's spreadsheet projections that did justice to the fantastic consumer acceptance of 1-2-3."
+    }, 
+    {
+      "index": 70, 
+      "score": 0.24019427597522736, 
+      "sent": "Every week, the figures would be updated, the formulas reworked if necessary (perhaps the price of the olive oil had risen) and the recalculated model provides an accurate snapshot of the business."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.23890374600887299, 
+      "sent": "Somewhere on the sheet the columns and rows would be tallied, and that information would be entered on even larger sheets."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.23851463198661804, 
+      "sent": "If the perceptions of those who play a large part in shaping our world are shaped by spreadsheets, it is important that all of us understand what this tool can and cannot do."
+    }, 
+    {
+      "index": 222, 
+      "score": 0.23841172456741333, 
+      "sent": "Or maybe the spreadsheeter knows that the widget company plans to use the projection to seek new financing and therefore doesn't want to reveal the company's vulnerability to fluctuations in the price of raw materials."
+    }, 
+    {
+      "index": 224, 
+      "score": 0.23772160708904266, 
+      "sent": "A notorious example of this kind of fiddling occurred when David Stockman, Director of the Office of Management and Budget, was drawing up the budget for Ronald Reagan's first presidential term."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.23672796785831451, 
+      "sent": "This moved me to republish a long piece I wrote 30 years ago about the significance, as well as the dangers, of this advance."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.23450647294521332, 
+      "sent": "Bricklin and Frankson released VisiCalc (the name was derived from Visible Calculation) in late 1979."
+    }, 
+    {
+      "index": 97, 
+      "score": 0.23340880870819092, 
+      "sent": "If word comes down that a belt-tightening is in order, a few keystrokes will create a sheet that clearly identifies the worst performers."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.23271322250366211, 
+      "sent": "For the first time, businessmen have at their fingertips sophisticated and flexible means to chart all the variables - from interest rates to warehouse space - that make (and break) businesses."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.23218654096126556, 
+      "sent": "They speak of having a better handle on their businesses, of knowing more and planning better, of approaching their work more imaginatively."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.23157735168933868, 
+      "sent": "Mitch Kapor, age 34, a former teacher of Transcendental Meditation, is chairman of the board of the Lotus Development Corporation."
+    }, 
+    {
+      "index": 19, 
+      "score": 0.22971214354038239, 
+      "sent": "Making spreadsheets, however necessary, was a dull chore best left to accountants, junior analysts, or secretaries."
+    }, 
+    {
+      "index": 66, 
+      "score": 0.22944137454032898, 
+      "sent": "This serves to indicate the grid of a ledger sheet, the metaphor used by Lotus and other best-selling spreadsheets like VisiCalc, Multiplan, and SuperCalc."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.2286669909954071, 
+      "sent": "Like most Harvard MBA candidates, he wanted to be a businessman; but more often than not, his thoughts strayed to the technological."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.22832141816616058, 
+      "sent": "The spreadsheet embodies, embraces, that end, and ultimately serves to reinforce it."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.22794972360134125, 
+      "sent": "Bricklin knew all this, but he also knew that spreadsheets were needed for the exercise; he wanted an easier way to do them."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.22655552625656128, 
+      "sent": "The piece first appeared in Harper's, November 1984."
+    }, 
+    {
+      "index": 55, 
+      "score": 0.22566953301429749, 
+      "sent": "The computer spreadsheet, like the transcontinental railroad, is more than a means to an end."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.22396118938922882, 
+      "sent": "The question Bricklin was pondering that day in 1978 concerned how he might use what he knew about computers to help him in his finance course."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.22296763956546783, 
+      "sent": "By placing in the cells either figures of formulas that adjust figures according to different variables, it is possible to duplicate the relationships between various aspects of a business and create a \"model.\""
+    }, 
+    {
+      "index": 200, 
+      "score": 0.22194625437259674, 
+      "sent": "It is no great drain on an executive's time to experiment with all sorts of odd, even insidious."
+    }, 
+    {
+      "index": 5, 
+      "score": 0.22132399678230286, 
+      "sent": "It was the kind of idea--so obvious, so right-- that made him immediately wonder why no one else had thought of it."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.22122514247894287, 
+      "sent": "Bricklin and his classmates would need ledger sheets, often called spreadsheets."
+    }, 
+    {
+      "index": 163, 
+      "score": 0.22109867632389069, 
+      "sent": "A brilliant model is not only beautiful, it yields insights impossible to attain by any other method."
+    }, 
+    {
+      "index": 198, 
+      "score": 0.22077244520187378, 
+      "sent": "The spreadsheet user has no way of quantifying a corporate tradition or the misery of stockholders or whether the headaches of a drawn out takeover bid will ultimately harm the corporate climates of the firms involved."
+    }, 
+    {
+      "index": 232, 
+      "score": 0.22009307146072388, 
+      "sent": "So Stockman was able to fortify the Administration with figures -- generated by a computer -- showing that the deficit would not be problem."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.21978472173213959, 
+      "sent": "He pressed the keys that make the blinking cursor hopscotch across the cells and as he changed an item in one cell, there was a ripple-like movement in the other cells; the spreadsheet program was recalculating."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.21952489018440247, 
+      "sent": "It would be contained on a floppy disk and run on the then brand-new Apple personal computer."
+    }, 
+    {
+      "index": 245, 
+      "score": 0.21931798756122589, 
+      "sent": "This use of spreadsheets has less to do with productivity or insightful analysis than with the art of persuasion."
+    }, 
+    {
+      "index": 219, 
+      "score": 0.21876193583011627, 
+      "sent": "But to determine the effect of a 10 percent price increase on the number of widgets actually sold, he would have to take into account all sorts of market factors, as well as how people tend to behave in certain situations."
+    }, 
+    {
+      "index": 154, 
+      "score": 0.21823342144489288, 
+      "sent": "Allerton J. Cushman of Morgan Stanley has been a connoisseur of these models since discovering that computer spreadsheets could make forecasts of the property-casualty insurance industry."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.21815586090087891, 
+      "sent": "There are corporate executives, wholesalers, retailers, and small business owners who talk about their business lives in two time periods: before and after the electronic spreadsheet."
+    }, 
+    {
+      "index": 213, 
+      "score": 0.21753104031085968, 
+      "sent": "The accuracy of a spreadsheet model is dependent on the accuracy of the formulas that govern the relationships between various figures."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.21717111766338348, 
+      "sent": "More than a million computer spreadsheet programs worth more than $250 million will be purchased in the United States this year."
+    }, 
+    {
+      "index": 61, 
+      "score": 0.21632613241672516, 
+      "sent": "Ezra Gottheil, 34 is the senior product-design planner at Lotus."
+    }, 
+    {
+      "index": 203, 
+      "score": 0.21358399093151093, 
+      "sent": "Spreadsheets have no way of dealing with hunches, either, no formulas for telling their users when lightning will strike- when a product will be not merely a product but a trend-setting blockbuster."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.21342629194259644, 
+      "sent": "\"Compare the expansion of business today to the conquering of the continent in the nineteenth century,\" Kapor told me recently as he pulled himself away from his IBM-PC."
+    }, 
+    {
+      "index": 179, 
+      "score": 0.21332678198814392, 
+      "sent": "Because spreadsheets can do so many important things, those who use them tend to lose sight of the crucial fact that the imaginary business that they create on their computers are just that-imaginary."
+    }, 
+    {
+      "index": 235, 
+      "score": 0.21313680708408356, 
+      "sent": "The output he was working with wasn't in the now-familiar spreadsheet format; instead, the formulas appeared in one place and the results in another."
+    }, 
+    {
+      "index": 106, 
+      "score": 0.21305227279663086, 
+      "sent": "The spreadsheet, as one executive put it, allows the user to create and then experiment with \"a phantom business within the computer."
+    }, 
+    {
+      "index": 169, 
+      "score": 0.21299654245376587, 
+      "sent": "In the course of making the spreadsheet model, he discovered there was a point at which going along with a raise in his rent would actually decrease the amount he'd pay the landlord."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.21119974553585052, 
+      "sent": "It occurred to him: why not create the spreadsheets on a microcomputer?Why not design a program that would produce on a computer screen a green, glowing ledger, so that the calculations, as well as the final tabulations, would be visible to the person \"crunching\" the numbers?Why not make an electronic spreadsheet, a word processor for figures?Bricklin's teachers at Harvard thought he was wasting his time: why would a manager want to do a spreadsheet on one of those \"toy\" computers?"
+    }, 
+    {
+      "index": 184, 
+      "score": 0.20990577340126038, 
+      "sent": "Jim McNitt, in The Art of Computer Management, tells the story of a restaurant owner named Maxwell who was trying to decide whether to undertake a costly renovation."
+    }, 
+    {
+      "index": 76, 
+      "score": 0.20956133306026459, 
+      "sent": "He was offering the computer different hypothetical developments, and it was feeding back to him their probable consequences."
+    }, 
+    {
+      "index": 199, 
+      "score": 0.20882274210453033, 
+      "sent": "The flexibility of spreadsheets can encourage other heartless moves from headquarters."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.20879770815372467, 
+      "sent": "The \"cursor,\" a tiny block of light on the screen that acts like a kind of electronic pencil, can be moved (by a touch of the computer keyboard) to any cell on the spreadsheet in order to \"input\" numbers or formulas."
+    }, 
+    {
+      "index": 220, 
+      "score": 0.2087302953004837, 
+      "sent": "Perhaps the spreadsheeter has access to a study that definitively shows that a 5 percent increase in widget prices results in a 6 percent decrease in sales."
+    }, 
+    {
+      "index": 78, 
+      "score": 0.20790667831897736, 
+      "sent": "In these, the early days of electronic spreadsheeting, it is most frequently seen as a tool for saving time."
+    }, 
+    {
+      "index": 82, 
+      "score": 0.20783911645412445, 
+      "sent": "A client would come in to work out a billing procedure, and after Jackson had put the relevant numbers on a sheet -- in light pencil, so erasures could be easily made -- various questions would come up."
+    }, 
+    {
+      "index": 96, 
+      "score": 0.20616966485977173, 
+      "sent": "How-to manuals for spreadsheets often use as an example a performance chart for salespeople -- the model breaks down how many items they sell week by week and instantly calculates commissions and even bonuses due."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.20578770339488983, 
+      "sent": "When you \"boot\" almost any spreadsheet program into your personal computer, you see little more than some letters running across the top of the display screen and some numbers running down the side."
+    }, 
+    {
+      "index": 159, 
+      "score": 0.2056785523891449, 
+      "sent": "Sterin, Cushman, and others so-called gurus lost themselves in the more esthetic possibilities of spreadsheeting: the perfect model is an end in itself."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.20551882684230804, 
+      "sent": "It accelerated the movement, made it possible, and changed the course of the nation."
+    }, 
+    {
+      "index": 244, 
+      "score": 0.20505550503730774, 
+      "sent": "The spreadsheet presentation is becoming both more commonplace and more sophisticated: not only the numbers but the formats of the sheets themselves are designed to make eloquent points."
+    }, 
+    {
+      "index": 72, 
+      "score": 0.20463413000106812, 
+      "sent": "The screen lit up with the familiar grid, and Gottheil's hands arched over the keys as gracefully as the hands of a pianist."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.20441703498363495, 
+      "sent": "And yet it was no accident that this breakthrough should have been his."
+    }, 
+    {
+      "index": 195, 
+      "score": 0.20436841249465942, 
+      "sent": "An executive in a acquisition-hungry company might spend his time spreadsheeting in order to find a company ripe for takeover."
+    }, 
+    {
+      "index": 155, 
+      "score": 0.20430479943752289, 
+      "sent": "Cushman wrote a pamphlet about his projections entitled \"Confessions of an Apple Byter\", which offered the observation that with VisiCalc, getting your arms around the future seems a trifle easier."
+    }, 
+    {
+      "index": 47, 
+      "score": 0.20410147309303284, 
+      "sent": "Less well known is that most of these new entrepreneurs depend on their economic spreadsheets as much as movie cowboys depend on their horses."
+    }, 
+    {
+      "index": 234, 
+      "score": 0.20399826765060425, 
+      "sent": "In 1981, electronic spreadsheets were just coming into their own, and the kind of sophisticated modeling Stockman did was still done chiefly on mainframe computers."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.2038709968328476, 
+      "sent": "\"The spreadsheet in that comparison is like the transcontinental railroad."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.20336674153804779, 
+      "sent": "Computer programs are said to use different \"metaphors\" to organize their task; a program might use the metaphor of a Rolodex, or a file cabinet."
+    }, 
+    {
+      "index": 107, 
+      "score": 0.20306594669818878, 
+      "sent": "\"\"Before the spreadsheet, you barely had enough time to do the totals,\" said Archie Barrett, a Capitol Hill staff member who uses an IBM PC-XT to work up spreadsheets for the House Armed Services Committee."
+    }, 
+    {
+      "index": 274, 
+      "score": 0.20191669464111328, 
+      "sent": "There is no doubt that the electronic spreadsheet saves time and provides insight; there is no doubt that even greater benefits will one day be derived from these grids."
+    }, 
+    {
+      "index": 134, 
+      "score": 0.20136024057865143, 
+      "sent": "With spreadsheets, a microcomputer gives you more power at a tenth the cost."
+    }, 
+    {
+      "index": 252, 
+      "score": 0.20131205022335052, 
+      "sent": "Sneider expects spreadsheets to become more persuasive - and the distortion of reality greater - when color printers become more common."
+    }, 
+    {
+      "index": 136, 
+      "score": 0.19978596270084381, 
+      "sent": "Since it was easy to learn how to use spreadsheets - no programming experience is required - all it takes to get into the game is a $3,000 personal computer and a $500 copy of 1-2-3, or even a copy of VisiCalc or the Micro-Soft Company's Multiplan, both of which cost less than $200."
+    }, 
+    {
+      "index": 105, 
+      "score": 0.19947704672813416, 
+      "sent": "\"Yet what really has the spreadsheet users charmed is not the hard and fast figures but the \"what if\" factor: the ability to create scenarios, explore hypothetical developments, try out different options."
+    }, 
+    {
+      "index": 89, 
+      "score": 0.1984381377696991, 
+      "sent": "In the first days of electronic spreadsheets -- that is, two or three years ago -- those who used them got things done so quickly that, despite the evidence of finished reports, bosses and co-workers often had trouble believing the tasks had been completed."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.19805972278118134, 
+      "sent": "Gottheil turned to the keyboard of the IBM-PC on a table beside his desk and booted a spreadsheet."
+    }, 
+    {
+      "index": 123, 
+      "score": 0.19786933064460754, 
+      "sent": "Junior analysts, without benefit of secretaries or support from data processing departments, can work up 50-page reports, complete with graphs and charts, advocating a complicated course of action for a client."
+    }, 
+    {
+      "index": 173, 
+      "score": 0.19731855392456055, 
+      "sent": "Sneider and the client made a model that was sensitive to all sorts of variables."
+    }, 
+    {
+      "index": 122, 
+      "score": 0.19684256613254547, 
+      "sent": "The what-if factor has not only changed the nature of jobs such as accounting; it has altered once rigid organizational structures."
+    }, 
+    {
+      "index": 268, 
+      "score": 0.1965649276971817, 
+      "sent": "The buzz word these days in computer software firms looking to expand their markets is \"personal productivity,\" as if the home itself -- maybe life itself - were best viewed as a business."
+    }, 
+    {
+      "index": 95, 
+      "score": 0.1955312043428421, 
+      "sent": "People use spreadsheets to make daily inventory checks, to find out who has paid their bills, to chart the performance of truck drivers over a period of weeks or months."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.19500894844532013, 
+      "sent": "As Marshall McLuhan observed, \"We shape our tools and thereafter our tools shape us.\""
+    }, 
+    {
+      "index": 185, 
+      "score": 0.19464804232120514, 
+      "sent": "He ran fifteen different scenarios on his computer, including one in which he took the money set aside for renovation and invested it elsewhere."
+    }, 
+    {
+      "index": 217, 
+      "score": 0.19450390338897705, 
+      "sent": "For instance, a 5 percent increase in the cost of raw materials used to make widgets might lead to 10 percent increase in the retail price, according to an established cost-price ratio."
+    }, 
+    {
+      "index": 130, 
+      "score": 0.19416341185569763, 
+      "sent": "There are two kinds of backlog - the obvious one, of things requested, and a hidden one."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.19382412731647491, 
+      "sent": "They cite prodigious gains in productivity."
+    }, 
+    {
+      "index": 180, 
+      "score": 0.19306701421737671, 
+      "sent": "You can't really duplicate a business inside a computer, just aspects of a business."
+    }, 
+    {
+      "index": 135, 
+      "score": 0.19276539981365204, 
+      "sent": "Now people can do the calculations themselves, and they don't have to deal with the bureaucracy."
+    }, 
+    {
+      "index": 124, 
+      "score": 0.19229128956794739, 
+      "sent": "And senior executives who take the time to learn how to use spreadsheets are no longer forced to rely on their subordinates for information."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.19203358888626099, 
+      "sent": "But Bricklin could not be dissuaded."
+    }, 
+    {
+      "index": 212, 
+      "score": 0.19174793362617493, 
+      "sent": "With spreadsheets, the danger is not so much that incorrect figures can be fed into them as that \"garbage\" can be embedded in the models themselves."
+    }, 
+    {
+      "index": 114, 
+      "score": 0.1901189386844635, 
+      "sent": "He explained:Before, you would suggest a change to a client, get a staff member to calculate it, send it to the typist, to the proofreader, and recalculate it to make sure there weren't any errors."
+    }, 
+    {
+      "index": 223, 
+      "score": 0.1897100955247879, 
+      "sent": "So he might make the ludicrously optimistic assumption that a 5 percent price increase would result in only a 1 percent decrease in sales."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.18869635462760925, 
+      "sent": "Each figure would have to be punched into a hand calculator and then checked by one of Jackson's employees."
+    }, 
+    {
+      "index": 218, 
+      "score": 0.1886495053768158, 
+      "sent": "Anyone projecting a budget for a widget company could confidently integrate that formula into his model."
+    }, 
+    {
+      "index": 186, 
+      "score": 0.18849469721317291, 
+      "sent": "What Maxwell found was startling: Not only would renovation be foolhardy, but \"even the 'best case' showed I'd get nearly as good a rate of a return on my investment in a money market fund as staying in the restaurant business.\""
+    }, 
+    {
+      "index": 162, 
+      "score": 0.18833355605602264, 
+      "sent": "Mastery is important, not for art's sake but to win."
+    }, 
+    {
+      "index": 90, 
+      "score": 0.18831515312194824, 
+      "sent": "Gottheil told me of an accountant who got \"a rush task, sat down with his micro and his spreadsheet, finished it in an hour or two, and left it on his desk for two days."
+    }, 
+    {
+      "index": 164, 
+      "score": 0.18767346441745758, 
+      "sent": "Dick York, a private real estate investor in Sausalito,changed his entire business to revolve around his Lotus 1-2-3."
+    }, 
+    {
+      "index": 23, 
+      "score": 0.18745262920856476, 
+      "sent": "What were secretaries and accountants and the people down in DP for?"
+    }, 
+    {
+      "index": 193, 
+      "score": 0.18734677135944366, 
+      "sent": "He is more likely to follow the numbers turned out by spreadsheets."
+    }, 
+    {
+      "index": 112, 
+      "score": 0.18713128566741943, 
+      "sent": "\"The what-if factor has changed the way Allen Sneider, a partner in the Boston office of Laventhol & Harwath, a national accounting firm, approaches his job."
+    }, 
+    {
+      "index": 149, 
+      "score": 0.18659114837646484, 
+      "sent": "Computer \"hackers\" lose themselves in the intricacies of programming; spreadsheet hackers lose themselves in the world of what-if."
+    }, 
+    {
+      "index": 79, 
+      "score": 0.18426103889942169, 
+      "sent": "Don Jackson is a certified public accountant in Cincinnati."
+    }, 
+    {
+      "index": 271, 
+      "score": 0.18377749621868134, 
+      "sent": "Thousands of Americans are attending classes to learn about the spreadsheet way of knowledge."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.18364681303501129, 
+      "sent": "The basic model for a restaurant, for example, world include expenses such as salaries, food and liquor costs, and mortgage or rent payments; revenues might be broken down into \"bar\" and \"food,\" perhaps even further by specific dishes."
+    }, 
+    {
+      "index": 197, 
+      "score": 0.18348689377307892, 
+      "sent": "Even a hostile takeover seems cut and dried, perfectly logical, in the world of spreadsheets."
+    }, 
+    {
+      "index": 126, 
+      "score": 0.18341678380966187, 
+      "sent": "After seeing what VisiCalc and the more powerful Lotus 1-2-3 could do, Stein became a passionate disciple of the spreadsheet."
+    }, 
+    {
+      "index": 62, 
+      "score": 0.18323692679405212, 
+      "sent": "He shows up for work in casual clothes, and his small office is cluttered with piles of manuals and software."
+    }, 
+    {
+      "index": 263, 
+      "score": 0.18308410048484802, 
+      "sent": "More than 10 million people filed Schedule C \"self-employment\" reports with the IRS last year: we are becoming a nation of businesspeople."
+    }, 
+    {
+      "index": 214, 
+      "score": 0.18272630870342255, 
+      "sent": "These formulas are based on assumptions made by the model maker."
+    }, 
+    {
+      "index": 91, 
+      "score": 0.18211868405342102, 
+      "sent": "Then he Fed Ex-ed it to the client and got all sorts of accolades for working overtime."
+    }, 
+    {
+      "index": 172, 
+      "score": 0.18204109370708466, 
+      "sent": "A client representing a finance company wanted to know whether it would be a good idea to pay $12 million for a factory that made artificial turf."
+    }, 
+    {
+      "index": 202, 
+      "score": 0.18198347091674805, 
+      "sent": "Then he might run his idea through a spreadsheet and find a huge gain in capital- and there would be an unthinkable, in hard figures."
+    }, 
+    {
+      "index": 100, 
+      "score": 0.18159943819046021, 
+      "sent": "Photo by Jim Raycroft.Bob Frankston, the programmer who designed VisiCalc with Dan Bricklin, noted that instant hard figures, so recently a luxury, are quickly becoming a necessity."
+    }, 
+    {
+      "index": 94, 
+      "score": 0.18153108656406403, 
+      "sent": "Executives no longer have to be satisfied with quarterly updates, for it is now an easy matter to compile monthly, weekly, even daily updates."
+    }, 
+    {
+      "index": 277, 
+      "score": 0.18083201348781586, 
+      "sent": "Fortunately, few would argue that all relations between people can be quantified and manipulated by formulas."
+    }, 
+    {
+      "index": 196, 
+      "score": 0.18040896952152252, 
+      "sent": "If his spreadsheet projections were to produce a likely candidate- if the numbers looked good- he would naturally recommend making a takeover bid."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.18015404045581818, 
+      "sent": "For example, if the billing procedure was based on a 15 percent interest rate, what would happen if the rate went up to 18 percent?"
+    }, 
+    {
+      "index": 260, 
+      "score": 0.17990462481975555, 
+      "sent": "VisiCalc's co-designer Bob Frankston attributes some of his program's popularity to these other users: \"It turns out there are a number of people who are running their own businesses or doing financial management."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.17987090349197388, 
+      "sent": "\"Kapor's comparison is an apt one."
+    }, 
+    {
+      "index": 237, 
+      "score": 0.17972438037395477, 
+      "sent": "That cannot be said of electronic spreadsheets, which don't display the formulas that govern their calculations."
+    }, 
+    {
+      "index": 121, 
+      "score": 0.17955280840396881, 
+      "sent": "The whole mental attitude toward preparing projections has changed."
+    }, 
+    {
+      "index": 250, 
+      "score": 0.17945902049541473, 
+      "sent": "Lotus 1-2-3 can turn figures and formulas into graphs--graphs that spreadsheeters can use to skew and oversimplify reality."
+    }, 
+    {
+      "index": 157, 
+      "score": 0.1789957582950592, 
+      "sent": "\"Spreadsheet models have become a form of expression, and the very act of creating them seem to yield a pleasure unrelated to their utility."
+    }, 
+    {
+      "index": 231, 
+      "score": 0.17883902788162231, 
+      "sent": "...The new model was based on a dramatic surge in the nation's productivity.\""
+    }, 
+    {
+      "index": 209, 
+      "score": 0.17810633778572083, 
+      "sent": "In August 1984, the Wall Street Journal reported that a Texas-based oil and gas company had fired several executives after the firm lost millions of dollars in an acquisition deal because of \"errors traced to a faulty financial analysis spread sheet model."
+    }, 
+    {
+      "index": 182, 
+      "score": 0.17803524434566498, 
+      "sent": "The aspects that get emphasized are the ones easily embodied by numbers."
+    }, 
+    {
+      "index": 256, 
+      "score": 0.17784129083156586, 
+      "sent": "All of this has made some people who work with spreadsheets regularly skeptical of what they see."
+    }, 
+    {
+      "index": 275, 
+      "score": 0.1778290867805481, 
+      "sent": "Yet all these benefits will be meaningless if the spreadsheet metaphor is taken too much to heart."
+    }, 
+    {
+      "index": 101, 
+      "score": 0.17615850269794464, 
+      "sent": "The spreadsheet tool is shaping us."
+    }, 
+    {
+      "index": 168, 
+      "score": 0.17615029215812683, 
+      "sent": "York told me about the time he negotiated a commercial lease that included both a monthly rental and a percentage of the profit of his operation."
+    }, 
+    {
+      "index": 174, 
+      "score": 0.17565466463565826, 
+      "sent": "It would let you know the consequences of any change you might want to make in the business."
+    }, 
+    {
+      "index": 272, 
+      "score": 0.17467401921749115, 
+      "sent": "Some will lose themselves in the rows of columns, the grids becoming their windows on the world."
+    }, 
+    {
+      "index": 208, 
+      "score": 0.17451044917106628, 
+      "sent": "The spreadsheet that looks good but turns makers themselves pay the price."
+    }, 
+    {
+      "index": 133, 
+      "score": 0.17427900433540344, 
+      "sent": "We realized that in three or four years, you might as well take your big minicomputer out on a boat and make an anchor out of it."
+    }, 
+    {
+      "index": 153, 
+      "score": 0.17387098073959351, 
+      "sent": "\"The experiments Stein and those like him carry out are far-flung attempts to formulate the ultimate model, the spreadsheet that behaves just like an actual business."
+    }, 
+    {
+      "index": 253, 
+      "score": 0.17364068329334259, 
+      "sent": "\"If I wanted to, I could skew the picture by choosing a particular color in a bar graph."
+    }, 
+    {
+      "index": 181, 
+      "score": 0.17348736524581909, 
+      "sent": "And since numbers are the strength of spreadsheets."
+    }, 
+    {
+      "index": 207, 
+      "score": 0.17320264875888824, 
+      "sent": "\"People tend to forget that even the most elegantly crafted spreadsheet is a house of cards, ready to collapse at the first erroneous assumption."
+    }, 
+    {
+      "index": 102, 
+      "score": 0.17313520610332489, 
+      "sent": "\"There's an increasing demand for quantitative rather than qualitative justification for decisions,\" he said."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.17281928658485413, 
+      "sent": "VisiCalc running on Apple IIc, 1983."
+    }, 
+    {
+      "index": 160, 
+      "score": 0.17275770008563995, 
+      "sent": "Power users learn from gurus, but have other ends in mind they can use sophisticated models to gain significant professional advantages."
+    }, 
+    {
+      "index": 264, 
+      "score": 0.17274723947048187, 
+      "sent": "Moreover, we are becoming a society of businesspeople."
+    }, 
+    {
+      "index": 258, 
+      "score": 0.17272888123989105, 
+      "sent": "\"So they have this other model to put against the first one, to factor the stuff out."
+    }, 
+    {
+      "index": 81, 
+      "score": 0.17199400067329407, 
+      "sent": "Before he bought an Apple three years ago, he painstakingly did his calculations on light green crosshatched ledger sheets."
+    }, 
+    {
+      "index": 156, 
+      "score": 0.17188233137130737, 
+      "sent": "Cushman's office, high above midtown Manhattan, is dominated by IBM-compatible computers and printers, and when I visited him there he explained his fascination with modeling this way: \"People like to build elegant models, whether of balsa wood or numbers."
+    }, 
+    {
+      "index": 147, 
+      "score": 0.17128424346446991, 
+      "sent": "\"All this powerful scenario-testing machinery right there on the desktop induces some people to experiment with elaborate models."
+    }, 
+    {
+      "index": 77, 
+      "score": 0.16960911452770233, 
+      "sent": "\"It's a good tool,\" Gottheil noted matter-of-factly."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.16917139291763306, 
+      "sent": "When I visited Gottheil he gave me a quick introduction to electronic speadsheeting."
+    }, 
+    {
+      "index": 92, 
+      "score": 0.16877143085002899, 
+      "sent": "\"But saving time is hardly the only benefit of spreadsheets."
+    }, 
+    {
+      "index": 247, 
+      "score": 0.1685502827167511, 
+      "sent": "\"When you're trying to sell a car, the standard technique is to ask for the other person's objections, and then argue them away."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.16853858530521393, 
+      "sent": "He has between 40 and 50 clients, mostly small businesses."
+    }, 
+    {
+      "index": 166, 
+      "score": 0.16779305040836334, 
+      "sent": "\"The spreadsheets give me constant updates, and I'm able to pinpoint property that isn't bringing in money -- I dump those properties immediately."
+    }, 
+    {
+      "index": 273, 
+      "score": 0.16775712370872498, 
+      "sent": "They will spend their evenings in front of their computers, the dark dimly lit by the glow of green phosphorescent numbers, fiddling with scenarios, trying to make the profit line perfect."
+    }, 
+    {
+      "index": 257, 
+      "score": 0.16715466976165771, 
+      "sent": "\"I know of one venture capital firm that assumes people manipulate spreadsheets,\" Kapor said."
+    }, 
+    {
+      "index": 93, 
+      "score": 0.16713771224021912, 
+      "sent": "They encourage businesses to keep track of things that were previously unquantified or altogether overlooked."
+    }, 
+    {
+      "index": 138, 
+      "score": 0.16698020696640015, 
+      "sent": "The company's chief financial officer wanted certain information, and his top \"experts\" had difficulty providing it."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.16658288240432739, 
+      "sent": "To find out, the whole sheet would have to be redone."
+    }, 
+    {
+      "index": 125, 
+      "score": 0.16485641896724701, 
+      "sent": "Theodore Stein is an assistant vice president in data processing at the Connecticut Mutual Life Insurance Company in Hartford."
+    }, 
+    {
+      "index": 150, 
+      "score": 0.16418442130088806, 
+      "sent": "Some, like Theodore Stein of Connecticut Mutual, admit that their habit goes beyond the point of diminishing returns: \"I can't begin to tell you how many hours I spend at this,\" he said."
+    }, 
+    {
+      "index": 238, 
+      "score": 0.16385854780673981, 
+      "sent": "As Mitch Kapor explained, with electronic spreadsheets, \"You can just randomly make formulas, all of which depend on each other."
+    }, 
+    {
+      "index": 192, 
+      "score": 0.16378413140773773, 
+      "sent": "But a corporate executive who ignored such a clear-cut bottom-line conclusion might be risking his professional life."
+    }, 
+    {
+      "index": 233, 
+      "score": 0.1620650440454483, 
+      "sent": "Stockman's sleight of hand was fairly easy to discern."
+    }, 
+    {
+      "index": 249, 
+      "score": 0.16158658266067505, 
+      "sent": "'\"As spreadsheets are used more for persuasion and negotiation, people are becoming rather sly about their design."
+    }, 
+    {
+      "index": 170, 
+      "score": 0.16116257011890411, 
+      "sent": "(The landlord did not have his own spreadsheet to divine this fact."
+    }, 
+    {
+      "index": 259, 
+      "score": 0.16098318994045258, 
+      "sent": "\"Obviously, not all the millions of people who use spreadsheets (VisiCalc alone has sold over 700,000 copies) are accountants, financial analysts, or middle managers."
+    }, 
+    {
+      "index": 239, 
+      "score": 0.15984152257442474, 
+      "sent": "And when you look at the final results, you have no way of knowing what the rules are, unless somebody tells you."
+    }, 
+    {
+      "index": 278, 
+      "score": 0.15925182402133942, 
+      "sent": "Of human behavior, no faultless assumptions - and so no perfect model -- can be made."
+    }, 
+    {
+      "index": 161, 
+      "score": 0.15907299518585205, 
+      "sent": "When a guru is not available, there are courses to take, self-help books to study, and magazine articles to examine, like the one in the July 1984 issue of Personal Computing entitled \"Power Spreadsheeting,\" which warns of \"arrested spreadsheet development\" and urges users to \"think like a spreadsheet\"."
+    }, 
+    {
+      "index": 269, 
+      "score": 0.15907149016857147, 
+      "sent": "Spreadsheets are at the heart of this movement."
+    }, 
+    {
+      "index": 242, 
+      "score": 0.15892705321311951, 
+      "sent": "Because a spreadsheet looks so authoritative - and it was done by a computer, wasn't it?"
+    }, 
+    {
+      "index": 267, 
+      "score": 0.15821442008018494, 
+      "sent": "We have accepted the venture capitalist as a role model."
+    }, 
+    {
+      "index": 127, 
+      "score": 0.15726913511753082, 
+      "sent": "Until recently, Connecticut Mutual, like many large corporations, centralized its computer services in one division - data processing."
+    }, 
+    {
+      "index": 148, 
+      "score": 0.15688340365886688, 
+      "sent": "They talk of \"playing\" with the numbers, \"massaging\" the model."
+    }, 
+    {
+      "index": 205, 
+      "score": 0.15678496658802032, 
+      "sent": "\"Our own projections were violated on a daily basis,\" said Ezra Gottheil."
+    }, 
+    {
+      "index": 241, 
+      "score": 0.1567130982875824, 
+      "sent": "Photo by Rick Payette.Increasingly, however, businessmen are not telling but letting their spreadsheets do the talking."
+    }, 
+    {
+      "index": 139, 
+      "score": 0.15490607917308807, 
+      "sent": "So one weekend he brought an Apple computer and a copy of VisiCalc home with him."
+    }, 
+    {
+      "index": 120, 
+      "score": 0.1538042426109314, 
+      "sent": "Before you'd be tempted to say, \"Let's leave it the way it was.\""
+    }, 
+    {
+      "index": 108, 
+      "score": 0.15364827215671539, 
+      "sent": "\"Now you put in a number and see whether you're above or below the total."
+    }, 
+    {
+      "index": 211, 
+      "score": 0.15356488525867462, 
+      "sent": "Any computer program, no matter how costly, sophisticated, or popular, will yield worthless results if the data fed into it is faulty."
+    }, 
+    {
+      "index": 88, 
+      "score": 0.1534351259469986, 
+      "sent": "\"Jackson's story is a common one."
+    }, 
+    {
+      "index": 251, 
+      "score": 0.15281851589679718, 
+      "sent": "\"With graphs, things take on greater weight,\" Allen Sneider said."
+    }, 
+    {
+      "index": 266, 
+      "score": 0.15242478251457214, 
+      "sent": "We read columns on \"personal money management\" that urge us to speculate in markets once reserved for the very few."
+    }, 
+    {
+      "index": 189, 
+      "score": 0.15223762392997742, 
+      "sent": "What the spreadsheet left out, of course was the unquantifiable emotional factor -- Maxwell loved what he did."
+    }, 
+    {
+      "index": 140, 
+      "score": 0.15211136639118195, 
+      "sent": "Monday morning, he called his people in and showed them how he had gotten the information he had been clamoring for."
+    }, 
+    {
+      "index": 75, 
+      "score": 0.15210603177547455, 
+      "sent": "Then he punched in another variable, and another ripple of figures washed across the screen."
+    }, 
+    {
+      "index": 227, 
+      "score": 0.15168969333171844, 
+      "sent": "Did Stockman warn his president that they were on a dangerous course?"
+    }, 
+    {
+      "index": 270, 
+      "score": 0.15166297554969788, 
+      "sent": "Using electronic spreadsheets, everyone can run his or her own business."
+    }, 
+    {
+      "index": 246, 
+      "score": 0.15132719278335571, 
+      "sent": "\"People doing negotiations now sit down with spreadsheets,\" Bob Frankston said."
+    }, 
+    {
+      "index": 276, 
+      "score": 0.1511099636554718, 
+      "sent": "After all, it is only a metaphor."
+    }, 
+    {
+      "index": 137, 
+      "score": 0.15099309384822845, 
+      "sent": "Stein learned then early in Connecticut Mutual's spreadsheeting days."
+    }, 
+    {
+      "index": 178, 
+      "score": 0.15048690140247345, 
+      "sent": "Instead, he started his own business -- buying and selling spreadsheet templates."
+    }, 
+    {
+      "index": 216, 
+      "score": 0.15015468001365662, 
+      "sent": "It might also be a wild guess, or a dishonestly optimistic view."
+    }, 
+    {
+      "index": 243, 
+      "score": 0.15000061690807343, 
+      "sent": "- the hypothetical models get accepted as gospel."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.14988383650779724, 
+      "sent": "(This was so long ago that I had to define what a cursor was!)"
+    }, 
+    {
+      "index": 132, 
+      "score": 0.1488359272480011, 
+      "sent": "When those two guys designed VisiCalc, they opened up a whole new way."
+    }, 
+    {
+      "index": 171, 
+      "score": 0.14849825203418732, 
+      "sent": ")Allen Sneider of Lowenthol & Horwath once worked a spreadsheet masterpiece."
+    }, 
+    {
+      "index": 141, 
+      "score": 0.14837935566902161, 
+      "sent": "\"With one swipe of the diskette, he cut them off at the knees.\""
+    }, 
+    {
+      "index": 240, 
+      "score": 0.1483561098575592, 
+      "sent": "\"Lotus 1-2-3 on the screen of the Tandy 3000NL computer used in 1988."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.14834928512573242, 
+      "sent": "\"I would work for twenty hours,\" Jackson said."
+    }, 
+    {
+      "index": 248, 
+      "score": 0.14764741063117981, 
+      "sent": "If two people are in front of a spreadsheet, and one says, 'Well, the numbers say this,' the other can't say, 'Yes, but there's something I can't quite point to."
+    }, 
+    {
+      "index": 167, 
+      "score": 0.14754343032836914, 
+      "sent": "This is information I'd always tried to get manually, but couldn't.\""
+    }, 
+    {
+      "index": 262, 
+      "score": 0.14673726260662079, 
+      "sent": "If you''ve got to project costs for a year, it makes sense to do it with a spreadsheet.\""
+    }, 
+    {
+      "index": 201, 
+      "score": 0.14638084173202515, 
+      "sent": "He might ask \"What if we dropped our pension plan?\""
+    }, 
+    {
+      "index": 175, 
+      "score": 0.14575184881687164, 
+      "sent": "Add a new production line, decrease production, increase inventory, widen the collateral base, change the mortgage rate, increase hourly wages...it was all there, calculated according to highly refined formulas."
+    }, 
+    {
+      "index": 177, 
+      "score": 0.14470289647579193, 
+      "sent": "Sneider's client did not buy the factory (the factory employees bought it)."
+    }, 
+    {
+      "index": 146, 
+      "score": 0.14468732476234436, 
+      "sent": "The following week, they all came down to learn VisiCalc - fast."
+    }, 
+    {
+      "index": 103, 
+      "score": 0.14459504187107086, 
+      "sent": "\"In the past, before spreadsheets, people would have taken a guess."
+    }, 
+    {
+      "index": 115, 
+      "score": 0.14421339333057404, 
+      "sent": "Now you have a machine right there with the client."
+    }, 
+    {
+      "index": 129, 
+      "score": 0.14419665932655334, 
+      "sent": "DP always has more requests than it can handle."
+    }, 
+    {
+      "index": 116, 
+      "score": 0.14417703449726105, 
+      "sent": "Want to see what happens with a different return on investment?"
+    }, 
+    {
+      "index": 215, 
+      "score": 0.14417476952075958, 
+      "sent": "An assumption might be an educated guess about a complicated cause-and-effect relationship."
+    }, 
+    {
+      "index": 255, 
+      "score": 0.14152379333972931, 
+      "sent": "They might think green indicates profitability.\""
+    }, 
+    {
+      "index": 128, 
+      "score": 0.14053888618946075, 
+      "sent": "People out in the field, or even at corporate headquarters, were generally not satisfied with the information they got from DP, Stein said."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.13969062268733978, 
+      "sent": "\"With a spreadsheet, it takes me 15 minutes."
+    }, 
+    {
+      "index": 210, 
+      "score": 0.13911809027194977, 
+      "sent": "\"An often-repeated truism about computers is \"Garbage in, Garbage Out.\""
+    }, 
+    {
+      "index": 165, 
+      "score": 0.13842861354351044, 
+      "sent": "\"I've used it to reduce everything in my operation to cash flow,\" he said."
+    }, 
+    {
+      "index": 104, 
+      "score": 0.13841772079467773, 
+      "sent": "Now they feel obligated to run the numbers."
+    }, 
+    {
+      "index": 191, 
+      "score": 0.13839374482631683, 
+      "sent": "Maxwell was his own boss and could follow his instincts."
+    }, 
+    {
+      "index": 131, 
+      "score": 0.13828632235527039, 
+      "sent": "People say, \"I won't ask for the information because I won't get it anyway."
+    }, 
+    {
+      "index": 254, 
+      "score": 0.13794124126434326, 
+      "sent": "Some people think red is very negative."
+    }, 
+    {
+      "index": 230, 
+      "score": 0.13745872676372528, 
+      "sent": "\"[He] assumed a swift decline in prices and interest rates."
+    }, 
+    {
+      "index": 190, 
+      "score": 0.13716791570186615, 
+      "sent": "He kept the restaurant (though scuttled the renovation)."
+    }, 
+    {
+      "index": 183, 
+      "score": 0.13705724477767944, 
+      "sent": "Intangible factors aren't so easily quantified."
+    }, 
+    {
+      "index": 261, 
+      "score": 0.13683386147022247, 
+      "sent": "The 'own business' might be something like renting an apartment."
+    }, 
+    {
+      "index": 158, 
+      "score": 0.13643178343772888, 
+      "sent": "Unusual models are duplicated and passed around; these templates are sometimes used by other modelers and sometimes only admired for their elegance."
+    }, 
+    {
+      "index": 221, 
+      "score": 0.13202002644538879, 
+      "sent": "But maybe no study exists."
+    }, 
+    {
+      "index": 98, 
+      "score": 0.12992903590202332, 
+      "sent": "Bob Frankston (standing) and Dan Bricklin."
+    }, 
+    {
+      "index": 229, 
+      "score": 0.1289559006690979, 
+      "sent": "\"He changed the economic assumptions fed into computer model,\" writes Greider."
+    }, 
+    {
+      "index": 236, 
+      "score": 0.1269029825925827, 
+      "sent": "You could see what you were getting."
+    }, 
+    {
+      "index": 151, 
+      "score": 0.12602896988391876, 
+      "sent": "\"This is my pet, in a way."
+    }, 
+    {
+      "index": 74, 
+      "score": 0.12552876770496368, 
+      "sent": "His eyebrows rose as he saw the result."
+    }, 
+    {
+      "index": 119, 
+      "score": 0.12448363751173019, 
+      "sent": "It's done in a minute."
+    }, 
+    {
+      "index": 109, 
+      "score": 0.12173359841108322, 
+      "sent": "You can play what-if games."
+    }, 
+    {
+      "index": 206, 
+      "score": 0.11783537268638611, 
+      "sent": "\"It was beyond our wildest assumptions."
+    }, 
+    {
+      "index": 110, 
+      "score": 0.11495307832956314, 
+      "sent": "What if we don't order as many tanks?"
+    }, 
+    {
+      "index": 152, 
+      "score": 0.11025402694940567, 
+      "sent": "Scratching its ears and brushing its code...it's almost an obsession."
+    }, 
+    {
+      "index": 187, 
+      "score": 0.10315927863121033, 
+      "sent": "Get out of the restaurant business!"
+    }, 
+    {
+      "index": 99, 
+      "score": 0.1029704362154007, 
+      "sent": "1982."
+    }, 
+    {
+      "index": 111, 
+      "score": 0.10254704207181931, 
+      "sent": "What if we order more?"
+    }, 
+    {
+      "index": 279, 
+      "score": 0.10066521912813187, 
+      "sent": "Copyright (c) 1984 by Steven Levy, reprinted by permission."
+    }, 
+    {
+      "index": 118, 
+      "score": 0.10014691948890686, 
+      "sent": "Interest rates changing by half of a percent?"
+    }, 
+    {
+      "index": 145, 
+      "score": 0.095219284296035767, 
+      "sent": "He'd cut the chain."
+    }, 
+    {
+      "index": 265, 
+      "score": 0.094427905976772308, 
+      "sent": "We speak in a jargon derived from the business world (\"What's the bottom line on this?\")."
+    }, 
+    {
+      "index": 188, 
+      "score": 0.093687146902084351, 
+      "sent": "the spreadsheet said."
+    }, 
+    {
+      "index": 143, 
+      "score": 0.089502975344657898, 
+      "sent": "\"He out-teched them."
+    }, 
+    {
+      "index": 144, 
+      "score": 0.079810410737991333, 
+      "sent": "His experts!"
+    }, 
+    {
+      "index": 228, 
+      "score": 0.076065756380558014, 
+      "sent": "No."
+    }, 
+    {
+      "index": 142, 
+      "score": 0.075627267360687256, 
+      "sent": "Stein said."
+    }, 
+    {
+      "index": 117, 
+      "score": 0.074345432221889496, 
+      "sent": "Sheltering?"
+    }, 
+    {
+      "index": 176, 
+      "score": 0.071970686316490173, 
+      "sent": "What happened?"
+    }, 
+    {
+      "index": 280, 
+      "score": 0.0091469064354896545, 
+      "sent": "Follow Backchannel: Twitter | Facebook"
+    }
+  ], 
+  "title": null
+}

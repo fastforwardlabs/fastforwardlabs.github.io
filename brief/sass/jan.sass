@@ -1,0 +1,683 @@
+$accent: #0058e1
+$highlight: #fefe64
+$lighter_highlight: #ffffbd
+
+// Helper mix-ins
+@mixin font-smoothing($value: antialiased)
+  @if $value == antialiased
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+  @else
+    -webkit-font-smoothing: subpixel-antialiased
+    -moz-osx-font-smoothing: auto
+
+*
+  box-sizing: border-box
+
+html
+  font-size: 16px
+@media(min-width: 400px)
+  html
+    font-size: 18px
+@media(min-width: 500px)
+  html
+    font-size: 20px
+
+body
+  font-family: Georgia, serif
+  background: #fafafa
+  color: #111
+
+h1, h2, h3, h4, h5, h6
+  font-family: Georgia, serif
+
+pre
+  border-width: 1px
+  border-color: rgba(0,0,0,.125)
+  border-style: solid
+  background: #efefef
+  padding: 1rem
+  margin: 1rem 0
+  font-size: 0.8rem
+
+.centerer
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+.sans-serif
+  font-family: "jaf-facitweb",sans-serif
+  font-size: 0.875em
+  line-height: 1.45
+
+.h5.sans-serif
+  font-size: 0.85rem
+  line-height: 1.4
+
+.h6.sans-serif
+  font-size: 0.75rem
+  line-height: 1.4
+
+.color-highlight
+  color: $highlight
+
+figure
+  margin: 0
+  margin-bottom: 1rem
+  img
+    display: block
+    margin: 0 auto
+    max-height: 30rem
+
+figcaption
+  font-size: 0.8rem
+  line-height: 1.5
+  margin-top: 0.5rem
+
+#menu-opener, #menu-closer
+  color: #aaa
+  background: #333
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  &:hover
+    background: #444
+    color: #bbb
+
+body.show-menu
+  overflow-y: hidden
+
+#menu
+  position: fixed
+  height: 100vh
+  overflow-y: auto
+  padding-top: 2.5rem
+#menu-header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 2.5rem
+
+#mobile-title
+  background: $highlight
+  font-weight: 700
+  font-family: 'jaf-facitweb', sans-serif
+  font-size: 0.9rem
+  line-height: 1.5
+  #mobile-title-label
+    font-size: 0.6rem
+    line-height: 1
+    letter-spacing: 0.05em
+    margin-bottom: 0.2rem
+#history-editor
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background: #ccc
+  line-height: 1.38rem
+  width: 7.5rem
+  color: #444
+  text-align: center
+  &:hover
+    background: #bbb
+    color: #111
+  #stop-editing
+    display: none
+  &.editing
+    span
+      display: none
+    #stop-editing
+      display: inline
+
+.article-link-deleter
+  width: 6rem
+  text-align: center
+  text-transform: uppercase
+  cursor: pointer
+  background: #FF4136
+  +font-smoothing(antialiased)
+  &:hover
+    background: darken(#FF4136, 4%)
+
+.article-link.editing
+  .article-link-content
+    padding-right: 6rem
+
+.mb025
+  margin-bottom: 0.25rem
+
+#logo
+  font-size: 2.5rem
+  // background-image: url('../images/crux.svg')
+  background-size: 100% auto
+  background-repeat: no-repeat
+  padding: 0 0.2em
+  background-position: 0 0.2em
+  &:hover
+    text-decoration: none
+
+#article-logo
+  padding: 0 1rem
+  color: #aaa
+  font-size: 1rem
+  position: relative
+  top: -0.1rem
+  color: $highlight
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: $highlight
+  // background-image: url('../images/crux.svg')
+  // background-size: 100% auto
+  // background-repeat: no-repeat
+  // padding: 0 0.2em
+  // margin-left: -0.2em
+  // background-position: 0 0.15em
+
+.secondary-text
+  color: #888
+
+a
+  color: $accent
+  color: #222
+  text-decoration: underline
+  &:hover
+    color: #444
+
+.bg-accent
+  background: $accent
+
+.article-link
+  // background: darken(#eff0fe,2%)
+  background: #efefef
+  text-decoration: none
+  color: #222
+  &:hover
+    // background: darken(#eff0fe,4%)
+    background: darken(#efefef,4%)
+    text-decoration: none
+    color: #111
+    .highlight
+      // background: darken($highlight, 4%)
+      background: $highlight
+  &.active
+    background: #ccc
+    // color: #fff
+    // +font-smoothing(antialiased)
+    cursor: default
+    .highlight
+      // color: #111
+
+.btn-primary
+  background: $accent
+
+.bg-highlight
+  background: $highlight
+
+.highlight
+  background: $highlight
+  padding: 0.1em 0
+
+.highlight-link
+  cursor: pointer
+  background: #efefef
+  &:hover
+    background: #e6e6e6
+
+#article-holder
+  background: #fafafa
+  max-width: 36rem
+  margin: 0 auto
+
+.toggle-button
+  cursor: pointer
+  color: #aaa
+  background: #333
+  +font-smoothing(antialiased)
+  text-transform: uppercase
+  &:hover
+    color: #bbb
+    background: #444
+
+.bg-light-gray
+  background: #dfdfdf
+
+.antialiased
+  +font-smoothing(antialiased)
+
+.uppercase
+  text-transform: uppercase
+
+ul
+  margin: 0
+  margin-bottom: 1rem
+  list-style-type: none
+  padding-left: 0
+  li
+    padding-left: 0
+    padding-left: 1.25rem
+    background-image: url('../images/bullet.svg')
+    background-repeat: no-repeat
+    background-size: 0.4em auto
+    background-position: 0 0.5em
+    margin-bottom: 0.5rem
+
+ol
+  margin: 0
+  margin-bottom: 1rem
+  padding-left: 1.25rem
+
+blockquote
+  margin: 0
+  padding-left: 1rem
+  margin-bottom: 1rem
+  border-left: solid rgba(0,0,0,.125) 0.25rem
+
+input:focus
+  box-shadow: 0 1px 2px $accent
+
+body.highlight-mode
+  .highlight-mode-toggle
+    background: #555
+    color: #ccc
+    cursor: default
+    border-color: #555
+    +font-smoothing(antialiased)
+  .article-highlight
+    padding: 0.1em 0
+    &.group_0
+      background: $highlight
+    &.group_1
+      background: $lighter_highlight
+    &.active
+      box-shadow: inset 0 0 0 20rem rgba(0,0,0,.05)
+
+body.skim-mode
+  .skim-mode-toggle
+    background: #555
+    color: #ccc
+    cursor: default
+    border-color: #555
+    +font-smoothing(antialiased)
+  a
+    text-decoration: none
+  .article-highlight
+    padding: 0.15em 0
+    &.group_0
+      text-shadow: 0 0 1px rgba(0,0,0,0.8)
+    &.group_1
+      color: transparent
+      text-shadow: 0 0 1px rgba(0,0,0,0.6)
+    &.group_2
+      color: transparent
+      text-shadow: 0 0 20px rgba(0,0,0,0.5)
+    &.active
+      box-shadow: inset 0 0 0 20rem rgba(0,0,0,.2)
+  #article-content
+    a
+      .group_0
+        text-shadow: 0 0 1px rgba(0,0,0,0.8)
+      .group_1
+        color: transparent
+        text-shadow: 0 0 1px rgba(0,0,0,0.6)
+      .group_2
+        color: transparent
+        text-shadow: 0 0 20px rgba(0,0,0,0.5)
+
+.btn-primary
+  +font-smoothing(antialiased)
+  &:hover
+    box-shadow: none
+
+.btn-small
+  padding: 0.25rem 0.5rem
+
+.btn-primary.disabled
+  background: #aaa
+  cursor: default
+  &:hover
+    background: #aaa
+
+.lh0
+  line-height: 0
+
+// Spinner base from http://codepen.io/bernethe/pen/dorozd
+.sp
+  width: 1.75rem
+  height: 1.75rem
+  clear: both
+  margin: 0 auto 0.5rem
+
+.sp-circle
+  border: 0.2rem rgba(#000,0.25) solid
+  border-top: 0.2rem rgba(#000,1) solid
+  border-radius: 50%
+  -webkit-animation: spCircRot .6s infinite linear
+  animation: spCircRot .6s infinite linear
+
+.sp-inline
+  display: inline-block
+  margin: 0
+  width: 0.8rem
+  height: 0.8rem
+  border-width: 0.15rem
+  position: relative
+  top: 0.1rem
+  margin-right: 0.1rem
+
+.sp-sider
+  width: 1rem
+  height: 1rem
+  margin-right: 0.4rem
+
+@-webkit-keyframes spCircRot
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(359deg)
+@keyframes spCircRot
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
+iframe
+  max-width: 100%
+
+#loading-bar
+  display: none
+
+body.loading-highlights
+  #loading-bar
+    display: block
+
+.time-string
+  background: #fafafa
+  color: #999
+
+#toggle-sidebar
+  display: none
+
+#header, #menu-header
+  height: 2.5rem
+  background: #222
+  color: #aaa
+  line-height: 2.5rem
+  +font-smoothing(antialiased)
+
+#menu-opener, #menu-closer
+  height: 2.5rem
+  line-height: 2.6rem
+#menu-closer
+  line-height: 2.35rem
+
+#overlay
+  display: none
+
+.reading-label
+  +font-smoothing(antialiased)
+  font-weight: normal
+  color: #999
+  background: #222
+
+#extension-link
+  display: none
+  #extension-link-close
+    position: absolute
+    right: 1rem
+    font-weight: 700
+    font-size: 1rem
+    padding: 0 1rem
+    top: 0.25rem
+    border-radius: 0.2rem
+    cursor: pointer
+    &:hover
+      box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625)
+
+
+#footer a
+  text-decoration: none
+
+@media(min-width: 840px)
+  #mobile-title
+    display: none
+  html
+    font-size: 18px
+  #toggle-sidebar
+    display: block
+    text-align: center
+    float: left
+    width: 2rem
+    height: 2rem
+    cursor: pointer
+    line-height: 1.9rem
+    font-size: 1rem
+    color: #888
+    background: #333
+    position: relative
+    &:hover
+      background: #444
+      color: #aaa
+  #header
+    position: fixed
+    left: 0
+    width: 100%
+    top: 0
+    z-index: 980
+    height: 2rem
+    line-height: 2rem
+  #menu-opener
+    padding: 0
+    height: 2rem
+    line-height: 2.025rem
+  #menu-header
+    height: 2rem
+    line-height: 2rem
+    background: #222
+    color: #999
+    border-left: none
+    position: fixed
+    right: 0
+    left: auto
+    top: 0
+    z-index: 999
+    width: 440px
+  #menu-closer
+    height: 2rem
+    line-height: 1.8rem
+    padding: 0
+  #article-logo
+    // display: none
+    font-size: 0.95rem
+    padding: 0
+    top: 0
+    float: left
+    padding: 0 0.5rem
+    height: 2rem
+    line-height: 1.95rem
+    color: #aaa
+    text-decoration: none !important
+    &:hover
+      color: $highlight
+  #article-title
+    font-size: 2rem
+  #content, #footer
+    padding-left: 300px
+  #content
+    padding-top: 2rem
+  #sidebar
+    position: fixed
+    left: 0
+    top: 0
+    width: 300px
+    border-right: solid 1px rgba(0,0,0,0.125)
+    height: 100vh
+    padding-top: 2rem
+    overflow-y: auto
+  body.bannered
+    #article-holder
+      padding-top: 2rem
+    #extension-link
+      display: block
+      padding-left: 300px
+  #article-toggle
+    position: fixed
+    float: left
+    padding-left: 300px
+    left: 0
+    top: 0
+    z-index: 990
+    border: none
+    height: 0
+    width: 100%
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    #toggle-inner
+      width: 100%
+      max-width: 36rem
+      margin: 0 auto
+      height: 0
+    .reading-label
+      height: 2rem
+      float: left
+      padding-top: 0
+      padding-bottom: 0
+      border-bottom: solid 1px rgba(0,0,0,0.125)
+      line-height: 2.05rem
+      padding-right: 0.5rem
+    .toggle-holder
+      display: block
+      float: left
+      .toggle-button
+        float: left
+        width: auto
+        height: 2rem
+        line-height: 2.025rem
+        padding-top: 0
+        padding-left: 1rem
+        padding-right: 1rem
+        padding-bottom: 0
+        border-top: none
+    .hide-wide
+      display: none
+  #article-holder
+    max-width: 36rem
+    margin: 0 auto
+  #overlay
+    display: block
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.6)
+    z-index: 996
+  #menu
+    position: fixed
+    top: 0
+    width: 440px
+    left: auto
+    padding-top: 2rem
+    right: 0
+    height: 100vh
+    overflow-y: auto
+    z-index: 997
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3)
+  body.show-menu
+    overflow: hidden
+  body.no-url
+    #content, #footer
+      padding-left: 0
+      padding-top: 0
+    #content
+      max-width: 36rem
+      margin: 0 auto
+    .article-link, .time-string
+      border-left: solid 1px rgba(0,0,0,0.125)
+      border-right: solid 1px rgba(0,0,0,0.125)
+    #form-holder
+      padding: 0
+      margin-bottom: 2rem
+    #footer
+      margin-top: 1rem
+  body.hide-sidebar
+    #content, #footer, #article-toggle
+      padding-left: 0
+    #sidebar
+      display: none
+    #extension-link
+      padding-left: 0
+  $toggle_active: #555
+  body.highlight-mode
+    .highlight-mode-toggle
+      background: $toggle_active
+      border-color: $toggle_active
+      color: #ccc
+  body.skim-mode
+    .skim-mode-toggle
+      background: $toggle_active
+      border-color: $toggle_active
+      color: #ccc
+
+@media(min-width: 940px)
+  html
+    font-size: 20px
+  #content, #footer
+    padding-left: 380px
+  #sidebar
+    width: 380px
+  #article-toggle
+    padding-left: 380px
+  #extension-link
+    padding-left: 380px
+
+.field.is-error, .field:invalid
+  border-color: rgba(0,0,0,.125)
+.field.is-error.is-focused, .field.is-error:focus, .field:invalid.is-focused, .field:invalid:focus
+  box-shadow: 0 0 2px $accent
+
+
+#main-info-holder
+  display: none
+
+#main-info-link
+  a
+    color: #222
+    background: lighten($highlight, 14%)
+    &:hover
+      color: #444
+
+#main-info
+  font-size: 0.9rem
+  line-height: 1.5
+  background: lighten($highlight, 14%)
+  position: relative
+  #main-info-closer
+    position: absolute
+    right: 0.5rem
+    top: 0.3rem
+    font-size: 1.5rem
+    line-height: 1
+    font-weight: 700
+    color: #222
+    padding: 0.2rem 1rem 0.4rem
+    cursor: pointer
+    &:hover
+      color: #444
+  a
+    color: #222
+    &:hover
+      color: #444
+
+body.infoed
+  #main-info-holder
+    display: block
+  #main-info-link
+    display: none

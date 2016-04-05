@@ -1,0 +1,1486 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 5, 
+      "score": 0.23610886931419373, 
+      "sent": "The following morning, I boarded another plane, this one to Atlanta, and the day after that I flew to Nashville, thinking all the while about my ever-shrinking family."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.23402261734008789, 
+      "sent": "I was given the news over a white courtesy phone while at the Dallas airport."
+    }, 
+    {
+      "index": 4, 
+      "score": 0.23237006366252899, 
+      "sent": "Then, because my plane to Baton Rouge was boarding and I wasn't sure what else to do, I got on it."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.21558891236782074, 
+      "sent": "She was living in a room in a beat-up house on the hard side of Somerville, Massachusetts, and had been dead, the coroner guessed, for at least five days before her door was battered down."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.20480670034885406, 
+      "sent": "A person expects his parents to die."
+    }, 
+    {
+      "index": 233, 
+      "score": 0.20357336103916168, 
+      "sent": "It's on proper stilts and has two rear decks, one above the other, overlooking the ocean."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.20313791930675507, 
+      "sent": "Traditionally, all the island houses were on stilts, but more and more often now the ground floors are filled in."
+    }, 
+    {
+      "index": 236, 
+      "score": 0.20244200527667999, 
+      "sent": "The sale included the furniture, so I also made an inventory of the Barcaloungers and the massive TVs that I would eventually be getting rid of, along with the shell-patterned bedspreads and cushions with anchors on them."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.20189614593982697, 
+      "sent": "A sampler on the living-room wall read, \"Old Shellers Never Die, They Simply Conch Out.\""
+    }, 
+    {
+      "index": 234, 
+      "score": 0.20056253671646118, 
+      "sent": "It was rented to vacationers until late September, but Phyllis allowed us to drop by and show it to the family the following morning, after we checked out of the house we'd been staying in."
+    }, 
+    {
+      "index": 243, 
+      "score": 0.20035956799983978, 
+      "sent": "Throughout the sixties and seventies, the road back to Raleigh took us past Smithfield, and a billboard on the outskirts of town that read, \"Welcome to Klan Country.\""
+    }, 
+    {
+      "index": 82, 
+      "score": 0.19980818033218384, 
+      "sent": "People were leaving responses on the paper's Web site, and one fellow wrote that Tiffany used to come into the video store where he worked in Somerville."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.19862319529056549, 
+      "sent": "When his glasses broke, she offered him a pair she had found while foraging for art supplies in somebody's trash can."
+    }, 
+    {
+      "index": 186, 
+      "score": 0.19486668705940247, 
+      "sent": "Our father was a figure of authority, while Paul is more of a playmate."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.19404144585132599, 
+      "sent": "Each of us had pulled away from the family at some point in our lives--we'd had to in order to forge our own identities, to go from being a Sedaris to being our own specific Sedaris."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.19248111546039581, 
+      "sent": "Normally, there was a social divide between the three eldest and the three youngest children in my family."
+    }, 
+    {
+      "index": 232, 
+      "score": 0.19155827164649963, 
+      "sent": "The cottage we bought is two stories tall and was built in 1978."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.19083134829998016, 
+      "sent": "I felt I'd lost the identity I'd enjoyed since 1968, when my younger brother was born."
+    }, 
+    {
+      "index": 251, 
+      "score": 0.18982984125614166, 
+      "sent": "Above our heads hung a sign that read, \"Whispering Dove Ranch,\" and just as I thought that we might be anywhere I noticed that the music piped through the speakers was Christian--the new kind, which says that Jesus is awesome."
+    }, 
+    {
+      "index": 153, 
+      "score": 0.189650759100914, 
+      "sent": "Being on the island meant missing the spinning classes he takes in Raleigh, so I found a fitness center not far from the rental cottage, and every afternoon he and I would spend some time there."
+    }, 
+    {
+      "index": 72, 
+      "score": 0.18946149945259094, 
+      "sent": "All the pictures were ocean-related: seascapes and lighthouses, all with the airborne \"V\"s that are shorthand for seagull."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.18915428221225739, 
+      "sent": "It was too new and fancy for that, as were the homes that surrounded it."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.18856136500835419, 
+      "sent": "It was always on the ground level, a kind of dank shed next to where the car was parked."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.18752288818359375, 
+      "sent": "They all have beachy names and are painted beachy colors, but most of those built after Hurricane Fran hit the coast, in 1996, are three stories tall and look almost suburban."
+    }, 
+    {
+      "index": 224, 
+      "score": 0.18652297556400299, 
+      "sent": "Amy's suggestion had the word \"seaman\" in it, and Gretchen's was even dirtier."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.18583084642887115, 
+      "sent": "I always picked the biggest one facing the ocean, and, just as I'd start to unpack, my parents would enter and tell me that this was theirs."
+    }, 
+    {
+      "index": 203, 
+      "score": 0.18526560068130493, 
+      "sent": "I used to think the ideal name for a beach house was the Ship Shape."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.18468333780765533, 
+      "sent": "Take those kids, double them, and subtract the cable TV: that's what my parents had to deal with."
+    }, 
+    {
+      "index": 242, 
+      "score": 0.18390032649040222, 
+      "sent": "As the heat intensified, so did the general feeling of depression."
+    }, 
+    {
+      "index": 191, 
+      "score": 0.18338821828365326, 
+      "sent": "Thus it was that on Wednesday morning, midway through our vacation, Hugh and I contacted a real-estate agent named Phyllis, who took us around to look at available properties."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.18177098035812378, 
+      "sent": "There were a lot of big families in the neighborhood I grew up in."
+    }, 
+    {
+      "index": 260, 
+      "score": 0.1816723495721817, 
+      "sent": "This is how I thought of it, for though I've often lost faith in myself, I've never lost it in my family, in my certainty that we are fundamentally better than everyone else."
+    }, 
+    {
+      "index": 187, 
+      "score": 0.18141645193099976, 
+      "sent": "When we went to the beach as children, on or about the fourth day our father would say, \"Wouldn't it be nice to buy a cottage down here?\""
+    }, 
+    {
+      "index": 13, 
+      "score": 0.18099726736545563, 
+      "sent": "Every other house was a fiefdom, so I never gave it much thought until I became an adult, and my friends started having children."
+    }, 
+    {
+      "index": 92, 
+      "score": 0.18037959933280945, 
+      "sent": "Even if you weren't getting along with Tiffany at the time, you couldn't deny the show she put on--the dramatic entrances, the non-stop, professional-grade insults, the chaos she'd inevitably leave in her wake."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.1803155243396759, 
+      "sent": "He said that she also gave him a Playboy magazine from the nineteen-sixties that included a photo spread titled \"The Ass Menagerie.\""
+    }, 
+    {
+      "index": 101, 
+      "score": 0.18005368113517761, 
+      "sent": "There's a certain kind of talk that takes place when you're lying, dazed, in the sun, and I've always been partial to it."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.17980897426605225, 
+      "sent": "Our weeklong rental period began on Saturday, June 8th, and we arrived to find a delivery woman standing in the driveway with seven pounds of seafood, a sympathy gift sent by friends."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.17978858947753906, 
+      "sent": "In it, she decreed that we, her family, could not have her body or attend her memorial service."
+    }, 
+    {
+      "index": 276, 
+      "score": 0.17958895862102509, 
+      "sent": "When we were young and set off for the beach, I'd look out the window at all the landmarks we drove by--the Purina silo on the south side of Raleigh, the Klan billboard--knowing that when we passed them a week later I'd be miserable."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.17877377569675446, 
+      "sent": "In the past, when my family rented a cottage my sisters and I would crowd the door like puppies around a food dish."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.1786109060049057, 
+      "sent": "Our father would unlock it, and we'd tear through the house claiming rooms."
+    }, 
+    {
+      "index": 219, 
+      "score": 0.17823611199855804, 
+      "sent": "But it's a house, not a tombstone, and it wouldn't fit in with the names of the other houses.\""
+    }, 
+    {
+      "index": 34, 
+      "score": 0.17775574326515198, 
+      "sent": "Six months before our sister killed herself, I made plans for us all to gather at a beach house on Emerald Isle, off the coast of North Carolina."
+    }, 
+    {
+      "index": 102, 
+      "score": 0.17638999223709106, 
+      "sent": "On the first afternoon of our most recent trip, we laid out one of the bedspreads we had as children, and arranged ourselves side by side on it, trading stories about Tiffany."
+    }, 
+    {
+      "index": 261, 
+      "score": 0.17547257244586945, 
+      "sent": "It's an archaic belief, one that I haven't seriously reconsidered since my late teens, but still I hold it."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.1749822199344635, 
+      "sent": "\"Three who are living and a daughter, Chloe, who died before she was born, eighteen years ago.\""
+    }, 
+    {
+      "index": 156, 
+      "score": 0.17488156259059906, 
+      "sent": "A mute television oversaw the room, tuned to the Weather Channel and reminding us that there's always a catastrophe somewhere or other, always someone flooded from his home, or running for his life from a funnel-shaped cloud."
+    }, 
+    {
+      "index": 241, 
+      "score": 0.17486350238323212, 
+      "sent": "There had been a breeze at the beach house, but once we left the island the air grew still."
+    }, 
+    {
+      "index": 228, 
+      "score": 0.17423826456069946, 
+      "sent": "A few days later, after the buyer's remorse had kicked in, I'd wonder if I hadn't bought the house as a way of saying, See, it's just that easy."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.17423045635223389, 
+      "sent": "A few days after getting the news, my sister Amy drove to Somerville with a friend and collected two boxes of things from Tiffany's room: family photographs, many of which had been ripped into pieces, comment cards from a neighborhood grocery store, notebooks, receipts."
+    }, 
+    {
+      "index": 120, 
+      "score": 0.17376372218132019, 
+      "sent": "Meanwhile, I'd get reports from him and Lisa: Tiffany had lost her apartment, had gone on disability, had moved into a room found for her by a social-service agency."
+    }, 
+    {
+      "index": 209, 
+      "score": 0.17355230450630188, 
+      "sent": "\"The name's supposed to be beachy, and, if it's a pun, all the better.\""
+    }, 
+    {
+      "index": 44, 
+      "score": 0.17327591776847839, 
+      "sent": "He and my mother would move in, and I would get booted to what was called \"the maid's room.\""
+    }, 
+    {
+      "index": 143, 
+      "score": 0.173077791929245, 
+      "sent": "She returned home in 1980, having spent two years there, and from that point on none of us can recall a conversation in which she did not mention it."
+    }, 
+    {
+      "index": 79, 
+      "score": 0.17303113639354706, 
+      "sent": "It was submitted by Gretchen, who stated that our sister had passed away peacefully at her home."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.17265839874744415, 
+      "sent": "Gretchen's faced the street and was intended for someone who was paralyzed."
+    }, 
+    {
+      "index": 183, 
+      "score": 0.1725878119468689, 
+      "sent": "As we continued shopping, he told us that his van had recently broken down, and that when he called for a tow truck the dispatcher said, \"We'll be right out, sweetie.\""
+    }, 
+    {
+      "index": 141, 
+      "score": 0.17258729040622711, 
+      "sent": "A few weeks after these messages were written, Tiffany ran away, and was subsequently sent to a disciplinary institution in Maine called Elan."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.17240388691425323, 
+      "sent": "Hanging from the ceiling were electric pulleys designed to lift a harnessed body into and out of bed."
+    }, 
+    {
+      "index": 157, 
+      "score": 0.17226114869117737, 
+      "sent": "Toward the end of the week, I came upon my father in Amy's room, sifting through the photographs that Tiffany had destroyed."
+    }, 
+    {
+      "index": 66, 
+      "score": 0.17203763127326965, 
+      "sent": "Unlike the cottages of our youth, this one did not have a maid's room."
+    }, 
+    {
+      "index": 267, 
+      "score": 0.17163079977035522, 
+      "sent": "At the far end of the parking lot was a stand selling reptiles."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.17155452072620392, 
+      "sent": "A couple Hugh and I knew in Normandy would occasionally come to dinner with their wrecking crew of three, and when they'd leave, several hours later, every last part of me would feel violated."
+    }, 
+    {
+      "index": 188, 
+      "score": 0.17122569680213928, 
+      "sent": "We'd get our hopes up, and then he would bring practical concerns into it."
+    }, 
+    {
+      "index": 210, 
+      "score": 0.1711057722568512, 
+      "sent": "I brought up a cottage we'd seen earlier in the day called Dune Our Thing, and my father winced."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.1709991991519928, 
+      "sent": "Because, I mean, what's a person supposed to do with that?"
+    }, 
+    {
+      "index": 74, 
+      "score": 0.17084755003452301, 
+      "sent": "On the round clock beside it, the numbers lay in an indecipherable heap, as if they'd come unglued."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.17080934345722198, 
+      "sent": "My family used to vacation there every summer, but after my mother died we stopped going, not because we lost interest but because it was she who always made the arrangements and, more important, paid for it."
+    }, 
+    {
+      "index": 158, 
+      "score": 0.16935878992080688, 
+      "sent": "In his hand was a fragment of my mother's head with a patch of blue sky behind her."
+    }, 
+    {
+      "index": 170, 
+      "score": 0.1685650646686554, 
+      "sent": "I was in the produce department, looking at red onions, when my brother sneaked up from behind and let loose with a loud \"Achoo,\" this while whipping a bouquet of wet parsley through the air."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.16846700012683868, 
+      "sent": "The place I found with the help of my sister-in-law, Kathy, had six bedrooms and a small swimming pool."
+    }, 
+    {
+      "index": 122, 
+      "score": 0.16820059716701508, 
+      "sent": "She didn't talk with us so much as at us, great blocks of speech that were by turns funny, astute, and so contradictory it was hard to connect the sentence you were hearing to the one that preceded it."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.16688016057014465, 
+      "sent": "Lisa's room faced the street, as did my father's."
+    }, 
+    {
+      "index": 133, 
+      "score": 0.16682390868663788, 
+      "sent": "In addition to the two boxes that Amy had filled in Somerville, she also brought down our sister's ninth-grade yearbook, from 1978."
+    }, 
+    {
+      "index": 78, 
+      "score": 0.16623924672603607, 
+      "sent": "The day before we arrived at the beach, Tiffany's obituary ran in the Raleigh News & Observer."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.16608461737632751, 
+      "sent": "The bed, a mattress on the floor, had been taken away and a large industrial fan had been set up."
+    }, 
+    {
+      "index": 192, 
+      "score": 0.16607816517353058, 
+      "sent": "On Friday afternoon, we made an offer on an oceanfront cottage not far from the one we were renting, and before sunset our bid was accepted."
+    }, 
+    {
+      "index": 93, 
+      "score": 0.16598200798034668, 
+      "sent": "One day she'd throw a dish at you and the next she'd create a stunning mosaic made of the shards."
+    }, 
+    {
+      "index": 134, 
+      "score": 0.16597607731819153, 
+      "sent": "Among the messages inscribed by her classmates was the following, written by someone who had drawn a marijuana leaf beside her name: Tiffany."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.16574868559837341, 
+      "sent": "Lisa, Gretchen, and I treated the others like servants and did very well for ourselves."
+    }, 
+    {
+      "index": 184, 
+      "score": 0.16570346057415009, 
+      "sent": "He lowered a watermelon into the cart, and turned to his daughter: \"Maddy's got a daddy who talks like a lady, but she don't care, do she?\""
+    }, 
+    {
+      "index": 235, 
+      "score": 0.16562704741954803, 
+      "sent": "A place always looks different--worse, most often--after you've made the commitment to buy it, so while the others raced up and down the stairs, claiming their future bedrooms, I held my nose to a vent and caught a whiff of mildew."
+    }, 
+    {
+      "index": 189, 
+      "score": 0.165223628282547, 
+      "sent": "They weren't petty--buying a house that will eventually get blown away by a hurricane probably isn't the best way to spend your money--but still we wanted one desperately."
+    }, 
+    {
+      "index": 244, 
+      "score": 0.16506798565387726, 
+      "sent": "This time, we took a different route, one my brother recommended."
+    }, 
+    {
+      "index": 249, 
+      "score": 0.16466662287712097, 
+      "sent": "Twenty years earlier, the most a place like this might have offered was fried okra."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.16461031138896942, 
+      "sent": "I recalled a father and son I'd met in California a few years back."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.16414071619510651, 
+      "sent": "\"That's funny,\" Lisa, the eldest, would say to the others, who were gathered like disciples around her."
+    }, 
+    {
+      "index": 262, 
+      "score": 0.16392874717712402, 
+      "sent": "Ours is the only club I'd ever wanted to be a member of, so I couldn't imagine quitting."
+    }, 
+    {
+      "index": 172, 
+      "score": 0.16366042196750641, 
+      "sent": "It's a neat trick, but he also doused the Indian woman who was standing to my left."
+    }, 
+    {
+      "index": 25, 
+      "score": 0.16316503286361694, 
+      "sent": "That's not fair, I remember thinking."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.16300196945667267, 
+      "sent": "There was never an interior stairway leading to the upper floor."
+    }, 
+    {
+      "index": 283, 
+      "score": 0.16239745914936066, 
+      "sent": "At the airport a few hours later, I picked sand from my pockets, and thought of our final moments at the beach house I'd bought."
+    }, 
+    {
+      "index": 121, 
+      "score": 0.16193015873432159, 
+      "sent": "Perhaps she was more forthcoming with her friends, but her family got things only in bits and pieces."
+    }, 
+    {
+      "index": 152, 
+      "score": 0.16161355376243591, 
+      "sent": "We were at the beach for three days before Lisa and our father, who is now ninety, joined us."
+    }, 
+    {
+      "index": 268, 
+      "score": 0.16124850511550903, 
+      "sent": "In giant tanks were two pythons, each as big around as a fire hose."
+    }, 
+    {
+      "index": 119, 
+      "score": 0.16093991696834564, 
+      "sent": "During that period, I regularly found myself near Somerville, and though I'd always toy with the idea of contacting her and spending a few hours together, I never did, despite my father's encouragement."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.16065596044063568, 
+      "sent": "This made it sound as if she were very old, and had a house."
+    }, 
+    {
+      "index": 190, 
+      "score": 0.16061192750930786, 
+      "sent": "I told myself when I was young that one day I would buy a beach house and that it would be everyone's, as long as they followed my Draconian rules and never stopped thanking me for it."
+    }, 
+    {
+      "index": 47, 
+      "score": 0.15951076149940491, 
+      "sent": "Instead, I had to take the outside steps and, more often than not, knock on the locked front door, like a beggar hoping to be invited in."
+    }, 
+    {
+      "index": 278, 
+      "score": 0.15874986350536346, 
+      "sent": "My life is much fuller than it was back then, yet this return felt no different."
+    }, 
+    {
+      "index": 258, 
+      "score": 0.15874245762825012, 
+      "sent": "Mustn't Tiffany have hoped that whatever pills she'd taken wouldn't be strong enough, and that her failed attempt would lead her back into our fold?"
+    }, 
+    {
+      "index": 30, 
+      "score": 0.1586771160364151, 
+      "sent": "\"So put that in your pipe and smoke it,\" our mother would have said."
+    }, 
+    {
+      "index": 277, 
+      "score": 0.15803058445453644, 
+      "sent": "Our vacation over, now there'd be nothing to live for until Christmas."
+    }, 
+    {
+      "index": 269, 
+      "score": 0.15741139650344849, 
+      "sent": "The heat seemed to suit them, and I watched as they raised their heads, testing the screened ceilings."
+    }, 
+    {
+      "index": 240, 
+      "score": 0.15723554790019989, 
+      "sent": "We sketched a plan to return for Thanksgiving, and, after saying goodbye to one another, my family splintered into groups and headed off to our respective homes."
+    }, 
+    {
+      "index": 223, 
+      "score": 0.15718132257461548, 
+      "sent": "Paul interrupted to nominate the Conch Sucker."
+    }, 
+    {
+      "index": 182, 
+      "score": 0.15682202577590942, 
+      "sent": "Over the phone, my brother, like me, is often mistaken for a woman."
+    }, 
+    {
+      "index": 118, 
+      "score": 0.15665589272975922, 
+      "sent": "She and I usually made up after arguing, but our last fight took it out of me, and at the time of her death we hadn't spoken in eight years."
+    }, 
+    {
+      "index": 257, 
+      "score": 0.15608686208724976, 
+      "sent": "For that's all any of us were thinking, had been thinking since we got the news."
+    }, 
+    {
+      "index": 216, 
+      "score": 0.15603636205196381, 
+      "sent": "The perfect way to pay our respects.\""
+    }, 
+    {
+      "index": 142, 
+      "score": 0.15577033162117004, 
+      "sent": "According to what she told us later, it was a horrible place."
+    }, 
+    {
+      "index": 263, 
+      "score": 0.15573234856128693, 
+      "sent": "Backing off for a year or two was understandable, but to want out so badly that you'd take your own life?"
+    }, 
+    {
+      "index": 33, 
+      "score": 0.15571664273738861, 
+      "sent": "Amy snapped some pictures while she was there, and, individually and in groups, those of us left studied them for clues: a paper plate on a dresser that had several drawers missing, a phone number written on a wall, a collection of mop handles, each one a different color, arranged like cattails in a barrel painted green."
+    }, 
+    {
+      "index": 139, 
+      "score": 0.15529955923557281, 
+      "sent": "Then, there's: Tiffany I'm looking forward to getting high with you this summer."
+    }, 
+    {
+      "index": 95, 
+      "score": 0.15511496365070343, 
+      "sent": "At no time did she get along with everybody, but there was always someone she was in contact with."
+    }, 
+    {
+      "index": 202, 
+      "score": 0.15467515587806702, 
+      "sent": "\"Right now it's called Fantastic Place,\" I told her, \"but we're going to change it.\""
+    }, 
+    {
+      "index": 144, 
+      "score": 0.15464532375335693, 
+      "sent": "She blamed the family for sending her off, but we, her siblings, had nothing to do with it."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.15439499914646149, 
+      "sent": "At the beach, though, all bets were off, and it was just upstairs against downstairs, meaning everyone against me."
+    }, 
+    {
+      "index": 225, 
+      "score": 0.15438573062419891, 
+      "sent": "\"What's wrong with the name it already has?\""
+    }, 
+    {
+      "index": 250, 
+      "score": 0.15434157848358154, 
+      "sent": "Now there was organic coffee, and artisanal goat cheese."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.15426258742809296, 
+      "sent": "This was fascinating, as we didn't really know our sister very well."
+    }, 
+    {
+      "index": 259, 
+      "score": 0.15420860052108765, 
+      "sent": "How could anyone purposefully leave us, us, of all people?"
+    }, 
+    {
+      "index": 90, 
+      "score": 0.15409336984157562, 
+      "sent": "\"The rest of us managed to make it,\" I'd say, aware of how old and guilt-trippy I sounded."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.15387618541717529, 
+      "sent": "\"They's slaw in there, too,\" she said, handing over the bags."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.15369880199432373, 
+      "sent": "In late May of this year, a few weeks shy of her fiftieth birthday, my youngest sister, Tiffany, committed suicide."
+    }, 
+    {
+      "index": 135, 
+      "score": 0.15368813276290894, 
+      "sent": "You are a one-of-a-kind girl so stay that way you unique ass."
+    }, 
+    {
+      "index": 117, 
+      "score": 0.15342703461647034, 
+      "sent": "While the rest of us seem to get along effortlessly, with Tiffany it always felt like work."
+    }, 
+    {
+      "index": 97, 
+      "score": 0.15341033041477203, 
+      "sent": "The last time she joined us on Emerald Isle was in 1986."
+    }, 
+    {
+      "index": 284, 
+      "score": 0.15332674980163574, 
+      "sent": "I was on the front porch with Phyllis, who had just locked the door, and we turned to see the others in the driveway below us."
+    }, 
+    {
+      "index": 217, 
+      "score": 0.1531347930431366, 
+      "sent": "\"If that's the case, we could name it after Mom,\" I told him."
+    }, 
+    {
+      "index": 94, 
+      "score": 0.15308433771133423, 
+      "sent": "When allegiances with one brother or sister flamed out, she'd take up with someone else."
+    }, 
+    {
+      "index": 112, 
+      "score": 0.15293721854686737, 
+      "sent": "Coming from someone else, the story might have been upsetting, but not being pretty was never one of Tiffany's problems, especially when she was in her twenties and thirties, and men tumbled helpless before her."
+    }, 
+    {
+      "index": 154, 
+      "score": 0.15269331634044647, 
+      "sent": "On the way over, we'd talk to each other, but as soon as we mounted our stationary bikes we'd each retreat into our own thoughts."
+    }, 
+    {
+      "index": 201, 
+      "score": 0.15238183736801147, 
+      "sent": "Lisa wanted to know if she could bring her dogs, and Amy asked what the house was named."
+    }, 
+    {
+      "index": 173, 
+      "score": 0.15226089954376221, 
+      "sent": "She was wearing a blood-colored sari, and so she got it on her bare arm as well as her neck and the lower part of her back."
+    }, 
+    {
+      "index": 246, 
+      "score": 0.15197025239467621, 
+      "sent": "I slumped down in the back seat, next to Amy, and every time I raised my head I'd see the same soybean field or low-slung cinder-block building we'd seemingly passed twenty minutes earlier."
+    }, 
+    {
+      "index": 164, 
+      "score": 0.15172399580478668, 
+      "sent": "\"A person's life reduced to one lousy box.\""
+    }, 
+    {
+      "index": 76, 
+      "score": 0.15143848955631256, 
+      "sent": "This was what we found ourselves saying whenever anyone asked the time."
+    }, 
+    {
+      "index": 247, 
+      "score": 0.15139190852642059, 
+      "sent": "We'd been on the road for a little more than an hour when we stopped at a farmers' market."
+    }, 
+    {
+      "index": 91, 
+      "score": 0.15122838318347931, 
+      "sent": "All of us would be disappointed, though for different reasons."
+    }, 
+    {
+      "index": 231, 
+      "score": 0.15080446004867554, 
+      "sent": "Rather, you make your family happy and iron out the details later."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.15072494745254517, 
+      "sent": "One or two seemed reasonable, but anything beyond that struck me as outrageous."
+    }, 
+    {
+      "index": 116, 
+      "score": 0.15068018436431885, 
+      "sent": "I made brief appearances for the rest of the week, stopping to dry off after a swim, but mainly I spent my days on a bike, cycling up and down the coast, and thinking about what had happened."
+    }, 
+    {
+      "index": 237, 
+      "score": 0.15023908019065857, 
+      "sent": "\"For our beach house, I want to have a train theme,\" I announced."
+    }, 
+    {
+      "index": 171, 
+      "score": 0.14983576536178589, 
+      "sent": "I felt the spray on the back of my neck and froze, thinking that a very sick stranger had just sneezed on me."
+    }, 
+    {
+      "index": 205, 
+      "score": 0.14902777969837189, 
+      "sent": "\"We're going to call it the Sea Section.\""
+    }, 
+    {
+      "index": 103, 
+      "score": 0.14899145066738129, 
+      "sent": "\"What about the Halloween she spent on that Army base?\""
+    }, 
+    {
+      "index": 42, 
+      "score": 0.14892314374446869, 
+      "sent": "\"I mean, just who the hell do you think you are?\""
+    }, 
+    {
+      "index": 62, 
+      "score": 0.14875629544258118, 
+      "sent": "The others arrived later and had to take the leftovers."
+    }, 
+    {
+      "index": 295, 
+      "score": 0.14821638166904449, 
+      "sent": "Sign up for the daily newsletter: the best of The New Yorker every day."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.1482139527797699, 
+      "sent": "The kitchen table sat twelve, and there was not one but two dishwashers."
+    }, 
+    {
+      "index": 151, 
+      "score": 0.14796788990497589, 
+      "sent": "\"You think we could let the world stop on account of any one of you?\""
+    }, 
+    {
+      "index": 88, 
+      "score": 0.14743849635124207, 
+      "sent": "She might promise to come home for Christmas, but at the last minute there'd always be some excuse: she missed her plane, she had to work."
+    }, 
+    {
+      "index": 220, 
+      "score": 0.1472974419593811, 
+      "sent": "\"Aw, baloney,\" my father said."
+    }, 
+    {
+      "index": 96, 
+      "score": 0.14718061685562134, 
+      "sent": "Toward the end, it was Lisa, but before that we'd all had our turn."
+    }, 
+    {
+      "index": 272, 
+      "score": 0.1460452675819397, 
+      "sent": "A girl had stuck her arm through the wire and was stroking the thing's back, while it glared, seething."
+    }, 
+    {
+      "index": 291, 
+      "score": 0.14596976339817047, 
+      "sent": "Now, that's a big family.\""
+    }, 
+    {
+      "index": 75, 
+      "score": 0.14572614431381226, 
+      "sent": "Just above them were printed the words \"Who cares?\""
+    }, 
+    {
+      "index": 238, 
+      "score": 0.14544139802455902, 
+      "sent": "\"Trains on the curtains, trains on the towels--we're going to go all out.\""
+    }, 
+    {
+      "index": 155, 
+      "score": 0.14536383748054504, 
+      "sent": "It was a small place, not very lively."
+    }, 
+    {
+      "index": 145, 
+      "score": 0.14524030685424805, 
+      "sent": "Paul, for instance, was ten when she left."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.14523671567440033, 
+      "sent": "Amy moved in next door, and my brother, Paul, his wife, and their ten-year-old daughter, Maddy, took the spot next to her."
+    }, 
+    {
+      "index": 89, 
+      "score": 0.14465859532356262, 
+      "sent": "The same would happen with our summer vacations."
+    }, 
+    {
+      "index": 264, 
+      "score": 0.14340341091156006, 
+      "sent": "\"I don't know that it had anything to do with us,\" my father said."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.14304745197296143, 
+      "sent": "Compared with most forty-nine-year-olds, or even most forty-nine-month-olds, Tiffany didn't have much."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.1429009884595871, 
+      "sent": "\"So are there other children?\""
+    }, 
+    {
+      "index": 266, 
+      "score": 0.14260008931159973, 
+      "sent": "Doesn't the blood of every suicide splash back on our faces?"
+    }, 
+    {
+      "index": 248, 
+      "score": 0.14250704646110535, 
+      "sent": "Inside an open-air pavilion, a woman offered complimentary plates of hummus served with a corn-and-black-bean salad, so we each accepted one and took seats on a bench."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.14193242788314819, 
+      "sent": "What is it that makes a noise like that?"
+    }, 
+    {
+      "index": 28, 
+      "score": 0.14170855283737183, 
+      "sent": "She did leave a will, though."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.14012041687965393, 
+      "sent": "This time, because I was paying, I got to choose the best room."
+    }, 
+    {
+      "index": 273, 
+      "score": 0.13917125761508942, 
+      "sent": "\"I'd like to buy everything here just so I could kill it,\" I said."
+    }, 
+    {
+      "index": 292, 
+      "score": 0.13911449909210205, 
+      "sent": "I looked at the sunbaked cars we would soon be climbing into, furnaces every one of them, and said, \"Yes."
+    }, 
+    {
+      "index": 198, 
+      "score": 0.13874243199825287, 
+      "sent": "How many times has it been replaced in the last ten years?\""
+    }, 
+    {
+      "index": 252, 
+      "score": 0.13839684426784515, 
+      "sent": "Hugh brought my father a plastic cup of water."
+    }, 
+    {
+      "index": 104, 
+      "score": 0.13817964494228363, 
+      "sent": "\"And the time she showed up at Dad's birthday party with a black eye?\""
+    }, 
+    {
+      "index": 176, 
+      "score": 0.13733606040477753, 
+      "sent": "The woman had many thin bracelets on, and they jangled as she brushed her hand against the back of her head."
+    }, 
+    {
+      "index": 114, 
+      "score": 0.13728995621204376, 
+      "sent": "I stayed in the sun too long that day and got a burn on my forehead."
+    }, 
+    {
+      "index": 166, 
+      "score": 0.13695698976516724, 
+      "sent": "\"Actually, there are two of them.\""
+    }, 
+    {
+      "index": 271, 
+      "score": 0.13691127300262451, 
+      "sent": "It wasn't full grown, but perhaps an adolescent, around three feet long, and grumpy-looking."
+    }, 
+    {
+      "index": 289, 
+      "score": 0.13684040307998657, 
+      "sent": "\"Then you've got your brother,\" she observed."
+    }, 
+    {
+      "index": 197, 
+      "score": 0.13673532009124756, 
+      "sent": "\"O.K., then, how old is the roof?"
+    }, 
+    {
+      "index": 140, 
+      "score": 0.13660533726215363, 
+      "sent": "Tiffany, Call me sometime this summer and we'll go out and get blitzed."
+    }, 
+    {
+      "index": 100, 
+      "score": 0.13490156829357147, 
+      "sent": "Then we became teenagers and devoted ourselves to tanning."
+    }, 
+    {
+      "index": 222, 
+      "score": 0.13454023003578186, 
+      "sent": "That's not what we're about.\""
+    }, 
+    {
+      "index": 149, 
+      "score": 0.13452659547328949, 
+      "sent": "As for my parents, there were only so many times they could apologize."
+    }, 
+    {
+      "index": 221, 
+      "score": 0.13429217040538788, 
+      "sent": "\"Fitting in--that's not who we are."
+    }, 
+    {
+      "index": 288, 
+      "score": 0.13404892385005951, 
+      "sent": "\"And so are the two women standing on either side of her.\""
+    }, 
+    {
+      "index": 193, 
+      "score": 0.1337694376707077, 
+      "sent": "I made the announcement at the dinner table and got the reaction I had expected."
+    }, 
+    {
+      "index": 169, 
+      "score": 0.13355726003646851, 
+      "sent": "One afternoon on Emerald Isle, we all rode to the Food Lion for groceries."
+    }, 
+    {
+      "index": 61, 
+      "score": 0.13199245929718018, 
+      "sent": "That was it for oceanfront."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.13167135417461395, 
+      "sent": "\"Did you hear something, a little whining sound?"
+    }, 
+    {
+      "index": 211, 
+      "score": 0.13157977163791656, 
+      "sent": "\"How about naming it Tiffany?\""
+    }, 
+    {
+      "index": 19, 
+      "score": 0.13122020661830902, 
+      "sent": "\"It just makes people uncomfortable.\""
+    }, 
+    {
+      "index": 23, 
+      "score": 0.13085934519767761, 
+      "sent": "\"There are,\" the man said."
+    }, 
+    {
+      "index": 105, 
+      "score": 0.1305185854434967, 
+      "sent": "\"I remember this girl she met years ago at a party,\" I began, when my turn came."
+    }, 
+    {
+      "index": 270, 
+      "score": 0.13044074177742004, 
+      "sent": "Beside the snakes was a low pen corralling an alligator with its mouth banded shut."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.1296619176864624, 
+      "sent": "But a sibling?"
+    }, 
+    {
+      "index": 195, 
+      "score": 0.12965415418148041, 
+      "sent": "\"You need to think clearly here.\""
+    }, 
+    {
+      "index": 17, 
+      "score": 0.12916998565196991, 
+      "sent": "Now, though, there weren't six, only five."
+    }, 
+    {
+      "index": 150, 
+      "score": 0.12908409535884857, 
+      "sent": "\"We had other kids,\" they said in their defense."
+    }, 
+    {
+      "index": 215, 
+      "score": 0.129006028175354, 
+      "sent": "\"I think it's a great idea."
+    }, 
+    {
+      "index": 194, 
+      "score": 0.12826278805732727, 
+      "sent": "\"Now, wait a minute,\" my father said."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.12746736407279968, 
+      "sent": "\"And you can't really say, 'There used to be six,' \" I told my sister Lisa."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.12739332020282745, 
+      "sent": "\"How do your poor folks manage?\""
+    }, 
+    {
+      "index": 110, 
+      "score": 0.12729814648628235, 
+      "sent": "I rearranged the towel I was using as a pillow."
+    }, 
+    {
+      "index": 204, 
+      "score": 0.12729761004447937, 
+      "sent": "Now, though, I had a better idea."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.12702344357967377, 
+      "sent": "\"I want to come inside.\""
+    }, 
+    {
+      "index": 137, 
+      "score": 0.12684424221515656, 
+      "sent": "This school sux to hell."
+    }, 
+    {
+      "index": 136, 
+      "score": 0.12672694027423859, 
+      "sent": "I'm only sorry we couldn't have partied more together."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.12670490145683289, 
+      "sent": "\"What do you want?\""
+    }, 
+    {
+      "index": 282, 
+      "score": 0.12653110921382904, 
+      "sent": "You're the one with a watch on.\""
+    }, 
+    {
+      "index": 239, 
+      "score": 0.12636777758598328, 
+      "sent": "\"Oh, brother,\" my father moaned."
+    }, 
+    {
+      "index": 185, 
+      "score": 0.12625184655189514, 
+      "sent": "Giggling, she punched him in the stomach, and I was struck by how comfortable the two of them are with each other."
+    }, 
+    {
+      "index": 123, 
+      "score": 0.12622170150279999, 
+      "sent": "Before we stopped speaking, I could always tell when she was on the phone."
+    }, 
+    {
+      "index": 113, 
+      "score": 0.12605263292789459, 
+      "sent": "\"Funny,\" I said, \"but I don't remember a scar on her face.\""
+    }, 
+    {
+      "index": 55, 
+      "score": 0.1257251501083374, 
+      "sent": "A little sea slug?\""
+    }, 
+    {
+      "index": 70, 
+      "score": 0.12551064789295197, 
+      "sent": "This place was vast and airy."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.12521837651729584, 
+      "sent": "\"Six kids!\""
+    }, 
+    {
+      "index": 230, 
+      "score": 0.12521813809871674, 
+      "sent": "No asking to look at the septic tank."
+    }, 
+    {
+      "index": 115, 
+      "score": 0.125186488032341, 
+      "sent": "That was basically it for me and the beach blanket."
+    }, 
+    {
+      "index": 245, 
+      "score": 0.12504833936691284, 
+      "sent": "Hugh drove, and my father sat beside him."
+    }, 
+    {
+      "index": 199, 
+      "score": 0.12489994615316391, 
+      "sent": "\"When can we move in?\""
+    }, 
+    {
+      "index": 175, 
+      "score": 0.12431151419878006, 
+      "sent": "\"I was just playing a joke on my brother.\""
+    }, 
+    {
+      "index": 253, 
+      "score": 0.12399513274431229, 
+      "sent": "\"You O.K., Lou?\""
+    }, 
+    {
+      "index": 285, 
+      "score": 0.12247466295957565, 
+      "sent": "\"So is that one of your sisters?\""
+    }, 
+    {
+      "index": 163, 
+      "score": 0.1212485060095787, 
+      "sent": "\"Just awful,\" my father whispered."
+    }, 
+    {
+      "index": 174, 
+      "score": 0.12106626480817795, 
+      "sent": "\"Sorry, man,\" Paul said when she turned around, horrified."
+    }, 
+    {
+      "index": 177, 
+      "score": 0.12094053626060486, 
+      "sent": "\"You called her 'man,' \" I said to him after she walked off."
+    }, 
+    {
+      "index": 111, 
+      "score": 0.12050597369670868, 
+      "sent": "\"Isn't it, though?\""
+    }, 
+    {
+      "index": 98, 
+      "score": 0.12012523412704468, 
+      "sent": "\"And, even then, she left after three days,\" Gretchen reminded us."
+    }, 
+    {
+      "index": 124, 
+      "score": 0.11976877599954605, 
+      "sent": "I'd walk into the house and hear Hugh say, \"Uh-huh ."
+    }, 
+    {
+      "index": 81, 
+      "score": 0.11975404620170593, 
+      "sent": "But what else could you do?"
+    }, 
+    {
+      "index": 109, 
+      "score": 0.11965681612491608, 
+      "sent": "\"Oh, that's a good line!\""
+    }, 
+    {
+      "index": 106, 
+      "score": 0.11923547089099884, 
+      "sent": "\"She'd been talking about facial scars, and how terrible it would be to have one, so Tiffany said, 'I have a little scar on my face and I don't think it's so awful.'"
+    }, 
+    {
+      "index": 254, 
+      "score": 0.11863695085048676, 
+      "sent": "\"Fine,\" my father answered."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.11848820000886917, 
+      "sent": "Tiffany, though, stayed away."
+    }, 
+    {
+      "index": 227, 
+      "score": 0.11792509257793427, 
+      "sent": "\"No, no, no,\" my father said, forgetting, I think, that this wasn't his decision."
+    }, 
+    {
+      "index": 255, 
+      "score": 0.11759065836668015, 
+      "sent": "\"Why do you think she did it?\""
+    }, 
+    {
+      "index": 196, 
+      "score": 0.11685149371623993, 
+      "sent": "\"I already have,\" I told him."
+    }, 
+    {
+      "index": 165, 
+      "score": 0.1168128103017807, 
+      "sent": "I put my hand on his shoulder."
+    }, 
+    {
+      "index": 159, 
+      "score": 0.11677026748657227, 
+      "sent": "Under what circumstances had this been ripped up?"
+    }, 
+    {
+      "index": 77, 
+      "score": 0.11539551615715027, 
+      "sent": "\"Who cares?\""
+    }, 
+    {
+      "index": 162, 
+      "score": 0.11539546400308609, 
+      "sent": "Something someone in a movie would do."
+    }, 
+    {
+      "index": 99, 
+      "score": 0.11502258479595184, 
+      "sent": "As kids, we spent our beach time swimming."
+    }, 
+    {
+      "index": 229, 
+      "score": 0.11402665823698044, 
+      "sent": "No hemming and hawing."
+    }, 
+    {
+      "index": 279, 
+      "score": 0.11401719599962234, 
+      "sent": "\"What time is it?\""
+    }, 
+    {
+      "index": 275, 
+      "score": 0.11400963366031647, 
+      "sent": "\"I'm with you, brother.\""
+    }, 
+    {
+      "index": 206, 
+      "score": 0.11398568749427795, 
+      "sent": "My father put down his hamburger."
+    }, 
+    {
+      "index": 147, 
+      "score": 0.11392957717180252, 
+      "sent": "For a year, I sent her monthly letters."
+    }, 
+    {
+      "index": 161, 
+      "score": 0.11281435191631317, 
+      "sent": "It seemed such a melodramatic gesture, like throwing a glass against a wall."
+    }, 
+    {
+      "index": 208, 
+      "score": 0.11269368976354599, 
+      "sent": "\"But it's perfect,\" I argued."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.11212418973445892, 
+      "sent": "A hermit crab?"
+    }, 
+    {
+      "index": 293, 
+      "score": 0.11203893274068832, 
+      "sent": "It certainly is.\""
+    }, 
+    {
+      "index": 148, 
+      "score": 0.11066298931837082, 
+      "sent": "Then she wrote and asked me to stop."
+    }, 
+    {
+      "index": 207, 
+      "score": 0.11031556129455566, 
+      "sent": "\"Oh, no, you're not.\""
+    }, 
+    {
+      "index": 138, 
+      "score": 0.10789977014064789, 
+      "sent": "Stay -cool -stoned -drunk -fucked up Check your ass later."
+    }, 
+    {
+      "index": 214, 
+      "score": 0.107666976749897, 
+      "sent": "He picked his hamburger back up."
+    }, 
+    {
+      "index": 181, 
+      "score": 0.10681099444627762, 
+      "sent": "\"For real?\""
+    }, 
+    {
+      "index": 43, 
+      "score": 0.10630807280540466, 
+      "sent": "my father would ask."
+    }, 
+    {
+      "index": 178, 
+      "score": 0.10617766529321671, 
+      "sent": "\"For real?\""
+    }, 
+    {
+      "index": 213, 
+      "score": 0.10610115528106689, 
+      "sent": "Our silence translated to: Let's pretend we didn't hear that."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.10551254451274872, 
+      "sent": "The siblings, clockwise from top left: Gretchen, Lisa, David, Tiffany, Paul, and Amy."
+    }, 
+    {
+      "index": 265, 
+      "score": 0.10468755662441254, 
+      "sent": "But how could it have not?"
+    }, 
+    {
+      "index": 294, 
+      "score": 0.10424735397100449, 
+      "sent": "Sign up for the daily newsletter."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.10260503739118576, 
+      "sent": "my sisters would ask."
+    }, 
+    {
+      "index": 274, 
+      "score": 0.10191753506660461, 
+      "sent": "My father mopped his forehead with Kleenex."
+    }, 
+    {
+      "index": 290, 
+      "score": 0.10190784931182861, 
+      "sent": "\"That makes five--wow!"
+    }, 
+    {
+      "index": 168, 
+      "score": 0.10177014768123627, 
+      "sent": "\"Two lousy boxes.\""
+    }, 
+    {
+      "index": 107, 
+      "score": 0.099443338811397552, 
+      "sent": "\" 'Well,' the girl said, 'you would if you were pretty.'"
+    }, 
+    {
+      "index": 287, 
+      "score": 0.098218970000743866, 
+      "sent": "\"It is,\" I said."
+    }, 
+    {
+      "index": 256, 
+      "score": 0.096453890204429626, 
+      "sent": "I asked as we stepped back into the sunlight."
+    }, 
+    {
+      "index": 167, 
+      "score": 0.094984143972396851, 
+      "sent": "He corrected himself."
+    }, 
+    {
+      "index": 108, 
+      "score": 0.094295874238014221, 
+      "sent": "\" Amy laughed and rolled over onto her stomach."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.093997836112976074, 
+      "sent": "I asked."
+    }, 
+    {
+      "index": 281, 
+      "score": 0.093876771628856659, 
+      "sent": "And instead of saying, \"Who cares?,\" she said, \"You tell me."
+    }, 
+    {
+      "index": 218, 
+      "score": 0.092954143881797791, 
+      "sent": "\"Or half after Tiffany and half after Mom."
+    }, 
+    {
+      "index": 146, 
+      "score": 0.08840971440076828, 
+      "sent": "I was twenty-one."
+    }, 
+    {
+      "index": 180, 
+      "score": 0.086123399436473846, 
+      "sent": "Amy mimicked him perfectly."
+    }, 
+    {
+      "index": 226, 
+      "score": 0.085379362106323242, 
+      "sent": "Lisa asked."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.084935463964939117, 
+      "sent": "people would say."
+    }, 
+    {
+      "index": 286, 
+      "score": 0.084643460810184479, 
+      "sent": "she asked, pointing to Gretchen."
+    }, 
+    {
+      "index": 212, 
+      "score": 0.084533706307411194, 
+      "sent": "he said."
+    }, 
+    {
+      "index": 179, 
+      "score": 0.083554141223430634, 
+      "sent": "he asked."
+    }, 
+    {
+      "index": 200, 
+      "score": 0.083365514874458313, 
+      "sent": "Gretchen asked."
+    }, 
+    {
+      "index": 280, 
+      "score": 0.07484792172908783, 
+      "sent": "I asked Amy."
+    }, 
+    {
+      "index": 130, 
+      "score": 0.070132657885551453, 
+      "sent": "uh-huh ."
+    }, 
+    {
+      "index": 160, 
+      "score": 0.067760109901428223, 
+      "sent": "I wondered."
+    }, 
+    {
+      "index": 127, 
+      "score": 0.065880022943019867, 
+      "sent": "uh-huh ."
+    }, 
+    {
+      "index": 125, 
+      "score": 0.055681601166725159, 
+      "sent": "."
+    }, 
+    {
+      "index": 131, 
+      "score": 0.055388975888490677, 
+      "sent": "."
+    }, 
+    {
+      "index": 128, 
+      "score": 0.054796032607555389, 
+      "sent": "."
+    }, 
+    {
+      "index": 129, 
+      "score": 0.051598813384771347, 
+      "sent": "."
+    }, 
+    {
+      "index": 126, 
+      "score": 0.046817582100629807, 
+      "sent": "."
+    }, 
+    {
+      "index": 132, 
+      "score": 0.04632437601685524, 
+      "sent": ".\""
+    }
+  ], 
+  "title": null
+}

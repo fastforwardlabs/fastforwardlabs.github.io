@@ -1,0 +1,561 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 5, 
+      "score": 0.30543580651283264, 
+      "sent": "The match is a way of judging the suddenly rapid progress of artificial intelligence."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.30339816212654114, 
+      "sent": "Meanwhile, another AlphaGo technique is now driving experimental robotics at Google and places like the University of California at Berkeley."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.29989334940910339, 
+      "sent": "The Korean-born Lee Sedol will go down in defeat unless he takes each of the match's last three games."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.29623708128929138, 
+      "sent": "One of the machine-learning techniques at the heart of AlphaGo has already reinvented myriad online services inside Google and other big-name Internet companies, helping to identify images, recognize commands spoken into smartphones, improve search engine results, and more."
+    }, 
+    {
+      "index": 17, 
+      "score": 0.29106160998344421, 
+      "sent": "Because this Google creation relies so heavily on machine learning techniques, the DeepMind team needs a good four to six weeks to train a new incarnation of the system."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.29012662172317505, 
+      "sent": "He is currently ranked number five in the world, and according to Demis Hassabis, who leads DeepMind, the Google AI lab that created AlphaGo, his team chose the Korean for this all-important match because they wanted an opponent who would be remembered as one of history's great players."
+    }, 
+    {
+      "index": 76, 
+      "score": 0.28663772344589233, 
+      "sent": "During the match, the commentators even invited DeepMind research scientist Thore Graepel onto their stage to explain the system's rather autonomous nature."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.28321313858032227, 
+      "sent": "At the press conference following Game One, Lee Sedol gave himself a 50-50 chance in the second game--a notable shift in attitude for the Go grandmaster, who was nothing less than adamant earlier in the week that he would defeat Google's artificially intelligent creation."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.28297680616378784, 
+      "sent": "The thing to realize is that, after playing AlphaGo for the first time on Wednesday, Lee Sedol could adjust his style of play--just as Kasparov did back in 1996."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.27673670649528503, 
+      "sent": "Regardless, AlphaGo was showing--once again--that it's significantly more skilled than it was in October when it topped Fan Hui, the European Go champion who was ranked 633rd in the world at the time."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.2720547616481781, 
+      "sent": "AlphaGo showed in the first game that it has a taste for the attack--something it didn't necessarily show this past October, when it beat three-time European Go champion Fan Hui during a closed-door match inside DeepMind headquarters."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.2706979513168335, 
+      "sent": "Lee Sedol is widely-regarded as the top Go player of the last decade, after winning more international titles than all but one other player."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.26264739036560059, 
+      "sent": "Although AlphaGo topped Lee Sedol in the match's first game on Wednesday afternoon, the outcome of Game Two was no easier to predict."
+    }, 
+    {
+      "index": 66, 
+      "score": 0.26104044914245605, 
+      "sent": "A New Autonomy This is particularly true of AlphaGo, which is driven so heavily by machine learning--technologies that allow it to learn tasks largely on its own."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.25637558102607727, 
+      "sent": "This week's match can show how far these technologies have come--and perhaps how far they will go."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.25635257363319397, 
+      "sent": "SEOUL, SOUTH KOREA -- After more than four hours of tight play and a rapid-fire endgame, Google's artificially intelligent Go-playing computer system has won a second contest against grandmaster Lee Sedol, taking a two-games-to-none lead in their historic best-of-five match in downtown Seoul."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.25564515590667725, 
+      "sent": "The surprisingly skillful Google machine, known as AlphaGo, now needs only one more win to claim victory in the match."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.24938300251960754, 
+      "sent": "Created in Asia over 2,500 year ago, Go is exponentially more complex than chess, and at least among humans, it requires an added degree of intuition."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.24727781116962433, 
+      "sent": "Hassabis and his team originally built AlphaGo using what are called deep neural networks, vast networks of hardware and software that mimic the web of neurons in the human brain."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.24635903537273407, 
+      "sent": "But they do feel the Korean made a rather large error late in the game, following some particularly skillful play by AlphaGo."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.24149352312088013, 
+      "sent": "In his 1996 match with IBM's Deep Blue supercomputer, world chess champion Gary Kasparov lost the first game but then came back to win the second game and, eventually, the match as a whole."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.24031639099121094, 
+      "sent": "\"Computers are able to make moves that are unexpected by people,\" says Murray Campbell, who was part of the team that built Deep Blue and is closely watching this week's match back in the States."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.23802214860916138, 
+      "sent": "For Redmond, the current version of AlphaGo not only plays more aggressively."
+    }, 
+    {
+      "index": 18, 
+      "score": 0.2357545793056488, 
+      "sent": "And that means they can't really change things during this eight-day match."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.23427049815654755, 
+      "sent": "Geordie Wood for WIRED 'I Am In Shock' Following Game One, Lee Sedol acknowledged he was \"shocked\" by how well AlphaGo played and said he'd made a notable mistake at the beginning of the game that led to his loss about three hours later."
+    }, 
+    {
+      "index": 4, 
+      "score": 0.23308238387107849, 
+      "sent": "Game Three is set for Saturday afternoon inside Seoul's Four Seasons hotel."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.23231488466262817, 
+      "sent": "Essentially, they taught AlphaGo to play the game by feeding thousands upon thousands of human Go moves into these neural networks."
+    }, 
+    {
+      "index": 96, 
+      "score": 0.23189398646354675, 
+      "sent": "But Redmond believed that Lee Sedol had made most of his major decisions, and that he could easily play out the game at speed."
+    }, 
+    {
+      "index": 81, 
+      "score": 0.23126477003097534, 
+      "sent": "Maximizing Probability After AlphaGo's rather unexpected play on his 19th move, the Google machine was very much the aggressor."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.22674873471260071, 
+      "sent": "It wasn't until the following year that Deep Blue topped Kasparov over the course of a six-game contest."
+    }, 
+    {
+      "index": 75, 
+      "score": 0.22545754909515381, 
+      "sent": "By Game Two, Redmond and Garlock were wise to this, after some coaching from the DeepMind team over breakfast here at the Four Seasons."
+    }, 
+    {
+      "index": 70, 
+      "score": 0.22326293587684631, 
+      "sent": "By playing match after match on its own, the system could learn to play at an even higher level--perhaps at a level that eclipses the skills of any human."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.21680076420307159, 
+      "sent": "Though machines have beaten the best humans at chess, checkers, Othello, Scrabble, Jeopardy!, and so many other games considered tests of human intellect, they have never beaten the very best at Go."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.21670694649219513, 
+      "sent": "\"One game is not enough data to learn from--for a machine--and training takes an awful lot of time.\""
+    }, 
+    {
+      "index": 23, 
+      "score": 0.21648910641670227, 
+      "sent": "\"The failure I made at the very beginning of the game lasted until the the very end,\" he said, through an interpreter."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.21643319725990295, 
+      "sent": "In any event, Lee Sedol did resolve to change his approach in Game Two."
+    }, 
+    {
+      "index": 44, 
+      "score": 0.2157675176858902, 
+      "sent": "Perhaps the Korean had adopted an added degree of caution after considering how well AlphaGo performed in Game One, but a certain amount of caution was expected because he was playing white, not black."
+    }, 
+    {
+      "index": 74, 
+      "score": 0.21552065014839172, 
+      "sent": "Once the system is trained using those machine learning techniques, it plays entirely on its own."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.21469816565513611, 
+      "sent": "The added rub was that, after playing black in Game One, the Korean had to play white in Game Two."
+    }, 
+    {
+      "index": 91, 
+      "score": 0.21284730732440948, 
+      "sent": "The Korean was back on the offensive, and Redmond predicted a \"close game\"--something he said so often during Game One."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.21222889423370361, 
+      "sent": "This reflects another aspect of the machine learning technology that underpins AlphaGo."
+    }, 
+    {
+      "index": 55, 
+      "score": 0.21130895614624023, 
+      "sent": "But he also suspected that the Korean grandmaster was feeling a certain \"pleasure\" after the machine's big move."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.2098982185125351, 
+      "sent": "He wasn't prepared to say whether it was a good move or a bad move, but it was aggressive, as if the machine was trying to force Lee Sedol into action."
+    }, 
+    {
+      "index": 72, 
+      "score": 0.20931515097618103, 
+      "sent": "During Game One, match commentators Michael Redmond and Chris Garlock didn't seem to understand that AlphaGo operated in this way."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.20796091854572296, 
+      "sent": "The question going into Game Two was whether it would attack just as aggressively when given the advantage of playing black."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.2066720575094223, 
+      "sent": "Redmond kept referring to AlphaGo's \"database\" of moves--something it doesn't really have."
+    }, 
+    {
+      "index": 90, 
+      "score": 0.20346441864967346, 
+      "sent": "Near the two-hour mark in Game Two, Lee Sedol made a move in the top left-hand corner, at the heart of the territory commanded by AlphaGo, and Redmond said: \"Things are really going to get fun now.\""
+    }, 
+    {
+      "index": 53, 
+      "score": 0.20271147787570953, 
+      "sent": "When Lee Sedol returned to the match table, he took an usually long time to respond, his game clock running down to an hour and 19 minutes, a full twenty minutes less than the time left on AlphaGo's clock."
+    }, 
+    {
+      "index": 95, 
+      "score": 0.20148575305938721, 
+      "sent": "Shortly thereafter, the grandmaster's clock ran out, which meant he was forced to play each of his remaining moves in under 60 seconds."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.1994907408952713, 
+      "sent": "Lee Sedol seen on the front page of a Korean newspaper."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.19903029501438141, 
+      "sent": "But then, using a technique called reinforcement learning, they matched AlphaGo against itself."
+    }, 
+    {
+      "index": 19, 
+      "score": 0.19868049025535583, 
+      "sent": "\"This is about teaching and learning,\" Hassabis told us just before Game Two."
+    }, 
+    {
+      "index": 82, 
+      "score": 0.19848588109016418, 
+      "sent": "But then things tightened up, with Lee Sedol commanding some notable territory."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.19641372561454773, 
+      "sent": "\"White is playing a much more conservative game,\" Redmond said, referring to Lee Sedol."
+    }, 
+    {
+      "index": 61, 
+      "score": 0.19497273862361908, 
+      "sent": "Kasparov was completely flummoxed, and much to the surprise of the chess world, he soon resigned the game."
+    }, 
+    {
+      "index": 103, 
+      "score": 0.19473561644554138, 
+      "sent": "Lee Sedol started to rock again, and the other English commentator, Chris Garlock, insisted he saw sweat on the Korean's brow."
+    }, 
+    {
+      "index": 94, 
+      "score": 0.19175544381141663, 
+      "sent": "At the three and a half hour mark, Redmond felt that Lee Sedol might have a small territorial advantage."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.19146914780139923, 
+      "sent": "At this point in the game, he took a rather long time considering his position and then continued with a comparatively cautious approach, according to Redmond."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.19047611951828003, 
+      "sent": "\"It's something new and unique he has to think about,\" Redmond explained."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.19037118554115295, 
+      "sent": "And they can rile opponents simply by doing something that no human would do--or at least that no human would anticipate from a machine."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.19013708829879761, 
+      "sent": "Geordie Wood for WIRED Back in 1997, during its second match with Gary Kasparov, IBM Deep Blue made a similar move very early in the second game."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.18931633234024048, 
+      "sent": "\"It's a creative move,\" Redmond said of AlphaGo's sudden change in tack."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.18885883688926697, 
+      "sent": "But the moves it then comes up with are out of our hands--and much better than we, as Go players, could come up with.\""
+    }, 
+    {
+      "index": 25, 
+      "score": 0.1887202113866806, 
+      "sent": "It's unclear what early mistake he was referring to."
+    }, 
+    {
+      "index": 77, 
+      "score": 0.18827347457408905, 
+      "sent": "\"Although we have programmed this machine to play, we have no idea what moves it will come up with,\" Graepel said."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.18733404576778412, 
+      "sent": "That's why it produces such unexpected moves."
+    }, 
+    {
+      "index": 105, 
+      "score": 0.18722717463970184, 
+      "sent": "As the match stretched well into its fourth hour, AlphaGo entered overtime as well, and both players were limited to 60 seconds per move."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.18697240948677063, 
+      "sent": "The match's English language commentators didn't see one."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.18607871234416962, 
+      "sent": "As Graepel explained, AlphaGo does not attempt to maximize its points or its margin of victory."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.18596957623958588, 
+      "sent": "'A Creative Move' Then, with its 19th move, AlphaGo made an even more surprising and forceful play, dropping a black piece into some empty space on the right-hand side of the board."
+    }, 
+    {
+      "index": 62, 
+      "score": 0.18558669090270996, 
+      "sent": "It highlighted a certain advantage that machines carry in a match like this."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.18268348276615143, 
+      "sent": "\"He's having trouble dealing with a move he has never seen before,\" Redmond said."
+    }, 
+    {
+      "index": 99, 
+      "score": 0.18230313062667847, 
+      "sent": "In terms of territory, the Korean seemed to hold his own."
+    }, 
+    {
+      "index": 88, 
+      "score": 0.18008837103843689, 
+      "sent": "Thus, late in Game One, the system made some moves that Redmond considered mistakes--\"slow\" in his terminology."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.17871540784835815, 
+      "sent": "\"I didn't think that AlphaGo would play the game in such a perfect manner.\""
+    }, 
+    {
+      "index": 89, 
+      "score": 0.17809633910655975, 
+      "sent": "These moves seemed to give up points, but from where Graepel was sitting, AlphaGo was merely trying to maximize its chances."
+    }, 
+    {
+      "index": 104, 
+      "score": 0.17774030566215515, 
+      "sent": "Then the grandmaster began punctuating his moves with an almost despondent shaking of the head."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.17685651779174805, 
+      "sent": "So, Graepel said, if AlphaGo must choose between a scenario where it will win by 20 points with 80 percent probability and another where it will win by 1 and a half points with 99 percent probability, it will choose the latter."
+    }, 
+    {
+      "index": 97, 
+      "score": 0.17671535909175873, 
+      "sent": "The result was a rapid-fire end game."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.17601498961448669, 
+      "sent": "\"It's something that I don't think I've seen in a top player's game.\""
+    }, 
+    {
+      "index": 42, 
+      "score": 0.17547610402107239, 
+      "sent": "On the whole, Redmond said, the game was moving slower than it had at the same point in Game One."
+    }, 
+    {
+      "index": 93, 
+      "score": 0.17481538653373718, 
+      "sent": "Overtime at Speed Unlike Game One, when Lee Sedol resigned after about three and a half hours, the Korean kept playing as the match approached its fourth hour."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.17387157678604126, 
+      "sent": "As commentator Michael Redmond put it, AlphaGo started \"fast,\" and seven moves in, the machine made what he called a \"slightly unusual move.\""
+    }, 
+    {
+      "index": 79, 
+      "score": 0.17293882369995117, 
+      "sent": "We just create the data sets and the training algorithms."
+    }, 
+    {
+      "index": 110, 
+      "score": 0.17111033201217651, 
+      "sent": "And on Saturday, unlike today, he will play black and move first."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.16961811482906342, 
+      "sent": "\"This is a reason people become pros.\""
+    }, 
+    {
+      "index": 101, 
+      "score": 0.16935653984546661, 
+      "sent": "Twice, he let his 60 second clock run out (on the third time, he forfeits the game), an indication that we was still unsure how things should play out."
+    }, 
+    {
+      "index": 102, 
+      "score": 0.16805797815322876, 
+      "sent": "\"I have a feeling--and maybe Lee Sedol has a feeling--that black is ahead,\" Redmond said."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.16668654978275299, 
+      "sent": "But AlphaGo could not."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.16602852940559387, 
+      "sent": "Match commentators were unable to make a real call on who was ahead and who was behind."
+    }, 
+    {
+      "index": 78, 
+      "score": 0.16476041078567505, 
+      "sent": "\"Its moves are an emergent phenomenon from the training."
+    }, 
+    {
+      "index": 92, 
+      "score": 0.16126006841659546, 
+      "sent": "\"My assessment will likely be changing,\" Redmond later said, \"with every move.\""
+    }, 
+    {
+      "index": 109, 
+      "score": 0.15849128365516663, 
+      "sent": "That favors the Korean."
+    }, 
+    {
+      "index": 108, 
+      "score": 0.15688885748386383, 
+      "sent": "Friday is a rest day for the two players."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.15582317113876343, 
+      "sent": "He promptly left the match table, taking an (allowed) break as his game clock continued to run."
+    }, 
+    {
+      "index": 98, 
+      "score": 0.15427295863628387, 
+      "sent": "Lee Sedol began rocking back and forth in his chair during his first 60 seconds of overtime and continued to do so even after he made his move."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.15330490469932556, 
+      "sent": "It soon made another move along the same lines."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.14855809509754181, 
+      "sent": "\"I am in shock."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.14847347140312195, 
+      "sent": "It tries to maximize its probability of winning."
+    }, 
+    {
+      "index": 100, 
+      "score": 0.14578098058700562, 
+      "sent": "But time was indeed an issue."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.14444370567798615, 
+      "sent": "I can admit that,\" Lee Sedol said after Game One."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.14372770488262177, 
+      "sent": "\"But what's done is done.\""
+    }, 
+    {
+      "index": 47, 
+      "score": 0.14330960810184479, 
+      "sent": "It makes fewer mistakes."
+    }, 
+    {
+      "index": 106, 
+      "score": 0.14053118228912354, 
+      "sent": "The pace picked up again, before only for so long."
+    }, 
+    {
+      "index": 107, 
+      "score": 0.14005866646766663, 
+      "sent": "Just a few minutes later, Lee Sedol resigned."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.13807132840156555, 
+      "sent": "Lee Sedol seemed just as surprised as anyone else."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.13776019215583801, 
+      "sent": "But it didn't give Kasparov much pleasure."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.13743868470191956, 
+      "sent": "But Lee Sedol didn't necessarily bite."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.12777619063854218, 
+      "sent": "Fast Versus Cautious Attack it did."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.11910802125930786, 
+      "sent": "They don't get upset."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.11381559073925018, 
+      "sent": "Commentator Michael Redmond."
+    }
+  ], 
+  "title": null
+}

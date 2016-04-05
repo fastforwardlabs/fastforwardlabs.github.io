@@ -1,0 +1,461 @@
+{
+  "model": "c22a5bd", 
+  "scored_article_sentences": [
+    {
+      "index": 4, 
+      "score": 0.35754165053367615, 
+      "sent": "EC2 for Poets is an explanation of cloud computing that removes a lot of the unnecessary mystery by walking anyone with basic computing knowledge step-by-step through building a simple application on the platform."
+    }, 
+    {
+      "index": 6, 
+      "score": 0.34246823191642761, 
+      "sent": "I feel very lucky to be a part of building TensorFlow, because it's a great opportunity to bring the power of deep learning to a mass audience."
+    }, 
+    {
+      "index": 5, 
+      "score": 0.33472654223442078, 
+      "sent": "In the same spirit, I want to show how anyone with a Mac laptop and the ability to use the Terminal can create their own image classifier using TensorFlow, without having to do any coding."
+    }, 
+    {
+      "index": 10, 
+      "score": 0.31300777196884155, 
+      "sent": "There's already a lot of great documentation on the TensorFlow site, but to demonstrate how easy it can be for general software engineers to pick up I'm going to present a walk-through that takes you from a clean OS X laptop all the way to classifying your own categories of images."
+    }, 
+    {
+      "index": 3, 
+      "score": 0.29837381839752197, 
+      "sent": "I always loved EC2 for Poets though, and I haven't seen anything for deep learning that's aimed at as wide an audience."
+    }, 
+    {
+      "index": 12, 
+      "score": 0.28920796513557434, 
+      "sent": "Docker It's possible to get TensorFlow running natively on OS X, but there's less standardization around how the development tools like Python are installed which makes it hard to give one-size-fits-all instructions."
+    }, 
+    {
+      "index": 14, 
+      "score": 0.27030327916145325, 
+      "sent": "The advantage is that I can start from a known system image, and so the instructions are a lot more likely to work for everyone."
+    }, 
+    {
+      "index": 2, 
+      "score": 0.26159438490867615, 
+      "sent": "Thankfully that has changed over the last few years, with a lot more guides and tutorials appearing."
+    }, 
+    {
+      "index": 9, 
+      "score": 0.25972068309783936, 
+      "sent": "That's true at the cutting edge of research, but otherwise it's mostly a holdover from the early days."
+    }, 
+    {
+      "index": 13, 
+      "score": 0.25494793057441711, 
+      "sent": "To make life easier, I'm going to use the free Docker container system, which will allow me to install a Linux virtual machine that runs on my MacBook Pro."
+    }, 
+    {
+      "index": 37, 
+      "score": 0.25403165817260742, 
+      "sent": "Under the hood, Docker actually uses VirtualBox to run its images, and we'll use its control panel to manage the setup."
+    }, 
+    {
+      "index": 36, 
+      "score": 0.25143906474113464, 
+      "sent": "In our example we're going to be doing some very heavy number-crunching though, so optimizing the configuration for speed is important."
+    }, 
+    {
+      "index": 77, 
+      "score": 0.24888400733470917, 
+      "sent": "I've changed the default /tmp destination for things like the output graph and cached bottlenecks to the shared /tf_files folder, so that the results will be accessible from OS X and will be retained between different runs of the virtual machine."
+    }, 
+    {
+      "index": 35, 
+      "score": 0.24725253880023956, 
+      "sent": "To confirm this has been successful, run this command: ls /tensorflow You should see a series of directories, including a tensorflow one and some .build files, something like this:  Optimizing Docker Often Docker is just used for testing web apps, where computational performance isn't that important, so the speed of the processor in the virtual machine isn't crucial."
+    }, 
+    {
+      "index": 82, 
+      "score": 0.24724583327770233, 
+      "sent": "The label_image example is a small C++ program that loads in a graph and applies it to a user-supplied image."
+    }, 
+    {
+      "index": 54, 
+      "score": 0.242025226354599, 
+      "sent": "Downloading Images The rest of this walk-through is based on the image-retraining example on the TensorFlow site."
+    }, 
+    {
+      "index": 15, 
+      "score": 0.24107855558395386, 
+      "sent": "Installing Docker There's full documentation on installing Docker at docker.com, and it's likely to be updated over time, but I will run through exactly what steps I took to get it running here."
+    }, 
+    {
+      "index": 30, 
+      "score": 0.24081666767597198, 
+      "sent": "To download and run the TensorFlow docker image, use this command from the terminal: docker run -it b.gcr.io/tensorflow/tensorflow:0.7.1-devel This will show a series of download and extraction steps."
+    }, 
+    {
+      "index": 8, 
+      "score": 0.23841717839241028, 
+      "sent": "The frustrating part is that deep learning is still seen as a very hard topic for product engineers to grasp."
+    }, 
+    {
+      "index": 55, 
+      "score": 0.23704135417938232, 
+      "sent": "It shows you how to take your own images organized into folders by category, and use them to quickly retrain the top layer of the Inception image recognition neural network to recognize those categories."
+    }, 
+    {
+      "index": 50, 
+      "score": 0.23463891446590424, 
+      "sent": "Most likely on a modern MacBook Pro 4 is a good setting, but use the green bar below the slider as a guide."
+    }, 
+    {
+      "index": 11, 
+      "score": 0.23321817815303802, 
+      "sent": "You'll find written instructions in this post, along with a screencast showing exactly what I'm doing."
+    }, 
+    {
+      "index": 1, 
+      "score": 0.23103323578834534, 
+      "sent": "There wasn't much documentation, and what existed was aimed at academic researchers who already knew a lot of the jargon and background."
+    }, 
+    {
+      "index": 61, 
+      "score": 0.23071993887424469, 
+      "sent": "Running the VM with Shared Folders Now you've got some images to train with, we're going to start up the virtual machine again, this time sharing the folder you just created with Linux so TensorFlow can access the photos: docker run -it -v $HOME/tf_files:/tf_files b.gcr.io/tensorflow/tensorflow:0.7.1-devel You should find yourself back in a Linux prompt."
+    }, 
+    {
+      "index": 47, 
+      "score": 0.22912907600402832, 
+      "sent": "Drag the 'Base Memory' slider as far as the green section goes, which is normally around 75% of your total laptop's memory."
+    }, 
+    {
+      "index": 32, 
+      "score": 0.2249486893415451, 
+      "sent": "It needs to download roughly a gigabyte of data, so it can take a while on a slow network connection."
+    }, 
+    {
+      "index": 39, 
+      "score": 0.2222512811422348, 
+      "sent": "I like to use spotlight to find and open it, so I don't have to hunt around on the file system."
+    }, 
+    {
+      "index": 71, 
+      "score": 0.22201605141162872, 
+      "sent": "You may notice there's some optimization flags in the command that help speed it up on processors with AVX, which almost all modern OS X machines have."
+    }, 
+    {
+      "index": 31, 
+      "score": 0.22201116383075714, 
+      "sent": "These are the different components of the TensorFlow image being assembled."
+    }, 
+    {
+      "index": 44, 
+      "score": 0.22143185138702393, 
+      "sent": "Once the shutdown is complete, 'default' should have the text 'Powered off' below it."
+    }, 
+    {
+      "index": 38, 
+      "score": 0.22105613350868225, 
+      "sent": "To do that, we'll need to take the following steps:  Find the VirtualBox application on your Mac."
+    }, 
+    {
+      "index": 23, 
+      "score": 0.22041033208370209, 
+      "sent": "At the end of the script, I saw ASCII art of a whale and I was left at a prompt."
+    }, 
+    {
+      "index": 48, 
+      "score": 0.22027726471424103, 
+      "sent": "So in my case it's 12GB, because I have a 16GB machine."
+    }, 
+    {
+      "index": 7, 
+      "score": 0.22024489939212799, 
+      "sent": "I look around and see so many applications that could benefit from the technology by understanding the images, speech, or text their users enter."
+    }, 
+    {
+      "index": 29, 
+      "score": 0.21940316259860992, 
+      "sent": "The Docker section in the TensorFlow documentation has more information."
+    }, 
+    {
+      "index": 28, 
+      "score": 0.21603813767433167, 
+      "sent": "Because the example code I'm going to use came in after the last versioned release, 0.7.1, we'll have to do some extra work below to update the source code using git, but once 0.8 comes out you could replace the '0.7.1' below with the 0.8.0 instead, and skip the 'Updating the Code' section."
+    }, 
+    {
+      "index": 49, 
+      "score": 0.2159733772277832, 
+      "sent": "Click on the 'Processor' tab, and set the number of processors higher than the default of 1."
+    }, 
+    {
+      "index": 34, 
+      "score": 0.21575194597244263, 
+      "sent": "This is now actually the shell for the Linux virtual machine you've downloaded."
+    }, 
+    {
+      "index": 76, 
+      "score": 0.21482634544372559, 
+      "sent": "If you want to know more about what's happening under the hood while you wait, you can check out the tutorial for a detailed explanation."
+    }, 
+    {
+      "index": 26, 
+      "score": 0.21447493135929108, 
+      "sent": "Installing TensorFlow Now I've got Docker installed and running, I can get a Linux virtual machine with TensorFlow pre-installed running."
+    }, 
+    {
+      "index": 63, 
+      "score": 0.21130800247192383, 
+      "sent": "Unfortunately getting it is a little involved, with some use of the source control program git."
+    }, 
+    {
+      "index": 89, 
+      "score": 0.21101891994476318, 
+      "sent": "The label_image example is a good template to look at if you can integrate C++ into your product, and we even support running on mobile, so check out the Android sample code if you'd like to run on a smart phone."
+    }, 
+    {
+      "index": 81, 
+      "score": 0.21039144694805145, 
+      "sent": "Using the Classifier The training process outputs the retrained graph into /tmp/output_graph.pb, and to test it out yourself you can build another piece of sample code."
+    }, 
+    {
+      "index": 86, 
+      "score": 0.20892500877380371, 
+      "sent": "This should be as simple as creating a new folder in your Downloads/tf_images directory, putting subfolders full of photos in it, and re-running the classifier commands."
+    }, 
+    {
+      "index": 78, 
+      "score": 0.20806421339511871, 
+      "sent": "Once the bottlenecks are cached, it will then go into the training process, which takes another five minutes or so on my laptop."
+    }, 
+    {
+      "index": 33, 
+      "score": 0.20751205086708069, 
+      "sent": "Once that's complete, you'll find yourself in a new terminal."
+    }, 
+    {
+      "index": 72, 
+      "score": 0.2070242166519165, 
+      "sent": "cd /tensorflow/ bazel build -c opt --copt=-mavx tensorflow/examples/image_retraining:retrain This part can take five to ten minutes, depending on the speed of your machine, as it's compiling the full source code for TensorFlow."
+    }, 
+    {
+      "index": 43, 
+      "score": 0.20447085797786713, 
+      "sent": "The other close options should also work, but this is the most clean."
+    }, 
+    {
+      "index": 27, 
+      "score": 0.20320028066635132, 
+      "sent": "We create daily development images, and ones for every major release."
+    }, 
+    {
+      "index": 21, 
+      "score": 0.20213715732097626, 
+      "sent": "At the end of the install process, I chose the Docker Quickstart Terminal."
+    }, 
+    {
+      "index": 53, 
+      "score": 0.20164737105369568, 
+      "sent": "You should find that your terminal was kicked out of the Linux prompt when you stopped the 'default' box, but now you've restarted it you can run the same command to access it again: docker run -it b.gcr.io/tensorflow/tensorflow:0.7.1-devel The only difference is that now the virtual machine will have access to a lot more of your laptop's computing power, and so the example should run a lot faster!"
+    }, 
+    {
+      "index": 62, 
+      "score": 0.20145538449287415, 
+      "sent": "To make sure the file sharing worked, try the following command: ls /tf_files/flower_photos You should see a list of the flower folders, like this: root@2c570d651d08:~# ls /tf_files/flower_photos LICENSE.txt daisy dandelion roses sunflowers tulips root@2c570d651d08:~# Updating the Code For this example, we need the very latest code since it's just been added."
+    }, 
+    {
+      "index": 56, 
+      "score": 0.19980251789093018, 
+      "sent": "To get started, the first thing you need to do is get some example images."
+    }, 
+    {
+      "index": 24, 
+      "score": 0.199077308177948, 
+      "sent": "I went back to step one of the instructions, and ran the suggested command in the terminal: docker run hello-world  This gave me output confirming my installation of Docker had worked: Hello from Docker."
+    }, 
+    {
+      "index": 60, 
+      "score": 0.19844672083854675, 
+      "sent": "There's more guidance on that process in the tutorial."
+    }, 
+    {
+      "index": 70, 
+      "score": 0.19798246026039124, 
+      "sent": "We want to sync it to a version we know works though, so we'll run this command: git checkout 6d46c0b370836698a3195a6d73398f15fa44bcb2 Building the Code If that worked, the next step is to compile the code."
+    }, 
+    {
+      "index": 83, 
+      "score": 0.1966363936662674, 
+      "sent": "Give it a try like this: bazel build tensorflow/examples/label_image:label_image && \\ bazel-bin/tensorflow/examples/label_image/label_image \\ --graph=/tf_files/retrained_graph.pb \\ --labels=/tf_files/retrained_labels.txt \\ --output_layer=final_result \\ --image=/tf_files/flower_photos/daisy/21652746_cc379e0eea_m.jpg You should see a result showing that it identified a daisy in that picture, though because the training process is random you may occasionally have a model that makes a mistak on the image."
+    }, 
+    {
+      "index": 42, 
+      "score": 0.19646474719047546, 
+      "sent": "Right-click on 'default' to bring up the context menu and chose 'Close->ACPI Shutdown'."
+    }, 
+    {
+      "index": 59, 
+      "score": 0.19445271790027618, 
+      "sent": "If you look at how they're organized, you should be able to use the same structure with classes you care about, just replacing the folder names with the category labels you're dealing with, and populating them with photos of those objects."
+    }, 
+    {
+      "index": 40, 
+      "score": 0.19435940682888031, 
+      "sent": "Once VirtualBox is open, you should see a left-hand pane showing virtual machines."
+    }, 
+    {
+      "index": 0, 
+      "score": 0.19222524762153625, 
+      "sent": "When I first started investigating the world of deep learning, I found it very hard to get started."
+    }, 
+    {
+      "index": 73, 
+      "score": 0.18495917320251465, 
+      "sent": "Don't worry if you see a lot of warnings, this is normal (though we're working on reducing them going forward)."
+    }, 
+    {
+      "index": 75, 
+      "score": 0.18265849351882935, 
+      "sent": "There's around 3,700 photos in total to process, and my machine does around 200 a minute, so it takes around twenty minutes in total."
+    }, 
+    {
+      "index": 74, 
+      "score": 0.18261760473251343, 
+      "sent": "Running the Code I can now run the retraining process using this command: bazel-bin/tensorflow/examples/image_retraining/retrain \\ --bottleneck_dir=/tf_files/bottlenecks \\ --model_dir=/tf_files/inception \\ --output_graph=/tf_files/retrained_graph.pb \\ --output_labels=/tf_files/retrained_labels.txt \\ --image_dir /tf_files/flower_photos You'll see a message about downloading the Inception model, and then a long series of messages about creating bottlenecks."
+    }, 
+    {
+      "index": 85, 
+      "score": 0.18190348148345947, 
+      "sent": "Next Steps The first thing you'll probably want to do is train a classifier for objects you care about in your application."
+    }, 
+    {
+      "index": 17, 
+      "score": 0.18043237924575806, 
+      "sent": "Step one of the instructions sent me to download the Docker Toolbox."
+    }, 
+    {
+      "index": 65, 
+      "score": 0.17950576543807983, 
+      "sent": "Pulling the code requires a default email address, which you can set to anything, since we're not planning on pushing any changes back."
+    }, 
+    {
+      "index": 25, 
+      "score": 0.17908068001270294, 
+      "sent": "This message shows that your installation appears to be working correctly."
+    }, 
+    {
+      "index": 87, 
+      "score": 0.17849732935428619, 
+      "sent": "You can find more detailed advice on tuning that process in the tutorial."
+    }, 
+    {
+      "index": 16, 
+      "score": 0.17840461432933807, 
+      "sent": "I went to docs.docker.com/mac/ in my browser."
+    }, 
+    {
+      "index": 22, 
+      "score": 0.17503635585308075, 
+      "sent": "That opened up a new terminal window and ran through an installation script."
+    }, 
+    {
+      "index": 90, 
+      "score": 0.17368587851524353, 
+      "sent": "Thanks for working through this process with me, I hope it's inspired you to think about how you can use deep learning to help your users, and I can't wait to see what you build!"
+    }, 
+    {
+      "index": 79, 
+      "score": 0.17351795732975006, 
+      "sent": "At the end, you should see the last output line giving the final estimated accuracy, which should be around 90%."
+    }, 
+    {
+      "index": 20, 
+      "score": 0.16987204551696777, 
+      "sent": "I ran that downloaded pkg to install the Toolbox."
+    }, 
+    {
+      "index": 57, 
+      "score": 0.16890153288841248, 
+      "sent": "To begin, go to the terminal and enter the 'exit' command if you still see the 'root@...' prompt that indicates you're still in the Linux virtual machine."
+    }, 
+    {
+      "index": 84, 
+      "score": 0.16692942380905151, 
+      "sent": "Try it with some of the other photos to get a feel for how it's doing."
+    }, 
+    {
+      "index": 45, 
+      "score": 0.16448655724525452, 
+      "sent": "Right click on it again and choose 'Settings...' from the menu."
+    }, 
+    {
+      "index": 58, 
+      "score": 0.16286244988441467, 
+      "sent": "Then run the following commands to create a new folder in your Downloads directory to hold training images, and download and extract the flower photos: cd $HOME mkdir tf_files cd tf_files curl -O http://download.tensorflow.org/example_images/flower_photos.tgz tar xzf flower_photos.tgz open flower_photos This should end up with a new finder window opening, showing a set of five folders:  This means you've successfully downloaded the example flower images."
+    }, 
+    {
+      "index": 41, 
+      "score": 0.15877074003219604, 
+      "sent": "There should be one called 'default' that's running."
+    }, 
+    {
+      "index": 52, 
+      "score": 0.156963050365448, 
+      "sent": "Right-click on 'default' and choose 'Start->Headless Start'."
+    }, 
+    {
+      "index": 80, 
+      "score": 0.15470743179321289, 
+      "sent": "That means you've trained your classifier to guess the right flower species nine times out of ten when shown a photo!"
+    }, 
+    {
+      "index": 18, 
+      "score": 0.15440197288990021, 
+      "sent": "On the Toolbox page, I clicked on the Mac download button."
+    }, 
+    {
+      "index": 88, 
+      "score": 0.15224254131317139, 
+      "sent": "Finally, you'll want to use this in your own application!"
+    }, 
+    {
+      "index": 66, 
+      "score": 0.149309903383255, 
+      "sent": "git config --global user.email \"you@example.com\" git config --global user.name \"Your Name\" Now you should be able to pull the latest source."
+    }, 
+    {
+      "index": 51, 
+      "score": 0.14731460809707642, 
+      "sent": "Click 'OK' on the settings dialog."
+    }, 
+    {
+      "index": 46, 
+      "score": 0.14118671417236328, 
+      "sent": "Click on the 'System' icon, and then choose the 'Motherboard' tab."
+    }, 
+    {
+      "index": 67, 
+      "score": 0.13855762779712677, 
+      "sent": "cd /tensorflow/ git pull origin master You'll find yourself in a vim window."
+    }, 
+    {
+      "index": 64, 
+      "score": 0.13705521821975708, 
+      "sent": "I'll walk through the steps below."
+    }, 
+    {
+      "index": 69, 
+      "score": 0.13281293213367462, 
+      "sent": "You should now have fully up-to-date code."
+    }, 
+    {
+      "index": 19, 
+      "score": 0.12917712330818176, 
+      "sent": "That downloaded a DockerToolbox-1.10.2.pkg file."
+    }, 
+    {
+      "index": 68, 
+      "score": 0.11732243746519089, 
+      "sent": "Just type ':quit' to exit."
+    }
+  ], 
+  "title": null
+}
