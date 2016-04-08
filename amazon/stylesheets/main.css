@@ -1,0 +1,14 @@
+/* line 3, ../sass/main.sass */
+.container {
+  max-width: 40rem;
+}
+
+/* line 6, ../sass/main.sass */
+.bg-green {
+  background: #18cc3d;
+}
+
+/* line 9, ../sass/main.sass */
+.green {
+  color: #18cc3d;
+}
