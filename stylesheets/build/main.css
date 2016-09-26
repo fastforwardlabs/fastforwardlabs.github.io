@@ -1485,7 +1485,10 @@ input[type="submit"] {
       padding-top: 10px; }
     .third .person-holder .footlink {
       line-height: 24px;
-      font-size: 20px; }
+      font-size: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
       .third .person-holder .footlink i {
         margin-right: 4px; }
     .third .person-holder .fotolink {
