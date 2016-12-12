@@ -326,6 +326,20 @@ style="color: red">"fire"</span>, "first", "five", "for", "former", "formerly",
 
 ---
 
+## Outline
+
+1. modeling and vectorization
+2. bag of words
+3. tokenization
+4. stopwords
+5. n-grams
+6. lemmatization
+7. feature engineering
+8. text cleaning
+9. beyond bag of words
+10. scaling
+---
+
 ## n-grams
 
  - These are one way of tackling the word order problem. Previously we used a
@@ -344,6 +358,7 @@ style="color: red">"fire"</span>, "first", "five", "for", "former", "formerly",
    <tr><td>dog</td><td>bites</td><td>man</td><td>dog bites</td><td>bites
    man</td><td>man bites</td><td>bites dog</td></tr>
    </table>
+--
 
  - “dog bites man” vectorizes to
    <table class="bagwords">
@@ -461,6 +476,7 @@ style="color: red">"fire"</span>, "first", "five", "for", "former", "formerly",
    <tr><td>claim</td><td>one</td><td>and</td><td>two</td></tr>
    <tr><td>2</td><td>1</td><td>1</td><td>1</td></tr>
    </table>
+--
 
  - You can also use term-frequency inverse-document-frequency (TFIDF), where
    every element is a floating point number greater than zero. The numbers are
