@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text mining primer</title>
+        <meta name="robots" content="noindex" />
+        <meta charset="utf-8">
+        <style>
+        @import url(fonts.css);
+        body { 
+            font-family: 'Roboto';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather';
+            font-weight: normal;
+        }
+        li {
+            margin-top: 1ex;
+        }
+        p:first-child, pre:first-child {
+            margin: 0;
+        }
+        .full-width {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .full-height {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .full-bleed {
+            padding: 0;
+        }
+        .remark-slide-number {
+            display: none;
+        }
+        a {color: blue}
+        .column:first-of-type {float:left}
+        .column:last-of-type {float:right}
+        .split .column:first-of-type {width: 50%}
+        .split .column:last-of-type {width: 50%}
+        .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table.bagwords {
+            font-family: 'Roboto Mono';
+            font-size: 70%;
+        }
+        table.bagwords td {
+            width: 8em;
+        }
+        </style>
+    </head>
+<body>
+
+<textarea id="source">
+
+class: center, middle, full-bleed
+
+<img src="img/ff-logo-transparent-bg.png" width="30%">
+
+## Text mining primer
+
+### Mike Williams • Director of research at Fast Forward Labs
+
+#### <mike@fastforwardlabs.com> • [fastforwardlabs.com/talks/textminingprimer](http://www.fastforwardlabs.com/talks/textminingprimer) • [@mikepqr](http://twitter.com/mikepqr)
+
+???
+
+**Hit "p" on your keyboard to toggle between full screen and presenter notes.**
+
+Our goal today is to provide a conceptual, tool-independent introduction to the
+principles of text mining.
+
+I'm going to assume you've done some modeling before, but not necessarily with
+text.
+
+If you've never worked with text data, much of this will be new. None of it
+will be very hard though.
+
+If you've done text mining before I hope you'll find it useful to take a step
+back and thinkg about why you do what you do.
+
+---
+
+## Outline
+
+1. modeling and vectorization
+2. bag of words
+3. tokenization
+4. stopwords
+5. n-grams
+6. lemmatization
+7. feature engineering
+8. text cleaning
+9. beyond bag of words
+10. scaling
+
+---
+
+class: full-bleed, center, middle
+
+![Tips](img/tips.png)
+
+???
+
+Our goal when we model is to learn corellations, or rules of thumb, that relate
+X to Y.
+
+Here X is the cost of a meal, and Y is the tip the customer left.
+
+Sometimes there are several Xs. You could also look for a relationship with how
+long the party stayed, how big it was, whether they drank alcohol, etc.
+
+The details of how you learn the relationship between X and Y are not the
+subject of this talk.
+
+But I wanted to start with this image to remind you what we're doing: we're
+trying to spot patterns in a historical dataset, and use those patterns to
+predict unknowns.
+
+---
+
+## Modeling
+
+ - The goal of the USAA competition is to be able to predict the dollar amount
+   of a claim, given its text
+   - “My house was destroyed by a hurricane” 💰💰💰💰💰💰
+   - “My Ikea coffee table was scratched” 💰
+   
+--
+
+ - We've got the same problem we had before: we want to learn (or use a computer
+   to learn) patterns that relate X (the text in this case) to Y (the claim
+   value)
+
+--
+
+ - But with the tipping dataset we had and X that was naturally quantitative. We
+   can't plot a graph of the raw claim text in the same way.
+--
+
+ - Here's where we hit the fundamental challenge of text mining: computers work
+   with numbers, not text.
+
+--
+
+ - In order for the computer to use the meaning of the document, we have to get
+   text into a numerical form that retains that meaning. In its most general
+   form, this is called “vectorization”
+--
+
+ - Text mining with a goal of modeling (or “supervised machine learning”) in
+   mind basically boils down to doing a good a job as possible at vectorization.
+
+---
+
+## Bag of words
+
+ - The simplest possible thing you can do to turn text into numbers
+
+    1. Define a vocabulary, e.g. a list of all the unique words in your corpus,
+       or all the words in the English language
+    2. Assign each token in the vocabulary a permanent position in a “vector” or
+       list
+    3. For each document, record whether or not that token occurs in a vector
+--
+
+ - “My house was destroyed by a hurricane”, “My Ikea coffee table was
+   scratched” gives use this 11 word vocabulary:
+   <table class="bagwords">
+   <tr><td>My</td><td>house</td><td>was</td><td>destroyed</td><td>by</td><td>a</td><td>hurricane</td><td>Ikea</td><td>coffee</td><td>table</td><td>scratched</td></tr>
+   </table>
+
+--
+
+ - “My house was destroyed by a hurricane” then becomes:
+
+   <table class="bagwords">
+   <tr><td>My</td><td>house</td><td>was</td><td>destroyed</td><td>by</td><td>a</td><td>hurricane</td><td>Ikea</td><td>coffee</td><td>table</td><td>scratched</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+   </table>
+--
+
+ - Now you vectorize “My Ikea coffee table was scratched”. You should get:
+--
+
+   <table class="bagwords">
+   <tr><td>My</td><td>house</td><td>was</td><td>destroyed</td><td>by</td><td>a</td><td>hurricane</td><td>Ikea</td><td>coffee</td><td>table</td><td>scratched</td></tr>
+   <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+   </table>
+--
+
+ - We can now build a model that might learn, for example, that the presence of
+   the word “hurricane” is predictive of large claims.
+
+---
+
+## Tokenization
+
+ - This is the fancy name for breaking up a document into words. We had to
+   tokenize text during every step of building a bag of words.
+--
+
+ - For our two claims it was very straightforward, but for real world text it
+   can be hard or ambiguous, especially around punctuation.
+--
+
+ - Trust your NLP package. nltk, scikit-learn, spaCy, and their R
+   equivalents all do a pretty good job!
+--
+
+ - Most tokenization sytems “fold” or ignore case, i.e. they split tokens and
+   then make everything lower case. Imagine the document “Claim one and claim
+   two”. If we don't fold case then we get
+   <table class="bagwords">
+   <tr><td>Claim</td><td>one</td><td>and</td><td>claim</td><td>two</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1<td></tr>
+   </table>
+--
+
+   If we do fold case then we get
+   <table class="bagwords">
+   <tr><td>claim</td><td>one</td><td>and</td><td>two</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+   </table>
+--
+
+ - BTW, In text mining we usually say “token” because not all the bits of a document
+   are words, e.g. “😎”, “6”, “...”
+
+---
+
+## Tokenization
+
+ - We call it “bag of words” because we break up the tokens and toss them in a
+   bag, so we lose word order
+
+ - For example, “dog bites man” and “man bites dog” both become the same vector
+--
+
+   <table class="bagwords">
+   <tr><td>dog</td><td>bites</td><td>man</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td></tr>
+   </table>
+
+--
+
+ - Clearly these are two very different documents, but they look the same to the
+   computer!
+
+ - We'll work on fixing that next, but first: stopwords.
+
+---
+
+## Stopwords
+    
+ - Stopwords are usually short words whose meaning is unclear in isolation when
+   we ignore word order, e.g. “it”, “is”, “and”, “the”, etc.
+--
+   
+ - Your model doesn't learn anything from the presence (or absence) of these
+   tokens. It just gets confused.
+--
+
+ - Usually we just remove stopwords when we build the vocabulary.
+
+--
+ - So if “my”, “was”, “by” and “a” are stopwords, then “My house was destroyed
+   by a hurricane” then becomes:
+--
+
+   <table class="bagwords">
+   <tr><td>house</td><td>destroyed</td><td>hurricane</td><td>Ikea</td><td>coffee</td><td>table</td><td>scratched</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+   </table>
+
+--
+ - Most NLP packages have a list of default English stopwords. This is usually
+   a good place to start (although be careful!)
+
+---
+
+class: full-bleed
+
+<code> ENGLISH_STOP_WORDS = frozenset([ "a", "about", "above", "across",
+"after", "afterwards", "again", "against", "all", "almost", "alone", "along",
+"already", "also", "although", "always", "am", "among", "amongst", "amoungst",
+"amount", "an", "and", "another", "any", "anyhow", "anyone", "anything",
+"anyway", "anywhere", "are", "around", "as", "at", "back", "be", "became",
+"because", "become", "becomes", "becoming", "been", "before", "beforehand",
+"behind", "being", "below", "beside", "besides", "between", "beyond", "bill",
+"both", "bottom", "but", "by", "call", "can", "cannot", "cant", "co", "con",
+"could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down",
+"due", "during", "each", "eg", "eight", "either", "eleven", "else", "elsewhere",
+"empty", "enough", "etc", "even", "ever", "every", "everyone", "everything",
+"everywhere", "except", "few", "fifteen", "fifty", "fill", "find", <span
+style="color: red">"fire"</span>, "first", "five", "for", "former", "formerly",
+"forty", "found", "four", "from", "front", "full", "further", "get", "give",
+"go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter",
+"hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his",
+"how", "however", "hundred", "i", "ie", "if", "in", "inc", "indeed", "interest",
+"into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly",
+"least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might",
+"mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must",
+"my", "myself", "name", "namely", "neither", "never", "nevertheless", "next",
+"nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now",
+"nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or",
+"other", "others", "otherwise", "our", "ours", "ourselves", "out", "over",
+"own", "part", "per", "perhaps", "please", "put", "rather", "re", "same", "see",
+"seem", "seemed", "seeming", "seems", "serious", "several", "she", "should",
+"show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow",
+"someone", "something", "sometime", "sometimes", "somewhere", "still", "such",
+"system", "take", "ten", "than", "that", "the", "their", "them", "themselves",
+"then", "thence", "there", "thereafter", "thereby", "therefore", "therein",
+"thereupon", "these", "they", "thick", "thin", "third", "this", "those",
+"though", "three", "through", "throughout", "thru", "thus", "to", "together",
+"too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under",
+"until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what",
+"whatever", "when", "whence", "whenever", "where", "whereafter", "whereas",
+"whereby", "wherein", "whereupon", "wherever", "whether", "which", "while",
+"whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with",
+"within", "without", "would", "yet", "you", "your", "yours", "yourself",
+"yourselves"]) </code>
+
+---
+
+## n-grams
+
+ - These are one way of tackling the word order problem. Previously we used a
+   vocabulary made up of individual words. Now we use a vocabulary made of up
+   combinations of words.
+
+ - So given the corpus “dog bites man” and “man bites dog” the unigram
+   vocabulary would be
+   <table class="bagwords">
+   <tr><td>dog</td><td>bites</td><td>man</td></tr>
+   </table>
+--
+
+ - The bigram vocabulary would be
+   <table class="bagwords">
+   <tr><td>dog</td><td>bites</td><td>man</td><td>dog bites</td><td>bites
+   man</td><td>man bites</td><td>bites dog</td></tr>
+   </table>
+
+ - “dog bites man” vectorizes to
+   <table class="bagwords">
+   <tr><td>dog</td><td>bites</td><td>man</td><td>dog bites</td><td>bites
+   man</td><td>man bites</td><td>bites dog</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+   </table>
+
+ - and “man bites dog” to
+--
+
+   <table class="bagwords">
+   <tr><td>dog</td><td>bites</td><td>man</td><td>dog bites</td><td>bites
+   man</td><td>man bites</td><td>bites dog</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+   </table>
+
+ - Note that crucially they are different! This is good.
+
+ - This also goes some what to accounting for negation: your vector records
+   whether the word “not” occured immediately before “good”
+
+ - You can have trigrams and so on (n-grams)
+
+---
+
+## Lemmatization
+
+ - This refers to treating words that are variants as identical when building
+   the bag of words
+
+ - In the same way we treat upper and lower and capitalized versions of a word
+   as identical, we can treat related ideas as identical
+--
+
+    - tense, e.g. “crash”, “crashes”, “crashed”
+--
+    - count, e.g. “car”, “cars”
+--
+    - degree, e.g. “busy”, “busier”, “busiest”
+--
+
+ - Whether this is a good idea or not depends on the application! It can slow
+   down vectorization, but speed up and improve modeling.
+
+ - Again, your NLP tooklit can usually handle this for you
+
+---
+
+## Feature engineering
+
+ - Having turned a document into a vector, we can now learn the relationship
+   between its numerical representation and the thing we're trying to predict
+
+ - There's nothing to stop us adding things to this vector that we think are
+   predictive, but don't come directly from the words used
+
+ - This is “feature engineering”, and it's a place where you can get creative
+   and apply your domain specific knowledge
+--
+
+ - For example, metadata
+    
+    - document length
+--
+    - creation date
+--
+    - premium
+--
+    - lifetime claim total of customer
+--
+
+ - Domain-specific stopwords: maybe the claims use jargon that, like stopwords,
+   are not predictive on their own (“DDDDDDDDD”)
+--
+
+ - Often you'll stop at unigrams or bigrams for computational efficiency, but
+   perhaps there are a few longer patterns or phrases that you know are
+   significant. You can add those in without going to n-grams.
+
+---
+
+## Text cleaning
+
+ - Often every document has a similar header or footer. This should be removed
+   if it's common to all documents.
+--
+
+ - HTML tags shows up in documents. This should be removed, and that can be
+   difficult.
+--
+
+ - Depending on your progrmaming environtment and NLP toolkit, you may have
+   trouble with punctuation (e.g. apostrophes being word boundaries, so “wasn’t”
+   to “wasn” and “t”) or encoding (e.g. “ñ” to “&#38;#241”). Be alert for these!
+
+---
+
+## Beyond bag of words
+
+ - We used “binary” bag of words, where every element in a vector is a 1 or 0,
+   indicating the presence or absence of the corresponding token.
+   So for “claim one and claim two” 
+   <table class="bagwords">
+   <tr><td>claim</td><td>one</td><td>and</td><td>two</td></tr>
+   <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+   </table>
+--
+
+ - You can also using “counting” bag of words, where every element is the number
+   of times the token occurs. This captures the idea that the more often a word
+   is used, the more important it is to the meaning of the document.
+--
+   <table class="bagwords">
+   <tr><td>claim</td><td>one</td><td>and</td><td>two</td></tr>
+   <tr><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+   </table>
+
+ - You can also use term-frequency inverse-document-frequency (TFIDF), where
+   every element is a floating point number greater than zero. The numbers are
+   largest for words that occur often in the document *and* rarely in the
+   corpus. This captures the idea that the repeated use of a rare word is
+   especially significant.
+   <table class="bagwords">
+   <tr><td>claim</td><td>one</td><td>and</td><td>two</td></tr>
+   <tr><td>0.3</td><td>0.1</td><td>0.05</td><td>0.2</td></tr>
+   </table>
+
+ - Most NLP toolkits will do handle all of these calculations for you.
+
+---
+
+## Scaling
+
+ - Your dataset is large! You should try to remove from your vocabulary anything
+   that is unlikely to be predictive.
+
+     - Discard words that occur fewer than N times in the corpus (perhaps
+       misspellings)?
+     - Discard words that occur in more than M% of documents in the corpus
+       (domain-specific stopwords)?
+     - Avoid n-grams?
+
+ - Be clever with your modeling (e.g. online/parallel training)
+
+ - Good luck!
+
+    </textarea>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+    var slideshow = remark.create({
+              ratio: '16:9',
+    });
+    </script>
+  </body>
+</html>
+<!-- vim: set filetype=markdown: --> 
