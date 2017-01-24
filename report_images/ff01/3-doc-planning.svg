@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 266.3 87" enable-background="new 0 0 266.3 87" xml:space="preserve">
+<polyline fill="none" stroke="#00DCEC" stroke-width="9" stroke-miterlimit="10" points="106.7,66.7 129.9,65.9 153,65.9 
+	176.2,67.5 "/>
+<rect x="125.7" y="16.3" fill="#00DCEC" width="7.2" height="7.2"/>
+<polyline fill="none" stroke="#00DCEC" stroke-width="9" stroke-miterlimit="10" points="106.7,47.4 129.9,42.5 153,43.3 
+	176.2,43.3 199.4,43.3 209.8,47.8 "/>
+<g>
+	<text transform="matrix(1 0 0 1 31.9819 25.4872)" fill="#231F20" font-family="'ChambersSansOT-BoldItalic'" font-size="7.3973">Temp</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 31.9819 50.5266)" fill="#231F20" font-family="'ChambersSansOT-BoldItalic'" font-size="7.3973">Rain</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 31.9819 75.5662)" fill="#231F20" font-family="'ChambersSansOT-BoldItalic'" font-size="7.3973">Wind</text>
+</g>
+<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" points="59.6,76.6 82.7,70.8 105.9,66.7 
+	129.1,65.9 152.2,65.9 175.4,67.5 198.6,73.3 221.8,71.6 "/>
+<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" points="59.6,55.6 82.7,50.7 105.9,47.4 
+	129.1,42.5 152.2,43.3 175.4,43.3 198.6,43.3 221.8,52.4 "/>
+<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" points="59.6,29.8 82.7,28.1 105.9,24.8 
+	129.1,19.9 152.2,22.4 175.4,24.8 198.6,28.1 221.8,30.6 "/>
+<g>
+	<text transform="matrix(1 0 0 1 132.5707 13.265)" fill="#00DCEC" font-family="'ChambersSansOT-Bold'" font-size="6.5754">high 72̊°</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 134.0961 36.7279)" fill="#00DCEC" font-family="'ChambersSansOT-Bold'" font-size="6.5754">above 50% chance</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 134.7011 59.4672)" fill="#00DCEC" font-family="'ChambersSansOT-Bold'" font-size="6.5754">above 5 mph</text>
+</g>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 270 170.3" enable-background="new 0 0 270 170.3" xml:space="preserve">
+<g>
+	<g id="aKI2wh_1_">
+		
+			<image overflow="visible" width="4" height="4" id="aKI2wh_2_" xlink:href="94D7434B7F73CAF.jpg"  transform="matrix(23.5678 0 0 23.5678 60.6693 8.1421)">
+		</image>
+	</g>
+	<rect x="60.7" y="8.1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="94.3" height="94.3"/>
+</g>
+<g>
+	<g>
+		<rect x="164.5" y="8.1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="94.3" height="94.3"/>
+	</g>
+	<text transform="matrix(1 0 0 1 169.5905 23.1091)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">255</text>
+	<text transform="matrix(1 0 0 1 169.5905 46.3264)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">255</text>
+	<text transform="matrix(1 0 0 1 169.694 70.5871)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">242</text>
+	<text transform="matrix(1 0 0 1 170.5671 93.5432)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">251</text>
+	<text transform="matrix(1 0 0 1 193.1677 22.6965)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">106</text>
+	<text transform="matrix(1 0 0 1 194.6169 45.9138)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">131</text>
+	<text transform="matrix(1 0 0 1 193.694 70.1745)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">132</text>
+	<text transform="matrix(1 0 0 1 193.4606 93.1311)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">164</text>
+	<text transform="matrix(1 0 0 1 217.7136 22.6965)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">88</text>
+	<text transform="matrix(1 0 0 1 216.9577 45.9138)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">107</text>
+	<text transform="matrix(1 0 0 1 217.1999 70.1745)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">157</text>
+	<text transform="matrix(1 0 0 1 216.9079 93.1311)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">134</text>
+	<text transform="matrix(1 0 0 1 239.9616 22.6965)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">192</text>
+	<text transform="matrix(1 0 0 1 239.7233 45.9138)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">184</text>
+	<text transform="matrix(1 0 0 1 240.5876 70.1745)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">173</text>
+	<text transform="matrix(1 0 0 1 239.4314 93.1311)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="8.3478">180</text>
+</g>
+<rect x="14.9" y="134.3" fill="none" width="234.2" height="24.3"/>
+<text transform="matrix(1 0 0 1 14.8502 141.3961)"><tspan x="0" y="0" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="10">255, 255, 242, 251, 106, 131, 132, 164, 88, 107, 157, </tspan><tspan x="0" y="11.6" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="10">134, 192, 184, 173, 180</tspan></text>
+<rect x="7.3" y="111" fill="none" stroke="#000000" stroke-miterlimit="10" width="251.3" height="51.1"/>
+<rect x="7.3" y="111" fill="#231F20" width="251.4" height="16.2"/>
+<text transform="matrix(1 0 0 1 106.6427 122.0024)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="8">INPUT VECTOR</text>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="154.3" y1="55.3" x2="164.5" y2="55.3"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="211.6" y1="102.4" x2="211.6" y2="111"/>
+<g>
+	<g id="my32Yf_1_">
+		
+			<image overflow="visible" width="256" height="256" id="my32Yf_2_" xlink:href="94D7434B7F73CAA.jpg"  transform="matrix(0.1715 0 0 0.1715 7.3451 33.3251)">
+		</image>
+	</g>
+	<rect x="15" y="57" fill="none" stroke="#000000" stroke-miterlimit="10" width="5.9" height="5.9"/>
+	<rect x="7.3" y="33.3" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="43.9" height="43.9"/>
+</g>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="51.2" y1="55.3" x2="60.7" y2="55.3"/>
+</svg>

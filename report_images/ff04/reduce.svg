@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 270 126" enable-background="new 0 0 270 126" xml:space="preserve">
+<rect x="200" y="19" fill="#76489D" width="29" height="28"/>
+<rect x="200" y="55" fill="#76489D" width="29" height="28"/>
+<rect x="200" y="91" fill="#76489D" width="29" height="28"/>
+<rect x="12" y="24" fill="#CCCCCC" width="86" height="8"/>
+<rect x="12" y="34" fill="#CCCCCC" width="60.3" height="8"/>
+<rect x="12" y="55" fill="#CCCCCC" width="86" height="8"/>
+<rect x="12" y="65" fill="#CCCCCC" width="86" height="8"/>
+<rect x="12" y="101" fill="#CCCCCC" width="86" height="8"/>
+<rect x="12" y="91" fill="#CCCCCC" width="86" height="8"/>
+<rect x="12" y="75" fill="#CCCCCC" width="28" height="8"/>
+<rect x="12" y="111" fill="#CCCCCC" width="72" height="8"/>
+<rect x="23" y="24" fill="#3767B1" width="22" height="8"/>
+<rect x="38" y="34" fill="#76489D" width="35" height="8"/>
+<rect x="57" y="55" fill="#BD3894" width="24" height="8"/>
+<rect x="23" y="65" fill="#76489D" width="43" height="8"/>
+<rect x="39" y="101" fill="#3767B1" width="44" height="8"/>
+<text transform="matrix(1 0 0 1 190.9603 11.4998)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="10">MENTIONS</text>
+<rect x="172" y="19" fill="#3767B1" width="29" height="28"/>
+<rect x="229" y="19" fill="#BD3894" width="29" height="28"/>
+<text transform="matrix(1 0 0 1 184.6196 36.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">1</text>
+<text transform="matrix(1 0 0 1 213.02 36.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">1</text>
+<text transform="matrix(1 0 0 1 240.0601 36.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">0</text>
+<rect x="172" y="55" fill="#3767B1" width="29" height="28"/>
+<rect x="229" y="55" fill="#BD3894" width="29" height="28"/>
+<text transform="matrix(1 0 0 1 183.1597 72.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">0</text>
+<text transform="matrix(1 0 0 1 213.02 72.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">1</text>
+<text transform="matrix(1 0 0 1 241.52 72.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">1</text>
+<rect x="172" y="91" fill="#3767B1" width="29" height="28"/>
+<rect x="229" y="91" fill="#BD3894" width="29" height="28"/>
+<text transform="matrix(1 0 0 1 184.6196 108.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">1</text>
+<text transform="matrix(1 0 0 1 211.5601 108.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">0</text>
+<text transform="matrix(1 0 0 1 240.0601 108.0073)" fill="#FFFFFF" font-family="'ChambersSansOT-Bold'" font-size="10">0</text>
+<g>
+	<g>
+		<line fill="none" stroke="#CCCCCC" stroke-width="2" stroke-miterlimit="10" x1="112" y1="33" x2="154.7" y2="33"/>
+		<g>
+			<polygon fill="#CCCCCC" points="150.7,36.4 154.1,33 150.7,29.6 153.6,29.6 157,33 153.6,36.4 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#CCCCCC" stroke-width="2" stroke-miterlimit="10" x1="112" y1="69" x2="154.7" y2="69"/>
+		<g>
+			<polygon fill="#CCCCCC" points="150.7,72.4 154.1,69 150.7,65.6 153.6,65.6 157,69 153.6,72.4 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#CCCCCC" stroke-width="2" stroke-miterlimit="10" x1="112" y1="105" x2="154.7" y2="105"/>
+		<g>
+			<polygon fill="#CCCCCC" points="150.7,108.4 154.1,105 150.7,101.6 153.6,101.6 157,105 153.6,108.4 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 28.3302 11.4998)" fill="#231F20" font-family="'ChambersSansOT-Bold'" font-size="10">SENTENCES</text>
+</svg>

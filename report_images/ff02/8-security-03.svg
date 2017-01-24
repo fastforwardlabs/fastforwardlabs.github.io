@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 210 162" enable-background="new 0 0 210 162" xml:space="preserve">
+<g id="grid">
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="19.8" x2="205.2" y2="19.8"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="32.1" x2="205.2" y2="32.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="44.5" x2="205.2" y2="44.5"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="56.9" x2="205.2" y2="56.9"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="69.3" x2="205.2" y2="69.3"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="81.6" x2="205.2" y2="81.6"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="7.2" y1="94" x2="205.2" y2="94"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="193.5" y1="8.1" x2="193.5" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="181.2" y1="8.1" x2="181.2" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="168.8" y1="8.1" x2="168.8" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="156.4" y1="8.1" x2="156.4" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="144" y1="8.1" x2="144" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="131.7" y1="8.1" x2="131.7" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="119.3" y1="8.1" x2="119.3" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="106.9" y1="8.1" x2="106.9" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="94.5" y1="8.1" x2="94.5" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="82.2" y1="8.1" x2="82.2" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="69.8" y1="8.1" x2="69.8" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="57.4" y1="8.1" x2="57.4" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="45" y1="8.1" x2="45" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="32.7" y1="8.1" x2="32.7" y2="107.1"/>
+	<line fill="none" stroke="#DCDDDE" stroke-miterlimit="10" x1="20.3" y1="8.1" x2="20.3" y2="107.1"/>
+</g>
+<g id="Layer_4">
+</g>
+<g id="Layer_1_1_">
+	<g>
+		<circle fill="#EC008B" cx="131.7" cy="44.5" r="6.2"/>
+		<circle fill="#EC008B" cx="181.2" cy="81.6" r="6.2"/>
+	</g>
+	<g>
+		<circle fill="#231F20" cx="32.7" cy="31.4" r="6.2"/>
+		<circle fill="#231F20" cx="57.4" cy="31.4" r="6.2"/>
+		<circle fill="#231F20" cx="45" cy="56.8" r="6.2"/>
+		<circle fill="#231F20" cx="82.2" cy="43.8" r="6.2"/>
+		<circle fill="#231F20" cx="20.3" cy="57.6" r="6.2"/>
+		<circle fill="#231F20" cx="57.4" cy="69.3" r="6.2"/>
+		<circle fill="#231F20" cx="69.8" cy="80.9" r="6.2"/>
+		<circle fill="#231F20" cx="94.5" cy="68.6" r="6.2"/>
+		<circle fill="#231F20" cx="32.7" cy="80.9" r="6.2"/>
+	</g>
+	
+		<text transform="matrix(1 0 0 1 34.6866 132.3739)" fill="#231F20" font-family="'ChambersSansOT-BoldItalic'" font-size="13.0234">typical</text>
+	
+		<text transform="matrix(1 0 0 1 32.4863 148.0489)" fill="#231F20" font-family="'ChambersSansOT-BoldItalic'" font-size="13.0234">activity</text>
+	
+		<text transform="matrix(1 0 0 1 134.7021 132.3739)" fill="#EC008C" font-family="'ChambersSansOT-BoldItalic'" font-size="13.0234">possible</text>
+	
+		<text transform="matrix(1 0 0 1 130.3027 148.0489)" fill="#EC008C" font-family="'ChambersSansOT-BoldItalic'" font-size="13.0234">attackers</text>
+</g>
+<g id="Layer_3">
+	
+		<circle fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6,6" cx="56" cy="57.6" r="49.5"/>
+</g>
+</svg>
