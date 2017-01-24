@@ -1,4 +1,12 @@
 <html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
   <body>
   </body>
   <script
@@ -6,17 +14,78 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script type="text/javascript">
-    var folder = "ff01/";
 
-    $.ajax({
-        url : folder,
+    const base_api_dir = "https://api.github.com/repos/fastforwardlabs/fastforwardlabs.github.io/contents/report_images";
+    const rel_base_dir = "/report_images"
+
+    const $body = $('body')
+
+    const storage_buster = 1
+    let dir_array = []
+    let dir_array_store_name = 'dir_array_' + storage_buster
+
+    let dir_array_data = localStorage.getItem(dir_array_store_name)
+    if (dir_array_data) {
+      dir_array = JSON.parse(dir_array_data)
+      ListDirs(dir_array)
+    } else {
+      $.ajax({
+        url : base_api_dir,
         success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                if( val.match(/\.(jpe?g|png|gif|svg)$/) ) {
-                    $("body").append( "<img src='"+ folder + val +"'>" );
-                }
-            });
+          $.each(data, function(i) {
+            if (this.type == 'dir') {
+              dir_array.push(this.name)
+            }
+          })
+          localStorage.setItem(dir_array_store_name, JSON.stringify(dir_array))
+          ListDirs(dir_array)
         }
-    });
+      });
+    }
+
+    function ListDirs(array) {
+      array.reverse()
+      let $jumper = $('<div id="jumper" style="max-width: 500px; margin: 2rem auto 0;"><div>Jump to:</div></div>')
+      $body.append($jumper)
+      $.each(array, function(i) {
+        $jumper.append(`
+          <div>
+            <h3><a href="#${this}">${this}</a></h3>
+          </div>
+        `)
+        $body.append('<div id="' + this + '" class="dir-container ' + this + '" style="padding: 1rem; margin: 0 auto; max-width: 500px; position: relative;"><h1 class="dir-title">' + this + '</h1></div>')
+        getDirContents(this)
+      })
+    }
+
+    function getDirContents(name) {
+      let dir_data_storage_name = name + '_' + storage_buster
+      let dir_data = localStorage.getItem(dir_data_storage_name)
+      if (dir_data) {
+        listDirContents(name, JSON.parse(dir_data))
+      } else {
+        $.ajax({
+          url : base_api_dir + '/' + name,
+          success: function (data) {
+            localStorage.setItem(dir_data_storage_name, JSON.stringify(data))
+            listDirContents(name, data)
+          }
+        })
+      }
+    }
+
+    function listDirContents(name, array) {
+      let $dir_div = $('.' + name)
+      $.each(array, function(i) {
+        $dir_div.append(`
+          <div style="margin-bottom: 2rem;">
+            <div style="margin-bottom: 1rem;">${this.name}</div>
+            <img style="max-width: 100%; margin-bottom: 1rem" src=${rel_base_dir}/${name}/${this.name} />
+            <hr />
+          </div>
+        `)
+      })
+    }
+
   </script>
 </html>
