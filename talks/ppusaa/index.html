@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Probabilistic Programming</title>
+        <meta name="robots" content="noindex" />
+        <meta charset="utf-8">
+        <style>
+        @import url(./fonts.css);
+        body { 
+            font-family: 'Roboto';
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather';
+        }
+        h3, h4 {
+            font-weight: normal;
+        }
+        p:first-child {
+            margin: 0;
+        }
+        li {
+            margin-top: 1ex;
+        }
+        .full-width {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .full-height {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .full-bleed {
+            padding: 0;
+        }
+        .remark-slide-number {display: none;}
+        .column:first-of-type {float:left}
+        .column:last-of-type {float:right}
+        .split-30 .column:first-of-type {width: 30%}
+        .split-30 .column:last-of-type {width: 70%}
+        .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+        a { color: blue; }
+        </style>
+    </head>
+<body>
+<textarea id="source">
+
+class: center, middle, full-bleed
+
+<img src="img/iso-cover.png" width="40%">
+
+## Probabilistic Programming
+
+#### Mike Lee Williams • [@mikepqr](http://twitter.com/mikepqr) • <mike@fastforwardlabs.com> • [fastforwardlabs.com/talks/ppusaa](http://www.fastforwardlabs.com/talks/ppusaa)
+
+#### Fast Forward Labs • [@fastforwardlabs](https://twitter.com/fastforwardlabs) • [fastforwardlabs.com](http://www.fastforwardlabs.com)
+
+???
+
+---
+
+class: full-bleed, center, middle
+
+![](img/ff05.gif)
+
+---
+
+### Bayesian inference is great in theory...
+
+ - Quantify risk
+ - Insert institutional knowledge
+ - Interpretability
+ - Online learning
+
+### but it's slow if you're not careful.
+
+### Being careful requires cleverness...
+ 
+ - Metropolis Hastings
+ - Hamiltonian Monte Carlo with automatic differentiation and NUTS
+ - ADVI
+
+### the cleverness is now ready to abstracted away 😎
+
+---
+
+class: center, middle, full-bleed
+
+![](img/ab.png)
+
+???
+
+Let's start with a story. I conduct this A/B test and get these results.
+
+Clearly layout B is better.
+
+If I had a million visitors to both layouts then yes, very probably.
+
+But what if I had 25 visitors to layout A, and 20 visitors to layout B. Are you
+confident that these results would generalize to the real world? And what if it
+costs you $100k to deploy the change? Do you want to risk it?
+
+---
+
+class: center, middle, full-bleed
+
+![](img/baddata.png)
+
+???
+
+This is the central problem of data analysis.
+
+I don't care how big your data is. It's still bad.
+
+Measurement error, incomplete.
+
+Given that's a fact of live. We need a way to quantify uncertainty.
+
+And what if layout A has been running for weeks already before the test.
+We need a way to incorporate that knowledge into our analysis.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/bayesrule.png)
+
+???
+
+This is Bayes rule. The only equation I'm going to show today.
+
+It's the central idea of data analysis. It's extremely simple.
+
+The thing on the left is the probability a hypothesis is true, given our data.
+That hypothesis might be "the conversion fraction for layout A is 3.57%". This
+is the posterior distribution, and it's almost always the thing we want to
+know. We can use it to answer questions like "is layout A better than layout
+B".
+
+How do we get it? From the things on the right.
+
+Far right is the likelihood. That is a thing you can calculate. It says: what
+if we _assumed_ the hypothesis were true. How likely is it we would have got
+the observations we in fact got.
+
+And the other thing on the right is the _prior_. That's how likely we though
+the hypothesis was prior to our collection of data.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/layouta.png)
+
+???
+
+How do we use this rule? Let's start with layout A. 
+
+Let's say layout A had been running for a few days, and we suspected it's
+conversion fraction was around 3.5%. That's the prior on the left. We're not
+ruling out 1% or 5%, but 3.5% is our best guess.
+
+Note here: we're incorporating institutional knowledge.
+
+Now we use Bayes rule to update the prior in the light of our data, to get the
+posterior.
+
+The right hand plot is the probability of each possible conversion fraction for
+layout A given the data, which was 4 conversions out of 100 visitors.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/layoutb.png)
+
+???
+
+Maybe layout B is a new layout. We had no idea what it's conversion fraction
+would be, so we use what's called a uninformative prior. We assume every
+possible value between 0 and 1 is equally likely.
+
+You can still use this approach when you have no institutional knowledge!
+
+Now we use Bayes rule to update the prior in the light of our data, to get the
+posterior.
+
+The right hand plot is the probability of each possible conversion fraction for
+layout B given the data, which was 2 out of 50.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/compareposteriors.png)
+
+???
+
+Finally to answer the question is layout A or layout B better, we compare the
+two posteriors.
+
+What's the answer? Layout A or layout B? We can't say!
+
+What we can say is precisely how likely it is that layout B is better than
+layout A. I think it's about 60% in this case.
+
+So if it costs you hundreds of thousands of dollars to change your website,
+you're probably not confident enough.
+
+You don't only have the ability to say how likely possibility 1 is. You can say
+how likely all the other possibilities are! In that way you can quantify risk.
+
+This is the first huge advantage of this approach. We can assign probabilities
+to all possible outcomes. If we don't like what we can see, we can run the
+experiment for longer, until we're more confident. And if we can't run the
+experiment for longer, we can decide how much to bet, now we know the odds.
+
+That's the power of having the full probabilistic picture. The ability to
+quantify exactly how likely every possibility is, is not just a slight
+improvement. It opens up qualitatively new kinds of products.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/online.png)
+
+???
+
+I'm now going to enumerate a couple of other advantages of this approach.
+
+The first is that it naturally incorporates the idea that you become more
+certain as you get more data.
+
+So if we run the A/B test for longer our posterior becomes _narrower_. We
+assign more and more probabiltiy to a narrower and narrower region. We become
+more confident.
+
+In fact, you can take this idea to the limit and feed in data one example at a
+time. This is _online learning_. At any point in time, we have a full picture
+of what we know, and that picture is getting more and more complete.
+
+This is great for bootstrapping a startup that wants to use machine learning,
+but doesn't have any customers. In the early days, when you don't have much
+data, your predictions will look like your prior. They may not be perfect, but
+it's a start. As you gather data, your model will evolve to better reflect your
+customers' behaviour and become more confident.
+
+
+---
+
+class: center, middle, full-bleed
+
+![](img/hierarch.png)
+
+???
+
+The next advantage is that it allows hierarchical modeling.
+
+This is particularly useful when you have segmented data, and some of the
+segments are empty.
+
+So if you have users in different towns and countries, and one week you happen
+to have no visitors from Philadelphia. But you do have visitors from New York.
+
+You can set up a hierarchical model that allows you to fill in the blanks, and
+take advantage of the fact that people from Philadelphia are demographically
+more similar to people from New York than to people from Kuala Lumpar.
+
+In the absence of direct measurements, you've got the next best thing.
+
+I'll show a prototype we built in a second that depends critically on this
+idea.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/multiple.png)
+
+???
+
+Another advantage is you can use multiple datasets.
+
+Let's say we're an insurance company, and we want to know the life expectancy
+of all Americans.
+
+We have data on our own customers, and clearly their health outcomes depend on
+this average American life expectancy.
+
+But we have access to another dataset: Medicare, which makes public statistics
+that also depend on the thing we want to measure.
+
+We can _combine_ these two datasets to learn as much as possible using the
+Bayesian approach.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/inference.png)
+
+???
+
+Finally there's interpretability.
+
+Bayesian inference requires you to write down a model that specifies how your
+data was made. You don't know the values of the parameters until you do the
+inference, but you the structure of their relation.
+
+Given you created the model it is _interpretable by construction_.
+
+You will always have an answer to the question: why was a particular prediction
+made. 
+
+This can be used to create actionable insights. The model says this customer is
+going to churn for reason X, so let's change X about that customer.
+
+And interpretability is in some cases not just nice to have, it's a legal
+requirement!
+
+---
+
+class: center, middle, full-bleed
+
+![](img/sampling.png)
+
+???
+
+That all sounds great, right? So what's the problem.
+
+Generally speaking, it's not possible to use the equation directly. For
+interesting problems modeled in realistic ways, the calculations are expensive
+or impossible. So we solve problems by simulation.
+
+We try a value, simulate the observed data, compare that to the real
+observations, and if they look similar, that value was probably a pretty good
+guess. If it doesn't, we discard the value and try again. 
+
+This is rejection sampling. We do this lots of times, and build up a picture of
+what the good guesses are. And it works. It's how I made the plots for the A/B
+test we just looked at.
+
+The problem is if we do it this way we reject an awful lot!
+
+To see why: imagine we roll a fair die ten times and get the data on the left.
+We don't know the die is fair so we use the rejection sampling algorithm.
+
+We trial different probabilities for each number and simulate ten rolls given
+those trial values. Let's say our first guess happens to be correct, that the
+die is indeed fair.
+
+We simulate ten rolls with this guess. Even though our guess is correct, it is
+_extremely_ unlikely that we will get the same rolls as our real observations.
+So even though our guess is correct, most of the time we'll reject it.
+
+It's going to take a lot of attempts to get a full picture of the fairness of
+the die.
+
+---
+
+## Metropolis Hastings
+
+```python
+#!/usr/bin/env python3
+import numpy as np
+import itertools as it
+
+
+def sampler_mh(dist, x0=0, burnin=1000, alpha=0.5, verbose=False):
+    x = x0
+    samples_accept = 0
+    for i in it.count(1):
+        candidate = np.random.normal(loc=x, scale=alpha)
+        candidate_prob = min([1.0, dist(candidate) / dist(x)])
+        accept = np.random.rand()
+        if accept < candidate_prob:
+            samples_accept += 1
+            x = candidate
+        if i > burnin:
+            yield x, i, samples_accept
+```
+
+???
+
+If rejection sampling is too slow, the next thing we can try is MH. It's only a
+few lines of code. 
+
+Conceptually: the sampler chooses a value for the parameter and returns that.
+To get the next sample, it evaluates the probability for that choice, and also
+in some other location.
+
+If the other location is higher probability, the sampler tosses a coin to
+decide whether to move over to that new location for the next round.
+
+For this talk, the details aren't important: what is important is that this
+algorithm guarantees that the sampler will generally move towards values that
+are higher probability.
+
+Spending time in these locations makes the acceptance rate _much_ higher!
+Mission accomplished. But sometimes even this is too slow.
+
+---
+
+class: center, middle
+<div style="text-align:center">
+<img src="img/hmc.png"><img src="img/autodiff.png">
+</div>
+
+???
+
+Hamiltonian Monte Carlo is the latest and greatest.
+
+It's _much_ faster at finding the interesting, high probability bits of the
+problem. It's practical even if there are thousands of parameters.
+
+It does this it at a cost: it needs to know not just the probability of a given
+choice of parameters, but also the rate of change of that probability.
+
+That's the gradient. You get the gradient of a function by differentiating. If
+you remember your calculus, you'll remember that this wasn't always an easy
+thing to do, and it was rarely fun.
+
+The solution is automatic differentiation.
+
+I promised there would be only one equation in this talk. I lied. Here's two
+more.
+
+They may look simple, but they're actually pretty complicated, because `e` is a
+thing called an abstract number.
+
+What this approach allows, however, is for you to leave the calculus to the
+computer. If you give it the function, it's able to efficiently and accurately
+evaluate its derivative, or gradient.
+
+That allows Hamiltonian Monte Carlo to explore the probability space
+strategically, rather than at random as in rejection sampling, or semi-randomly
+as in Metropolis Hastings.
+
+Hamiltonian Monte Carlo was further improved a couple of years ago by NUTS (or
+the No U-Turn Sampler). That makes it more _robust_, which is the nice way of
+saying "idiot proof". 
+
+Thanks to autodiff you nonger have to differentiate a function to use HMC. 
+
+And thanks to NUTS, you no longer have to tune sensitive parameters to get it
+to work.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/advi.png)
+
+???
+
+And this is variational inference by automatic differentiation (ADVI), the new
+hotness. Computational statisticians are still trying to figure out to what
+extent the results can be trusted, but it's blazingly fast.
+
+---
+
+### Bayesian inference is great in theory...
+
+ - Quantify risk
+ - Insert institutional knowledge
+ - Interpretability
+ - Online learning
+
+--
+
+### but it's slow if you're not careful.
+
+--
+
+### Being careful requires cleverness...
+ 
+ - Metropolis Hastings
+ - Hamiltonian Monte Carlo with automatic differentiation and NUTS
+ - ADVI
+
+--
+
+### the cleverness is now ready to abstracted away 😎
+
+---
+
+class: center, middle, full-bleed
+
+![](img/stan.png)![](img/pymc3.png)
+
+???
+
+These complexities and more get abstracted away in a programming paradigm
+called probabilistic programming.
+
+In these systems, industrial strength implementations of the latest and
+greatest inference algorithms are baked in to the language as one-liners. This
+is similar to the way a fiddly algorithm like back propagation is available in
+deep learning frameworks like Tensorflow or Torch.
+
+All that's left to do for the user of these systems is specify the model, i.e.
+describe the random process that, for a given choice of parameters, generates
+the observations.
+
+For a problem like A/B testing that's very simple. There's an unknown
+conversion probability, and each visitor converts with that probability.
+
+For more complicated problems it can be trickier to specify the model.
+Probabilistic programming languages make things easier by including fundamental
+ideals like probability distributions and random variables as primitives of the
+language.
+
+Now at this point, if you're a certain age, say my age or up, you may be saying
+this sounds a lot like BUGS (or WinBUGS). And yes, they were early
+probabilistic programming systems.
+
+But what's changed in the last 2 or so years with the arrival of Stan and pymc3
+is that HMC is now widely available. And that means that internet-scale
+problems are now tractable. 
+
+---
+
+class: middle
+
+```C
+data {
+    int<lower=0> N;
+    int<lower=0> N_features;
+    matrix[N, N_features] X;
+    int<lower=0,upper=1> repaid[N];
+}
+parameters {
+    vector[N_features] p_coef;
+}
+model {
+    vector[N] p;
+    p_coef ~ cauchy(0, 2.5);
+    p = logit(X * p_coef);
+    repaid ~ bernoulli(p);
+}
+```
+
+???
+
+What does working with these languages look like?
+
+Well, here's almost the complete Stan listing for a product I'm going to show
+you in a second that predicts loan repayment based on income, outstanding debt,
+loan purpose, etc.
+
+And yes, it's very short! This is a side-product of distributions and RVs being
+primitives of the language.
+
+---
+
+class: middle
+
+```python
+X = pd.read_csv('mydata.csv')
+repaid = X['repaid']
+X = X.drop('repaid', axis=1)
+data = {'N': len(X),
+        'N_features': len(X.columns),
+        'X': X.values,
+        'repaid': repaid}
+
+import pystan
+with open('model.stan') as f:
+    model_code = f.read()
+model = pystan.StanModel(model_code=model_code)
+
+fit = model.sampling(data)
+posterior = fit.extract()
+```
+
+???
+
+You write this Stan code. Then you write some data munging code in the general
+purpose language of your choice (Python in our case), and you call Stan from
+within that language.
+
+Stan translates the stan code to C++, which it compiles and runs for you on the
+data you feed in from your glue code.
+
+If that sounds a bit janky, I am not necessarily going to disagree with you.
+But it works!
+
+---
+
+class: full-bleed
+
+<img width="100%" src="img/loans.png">
+
+---
+
+class: full-bleed
+
+<img width="100%" src="img/nycrealestate.png">
+
+---
+
+class: full-bleed
+
+<img width="100%" src="img/realestatezoom.png">
+
+---
+
+## Stan vs pymc3 vs the others
+
+ - Stan is fine for offline analysis, but it's very awkward to productize.
+
+ - pymc3 is not research code, which means it's half a step behind
+   algorithmically, but the difference is much less than it used to be, and it
+   has in our view made design decisions that make it much easier to build
+   products with.
+
+???
+
+The inevitable disconnect between its
+output and what you use that output for (e.g. a web app) makes iterative
+development, at best, twice as slow.
+
+ - If you like Clojure and functional programming check out Anglican
+
+ - If you like Tensorflow and neural networks check out Edward
+
+ - If you like Scala check out Figaro
+
+---
+
+## Facebook Prophet (released 2017-02-23)
+
+![](img/prophet.png)
+
+---
+
+![](img/mauna.png)
+
+---
+
+## Use probabilistic programming
+
+--
+
+When you
+
+ - want to make use of **institutional knowledge**
+--
+
+ - have several **heterogeneous datasets**
+--
+
+ - need to **quantify the probability of all possibilities**, not just determine
+   which is most likely
+--
+
+ - want to do **online learning** (i.e., continually update your model as data
+   arrives)
+--
+
+ - want to do **active learning** (i.e., gather more information until your
+   predictions reach some threshold of confidence)
+--
+
+ - want to use data to **decide if a more complicated model is justified**
+--
+
+ - need to **explain your decisions** to customers or regulators
+--
+
+ - have **sparse data** with a shared or hierarchical structure
+
+---
+
+## Further reading
+
+#### Bayesian inference
+
+ - [Understanding Bayes: How to become a Bayesian in eight easy
+   steps](https://alexanderetz.com/2016/02/07/understanding-bayes-how-to-become-a-bayesian-in-eight-easy-steps/)
+
+ - _Think Bayes_, Allen Downey, O'Reilly
+
+ - _Data Analysis Using Regression and Multilevel/Hierarchical Models_, Gelman
+   and Hill, CUP
+
+#### Probabilistic programming
+
+ - Our blog post on [the algorithms behind probabilsitic
+   programming](http://blog.fastforwardlabs.com/2017/01/30/the-algorithms-behind-probabilistic-programming.html)
+
+ - [The history of pymc3](http://stronginference.com/pymc3-release.html)
+
+#### Both!
+
+ - The Fast Forward Labs report!
+
+---
+
+class: center, middle, full-bleed
+
+<img src="img/iso-cover.png" width="40%">
+
+## Probabilistic Programming
+
+#### Mike Lee Williams • [@mikepqr](http://twitter.com/mikepqr) • <mike@fastforwardlabs.com> • [fastforwardlabs.com/talks/ppusaa](http://www.fastforwardlabs.com/talks/ppusaa)
+
+#### Fast Forward Labs • [@fastforwardlabs](https://twitter.com/fastforwardlabs) • [fastforwardlabs.com](http://www.fastforwardlabs.com)
+
+???
+
+Last slide
+
+    </textarea>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+    var slideshow = remark.create({
+              ratio: '16:9',
+    });
+    </script>
+  </body>
+</html>
+<!-- vim: set filetype=markdown: --> 
