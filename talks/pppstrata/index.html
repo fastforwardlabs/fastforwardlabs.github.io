@@ -56,11 +56,28 @@ class: center, middle, full-bleed
 
 ???
 
+Welcome!
+
+Use the arrow keys to move forward and backward.
+
+Hit `p` on your keyboard to toggle the presenter notes on/off.
+
+
 ---
 
 class: full-bleed, center, middle
 
 ![](img/ff05.gif)
+
+???
+
+Fast Forward Labs builds product prototypes and writes reports about advances
+in machine intelligence.
+
+You might want to become a subscriber!
+
+We recently looked into probablistic programming. Here are some of the
+highlights.
 
 ---
 
@@ -80,6 +97,12 @@ class: full-bleed, center, middle
  - ADVI
 
 ### the cleverness is now ready to abstracted away 😎
+
+???
+
+This talk is about probablistic programming. But before I introduce it, I'm
+going to spend the first 2/3 of the talk explaining the problems we need to
+solve. Here's the outline of that first bit.
 
 ---
 
@@ -320,10 +343,10 @@ requirement!
 
 ---
 
-class: middle
+### Approximate Bayesian Computation
 
 ```python
-def abayes(data, prior_sampler, simulate, compare):
+def sampler_abc(data, prior_sampler, simulate, compare):
     '''Yield samples from the posterior by Approximate Bayesian Computation.'''
     for p in prior_sampler:
         if compare(simulate(p), data):
@@ -344,103 +367,6 @@ Computation.
 This is the entire algorithm. There was a week long conference about it in the
 United States last month, but the basic idea is one line of code.
 
-How do we actually use it to solve a concrete problem?
-
----
-
-class: middle
-
-```python
-import random
-
-n_b, obs_b =  400, 20  # 400 visitors, 20 conversions
-
-
-def uniform_prior_sampler():
-    '''Yield stream of random numbers in interval (0, 1).'''
-    while True:
-        yield random.random()
-
-
-def simulate_conversion(p, n_visitors=n_b):
-    '''Returns number of vistors who convert given conversion fraction p.'''
-    return sum(random.random() < p for _ in range(n_visitors))
-
-
-def compare_conversion(obs1, obs2):
-    '''Return true if two observations are the same.'''
-    return obs1 == obs2
-
-
-posterior_sampler_b = abayes(obs_b,
-                             uniform_prior_sampler(),
-                             simulate_conversion,
-                             compare_conversion)
-
-```
-
-???
-
-Our abc function requires:
- - data
- - a generator that yields a stream of samples from the prior
- - a function to run a simulation, given a sample from the prior
- - a function to compare the simulation to the observation
-
-Here are those functions for the B of our A/B test (a uniform prior, 400
-visitors, 20 conversions).
-
-Now we have a generator `posterior_sampler_b` that is pregnant with
-possibility.
-
----
-
-class: middle
-
-```python
->>> from itertools import islice
->>> next(posterior_sampler_b)
-0.04223951410146609
-
->>> from tqdm import tqdm
->>> samples = []
->>> for i in tqdm(range(500)):
-...     samples.append(next(posterior_sampler_b))
- 47%|██████████████████▎                    | 234/500 [00:07<00:10, 25.84it/s]
-
->>> plt.hist(samples, normed=True)  # plot pdf
-```
-![](img/abayes_posterior.png)
-
-???
-
-Here's how you get 3 samples from the generator.
-
-Obviously to build up a complete picture you need more, so here's 500. I'm
-using `tqdm` to visualize the progress of the sampler.
-
-Note that we're getting 20-30 samples per second.
-
-This, by the way, is the Beta distribution. This is where it comes from!
-
----
-
-class: middle
-
-```python
->>> n_b *= 2
->>> obs_b *= 2
->>> for i in tqdm(range(500)):
-...     samples.append(next(posterior_sampler_b))
- 47%|██████████████████▎                    | 234/500 [00:05<01:09,  6.62it/s]
-```
-
-???
-
-That all sounds great, right? 
-
-It's how I made the plots I showed you earlier.
-
 The problem is that compare function. To accept a sample we require exact
 agreement between the simulation and the observation.
 
@@ -448,23 +374,21 @@ Even if our trial value of the conversion fraction is "correct", the
 probability of the simulation yielding exactly 20 conversions out of 400 is
 tiny.
 
-What if we make the experiment twice as big. With 800 visitors and 40
-conversions we get only 5 to 10 samples per second!
+---
 
-For A/B tests, our algorithm is Θ(n^2)! This is disastrous!
+class: center, middle
 
-One fix is to make the comparison less exact, i.e. require only approximate
-agreement. I'll leave that to you to try, and think through the consequences
-for your posterior. This is basically the academic field of ABC in a nutshell.
+![](img/marchmadness.png)
 
-But for more complicated problems, with more than one parameter it gets even
-worse. Exploring a high-dimensional space at random you are spectacularly
-unlikely to find the high probability regions, and the high probability regions
-aren't very high probability!
+???
+
+It's the same thing in your March Madness bracket. Even the most likely outcome
+is still, in an absolute sense fantastically unlikely.
 
 ---
 
-class: middle
+### Metropolis Hastings
+
 
 ```python
 import numpy as np
@@ -487,8 +411,8 @@ def sampler_mh(dist, x0=0, burnin=1000, alpha=0.5, verbose=False):
 
 ???
 
-If rejection sampling is too slow, the next thing we can try is MH. It's only a
-few lines of code. 
+If ABC is too slow, the next thing we can try is MH. It's only a few lines of
+code. 
 
 Conceptually: the sampler chooses a value for the parameter and returns that.
 To get the next sample, it evaluates the probability for that choice, and also
@@ -506,14 +430,9 @@ Mission accomplished. But sometimes even this is too slow.
 
 ---
 
-class: center, middle
+### Hamiltonian Monte Carlo with autodiff and NUTS
 
-![](img/hmc.png)
-
-<h3>
-<em>f(x) = y<br />
-f(x + ze) = y + f'(z)e</em>
-</h3>
+<img src="img/hmc.png" width="30%">
 
 ???
 
@@ -556,9 +475,9 @@ to work.
 
 ---
 
-class: center, middle, full-bleed
+### Automatic Differentiation Variational Inference
 
-![](img/advi.png)
+<img src="img/advi.png" width="70%">
 
 ???
 
@@ -632,15 +551,20 @@ problems are now tractable.
 class: middle
 
 ```C
+/* define data */
 data {
     int<lower=0> N;
     int<lower=0> N_features;
     matrix[N, N_features] X;
     int<lower=0,upper=1> repaid[N];
 }
+
+/* define the thing you want to know */
 parameters {
     vector[N_features] p_coef;
 }
+
+/* declare how the data is related to the thing you want to know */
 model {
     vector[N] p;
     p_coef ~ cauchy(0, 2.5);
@@ -785,6 +709,8 @@ seasonal forecasting.
 
 ---
 
+class: full-bleed, center, middle
+
 ![](img/mauna.png)
 
 ???
@@ -811,24 +737,24 @@ When you
 
 ---
 
-## Homework!
+## Office Hours
 
- - Use `abayes()` to implement online learning
- - Implement a fuzzy comparison to speed up `abayes()`
- - Use it to solve the German Tank Problem (and check you get the analytic
-   solution)
+ - O'Reilly booth, 2.40-3.20pm today!
+ - Probabilistic programming, text summarization, applied research, Los Angeles
 
 ## Further reading
 
- - NYC real estate prototype, [www.fastforwardlabs.com/pre](http://www.fastforwardlabs.com/pre/)
+ - Play with the NYC real estate prototype, [www.fastforwardlabs.com/pre](http://www.fastforwardlabs.com/pre/)
 
  - [Understanding Bayes: How to become a Bayesian in eight easy
    steps](https://alexanderetz.com/2016/02/07/understanding-bayes-how-to-become-a-bayesian-in-eight-easy-steps/)
 
- - Our blog post on [the algorithms behind probabilsitic
+ - [The algorithms behind probabilsitic
    programming](http://blog.fastforwardlabs.com/2017/01/30/the-algorithms-behind-probabilistic-programming.html)
 
  - [The history of pymc3](http://stronginference.com/pymc3-release.html)
+
+ - Coming soon: _Probabilistic Programming From Scratch_ (O'Reilly)
 
 ---
 
@@ -844,7 +770,6 @@ class: center, middle, full-bleed
 
 ???
 
-Last slide
 
     </textarea>
     <script src="remark-latest.min.js">
