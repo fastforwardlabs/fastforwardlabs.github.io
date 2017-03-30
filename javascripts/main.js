@@ -3,11 +3,11 @@ var rotation_speed = ((Math.PI/180)/300);
 // requestAnimationFrame() shim by Paul Irish
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
 window.requestAnimFrame = (function() {
-  return  window.requestAnimationFrame       || 
-      window.webkitRequestAnimationFrame || 
-      window.mozRequestAnimationFrame    || 
-      window.oRequestAnimationFrame      || 
-      window.msRequestAnimationFrame     || 
+  return  window.requestAnimationFrame       ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame    ||
+      window.oRequestAnimationFrame      ||
+      window.msRequestAnimationFrame     ||
       function(/* function */ callback, /* DOMElement */ element){
         window.setTimeout(callback, 1000 / 60);
       };
@@ -28,10 +28,10 @@ var cancelRequestAnimFrame = (function() {
  * @param {int} delay The delay in milliseconds
  */
 window.requestInterval = function(fn, delay) {
-  if( !window.requestAnimationFrame       && 
-    !window.webkitRequestAnimationFrame && 
+  if( !window.requestAnimationFrame       &&
+    !window.webkitRequestAnimationFrame &&
     !(window.mozRequestAnimationFrame && window.mozCancelRequestAnimationFrame) && // Firefox 5 ships without cancel support
-    !window.oRequestAnimationFrame      && 
+    !window.oRequestAnimationFrame      &&
     !window.msRequestAnimationFrame)
       return window.setInterval(fn, delay);
   var start = new Date().getTime(),
@@ -67,10 +67,10 @@ window.clearRequestInterval = function(handle) {
  * @param {int} delay The delay in milliseconds
  */
 window.requestTimeout = function(fn, delay) {
-  if( !window.requestAnimationFrame       && 
-    !window.webkitRequestAnimationFrame && 
+  if( !window.requestAnimationFrame       &&
+    !window.webkitRequestAnimationFrame &&
     !(window.mozRequestAnimationFrame && window.mozCancelRequestAnimationFrame) && // Firefox 5 ships without cancel support
-    !window.oRequestAnimationFrame      && 
+    !window.oRequestAnimationFrame      &&
     !window.msRequestAnimationFrame)
       return window.setTimeout(fn, delay);
   var start = new Date().getTime(),
@@ -970,147 +970,136 @@ function revolveGraph() {
 
 var startTopicGraph = function() {
 
-var api = "http://techgraph.fastforwardlabs.com/api/";
+  $.get('/techgraph/techgraph.yaml', function(data) {
+    let json = YAML.parse(data);
+    let topics = [];
+    let links = [];
 
-  d3.json(api + "topics", function(error, response) {
-
-    var topics = response;
-
-    d3.json(api + "links", function(error, response) {
-
-      var clusters = [[]];
-
-      function prepLink(link) {
-        for (var j = 0; j < topics.length; j++) {
-          var node = topics[j];
-          if (node._id == link.source_id) {
-            link.source = j;
-          } else if (node._id == link.target_id) {
-            link.target = j;
-          }
-        }
-        return link;
-      }
-
-      // Prep likns
-      var links_raw = response;
-      var links = [];
-      for (var i=0; i<links_raw.length; i++) {
-        var link = links_raw[i];
-        link = prepLink(link);
-        links.push(link);
-      }
-
-      // Basic setup
-      var svg_width = width;
-      var svg_height = height;
-
-      // Set x and y for topics so they spring out
-      for (var i=0; i<topics.length; i++) {
-        var topic = topics[i];
-        topic.x = (Math.random() * 100) - 100 + svg_width/2;
-        topic.y = (Math.random() * 100) - 100 + svg_height/2;
-      }
-
-      // Set up SVG
-      var svg = d3.select("#techgraph-holder")
-        .append("svg")
-        .attr('id', "techgraph")
-        .attr("width", svg_width)
-        .attr("height", svg_height);
-
-      // Set up labels
-      var label_sheet = d3.select("#techgraph-holder")
-        .append("div")
-        .classed("label_sheet", true)
-
-      function drawLinks() {
-        link_lines = svg.selectAll(".link", function(d) { return d._id; }).data(links);
-        link_lines.enter()
-          .append("line")
-          .attr('class',"link")
-        link_lines.exit().remove();
-      }
-
-      function drawNodes() {
-        labels = label_sheet.selectAll('.label_holder').data(nodes, function(d) { return d._id; });
-        labels.exit().remove();
-        var lEnter = labels.enter()
-          .append("div")
-          .attr("class", function(d) { if (d.fixed) {
-              return "spacer";
-            }
+    function nodePusher(data, parent) {
+      if (typeof data === 'object') {
+        if (Array.isArray(data)) {
+          data.forEach(function(child, i) {
+            nodePusher(child, parent)
           })
-          .classed("label_holder",true)
-          .attr("id", function(d) { return d._id })
-        var circle = lEnter.append("div")
-          .classed("circle", true)
-        var label = lEnter.append("div")
-          .classed("label",true)
-          .text(function(d) { return d.name; })
-      }
-
-      function setUp() {
-        force
-          .nodes(nodes)
-          .links(links)
-          .gravity(0.06)
-          .size([svg_width, svg_height])
-          .charge(function(d) {
-            if (d.fixed) {
-              var width = $window.width();
-              if (width < 500) {
-                return -1000
-              } else if (width < 340) {
-                return -600
-              } else {
-                return -2000
-              }
-            } else {
-              return -600
-            }
-          })
-          .linkDistance(120);
-      }
-
-      function update() {
-        drawLinks();
-        drawNodes();
-        force.start();
-      }
-
-      // Spacer node for logo
-      topics.push({
-        _id: "logo_spacer_0",
-        name: "spacer",
-        x: (svg_width/2),
-        y: (svg_height/2),
-        fixed: true
-      });
-
-      nodes = topics;
-      setUp();
-      update();
-
-      $(window).resize(function() {
-        // If mobile donot change on height change
-        if (no_scroll_events) {
-          if ($window.width() != svg_width) {
-            svg_width = $window.width();
-            svg_height = $window.height();
-            force.size([svg_width, svg_height]);
-            svg
-              .attr("width", svg_width)
-              .attr("height", svg_height);
-            // Spacer is last, kind of messy
-            var spacer = nodes[nodes.length-1];
-            spacer.x = svg_width/2;
-            spacer.px = svg_width/2;
-            spacer.y = svg_height/2;
-            spacer.py = svg_height/2;
-            update();
-          }
         } else {
+          Object.keys(data).forEach(function(key, i) {
+            topics.push(key);
+            if (parent) links.push({source: parent, target: key})
+            nodePusher(data[key], key)
+          })
+        }
+      } else {
+        if (parent) links.push({source: parent, target: data})
+        topics.push(data);
+      }
+    }
+
+    nodePusher(json, false)
+    links.forEach(function(link, i) {
+      link.source = topics.indexOf(link.source);
+      link.target = topics.indexOf(link.target);
+    });
+
+    topics = topics.map(function(n) { return {id: n.toLowerCase()} })
+
+    var clusters = [[]];
+
+    // Basic setup
+    var svg_width = width;
+    var svg_height = height;
+
+    // Set x and y for topics so they spring out
+    for (var i=0; i<topics.length; i++) {
+      var topic = topics[i];
+      topic.x = (Math.random() * 100) - 100 + svg_width/2;
+      topic.y = (Math.random() * 100) - 100 + svg_height/2;
+    }
+
+    // Set up SVG
+    var svg = d3.select("#techgraph-holder")
+      .append("svg")
+      .attr('id', "techgraph")
+      .attr("width", svg_width)
+      .attr("height", svg_height);
+
+    // Set up labels
+    var label_sheet = d3.select("#techgraph-holder")
+      .append("div")
+      .classed("label_sheet", true)
+
+    function drawLinks() {
+      link_lines = svg.selectAll(".link").data(links);
+      link_lines.enter()
+        .append("line")
+        .attr('class',"link")
+      link_lines.exit().remove();
+    }
+
+    function drawNodes() {
+      labels = label_sheet.selectAll('.label_holder').data(nodes);
+      labels.exit().remove();
+      var lEnter = labels.enter()
+        .append("div")
+        .attr("class", function(d) { if (d.fixed) {
+            return "spacer";
+          }
+        })
+        .classed("label_holder",true)
+        .attr("id", function(d) { return d.id })
+      var circle = lEnter.append("div")
+        .classed("circle", true)
+      var label = lEnter.append("div")
+        .classed("label",true)
+        .text(function(d) { return d.id; })
+    }
+
+    function setUp() {
+      force
+        .nodes(nodes)
+        .links(links)
+        .gravity(0.06)
+        .size([svg_width, svg_height])
+        .charge(function(d) {
+          if (d.fixed) {
+            var width = $window.width();
+            if (width < 500) {
+              return -1000
+            } else if (width < 340) {
+              return -600
+            } else {
+              return -2000
+            }
+          } else {
+            return -600
+          }
+        })
+        .linkDistance(120);
+    }
+
+    function update() {
+      drawLinks();
+      drawNodes();
+      force.start();
+    }
+
+    // Spacer node for logo
+    topics.push({
+      _id: "logo_spacer_0",
+      name: "spacer",
+      x: (svg_width/2),
+      y: (svg_height/2),
+      fixed: true
+    });
+
+    nodes = topics;
+
+    setUp();
+    update();
+
+    $(window).resize(function() {
+      // If mobile donot change on height change
+      if (no_scroll_events) {
+        if ($window.width() != svg_width) {
           svg_width = $window.width();
           svg_height = $window.height();
           force.size([svg_width, svg_height]);
@@ -1125,58 +1114,71 @@ var api = "http://techgraph.fastforwardlabs.com/api/";
           spacer.py = svg_height/2;
           update();
         }
-      });
-
-      force.on("tick", function() {
-        if (is_safari) {
-          labels.style("-webkit-transform", function(d) {
-            var node = d;
-            if (!node.fixed) {
-              var x_origin = width/2;
-              var y_origin = height/2;
-              var node_x = node.x - x_origin;
-              var node_y = node.y - y_origin;
-              var node_radius = Math.sqrt((node_x * node_x) + (node_y * node_y));
-              var new_x = node_x - node_y * rotation_speed;
-              var new_y = node_y + node_x * rotation_speed;
-              var x = new_x + x_origin;
-              var y = new_y + y_origin;
-              node.x = x;
-              node.y = y;
-            }
-            return "translate3D(" + Math.floor(d.x) + "px," + Math.floor(d.y) + "px, 0)";
-          });
-        } else {
-          labels.style("transform", function(d) {
-            var node = d;
-            if (!node.fixed) {
-              var x_origin = width/2;
-              var y_origin = height/2;
-              var node_x = node.x - x_origin;
-              var node_y = node.y - y_origin;
-              var node_radius = Math.sqrt((node_x * node_x) + (node_y * node_y));
-              var new_x = node_x - node_y * rotation_speed;
-              var new_y = node_y + node_x * rotation_speed;
-              var x = new_x + x_origin;
-              var y = new_y + y_origin;
-              node.x = x;
-              node.y = y;
-            }
-            return "translate3D(" + Math.floor(d.x) + "px," + Math.floor(d.y) + "px, 0)";
-          });
-        }
-        link_lines.attr("x1", function(d) { return Math.floor(d.source.x); })
-          .attr("y1", function(d) { return Math.floor(d.source.y); })
-          .attr("x2", function(d) { return Math.floor(d.target.x); })
-          .attr("y2", function(d) { return Math.floor(d.target.y); });
-        if (force.alpha() < 0.02) {
-          if (graph_active) {
-            revolveGraph();
-          }
-        }
-      });
-
-
+      } else {
+        svg_width = $window.width();
+        svg_height = $window.height();
+        force.size([svg_width, svg_height]);
+        svg
+          .attr("width", svg_width)
+          .attr("height", svg_height);
+        // Spacer is last, kind of messy
+        var spacer = nodes[nodes.length-1];
+        spacer.x = svg_width/2;
+        spacer.px = svg_width/2;
+        spacer.y = svg_height/2;
+        spacer.py = svg_height/2;
+        update();
+      }
     });
-  });
+
+    force.on("tick", function() {
+      if (is_safari) {
+        labels.style("-webkit-transform", function(d) {
+          var node = d;
+          if (!node.fixed) {
+            var x_origin = width/2;
+            var y_origin = height/2;
+            var node_x = node.x - x_origin;
+            var node_y = node.y - y_origin;
+            var node_radius = Math.sqrt((node_x * node_x) + (node_y * node_y));
+            var new_x = node_x - node_y * rotation_speed;
+            var new_y = node_y + node_x * rotation_speed;
+            var x = new_x + x_origin;
+            var y = new_y + y_origin;
+            node.x = x;
+            node.y = y;
+          }
+          return "translate3D(" + Math.floor(d.x) + "px," + Math.floor(d.y) + "px, 0)";
+        });
+      } else {
+        labels.style("transform", function(d) {
+          var node = d;
+          if (!node.fixed) {
+            var x_origin = width/2;
+            var y_origin = height/2;
+            var node_x = node.x - x_origin;
+            var node_y = node.y - y_origin;
+            var node_radius = Math.sqrt((node_x * node_x) + (node_y * node_y));
+            var new_x = node_x - node_y * rotation_speed;
+            var new_y = node_y + node_x * rotation_speed;
+            var x = new_x + x_origin;
+            var y = new_y + y_origin;
+            node.x = x;
+            node.y = y;
+          }
+          return "translate3D(" + Math.floor(d.x) + "px," + Math.floor(d.y) + "px, 0)";
+        });
+      }
+      link_lines.attr("x1", function(d) { return Math.floor(d.source.x); })
+        .attr("y1", function(d) { return Math.floor(d.source.y); })
+        .attr("x2", function(d) { return Math.floor(d.target.x); })
+        .attr("y2", function(d) { return Math.floor(d.target.y); });
+      if (force.alpha() < 0.02) {
+        if (graph_active) {
+          revolveGraph();
+        }
+      }
+    });
+  })
+
 }
