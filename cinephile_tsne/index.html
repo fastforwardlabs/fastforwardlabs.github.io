@@ -23,35 +23,35 @@
     <div class="loadingBar">Loading the visualization, your screen may lock up. Patience is a virtue. Global warming is real.</div>
     <div class="coverImageWrapper"><img src="images/Cover.png" class="coverImage"><span id="coverTitle">Visualizing the Taste of a Community of Cinephiles Using t-SNE</span></img></div>
     <div id="textContainer">
-        <div class="para"> 
+        <div class="para">
             <div class="headline">Introduction</div>
             <p class="paragraphText">
-                As the internet becomes ubiquitous we are beginning to see the fruition of something that has its humble beginnings as USENET in the 80s; people from all walks of life are breaking barriers of the physical world and coming together on the internet to form large communities based on the ideas that resonate with them
+                As the internet becomes ubiquitous we are beginning to see the fruition of something that has its humble beginnings as USENET in the 80s; people from all walks of life are breaking barriers of the physical world and coming together on the internet to form large communities based on the ideas that resonate with them.
             </p>
             <p class="paragraphText">
-While some of these communities are explicitly created for social interaction between members (such as Facebook and Twitter), we also see the emergence of passive communities that arise due to implicit relationships between its members which are defined by the members’ interactions with the service (such as Netflix and Spotify) 
+While some of these communities are explicitly created for social interaction between members (such as Facebook and Twitter), we also see the emergence of passive communities that arise due to implicit relationships between its members which are defined by the members’ interactions with the service (such as Netflix and Spotify).
             </p>
             <p class="paragraphText">
-Defining such relationships enables us to gain cultural insight into the community and the subject that it is centered about. For instance, users of a music streaming service can be grouped together based on the kind of music they like. The behavior of such a group could be used to document shifting trends of the musical genre they’re interested in, and to note the emergence and decline of subcultures. These insights are not only culturally significant, but also valuable from a business perspective. Movie/music streaming companies spend millions of dollars each year to acquire content. Can we build tools that help them to study their userbase and optimize their catalogue for operational costs.</p>
+Defining such relationships enables us to gain cultural insight into the community and the subject that it is centered around. For instance, users of a music streaming service can be grouped together based on the kind of music they like. The behavior of such a group could be used to document shifting trends of the musical genre they’re interested in, and to note the emergence and decline of subcultures. These insights are not only culturally significant, but also valuable from a business perspective. Movie and music streaming companies spend millions of dollars each year to acquire content. Can we build tools that help them to study their userbase and optimize their catalogue for operational costs?</p>
 <p class="paragraphText">
-In this post we are going to look at an interactive visualization that clusters movies together based on their ratings by a set of users. This visualization will give us a glimpse into the aesthetic tastes of a community of cinephiles.</p>
+In this post we look at an interactive visualization that clusters movies together based on their ratings by a set of users. This visualization will give us a glimpse into the aesthetic tastes of a community of cinephiles.</p>
         </div>
-        <div class="para"> 
+        <div class="para">
             <div class="headline">The Dataset</div>
             <div class="imageContainer" id="mubi"><img src="images/MUBI.png" class="images"></img><div class="imageCaption"><a href="http://www.mubi.com" target="_blank">(Source)</a></div></div>
 <p class="paragraphText" id="mubiHeadline">MUBI is an online service that integrates a subscription video-on-demand service with a massive database. The service has a truly diverse selection of content from underground cult classics to Tarantino blockbusters that attracts cinephiles from all over the world. Its 8 million users have collectively rated and reviewed thousands of movies present in its database.</p>
-<p class="paragraphText">Once we obtain a dataset of movie ratings from this community, we'd like to create the visualization that we desire but before we can do that we face a challenge&#8212How does one visually represent the relationship between thousands of users and the thousands of movies that they have rated? Lets take a look at a technique called t-SNE that can help us solve this problem.</p>
+<p class="paragraphText">In visualizing the MUBI datset, we must decide how to visually represent the relationship between thousands of users and the thousands of movies that they have rated. Let's take a look at a technique called t-SNE that can help us solve this problem.</p>
 
         </div>
-        <div class="para"> 
+        <div class="para">
             <div class="headline">Introduction to t-SNEs</div>
             <div class="imageContainer" id="dreduction"><img src="images/dreduction.png" class="images"></img><div class="imageCaption">An example of a dimensionality reduction operation <br><a href="http://axon.cs.byu.edu/papers/gashler2011smc.pdf" target="_blank">(Source)</a></div></div>
-            <div class="imageContainer" id="graph"><img src="images/graph.png" class="images specialImage"></img><div class="imageCaption">A graph that visualizes 4 dimensions. Sugar per cup is encoded as the size of an icon<br><a href="http://www.flaticon.com/authors/madebyoliver" target="_blank">(Cute SVG illustrations source)</a></div></div>
-                <p class="paragraphText" id="graphpara">Data-Visualization designers use a number of techniques and tricks to visualize the difference between two datums in a dataset. Datum can be sized as larger/smaller geometrical shapes depending on a quantifiable dimension, and can be assigned a color from a set of colors to signify a label.<p>
+            <div class="imageContainer" id="graph"><img src="images/graph.png" class="images specialImage"></img><div class="imageCaption">A graph that visualizes four dimensions. Sugar per cup is encoded as the size of an icon<br><a href="http://www.flaticon.com/authors/madebyoliver" target="_blank">(Cute SVG illustrations source)</a></div></div>
+                <p class="paragraphText" id="graphpara">Data-visualization designers use a number of techniques and tricks to visualize the difference between two datums in a dataset. Datum can be sized as larger/smaller geometrical shapes depending on a quantifiable dimension, and can be assigned a color from a set of colors to signify a label.<p>
                 <table>
                     <tr>
                         <th>Type of Fruit</th>
-                        <th>Weight</th> 
+                        <th>Weight</th>
                         <th>Cost</th>
                         <th>Sugar per cup</th>
 
@@ -81,15 +81,15 @@ In this post we are going to look at an interactive visualization that clusters 
                         <td>23</td>
                     </tr>
                 </table>
-                <p class="paragraphText">For example, consider the graphic on the right based on the above data which has 4 dimensions. Each of these 4 dimensions are visualized in different ways by using size, symbols and coordinates. What if we have a thousand dimensions that need to be visualized? Not only would a designer start running out of ways to visualize dimensions, the resulting visualization would probably be cognitively taxing to say the least.
+                <p class="paragraphText">For example, consider the graphic on the right based on the above data which has four dimensions. Each of these four dimensions are visualized in different ways by using size, symbols and coordinates. What if we have a thousand dimensions that need to be visualized? Not only would a designer start running out of ways to visualize dimensions, the resulting visualization would probably be cognitively taxing to say the least.
                 </p>
-                <p class="paragraphText" id="helloThere">  
+                <p class="paragraphText" id="helloThere">
                 This is where a t-SNE can help us. t-SNE (t-distributed stochastic neighbor embedding) is a machine learning algorithm developed by Geoffrey Hinton and Laurens van der Maaten which helps one to reduce the dimensionality of one’s data. It is popularly used to reduce high dimensionality data to a fewer number of dimensions, usually two or three, that enables one to draw scatterplots in which similar datum are placed in close proximity.</p>
                 <p class="paragraphText">
                 This sort of dimensional reduction has been around for quite a while. One particularly popular method, PCA, has solved this sort of problem since 1901. However, t-SNE does something that may other schemes do not: it keeps maintains as much global and local structure as it can. As a result, the dimensional reduction is ideal for both clustering and visualization. This is done by explicitly trying to maintain the distance between points from before and after the algorithm has been applied.</p>
 
         </div>
-        <div class="para"> 
+        <div class="para">
             <div class="headline">Process</div>
             <div class="imageContainer" id="admatrix"><img src="images/adjmatrix.png" class="images specialImage"></img><div class="imageCaption">A matrix with m number of columns and n number of rows. <br>Notice that not all users rate every movie</div></div>
             <p class="paragraphText" id="process">
@@ -100,25 +100,24 @@ This matrix can be transposed to yield a matrix where each row represents a movi
 Our t-SNE will reduce the number of dimensions to just two: which we will use as x-y coordinates for an interactive scatterplot.</p>
 
         </div>
-        <div class="para"> 
+        <div class="para">
             <div class="headline">The Visualization</div>
             <p class="paragraphText" id="guidedHandle">
                 Without further ado, here is what our visualization looks like.</p>
 <p class="paragraphText">
 Each movie in the visualization is represented as square and the color of the square represents the movie's genre. The position of each square is determined by the t-SNE algorithm which only takes movie ratings by users as an input; the algorithm is agnostic to the metadata of the movie itself such as genre, director and year of release.</p>
-<p class="paragraphText">
-You can zoom into the visualization to get a more granular view of the clusters and hovering over a movie will give you more information about the movie (but you'll get a chance for a deeper dive in the sandbox section) </p>
+<p class="paragraphText">Hovering over a square will give you information about the movie (you'll get a chance for a deeper dive in the sandbox section at the bottom of this page).</p>
         </div>
-        <div class="para"> 
+        <div class="para">
             <div class="headline">Guided Tour</div>
             <p class="guidedText">
                 In this section we’ll give you a guided tour through some interesting trends that we can observe in our visualization. Scroll along to trigger zoom interactions that will lead you to interesting parts of the visualization!
             </p>
             <p class="guidedText" id="tour1">
-                There are some genres in the visualization that show strong clustering. Clusters of movies of the same genre or same country of origin usually indicates a subset of users affinity towards that particular type of movie. 
+                There are some genres in the visualization that show strong clustering. Clusters of movies of the same genre or same country of origin usually indicate a subset of users affinity towards that particular type of movie.
             </p>
             <p class="guidedText" id="tour2">
-                Since this is a dataset of cinephiles from all over the world, it is reasonable to expect that one could observe clusters of movies from different countries. Indeed,we observe many such clusters from countries with strong cinematic traditions such as Italy, Iran, India, Turkey and Japan. 
+                Since this is a dataset of cinephiles from all over the world, it is reasonable to expect that one could observe clusters of movies from different countries. Indeed, we observe many such clusters from countries with strong cinematic traditions such as Italy, Iran, India, Turkey and Japan.
             </p>
 
             <p class="guidedText" id="tour3">
@@ -129,14 +128,14 @@ You can zoom into the visualization to get a more granular view of the clusters 
                 It is observed that as we go from the left to the right the number of reviews of a movie increases; As a consequence, movies ingrained in pop culture stand out by themselves, far away from the crowd. Similarly filmographies of popular directors, denoted by a web of lines in the visualization, such as Quentin Tarantino or Stanley Kubrick tend to reside towards the right side of the visualization.
             </p>
         </div>
-        <div class="para"> 
+        <div class="para">
             <div class="headline" id="sandbox">Sandbox</div>
             <p class="paragraphText">
-                Time to get your hands dirty in the sandbox! You can play around with different settings to turn different genres on/off or search for your favorite movie. You can also click a movie to view some more information about it
+                Time to get your hands dirty in the sandbox! You can zoom into the visualization to get a more granular view of the clusters, play around with different settings to turn different genres on/off or search for your favorite movie. You can also click on a square to view some more information about the movie and see connections to other movies by the same director.
             </p>
         </div>
     </div>
-    
+
     <div id="canvasContainer">
         <canvas id="mainCanvas"></canvas>
         <div class="tooltip">
@@ -197,8 +196,8 @@ You can zoom into the visualization to get a more granular view of the clusters 
                 </div>
             </div>
         </div>
-        
-       
+
+
         <div id="labelButtonContainer">
             <span id="warning">You can only select 12 genres at a time</span>
             <div class="labelButton" selected="true">Action</div>
@@ -244,11 +243,11 @@ You can zoom into the visualization to get a more granular view of the clusters 
             </div>
         </form>
     </div>
-    <script type="text/javascript" src="ListNode.js"></script> 
-    <script type="text/javascript" src="movieObject.js"></script>  
-    <script type="text/javascript" src="movieList.js"></script> 
-    <script type="text/javascript" src="cincity.js"></script>  
-    <script type="text/javascript" src="interface.js"></script> 
+    <script type="text/javascript" src="ListNode.js"></script>
+    <script type="text/javascript" src="movieObject.js"></script>
+    <script type="text/javascript" src="movieList.js"></script>
+    <script type="text/javascript" src="cincity.js"></script>
+    <script type="text/javascript" src="interface.js"></script>
     <footer>
     <div id="footWrapper">
         <div class="footBox">
@@ -264,7 +263,7 @@ You can zoom into the visualization to get a more granular view of the clusters 
         <div class="aboutBox">
             <span class="footerHeadline">About us</span><br>
             <p>Fast Forward Labs is a machine intelligence research company</p>
-            <p>You can read more posts like this one on <a href="http://blog.fastforwardlabs.com/">our blog</a>  
+            <p>You can read more posts like this one on <a href="http://blog.fastforwardlabs.com/">our blog</a>
         </div>
     </div>
   </footer>
