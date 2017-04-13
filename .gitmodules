@@ -1,0 +1,3 @@
+[submodule "cinephile_tsne"]
+	path = cinephile_tsne
+	url = git@github.com:adityajain15/cincityApp.git
