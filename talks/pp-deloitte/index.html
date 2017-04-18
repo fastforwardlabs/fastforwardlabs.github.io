@@ -66,19 +66,21 @@ class: full-bleed, center, middle
 
 ???
 
-Fast Forward Labs builds product prototypes and writes reports about advances
-in machine intelligence.
-
-We recently looked into probablistic programming, a set of techniques to make Bayesian Inference more accessible. Here are some of the
-highlights.
+We recently looked into probablistic programming, a set of techniques to make Bayesian Inference more accessible. Today's talk will cover some of the highlights and I hope we can have a lively conversation about the utility of these techniques after the talk.
 
 ---
 
-### Bayesian inference ...
+## What is Bayesian inference?
 
-... is a method of statistical inference in which Bayes' theorem is used to update the probability for a hypothesis as more evidence or information becomes available.
+Bayesian inference is a method of statistical inference in which Bayes' theorem is used to update the probability for a hypothesis as more evidence or information becomes available.
 
-### More about Bayes' theorem later!
+ - I believe it is raining outside.
+ - I see my colleague walking into the office with a wet umbrella.
+ - I *strongly* believe it is raining outside.
+
+Bayesian inference quantifies changes in belief in the light of new, incoming evidence, a.k.a. data.
+
+## More about Bayes' theorem later!
 
 ---
 
@@ -97,13 +99,11 @@ highlights.
  - Hamiltonian Monte Carlo with automatic differentiation and NUTS
  - ADVI
 
-### the cleverness is now ready to abstracted away 😎
+### the cleverness is now ready to abstracted away!
 
 ???
 
-This talk is about probablistic programming. But before I introduce it, I'm
-going to spend the first 2/3 of the talk explaining the problems we need to
-solve. Here's the outline of that first bit.
+Let me highlight the power of probabilistic programming, and Bayesian inference, using a simple example.
 
 ---
 
@@ -113,7 +113,7 @@ class: center, middle, full-bleed
 
 ???
 
-Let's start with a story. I conduct this A/B test and get these results.
+I conduct this A/B test and get these results.
 
 Clearly layout B is better.
 
@@ -135,9 +135,7 @@ This is the central problem of data analysis.
 
 I don't care how big your data is. It's still bad.
 
-Measurement error, incomplete.
-
-Given that's a fact of live. We need a way to quantify uncertainty.
+Measurement error, incomplete. Noise. Given that's a fact of live. We need a way to quantify uncertainty.
 
 And what if layout A has been running for weeks already before the test.
 We need a way to incorporate that knowledge into our analysis.
@@ -150,15 +148,15 @@ class: center, middle, full-bleed
 
 ???
 
-This is Bayes rule. The only equation I'm going to show today.
+This is Bayes rule. One of the few equations you are going to show today.
 
 It's the central idea of data analysis. It's extremely simple.
 
 The thing on the left is the probability a hypothesis is true, given our data.
-That hypothesis might be "the conversion fraction for layout A is 3.57%". This
+That hypothesis might be "the conversion fraction for layout A is 3.57%" or "It is raining outside.". This
 is the posterior distribution, and it's almost always the thing we want to
 know. We can use it to answer questions like "is layout A better than layout
-B".
+B" or "It's raining outside, isn't it?".
 
 How do we get it? From the things on the right.
 
@@ -167,7 +165,7 @@ if we _assumed_ the hypothesis were true. How likely is it we would have got
 the observations we in fact got.
 
 And the other thing on the right is the _prior_. That's how likely we though
-the hypothesis was prior to our collection of data.
+the hypothesis was prior to our collection of data (or, given all data we collected up until this point).
 
 ---
 
@@ -222,9 +220,7 @@ class: center, middle, full-bleed
 Finally to answer the question is layout A or layout B better, we compare the
 two posteriors.
 
-What's the answer? Layout A or layout B? We can't say!
-
-What we can say is precisely how likely it is that layout B is better than
+What's the answer? Layout A or layout B? We can't say! Data science and machine learning does not give 0/1 answers. Instead, what we can say is precisely how likely it is that layout B is better than
 layout A. I think it's about 60% in this case.
 
 So if it costs you hundreds of thousands of dollars to change your website,
@@ -241,6 +237,18 @@ experiment for longer, we can decide how much to bet, now we know the odds.
 That's the power of having the full probabilistic picture. The ability to
 quantify exactly how likely every possibility is, is not just a slight
 improvement. It opens up qualitatively new kinds of products.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/inference.png)
+
+???
+
+Probability someone converts with layout p: Bernoulli distribution, named after Swiss scientist Jacob Bernoulli,[1] is the probability distribution of a random variable which takes the value 1 with probability {\displaystyle p} p and the value 0 with probability {\displaystyle q=1-p} q=1-p—i.e., the probability distribution of any single experiment that asks a yes–no question.
+
+We don't know p (for sure), we express that uncertainy but putting a distribution over p. Math dictates, that distribution is a Beta distribution. Two parameters (a,b). Data shape these parameters. Simple case, we will see more complex examples later on.
 
 ---
 
@@ -277,8 +285,7 @@ class: full-bleed
 
 ???
 
-But once you've done that you can wrap it all in a Flask API and build a live,
-interactive product.
+Explain prototype.
 
 ---
 
@@ -338,6 +345,26 @@ class: center, middle, full-bleed
 <img width="60%" src="img/linkage-model.png">
 
 ???
+
+Let xij be the data for the jth
+record in file i, where i = 1, . . . , k, j = 1, . . . , ni
+, and ni
+is the number of records in file i; xij is a
+categorical vector of length p. Let yj
+0 be the latent vector of true field values for the j
+0
+th individual
+in the population (or rather aggregate sample), where j
+0 = 1, . . . , N, N being the total number of
+observed individuals from the population. N could be as small as 1 if every record in every file
+refers to the same individual or as large as Nmax ≡
+Pk
+i=1 ni
+if no datasets share any individuals.
+Next, we define the linkage structure Λ = {λij ; i = 1, . . . , k ; j = 1, . . . , ni} where λij is an
+integer from 1 to Nmax indicating which latent individual the jth record in file i refers to, i.e., xij
+is a possibly-distorted measurement of yλij . Finally, zij` is 1 or 0 according to whether or not a
+particular field ` is distorted in xij .
 
 ---
 
@@ -609,57 +636,6 @@ class: full-bleed
 
 ???
 
-But once you've done that you can wrap it all in a Flask API and build a live,
-interactive product.
-
----
-
-## It's a Useful Technique for Many Problems
-
- - Scenario analysis for risk (e.g., financial services, insurance)
- - Effectiveness of medical tests and interventions
- - Pharmacokinetic/pharmacodynamic modeling
- - Network latencies (limited data, costs to underestimating and overestimating)
-
-## Across a Variety of Industries.
-
-???
-
-[Clinical trials and efficacy] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3967501/
-
----
-
-## Use probabilistic programming
-
-When you
-
- - need to **quantify the probability of all possibilities**, not just determine
-   which is most likely
- - want to make use of **institutional knowledge**
- - want to do **online learning** (i.e., continually update your model as data
-   arrives)
- - want to do **active learning** (i.e., gather more information until your
-   predictions reach some threshold of confidence)
- - want to use data to **decide if a more complicated model is justified**
- - have several **heterogeneous datasets**
- - need to **explain your decisions** to customers or regulators
- - have **sparse data** with a shared or hierarchical structure
-
----
-
-## Facebook Prophet
-
-![](img/prophet.png)
-
-### https://research.fb.com/prophet-forecasting-at-scale/
-
-???
-
-Facebook released a probabilistic programming product last month!
-
-It's Python and R applications that use Stan under the hood for general purpose
-seasonal forecasting.
-
 ---
 
 ## Probabilistic Programming Options
@@ -690,6 +666,71 @@ even worse, subtly.
 
 ---
 
+## It's a Useful Technique for Many Problems
+
+ - Scenario analysis for risk (e.g., financial services, insurance)
+ - Effectiveness of medical tests and interventions
+ - Pharmacokinetic/pharmacodynamic modeling (work by Stan Group w. Novartis)
+ - Network latencies (limited data, costs to underestimating and overestimating)
+ - Sports analytics
+ - Elections forecasting
+
+## Across a Variety of Industries.
+
+???
+
+[Clinical trials and efficacy] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3967501/
+Stan Group, helped Novartis to determine drug dosages using
+Bayesian methods implemented. In particular, they model how
+drugs are absorbed into the body (i.e., pharmacokinetics). The selection of a
+drug dosage regimen is based on estimates of the patient's pharmacokinetic
+parameters governing how quickly the body can absorb the drug adjusted for
+patient characteristics (ie., weight, age, sex). Using the Bayesian approach,
+they estimate a patient's parameters from measured drug levels
+using the a priori pharmacokinetic parameters of the population model as a
+starting estimate. Then they adjust the starting estimates based on the
+patient's measured drug levels. Combining knowledge about the individual with
+knowledge about the population leads to more precise estimates than using
+either data set by itself, helping us chose the best drug dosage regimen.
+
+---
+
+## Use probabilistic programming
+
+When you
+
+ - need to **quantify the probability of all possibilities**, not just determine
+   which is most likely
+ - want to make use of **institutional knowledge**
+ - want to do **online learning** (i.e., continually update your model as data
+   arrives)
+ - want to do **active learning** (i.e., gather more information until your
+   predictions reach some threshold of confidence)
+ - want to use data to **decide if a more complicated model is justified**
+ - have several **heterogeneous datasets**
+ - need to **explain your decisions** to customers or regulators
+ - have **sparse data** with a shared or hierarchical structure
+
+---
+
+class: full-bleed, middle, center
+
+<img width="80%" src="img/prophet.png">
+
+???
+
+Facebook released a probabilistic programming product last month!
+
+It's Python and R applications that use Stan under the hood for general purpose
+seasonal forecasting.
+
+---
+
+class: full-bleed, middle, center
+
+<img width="80%" src="img/prophet-components.png">
+
+---
 
 ## Further reading
 
@@ -702,6 +743,10 @@ even worse, subtly.
    programming](http://blog.fastforwardlabs.com/2017/01/30/the-algorithms-behind-probabilistic-programming.html)
 
  - [The history of pymc3](http://stronginference.com/pymc3-release.html)
+
+ - [Taking Prophet for a spin](http://blog.fastforwardlabs.com/2017/03/22/prophet.html)
+
+ - Slides: [fastforwardlabs.com/talks/pp-deloitte/#1](http://www.fastforwardlabs.com/talks/pp-deloitte/#1)
 
 ---
 
