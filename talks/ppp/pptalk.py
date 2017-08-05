@@ -8,6 +8,8 @@ sns.set_context('talk')
 
 cola = "#7a4ab5"
 colb = "#00c370"
+red = "#ef3c3c"
+
 n_a = 500
 obs_a = 20
 n_b = 400
@@ -137,6 +139,7 @@ def fig_compareposteriors(posterior_a, posterior_b):
                      fit_reg=False, color=cola, marker='.')
     ax = sns.regplot(np.array(posterior_a)[bgta], np.array(posterior_b)[bgta],
                      fit_reg=False, color=colb, marker='.')
+    ax.plot(0.04, 0.05, color='#ffffff', marker='X')
 
     lim1, lim2 = 0, 0.12
     ax.set_xlim(lim1, lim2)
@@ -149,6 +152,20 @@ def fig_compareposteriors(posterior_a, posterior_b):
     ax.set_xlabel('Conversion fraction layout A')
     ax.set_ylabel('Conversion fraction layout B')
     fig.savefig('img/compareposteriors.png', bbox_inches='tight')
+
+
+def fig_naiveanswer(a=0.04, b=0.05):
+    fig, ax = plt.subplots(figsize=(6.5, 6.5))
+    ax.plot(0.04, 0.05, color=red, marker='X')
+    lim1, lim2 = 0, 0.12
+    ax.set_xlim(lim1, lim2)
+    ax.set_ylim(lim1, lim2)
+    ax.plot([lim1, lim2], [lim1, lim2], color=colb)
+    ax.text(0.07, 0.10, 'B better', color=colb)
+    ax.text(0.09, 0.07, 'A better', color=cola)
+    ax.set_xlabel('Conversion fraction layout A')
+    ax.set_ylabel('Conversion fraction layout B')
+    fig.savefig('img/naiveanswer.png', bbox_inches='tight')
 
 
 def fig_online():
@@ -189,6 +206,7 @@ def main():
     print('Sampling from Layout B')
     prior_b, posterior_b = get_layout_samples(layout='b')
     fig_layout(prior_b, posterior_b, layout='b')
+    fig_naiveanswer(posterior_a, posterior_b)
     fig_compareposteriors(posterior_a, posterior_b)
     fig_online()
 
