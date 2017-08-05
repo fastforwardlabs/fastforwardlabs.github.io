@@ -84,6 +84,14 @@ Hit `p` on your keyboard to toggle the presenter notes on/off.
 
 class: full-bleed, center, middle
 
+![](img/ff06-animation.gif)
+
+???
+
+---
+
+class: full-bleed, center, middle
+
 ![](img/ff05.gif)
 
 ???
@@ -191,43 +199,27 @@ the hypothesis was prior to our collection of data.
 
 class: center, middle, full-bleed
 
-![](img/layouta.png)
+![](img/inference.png)
 
 ???
 
-How do we use this rule? Let's start with layout A. 
+Finally there's interpretability.
 
-Let's say layout A had been running for a few days, and we suspected its
-conversion fraction was around 3.5%. That's the prior on the left. We're not
-ruling out 1% or 5%, but 3.5% is our best guess.
+Bayesian inference requires you to write down a model that specifies how your
+data was made. You don't know the values of the parameters until you do the
+inference, but you the structure of their relation.
 
-Note here: we're incorporating institutional knowledge.
+Given you created the model it is _interpretable by construction_.
 
-Now we use Bayes rule to update the prior in the light of our data, to get the
-posterior.
+You will always have an answer to the question: why was a particular prediction
+made. 
 
-The right hand plot is the probability of each possible conversion fraction for
-layout A given the data, which was 4 conversions out of 100 visitors.
+This can be used to create actionable insights. The model says this customer is
+going to churn for reason X, so let's change X about that customer.
 
----
+And interpretability is in some cases not just nice to have, it's a legal
+requirement!
 
-class: center, middle, full-bleed
-
-![](img/layoutb.png)
-
-???
-
-Maybe layout B is a new layout. We had no idea what it's conversion fraction
-would be, so we use what's called a uninformative prior. We assume every
-possible value between 0 and 1 is equally likely.
-
-You can still use this approach when you have no institutional knowledge!
-
-Now we use Bayes rule to update the prior in the light of our data, to get the
-posterior.
-
-The right hand plot is the probability of each possible conversion fraction for
-layout B given the data, which was 2 out of 50.
 
 ---
 
@@ -342,31 +334,6 @@ Bayesian approach.
 
 ---
 
-class: center, middle, full-bleed
-
-![](img/inference.png)
-
-???
-
-Finally there's interpretability.
-
-Bayesian inference requires you to write down a model that specifies how your
-data was made. You don't know the values of the parameters until you do the
-inference, but you the structure of their relation.
-
-Given you created the model it is _interpretable by construction_.
-
-You will always have an answer to the question: why was a particular prediction
-made. 
-
-This can be used to create actionable insights. The model says this customer is
-going to churn for reason X, so let's change X about that customer.
-
-And interpretability is in some cases not just nice to have, it's a legal
-requirement!
-
----
-
 exclude: true
 
 ### Approximate Bayesian Computation
@@ -460,7 +427,7 @@ Mission accomplished. But sometimes even this is too slow.
 
 ---
 
-## Use probabilistic programming
+## Use Bayesian inference
 
 When you
 
@@ -495,9 +462,20 @@ The downside is, the code we write is slow.
 
 ---
 
-### Hamiltonian Monte Carlo with autodiff and NUTS
+### Hamiltonian Monte Carlo
 
-<img src="img/hmc.png" width="30%">
+ - Explores efficiently...
+
+--
+
+### with autodiff
+ - ...differentiates automatically...
+
+--
+
+### and NUTS
+
+ - ...is idiot-proof.
 
 ???
 
@@ -771,7 +749,7 @@ We made this plot with it in 30 minutes last week. It's great!
 
 ## Next steps
 
- - These slides,  [fastforwardlabs.com/talks/ppp](http://fastforwardlabs.com/talks/ppp) (hit `P` on your keyboard for presenter notes)
+ - These slides,  [fastforwardlabs.com/talks/ppp](http://fastforwardlabs.com/talks/ppp)
 
  - The NYC real estate prototype, [www.fastforwardlabs.com/pre](http://www.fastforwardlabs.com/pre/)
 
@@ -787,6 +765,48 @@ We made this plot with it in 30 minutes last week. It's great!
  - Fast Forward Labs • [@fastforwardlabs](https://twitter.com/fastforwardlabs) • <contact@fastforwardlabs.com> • [fastforwardlabs.com](http://www.fastforwardlabs.com)
 
 ???
+
+---
+
+class: center, middle, full-bleed
+
+![](img/layouta.png)
+
+???
+
+How do we use this rule? Let's start with layout A. 
+
+Let's say layout A had been running for a few days, and we suspected its
+conversion fraction was around 3.5%. That's the prior on the left. We're not
+ruling out 1% or 5%, but 3.5% is our best guess.
+
+Note here: we're incorporating institutional knowledge.
+
+Now we use Bayes rule to update the prior in the light of our data, to get the
+posterior.
+
+The right hand plot is the probability of each possible conversion fraction for
+layout A given the data, which was 4 conversions out of 100 visitors.
+
+---
+
+class: center, middle, full-bleed
+
+![](img/layoutb.png)
+
+???
+
+Maybe layout B is a new layout. We had no idea what it's conversion fraction
+would be, so we use what's called a uninformative prior. We assume every
+possible value between 0 and 1 is equally likely.
+
+You can still use this approach when you have no institutional knowledge!
+
+Now we use Bayes rule to update the prior in the light of our data, to get the
+posterior.
+
+The right hand plot is the probability of each possible conversion fraction for
+layout B given the data, which was 2 out of 50.
 
 
     </textarea>
