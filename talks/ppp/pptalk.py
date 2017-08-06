@@ -8,14 +8,13 @@ sns.set_context('talk')
 
 cola = "#7a4ab5"
 colb = "#00c370"
-red = "#ef3c3c"
 
 n_a = 500
 obs_a = 20
 n_b = 400
 obs_b = 20
 bins = 50
-nsamples = 100000
+nsamples = 10000
 
 
 def abayes(data, prior_sampler, simulate, compare):
@@ -139,7 +138,7 @@ def fig_compareposteriors(posterior_a, posterior_b):
                      fit_reg=False, color=cola, marker='.')
     ax = sns.regplot(np.array(posterior_a)[bgta], np.array(posterior_b)[bgta],
                      fit_reg=False, color=colb, marker='.')
-    ax.plot(0.04, 0.05, color='#ffffff', marker='X')
+    ax.plot(0.04, 0.05, color='#222222', marker='X')
 
     lim1, lim2 = 0, 0.12
     ax.set_xlim(lim1, lim2)
@@ -156,7 +155,7 @@ def fig_compareposteriors(posterior_a, posterior_b):
 
 def fig_naiveanswer(a=0.04, b=0.05):
     fig, ax = plt.subplots(figsize=(6.5, 6.5))
-    ax.plot(0.04, 0.05, color=red, marker='X')
+    ax.plot(0.04, 0.05, color="#222222", marker='X')
     lim1, lim2 = 0, 0.12
     ax.set_xlim(lim1, lim2)
     ax.set_ylim(lim1, lim2)
