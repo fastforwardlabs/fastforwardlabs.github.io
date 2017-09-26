@@ -42,7 +42,7 @@ a {
     text-decoration: none; }
 
 p a {
-  color: #00d4e3;
+  color: #00D4E3;
   background-image: linear-gradient(#ffffff 0%, #00d4e3 100%); }
 
 h1, h2, h3, h4, h5, h6 {
@@ -130,7 +130,7 @@ label {
   box-shadow: none; }
 
 .field:focus {
-  border-color: black;
+  border-color: #000;
   box-shadow: none; }
 
 .navigation a {
@@ -206,7 +206,7 @@ label {
   margin-right: 0.5rem; }
   .right-nav a.active, .right-nav .fake-link.active {
     text-decoration: none;
-    color: black;
+    color: #000;
     cursor: default; }
   .right-nav a:last-child, .right-nav .fake-link:last-child {
     margin-right: 0; }
@@ -224,10 +224,10 @@ label {
     top: 50%;
     width: 100%;
     height: 0.2rem;
-    background: #dddddd;
+    background: #ddd;
     -webkit-transform: rotate(-45deg);
     -webkit-transform-origin: center center; }
     .x-box .close-line:last-child {
       -webkit-transform: rotate(45deg); }
   .x-box:hover .close-line {
-    background: black; }
+    background: #000; }

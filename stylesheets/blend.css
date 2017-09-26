@@ -42,7 +42,7 @@ q, blockquote {
 a img {
   border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 html {
@@ -92,10 +92,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(radial, 100% 100%, 0, 100% 100%, 100, color-stop(20%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-radial-gradient(100% 100%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjEwMCUiIGN5PSIxMDAlIiByPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
   background-image: -moz-radial-gradient(100% 100%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: -o-radial-gradient(100% 100%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -webkit-radial-gradient(100% 100%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
   background-image: radial-gradient(100% 100%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
   background-size: cover;
   pointer-events: none; }
@@ -152,15 +152,16 @@ a {
     top: -0.18rem;
     border-top: solid 0.2rem transparent;
     background-image: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
     -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none; }
     .nav a:hover {
       text-decoration: none;
       background-image: none;
       color: #00dcec; }
     .nav a.active {
-      color: black; }
+      color: #000; }
   .nav .right a {
     color: #00dcec;
     background-image: linear-gradient(#00dcec 0%, #00dcec 100%);
@@ -183,8 +184,9 @@ a {
     color: #00dcec;
     position: relative;
     background-image: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
     -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none; }
     .learn-more a.scrolled {
       display: none; }
@@ -205,14 +207,15 @@ a {
     margin-left: 0.5rem; }
 
 .checker {
-  color: #888888;
+  color: #888;
   cursor: pointer; }
   .checker:hover {
-    color: black; }
+    color: #000; }
 
 .no-select {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none; }
 
 .f1 {
@@ -254,39 +257,40 @@ a.purple {
   font-size: 12.58741pt;
   line-height: 16.36364pt;
   font-family: "ff-chambers-sans-web";
-  fill: #aaaaaa;
+  fill: #aaa;
   cursor: default !important;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none; }
   #graph-holder .spacer {
     display: none; }
   #graph-holder .rect {
     stroke-width: 2;
-    stroke: #dddddd;
+    stroke: #ddd;
     fill: #fafafa; }
   #graph-holder .link {
     stroke-width: 2;
-    stroke: #dddddd; }
+    stroke: #ddd; }
   #graph-holder .node {
     cursor: default; }
   #graph-holder .text {
-    fill: #bbbbbb; }
+    fill: #bbb; }
   #graph-holder .nlg .rect {
     fill: #00dcec;
     stroke: #00dcec; }
   #graph-holder .nlg .text {
-    fill: white; }
+    fill: #fff; }
   #graph-holder .pmrs .rect {
     fill: #ee00ee;
     stroke: #ee00ee; }
   #graph-holder .pmrs .text {
-    fill: white; }
+    fill: #fff; }
   #graph-holder .dlia .rect {
     fill: #8237b6;
     stroke: #8237b6; }
   #graph-holder .dlia .text {
-    fill: white; }
+    fill: #fff; }
 
 .report-holder {
   position: relative;
@@ -373,17 +377,13 @@ img {
 @-webkit-keyframes spCircRot {
   from {
     -webkit-transform: rotate(0deg); }
-
   to {
     -webkit-transform: rotate(359deg); } }
-
 @keyframes spCircRot {
   from {
     transform: rotate(0deg); }
-
   to {
     transform: rotate(359deg); } }
-
 .sp-circle {
   display: none; }
 
@@ -402,7 +402,7 @@ input, textarea {
   input:active, input:focus, textarea:active, textarea:focus {
     outline: none !important;
     box-shadow: none !important;
-    border-color: black !important; }
+    border-color: #000 !important; }
 
 textarea {
   padding-top: 0.5rem;
@@ -410,7 +410,7 @@ textarea {
 
 input[type="submit"] {
   background: #00dcec;
-  color: white;
+  color: #fff;
   font-family: "ff-chambers-sans-web";
   border-radius: 0.2rem !important;
   border: none !important;
@@ -477,7 +477,7 @@ body.overlayed {
 
 .progress-holder {
   height: 1rem;
-  background: white;
+  background: #fff;
   background: red; }
   .progress-holder .progress {
     position: absolute;

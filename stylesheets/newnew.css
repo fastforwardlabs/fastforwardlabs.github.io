@@ -43,17 +43,17 @@ a {
   color: #00d2e2; }
 
 a {
-  background-image: linear-gradient(#ffffff 50%, #00dcec 50%);
+  background-image: linear-gradient(#fff 50%, #00dcec 50%);
   background-size: 1px 8px;
   background-position: 0 2rem;
   background-repeat: repeat-x; }
   a:hover {
     text-decoration: none;
     color: #00c9d8;
-    background-image: linear-gradient(#ffffff 50%, #00c9d8 50%); }
+    background-image: linear-gradient(#fff 50%, #00c9d8 50%); }
 
 .people a span {
-  background-image: linear-gradient(#ffffff 50%, #00dcec 50%);
+  background-image: linear-gradient(#fff 50%, #00dcec 50%);
   background-size: 1px 4px;
   background-position: 0 0.66rem;
   padding-bottom: 0.4rem;
@@ -91,17 +91,17 @@ a {
       color: #00c9d8;
       border-top: solid 0.1rem #00dcec, 4%; }
     .nav a.active {
-      border-top: solid 0.1rem black;
+      border-top: solid 0.1rem #000;
       padding-top: 0.5rem;
       background: transparent;
       background-image: none;
-      color: black;
+      color: #000;
       cursor: default; }
   .nav.footer a {
     padding-top: 0.5rem;
     text-transform: none;
     margin-top: 0;
-    background-image: linear-gradient(#ffffff 50%, #00dcec 50%);
+    background-image: linear-gradient(#fff 50%, #00dcec 50%);
     background-size: 1px 4px;
     background-position: 0 0.6rem;
     letter-spacing: 0;
@@ -111,10 +111,10 @@ a {
     margin-top: 0.81rem;
     margin-left: 0.5rem; }
     .nav.footer a:hover {
-      background-image: linear-gradient(#ffffff 50%, #00c9d8 50%); }
+      background-image: linear-gradient(#fff 50%, #00c9d8 50%); }
 
 a.f3 .underline {
-  background-image: linear-gradient(#ffffff 50%, #00dcec 50%);
+  background-image: linear-gradient(#fff 50%, #00dcec 50%);
   background-size: 1px 4px;
   background-position: 0 0.7rem;
   padding: 0 0 0.3rem;
@@ -123,17 +123,17 @@ a.f3 .underline {
   background-repeat: repeat-x; }
   a.f3 .underline:hover {
     color: #00c9d8;
-    background-image: linear-gradient(#ffffff 50%, #00c9d8 50%); }
+    background-image: linear-gradient(#fff 50%, #00c9d8 50%); }
 
 .underline {
-  background-image: linear-gradient(#ffffff 50%, #00dcec 50%);
+  background-image: linear-gradient(#fff 50%, #00dcec 50%);
   background-size: 1rem 0.25rem;
   background-position: 0 1.35rem;
   padding: 0 0 0.3rem;
   background-repeat: repeat-x; }
 
 a .underline {
-  background-image: linear-gradient(#ffffff 50%, #00dcec 50%);
+  background-image: linear-gradient(#fff 50%, #00dcec 50%);
   background-size: 1px 4px;
   background-position: 0 0.65rem;
   padding: 0 0 0.3rem;
@@ -141,7 +141,7 @@ a .underline {
 
 a:hover .underline {
   color: #00c9d8;
-  background-image: linear-gradient(#ffffff 50%, #00c9d8 50%); }
+  background-image: linear-gradient(#fff 50%, #00c9d8 50%); }
 
 .indent {
   padding-left: 2rem;
@@ -166,13 +166,13 @@ a:hover .underline {
 
 input, textarea {
   width: 100%;
-  background: white;
-  border: solid 0.1rem white !important;
+  background: #fff;
+  border: solid 0.1rem #fff !important;
   font-family: "ff-tisa-web-pro", serif; }
   input:active, input:focus, textarea:active, textarea:focus {
     outline: none !important;
     box-shadow: none !important;
-    border: solid 0.1rem #cccccc !important; }
+    border: solid 0.1rem #ccc !important; }
 
 img {
   width: 100%; }
@@ -183,7 +183,7 @@ img {
   top: 0.05rem; }
 
 .border-white {
-  border: solid 0.1rem white; }
+  border: solid 0.1rem #fff; }
 
 .video-holder {
   box-sizing: border-box;
@@ -216,7 +216,7 @@ img {
     width: 0.3rem;
     height: 0.3rem;
     border-radius: 0.3rem;
-    background: #cccccc;
+    background: #ccc;
     float: left;
     margin-top: 0.225rem;
     margin-left: 0.225rem; }
@@ -232,10 +232,10 @@ img {
 .divider {
   height: 0.1rem;
   width: 100%;
-  background: black; }
+  background: #000; }
 
 .border-try {
-  border: solid 0.5rem black; }
+  border: solid 0.5rem #000; }
 
 .grid, .grid_2 {
   height: 400vh;
@@ -315,17 +315,13 @@ img {
 @-webkit-keyframes spCircRot {
   from {
     -webkit-transform: rotate(0deg); }
-
   to {
     -webkit-transform: rotate(359deg); } }
-
 @keyframes spCircRot {
   from {
     transform: rotate(0deg); }
-
   to {
     transform: rotate(359deg); } }
-
 .sp-circle {
   display: none; }
 
@@ -356,8 +352,9 @@ input[type="submit"]:hover {
   background: #00c9d8; }
 
 .select-none {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none; }
 
 #arrow {
@@ -367,10 +364,10 @@ a:hover #arrow path {
   fill: #00c9d8; }
 
 #xer {
-  fill: #aaaaaa;
+  fill: #aaa;
   display: none; }
   #xer:hover {
-    fill: black; }
+    fill: #000; }
 
 .overlayed #xer {
   display: block; }
@@ -384,7 +381,7 @@ input[type="checkbox"] + label:before {
   width: 1.1rem;
   top: -0.02rem;
   position: relative;
-  color: white;
+  color: #fff;
   font-style: normal;
   font-size: 0.8rem;
   float: left; }
@@ -394,9 +391,10 @@ input[type="checkbox"] + label:before {
 
 input[type="checkbox"]:checked + label:before {
   content: "";
-  color: black; }
+  color: #000; }
 
 #checkbox-holder {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none; }
