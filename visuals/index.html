@@ -77,12 +77,14 @@ v<html>
 
     function listDirContents(name, array) {
       let $dir_div = $('.' + name)
-      console.log(this);
       $.each(array, function(i) {
+        console.log(this);
         $dir_div.append(`
           <div style="margin-bottom: 2rem;">
             <div style="margin-bottom: 1rem;">${this.name}</div>
-            <img style="max-width: 100%; margin-bottom: 1rem" src=${rel_base_dir}/${name}/${this.name} />
+            <a target="_blank" href=${rel_base_dir}/${name}/${this.name}>
+              <img style="max-width: 100%; margin-bottom: 1rem" src=${rel_base_dir}/${name}/${this.name} />
+            </a>
             <hr />
           </div>
         `)
