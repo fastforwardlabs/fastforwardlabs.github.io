@@ -33,11 +33,11 @@ const $body = $('body')
     let dir_array = []
     let dir_array_store_name = 'report_images_dir_array_' + storage_buster
 
-    let dir_array_data = localStorage.getItem(dir_array_store_name)
-    if (dir_array_data) {
-      dir_array = JSON.parse(dir_array_data)
-      ListDirs(dir_array)
-    } else {
+    // let dir_array_data = localStorage.getItem(dir_array_store_name)
+    // if (dir_array_data) {
+    //   dir_array = JSON.parse(dir_array_data)
+    //   ListDirs(dir_array)
+    // } else {
       $.ajax({
         url : base_api_dir,
         success: function (data) {
@@ -46,11 +46,11 @@ const $body = $('body')
               dir_array.push(this.name)
             }
           })
-          localStorage.setItem(dir_array_store_name, JSON.stringify(dir_array))
+          // localStorage.setItem(dir_array_store_name, JSON.stringify(dir_array))
           ListDirs(dir_array)
         }
       });
-    }
+    // }
 
     function ListDirs(array) {
       array.reverse()
@@ -69,19 +69,19 @@ const $body = $('body')
 
     function getDirContents(name) {
       let dir_data_storage_name = name + '_' + storage_buster
-      let dir_data = localStorage.getItem(dir_data_storage_name)
-      if (dir_data) {
-        listDirContents(name, JSON.parse(dir_data))
-      } else {
+      // let dir_data = localStorage.getItem(dir_data_storage_name)
+      // if (dir_data) {
+      //   listDirContents(name, JSON.parse(dir_data))
+      // } else {
         $.ajax({
           url : base_api_dir + '/' + name,
           success: function (data) {
-            localStorage.setItem(dir_data_storage_name, JSON.stringify(data))
+            // localStorage.setItem(dir_data_storage_name, JSON.stringify(data))
             listDirContents(name, data)
           }
         })
       }
-    }
+    // }
 
     function formatFileSize(size) {
       let formatted;
