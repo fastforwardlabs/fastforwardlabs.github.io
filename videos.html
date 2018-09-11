@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>CFFL Videos</title>
+<style>
+body {
+  overflow: hidden;
+}
+#video-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+<video autoplay id="video-background" muted plays-inline>
+  <source src="https://fastforwardlabs.github.io/visuals/shared/ff08/ff08-newsie.mp4" type="video/mp4
+">
+</video>
+</body>
+<script type="text/javascript">
+let videos = [
+  'https://fastforwardlabs.github.io/visuals/shared/ff08/ff08-newsie.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff07/ff07-deep-bargain.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff06/ff06-refractor.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff05/ff05-pre_loan.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff04/ff04-brief.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff03/ff03-fathom.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff02/ff02-cliquestream.mp4',
+  'https://fastforwardlabs.github.io/visuals/shared/ff01/ff01-roborealtor.mp4'
+]
+
+video = document.getElementsByTagName("video")[0]
+source = video.getElementsByTagName("source")
+
+let counter = 0;
+video.addEventListener('ended', function () {
+  if (counter === videos.length - 1) {
+    counter = 0
+  } else {
+    counter = counter + 1
+  }
+	source[0].src = videos[counter];
+  video.load();
+  video.play();
+})
+</script>
+</html>
